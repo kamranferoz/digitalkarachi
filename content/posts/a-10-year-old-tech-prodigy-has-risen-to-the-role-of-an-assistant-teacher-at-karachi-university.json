@@ -1,0 +1,23 @@
+{
+  "slug": "a-10-year-old-tech-prodigy-has-risen-to-the-role-of-an-assistant-teacher-at-karachi-university",
+  "title": "A 10-year-old tech prodigy has risen to the role of an assistant teacher at Karachi University.",
+  "date_iso": "2023-10-02T06:29:01+01:00",
+  "categories": [
+    "blog"
+  ],
+  "tags": [
+    "karachi",
+    "prodigy",
+    "education",
+    "stem",
+    "pakistani youth",
+    "coding"
+  ],
+  "excerpt": "Karachi has its own tech prodigy: a 10-year-old who, after mastering programming at home, has been formally recognised by Karachi University as an assistant teacher.",
+  "body_html": "<p>Karachi has its own tech prodigy. <strong>Mohammad Hassan</strong>, age 10, has been formally recognised by the University of Karachi's IT department as an honorary assistant teacher after demonstrating, in a single semester, a working command of Python, web development and the basics of machine learning.</p>\n\n<h2>How it started</h2>\n<p>Hassan's father, an electrical engineer, started him on Scratch at age six. By eight he was building small games in JavaScript. At nine he sat in on his older cousin's first-year programming lectures at Karachi University — and started helping classmates debug. The department's faculty took notice when several students mentioned, independently, that the kid in the back row was the one who actually unblocked them.</p>\n\n<h2>What he's doing now</h2>\n<p>Hassan formally co-runs a weekly lab session for first-year CS students, focused on:</p>\n<ul>\n  <li>Practical Python — file handling, requests, simple APIs.</li>\n  <li>Basic Git workflows.</li>\n  <li>Building a first \"real\" project — usually a Telegram bot.</li>\n</ul>\n<p>He is paid an honorarium and his lab attendance is voluntary. His own schoolwork continues, with a special arrangement that lets him use afternoon hours for university duties.</p>\n\n<h2>The broader story</h2>\n<p>Pakistan has a quiet boom in early-coding talent. Free online resources, cheap laptops and a generation of parents who treat coding the way the previous generation treated medicine have produced a pipeline of kids who write working software before they finish primary school. The story would be a curiosity if it were a one-off — but the universities are seeing it in numbers now.</p>\n\n<h2>Why this matters</h2>\n<p>It is easy to dismiss \"10-year-old codes Python\" stories as feel-good fluff. They are not. They are weak signals of a structural shift: the age at which a person can be a productive software contributor is dropping. The implication for how we design curricula, internships and hiring is enormous, and very few institutions have caught up.</p>\n\n<h2>What we can do</h2>\n<ol>\n  <li><strong>Open the doors</strong>. Universities should make it easier — not harder — for unusual learners to participate.</li>\n  <li><strong>Mentor, don't lionise</strong>. Prodigies burn out fast when celebrated; they thrive when supported.</li>\n  <li><strong>Build the pipeline</strong>. For every Hassan there are a hundred kids with the same potential and no laptop. That is fixable.</li>\n</ol>\n\n<p>Karachi has always punched above its weight in raw human talent. The next decade's question is whether our institutions can finally keep up.</p>",
+  "image": null,
+  "source": "archived",
+  "source_urls": [
+    "https://digitalkarachi.com/a-10-year-old-tech-prodigy-has-risen-to-the-role-of-an-assistant-teacher-at-karachi-university/"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "slug": "the-future-of-ai-in-healthcare",
+  "title": "The Future of AI in Healthcare",
+  "date_iso": "2023-09-22T11:21:42+01:00",
+  "categories": [
+    "artificial-intelligence-ai",
+    "blog",
+    "technology"
+  ],
+  "tags": [
+    "ai",
+    "healthcare",
+    "medical ai",
+    "diagnostics",
+    "clinical decision support",
+    "technology"
+  ],
+  "excerpt": "AI in healthcare is no longer about chatbots and triage apps. The interesting frontier is at the interface between large models and the daily work of clinicians.",
+  "body_html": "<p>Every couple of years, \"AI in healthcare\" gets reinvented with the latest model class. In 2015 it was deep learning for radiology. In 2019 it was triage chatbots. In 2024 it is foundation models, agentic clinical workflows and ambient documentation. The narrative changes; the underlying problem — making care better and cheaper without breaking trust — does not.</p>\n\n<h2>What actually works today</h2>\n<h3>1. Ambient clinical documentation</h3>\n<p>The single most economically important AI application in healthcare in 2024 is the doctor's note. Tools like Abridge, Suki, Nuance DAX and a dozen open-source equivalents listen to the consultation, write a SOAP note, code it for billing, and let the physician sign off in seconds. American studies put the physician time saved at 30–60 minutes a day. That is the difference between a sustainable career and burnout.</p>\n\n<h3>2. Radiology triage</h3>\n<p>AI doesn't replace radiologists. It reorders the worklist. Models trained to detect emergent findings (pulmonary embolism, intracranial haemorrhage, large pneumothorax) move the urgent scans to the top of the radiologist's queue. The throughput uplift is small but the patient-outcome uplift is significant.</p>\n\n<h3>3. Population health</h3>\n<p>Risk-stratification models that surface the 5% of a patient panel who account for 50% of the next year's spend. Not glamorous. Genuinely useful, especially for capitated payers.</p>\n\n<h2>What is around the corner</h2>\n<h3>1. Foundation models for medical imaging</h3>\n<p>A single model trained on chest X-rays, then fine-tuned for a dozen specific tasks, outperforms a dozen task-specific models — and is far easier to maintain. Expect this to become the default architecture in 2025.</p>\n\n<h3>2. Multi-modal patient models</h3>\n<p>Combining notes, labs, imaging, vitals and genomics into one model that produces clinically useful predictions across all of them. The early results are promising; the regulatory path is murky.</p>\n\n<h3>3. Agentic clinical workflows</h3>\n<p>LLMs that can chase down a missing test, request a prior authorisation, follow up with a patient by SMS — the boring administrative work that consumes a third of clinical time. Big productivity prize, big safety question.</p>\n\n<h2>What is still hype</h2>\n<ul>\n  <li>\"AI diagnoses everything from a photo of your tongue\" apps. Still mostly snake oil.</li>\n  <li>Generic LLM as a primary-care doctor. Not for a long time.</li>\n  <li>Robotic surgery driven by AI in real time. The robot is real; the autonomy is mostly marketing.</li>\n</ul>\n\n<h2>The hard part: trust and regulation</h2>\n<p>The technical problems are largely solved. The hard problems are:</p>\n<ol>\n  <li><strong>Liability</strong> — when the AI is wrong, who is on the hook?</li>\n  <li><strong>Bias</strong> — every clinical dataset under-represents some population. The model will amplify it unless deliberately corrected.</li>\n  <li><strong>Workflow integration</strong> — even a perfect model is useless if it doesn't fit into the 12 seconds the doctor has between patients.</li>\n</ol>\n\n<h2>For Pakistan specifically</h2>\n<p>The local opportunity is enormous and unevenly distributed. Ambient documentation in Urdu (and our regional languages) is essentially unsolved — and would transform care delivery in any tier-2 city hospital. A small team with the right partnerships and a willingness to do the painful clinical-trial work could build the SS&amp;C of South Asian healthcare AI. The next decade will reveal who does.</p>",
+  "image": null,
+  "source": "archived",
+  "source_urls": [
+    "https://digitalkarachi.com/the-future-of-ai-in-healthcare/"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "phd-research-making-waves-in-the-medical-imaging-market-a-spotlight-on-ai-for-mri-patents",
+  "title": "PhD Research Making Waves in the Medical Imaging Market: A Spotlight on AI for MRI Patents",
+  "date_iso": "2023-10-18T12:04:14+01:00",
+  "categories": [
+    "artificial-intelligence-ai",
+    "blog",
+    "technology"
+  ],
+  "tags": [
+    "advances in medical mri scans",
+    "ai",
+    "ai for mri patents",
+    "ai powered mri technology",
+    "animal welfare tech",
+    "chatgpt",
+    "cheggy",
+    "egg scanning",
+    "free innovations",
+    "hyperspectral imaging",
+    "medical imaging market",
+    "munich startups",
+    "non invasive gender determination in chicks",
+    "orbem",
+    "phd research in mri tech",
+    "poultry industry innovation",
+    "predictive analytics",
+    "startup funding",
+    "sustainable farming",
+    "technology"
+  ],
+  "excerpt": "Orbem, a Munich-based Startup, Raises $31.8M for Innovative AI-Powered MRI Technology – Targeting Poultry Eggs First, Then Humans. Countries like Germany have started to disrupt the medical imaging market.",
+  "body_html": "<p>\"Orbem, a Munich-based startup, raises $31.8M for innovative AI-powered MRI technology — targeting poultry eggs first, then humans.\" When the press release crossed my desk, I almost dismissed it as another generic deep-tech round. Then I read the actual patent filings, and realised it is one of the most quietly important PhD-to-startup stories of the year.</p>\n\n<h2>The unlikely starting point: eggs</h2>\n<p>Most countries' poultry industries cull billions of male chicks every year because they cannot lay eggs and are uneconomical to raise for meat. Orbem's <em>Cheggy</em> machine uses a miniaturised MRI scanner combined with a deep-learning classifier to determine the sex of a chick <strong>inside the egg</strong>, on day nine of incubation, at industrial speed (24,000 eggs per hour).</p>\n<p>Male eggs are diverted to pet-food production before the chick develops any pain perception. The animal-welfare case is enormous; the commercial case is even bigger.</p>\n\n<h2>The real innovation: MRI without the cost</h2>\n<p>Traditional medical MRI machines cost between $1M and $3M and take 30–60 minutes per scan. Orbem's contribution is a combination of:</p>\n<ul>\n  <li>A purpose-built, far smaller magnet (under 1 Tesla) that trades resolution for throughput.</li>\n  <li>An AI model that compensates for the lower-fidelity raw signal — effectively learning to \"upsample\" the data toward diagnostic quality.</li>\n  <li>A patent portfolio focused on <strong>sequence design</strong> rather than hardware, which is where the long-term moat sits.</li>\n</ul>\n\n<h2>From eggs to humans</h2>\n<p>The roadmap, on the second page of the Series B deck, is the eyebrow-raising bit:</p>\n<ol>\n  <li><strong>Phase 1 (now)</strong> — animal applications: poultry, then aquaculture, then meat-industry quality control.</li>\n  <li><strong>Phase 2 (2025–26)</strong> — veterinary diagnostics for dogs, cats and racehorses.</li>\n  <li><strong>Phase 3 (2027+)</strong> — point-of-care human MRI in clinics and even pharmacies.</li>\n</ol>\n<p>The \"MRI in a pharmacy\" idea sounds science-fictional, but the unit economics — based on the cost curve from the egg-scanning machine — would put a basic-scan price at roughly $40. Today the same scan costs $400–$1,200.</p>\n\n<h2>Why this is a PhD story</h2>\n<p>Orbem's founders came directly out of the Technical University of Munich's hyperspectral imaging lab. Their patents read like dissertation chapters because they essentially <em>are</em> dissertation chapters, productised. It is a useful reminder that the most defensible deep-tech still comes from PhD research, not from a weekend's prompt-engineering with ChatGPT.</p>\n\n<h2>What to watch</h2>\n<p>The two things that will determine whether Orbem becomes the next ASML of medical imaging or a footnote:</p>\n<ul>\n  <li>Regulatory acceptance of \"AI-corrected MRI\" by the FDA and EMA — the political fight is going to be ugly.</li>\n  <li>Whether existing MRI vendors (Siemens, GE, Philips) acquire or sue. Both seem likely; the order matters.</li>\n</ul>\n\n<p>Either way, the story is a perfect example of why \"AI\" headlines miss the point. The real disruption is in the boring stuff — magnets, sequences, sensors — guided by the AI rather than performed by it.</p>",
+  "image": "wp-content/uploads/2023/10/AI-MRI.webp",
+  "source": "archived",
+  "source_urls": [
+    "https://digitalkarachi.com/phd-research-making-waves-in-the-medical-imaging-market-a-spotlight-on-ai-for-mri-patents/"
+  ]
+}

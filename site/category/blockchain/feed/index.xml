@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blockchain – Digital Karachi</title>
+    <link>https://digitalkarachi.com/</link>
+    <description>Latest articles in Blockchain from Digital Karachi.</description>
+    <language>en-us</language>
+    <atom:link href="https://digitalkarachi.com/category/blockchain/feed/" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Tokenized Real-world Assets: Regulatory And Technical Realities</title>
+      <link>https://digitalkarachi.com/tokenized-real-world-assets-regulatory-and-technical-realities/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/tokenized-real-world-assets-regulatory-and-technical-realities/</guid>
+      <pubDate>2026-04-15T09:00:00+05:00</pubDate>
+      <description>Tokenization has emerged as a transformative tool for transforming real-world assets into digital equivalents. This process enables greater liquidity, transparency, and accessibility but is fraught with both regulatory complexities and technological hurdles.  DEFINING TOKENIZED ASSETS  A tokenized asset refers to the representation of any physical or intangible property in blockchain form. These</description>
+    </item>
+    <item>
+      <title>Layer-2 Scaling: The 2026 Landscape</title>
+      <link>https://digitalkarachi.com/layer-2-scaling-the-2026-landscape/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/layer-2-scaling-the-2026-landscape/</guid>
+      <pubDate>2026-03-07T09:00:00+05:00</pubDate>
+      <description>Blockchain technology has revolutionized how we transact, but scalability remains a key challenge. As we approach 2026, Layer-2 solutions continue to evolve, promising faster transactions and lower fees while maintaining the security of the blockchain. 
+ Understanding Layer-2 Solutions 
+ Layer-2 scaling solutions operate on top of the main blockchain network (Layer-1) to address scalability issue</description>
+    </item>
+    <item>
+      <title>Zero-Knowledge Proofs: Beyond Privacy into Authentication and More</title>
+      <link>https://digitalkarachi.com/zero-knowledge-proofs-beyond-privacy-into-authentication-and-more/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/zero-knowledge-proofs-beyond-privacy-into-authentication-and-more/</guid>
+      <pubDate>2026-01-27T09:00:00+05:00</pubDate>
+      <description>Zero-Knowledge Proofs (ZKPs) are cryptographic methods that allow one party to prove to another that a statement is true without revealing any information beyond the validity of the statement itself. Originally developed for privacy applications, ZKPs are now finding innovative uses in authentication, supply chain verification, and more. 
+ Introduction to Zero-Knowledge Proofs 
+ ZKPs were first i</description>
+    </item>
+    <item>
+      <title>MEV: What It Is And Why Builders Should Care</title>
+      <link>https://digitalkarachi.com/mev-what-it-is-and-why-builders-should-care/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/mev-what-it-is-and-why-builders-should-care/</guid>
+      <pubDate>2025-12-19T09:00:00+05:00</pubDate>
+      <description>Mining extrinsic value (MEV) has emerged as a critical issue for blockchain networks. It involves the extraction of profits by miners or validators through strategically ordering transactions in blockchains, often at the expense of network security and fairness.  Understanding MEV  Imagine a miner with the power to reorder transactions within a block. They can place profitable trades before less</description>
+    </item>
+    <item>
+      <title>Cross-Chain Bridges: The Security Postmortem</title>
+      <link>https://digitalkarachi.com/cross-chain-bridges-the-security-postmortem/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/cross-chain-bridges-the-security-postmortem/</guid>
+      <pubDate>2025-11-10T09:00:00+05:00</pubDate>
+      <description>As blockchain technology continues to evolve, interoperability has become a crucial aspect for developers and users. Cross-chain bridges have emerged as vital tools to facilitate data and asset transfers between different blockchain networks. However, these bridges are not without their security concerns. In this article, we delve into the vulnerabilities of cross-chain bridges and explore the me</description>
+    </item>
+    <item>
+      <title>Building a Wallet UX That Doesn&#x27;t Scare Normal Users</title>
+      <link>https://digitalkarachi.com/building-a-wallet-ux-that-doesn-t-scare-normal-users/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/building-a-wallet-ux-that-doesn-t-scare-normal-users/</guid>
+      <pubDate>2025-10-02T09:00:00+05:00</pubDate>
+      <description>As blockchain technology continues to gain traction, the need for user-friendly interfaces that ensure security without overwhelming users has never been greater. Designing a cryptocurrency wallet is a delicate balance between providing a seamless experience and ensuring robust protection against hacks. 
+ Understanding Your Users 
+ The first step in building an accessible wallet is understanding</description>
+    </item>
+    <item>
+      <title>Crypto In Remittances: The Pakistan Corridor Opportunity</title>
+      <link>https://digitalkarachi.com/crypto-in-remittances-the-pakistan-corridor-opportunity/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/crypto-in-remittances-the-pakistan-corridor-opportunity/</guid>
+      <pubDate>2025-08-24T09:00:00+05:00</pubDate>
+      <description>Remittances are a lifeline for millions of families across Pakistan, yet the current systems often suffer from high fees and slow processing times. Blockchain technology offers an opportunity to transform this sector, making remittances faster, cheaper, and more transparent. This article explores how blockchain can be leveraged in Pakistan&#x27;s remittance corridors, focusing on challenges, benefits,</description>
+    </item>
+    <item>
+      <title>Account-abstraction: What It Changes For End Users</title>
+      <link>https://digitalkarachi.com/account-abstraction-what-it-changes-for-end-users/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/account-abstraction-what-it-changes-for-end-users/</guid>
+      <pubDate>2025-07-16T09:00:00+05:00</pubDate>
+      <description>Account abstraction in blockchain technology is reshaping the way users interact with decentralized applications (dApps). By abstracting away complex smart contract interactions, it makes web3 more user-friendly and accessible. This transformation not only simplifies the process for beginners but also opens up new possibilities for advanced use cases. 
+ Understanding Account Abstraction 
+ Account</description>
+    </item>
+    <item>
+      <title>Restaking and Shared Security: The New Primitives</title>
+      <link>https://digitalkarachi.com/restaking-and-shared-security-the-new-primitives/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/restaking-and-shared-security-the-new-primitives/</guid>
+      <pubDate>2025-06-07T09:00:00+05:00</pubDate>
+      <description>Restaking and shared security have emerged as pivotal concepts in blockchain technology, pushing the boundaries of decentralization and network resilience. These mechanisms offer a new paradigm for validator nodes to participate more effectively without compromising on security or trust. 
+ Introduction to Restaking 
+ The traditional approach to staking in blockchain networks involves validators l</description>
+    </item>
+    <item>
+      <title>On-rapms And Off-ramps: The Unsexy Infrastructure That Matters</title>
+      <link>https://digitalkarachi.com/on-rapms-and-off-ramps-the-unsexy-infrastructure-that-matters/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/on-rapms-and-off-ramps-the-unsexy-infrastructure-that-matters/</guid>
+      <pubDate>2025-04-29T09:00:00+05:00</pubDate>
+      <description>When we think of blockchain technology, the spotlight typically lands on flashy use cases like NFTs or decentralized finance (DeFi). But behind these exciting innovations lies a critical yet often underappreciated aspect: on-ramps and off-ramps. These are the mechanisms that enable people to enter and exit the crypto ecosystem smoothly, making them foundational for widespread adoption.  WHY ON-RA</description>
+    </item>
+    <item>
+      <title>Bitcoin as Treasury: The Corporate Playbook</title>
+      <link>https://digitalkarachi.com/bitcoin-as-treasury-the-corporate-playbook/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/bitcoin-as-treasury-the-corporate-playbook/</guid>
+      <pubDate>2025-03-21T09:00:00+05:00</pubDate>
+      <description>As blockchain technology continues to mature, more companies are exploring its applications beyond cryptocurrencies. One of the most promising use cases is integrating Bitcoin as a treasury asset. This approach offers a blend of digital efficiency and traditional financial stability, making it an attractive option for corporate finance departments.  Why Corporates Are Turning to Bitcoin  The vola</description>
+    </item>
+    <item>
+      <title>Smart Contract Auditing: A Practitioner&#x27;s Checklist</title>
+      <link>https://digitalkarachi.com/smart-contract-auditing-a-practitioner-s-checklist/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/smart-contract-auditing-a-practitioner-s-checklist/</guid>
+      <pubDate>2025-02-10T09:00:00+05:00</pubDate>
+      <description>Smart contracts have revolutionized how businesses interact on the blockchain by automating complex processes. However, without thorough auditing, these contracts can harbor vulnerabilities that could lead to significant financial and operational risks. This article provides a comprehensive checklist for practitioners to ensure their smart contracts are secure, reliable, and robust. 
+ Understand</description>
+    </item>
+    <item>
+      <title>DAOs as Governance Experiments: What Worked, What Didn&#x27;t</title>
+      <link>https://digitalkarachi.com/daos-as-governance-experiments-what-worked-what-didn-t/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/daos-as-governance-experiments-what-worked-what-didn-t/</guid>
+      <pubDate>2025-01-02T09:00:00+05:00</pubDate>
+      <description>The rise of decentralized autonomous organizations (DAOs) has been one of the most significant developments in blockchain technology. These entities, governed by smart contracts and tokenized governance structures, represent a radical shift towards more democratic and transparent organizational models.  Introduction to DAOs  A DAO is an entity that operates based on pre-programmed rules encoded i</description>
+    </item>
+    <item>
+      <title>Account Abstraction: A Game-Changer for Blockchain Users</title>
+      <link>https://digitalkarachi.com/account-abstraction-a-game-changer-for-blockchain-users/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/account-abstraction-a-game-changer-for-blockchain-users/</guid>
+      <pubDate>2024-11-24T09:00:00+05:00</pubDate>
+      <description>Account abstraction is a transformative technology that aims to simplify how users interact with blockchain networks, making them more accessible and secure. By abstracting away the complexity of wallets, it enables seamless and efficient transactions without requiring users to manage their own private keys.  Understanding Account Abstraction  The core idea behind account abstraction is to create</description>
+    </item>
+    <item>
+      <title>Permissioned Blockchains In Enterprise: The Honest Assessment</title>
+      <link>https://digitalkarachi.com/permissioned-blockchains-in-enterprise-the-honest-assessment/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/permissioned-blockchains-in-enterprise-the-honest-assessment/</guid>
+      <pubDate>2024-10-16T09:00:00+05:00</pubDate>
+      <description>Permissioned blockchains have emerged as a compelling solution for businesses looking to leverage the transparency and security benefits of blockchain technology within their private networks. These systems offer enhanced control over who can participate, access data, or transact on the network, making them particularly suitable for enterprise environments where regulatory compliance and data pri</description>
+    </item>
+    <item>
+      <title>Stablecoins For Cross-border Payments In Emerging Markets</title>
+      <link>https://digitalkarachi.com/stablecoins-for-cross-border-payments-in-emerging-markets/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/stablecoins-for-cross-border-payments-in-emerging-markets/</guid>
+      <pubDate>2024-09-07T09:00:00+05:00</pubDate>
+      <description>With the rise of blockchain technology, stablecoins are revolutionizing cross-border payments in emerging markets. These digital assets have the potential to significantly enhance financial inclusion and reduce transaction costs for millions of people.  Understanding Stablecoins  A stablecoin is a type of cryptocurrency designed to maintain a stable value relative to another asset, usually fiat c</description>
+    </item>
+    <item>
+      <title>NFT Utility Beyond JPEGs: From Tickets to Credentials</title>
+      <link>https://digitalkarachi.com/nft-utility-beyond-jpegs-from-tickets-to-credentials/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/nft-utility-beyond-jpegs-from-tickets-to-credentials/</guid>
+      <pubDate>2024-07-30T09:00:00+05:00</pubDate>
+      <description>Non-fungible tokens (NFTs) have traditionally been associated with digital art and collectibles. However, their utility extends far beyond just JPEGs. In this article, we explore how NFTs are transforming ticketing, credentials, and memberships in various industries.  Ticketing: A New Era of Event Management  One of the most promising areas for NFTs is event ticketing. With traditional tickets, t</description>
+    </item>
+    <item>
+      <title>Oracles: The Trust Layer That Breaks Defi</title>
+      <link>https://digitalkarachi.com/oracles-the-trust-layer-that-breaks-defi/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/oracles-the-trust-layer-that-breaks-defi/</guid>
+      <pubDate>2024-06-21T09:00:00+05:00</pubDate>
+      <description>Oracles stand as the unsung heroes in decentralized finance (DeFi), linking real-world data to blockchain systems. Yet, their critical role often hides a complex web of security risks and vulnerabilities that can undermine the very trust DeFi aims to establish. In this article, we delve into the intricacies of oracles, their importance in DeFi, common challenges they pose, and potential solutions</description>
+    </item>
+    <item>
+      <title>On-chain Identity: The Patterns That Are Working</title>
+      <link>https://digitalkarachi.com/on-chain-identity-the-patterns-that-are-working/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/on-chain-identity-the-patterns-that-are-working/</guid>
+      <pubDate>2024-05-13T09:00:00+05:00</pubDate>
+      <description>On-chain identity has emerged as a critical component in the web3 ecosystem, offering a secure, transparent, and self-sovereign way to manage digital identities. With the increasing need for privacy and trust in decentralized systems, developers are exploring various patterns that make on-chain identity viable and practical. 
+
+ Self-Sovereign Identity (SSI) 
+ The concept of Self-Sovereign Identit</description>
+    </item>
+    <item>
+      <title>Privacy Coins in 2026: Technical and Regulatory Snapshot</title>
+      <link>https://digitalkarachi.com/privacy-coins-in-2026-technical-and-regulatory-snapshot/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/privacy-coins-in-2026-technical-and-regulatory-snapshot/</guid>
+      <pubDate>2024-04-04T09:00:00+05:00</pubDate>
+      <description>By 2026, privacy coins will have made significant strides in both technology and regulation. This article provides a comprehensive look at the current state of privacy-focused cryptocurrencies and how they are reshaping financial transactions. 
+ Introduction to Privacy Coins 
+ Privacy coins emerged as a response to the transparency concerns associated with traditional blockchains, particularly Bi</description>
+    </item>
+  </channel>
+</rss>

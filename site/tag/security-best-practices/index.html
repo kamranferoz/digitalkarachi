@@ -1,0 +1,980 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FAFAF7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E0F0C" media="(prefers-color-scheme: dark)">
+<title>#security-best-practices – Digital Karachi</title>
+<meta name="description" content="Articles tagged with #security-best-practices.">
+<link rel="canonical" href="https://digitalkarachi.com/tag/security-best-practices/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Digital Karachi">
+<meta property="og:title" content="#security-best-practices – Digital Karachi">
+<meta property="og:description" content="Articles tagged with #security-best-practices.">
+<meta property="og:url" content="https://digitalkarachi.com/tag/security-best-practices/">
+<meta property="og:image" content="https://digitalkarachi.com/wp-content/uploads/2023/09/DK-Logo-light.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="#security-best-practices – Digital Karachi">
+<meta name="twitter:description" content="Articles tagged with #security-best-practices.">
+<link rel="icon" href="../../wp-content/uploads/2023/09/cropped-favicon-32x32.webp" sizes="32x32" type="image/webp">
+<link rel="icon" href="../../wp-content/uploads/2023/09/cropped-favicon-192x192.webp" sizes="192x192" type="image/webp">
+<link rel="apple-touch-icon" href="../../wp-content/uploads/2023/09/cropped-favicon-192x192.webp">
+<link rel="alternate" type="application/rss+xml" title="Digital Karachi feed" href="../../feed/index.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400&display=swap"></noscript>
+<style id="dk-theme-inline">/* Digital Karachi — Editorial Minimal
+   Hand-written, framework-free. Tokens-driven, dark-mode aware.
+   ============================================================== */
+
+/* -- 1. Tokens ------------------------------------------------- */
+:root {
+  --bg: #FAFAF7;
+  --bg-alt: #F3F2EC;
+  --ink: #111111;
+  --ink-soft: #4B5563;
+  --ink-mute: #6B7280;
+  --rule: #E5E4DA;
+  --accent: #16A34A;
+  --accent-ink: #064E2A;
+  --accent-soft: #ECFDF5;
+  --serif: "Fraunces", ui-serif, Georgia, "Times New Roman", serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --container: min(92vw, 1180px);
+  --measure: min(92vw, 680px);
+  --radius: 4px;
+  --transition: 200ms cubic-bezier(.2,.6,.2,1);
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg: #0E0F0C;
+  --bg-alt: #17181B;
+  --ink: #F3F2EC;
+  --ink-soft: #C4C2B6;
+  --ink-mute: #8C8A7E;
+  --rule: #2A2B27;
+  --accent: #34D399;
+  --accent-ink: #BBF7D0;
+  --accent-soft: rgba(52,211,153,.08);
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="auto"] {
+    --bg: #0E0F0C;
+    --bg-alt: #17181B;
+    --ink: #F3F2EC;
+    --ink-soft: #C4C2B6;
+    --ink-mute: #8C8A7E;
+    --rule: #2A2B27;
+    --accent: #34D399;
+    --accent-ink: #BBF7D0;
+    --accent-soft: rgba(52,211,153,.08);
+    color-scheme: dark;
+  }
+}
+
+/* -- 2. Reset & base ------------------------------------------ */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body {
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  min-height: 100vh;
+  font-feature-settings: "ss01", "cv11";
+}
+img, svg, video { display: block; max-width: 100%; height: auto; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+input, textarea, select { font: inherit; color: inherit; }
+a { color: inherit; text-decoration: none; }
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+::selection { background: var(--accent); color: var(--bg); }
+
+/* Hide WordPress legacy markup if any survives the regen */
+.site-branding, .main-navigation, .ascendoor-wrapper > .ascendoor-page > .widget-area,
+.city_blog_banner_section, #city_blog_banner_section,
+.news-ticker-wrapper, .news-ticker, .secondary, #secondary,
+.site-info, .footer-top, .footer-bottom { display: none !important; }
+
+/* -- 3. Utility ------------------------------------------------ */
+.dk-skip {
+  position: absolute; left: -9999px; top: 0;
+  background: var(--accent); color: var(--bg);
+  padding: .6rem 1rem; z-index: 1000; font-weight: 600;
+}
+.dk-skip:focus { left: 1rem; top: 1rem; }
+.dk-container { width: var(--container); margin-inline: auto; }
+.dk-measure { width: var(--measure); margin-inline: auto; }
+.dk-eyebrow {
+  font-family: var(--mono);
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--accent);
+  font-weight: 500;
+}
+.dk-eyebrow a { color: inherit; }
+.dk-eyebrow a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.dk-meta {
+  font-family: var(--mono);
+  font-size: .8rem;
+  color: var(--ink-mute);
+  letter-spacing: .02em;
+}
+.dk-hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 3rem 0;
+}
+
+/* -- 4. Reading-progress bar ---------------------------------- */
+.dk-progress {
+  position: fixed; top: 0; left: 0;
+  height: 2px; width: 0;
+  background: var(--accent);
+  z-index: 100;
+  transition: width 60ms linear;
+}
+
+/* -- 5. Header / nav ------------------------------------------ */
+.dk-nav {
+  position: sticky; top: 0; z-index: 50;
+  background: color-mix(in srgb, var(--bg) 80%, transparent);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid var(--rule);
+}
+.dk-nav-inner {
+  width: var(--container);
+  margin-inline: auto;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.dk-wordmark {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.dk-wordmark em {
+  font-style: italic;
+  color: var(--accent);
+  font-weight: 500;
+  margin-right: .15ch;
+}
+.dk-nav-links {
+  display: flex; gap: 1.5rem;
+  margin-left: 2rem;
+  font-size: .94rem;
+  font-weight: 500;
+}
+.dk-nav-links a {
+  color: var(--ink-soft);
+  transition: color var(--transition);
+  position: relative;
+  padding: .2rem 0;
+}
+.dk-nav-links a:hover { color: var(--ink); }
+.dk-nav-links a.is-active { color: var(--ink); }
+.dk-nav-links a.is-active::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -2px;
+  height: 1.5px; background: var(--accent);
+}
+.dk-nav-tools {
+  display: flex; gap: .25rem;
+  margin-left: auto;
+  align-items: center;
+}
+.dk-icon-btn {
+  width: 38px; height: 38px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  color: var(--ink-soft);
+  transition: background var(--transition), color var(--transition);
+}
+.dk-icon-btn:hover { background: var(--bg-alt); color: var(--ink); }
+.dk-icon-btn svg { width: 18px; height: 18px; stroke-width: 1.75; }
+
+/* Light: show moon. Dark: show sun. */
+.dk-i-moon { display: block; }
+.dk-i-sun { display: none; }
+:root[data-theme="dark"] .dk-i-moon { display: none; }
+:root[data-theme="dark"] .dk-i-sun { display: block; }
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="auto"] .dk-i-moon { display: none; }
+  :root[data-theme="auto"] .dk-i-sun { display: block; }
+}
+
+.dk-mobile-menu-btn { display: none; }
+
+/* Mobile nav overlay */
+.dk-mobile-overlay {
+  position: fixed; inset: 0;
+  background: var(--bg);
+  z-index: 60;
+  padding: 6rem 2rem 2rem;
+  display: flex; flex-direction: column;
+  gap: 1.25rem;
+  opacity: 0;
+  transition: opacity var(--transition);
+  pointer-events: none;
+}
+.dk-mobile-overlay[data-open="true"] {
+  opacity: 1; pointer-events: auto;
+}
+.dk-mobile-overlay .dk-close {
+  position: absolute; top: 1rem; right: 1rem;
+}
+.dk-mobile-overlay a {
+  font-family: var(--serif); font-size: 2rem;
+  font-weight: 600; color: var(--ink);
+  padding: .5rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+.dk-mobile-overlay a:hover { color: var(--accent); }
+
+@media (max-width: 760px) {
+  .dk-nav-links { display: none; }
+  .dk-mobile-menu-btn { display: inline-flex; }
+}
+
+/* -- 6. Home: featured hero & grid ---------------------------- */
+.dk-hero {
+  width: var(--container);
+  margin-inline: auto;
+  padding-block: clamp(2rem, 5vw, 4rem);
+}
+.dk-hero-figure {
+  display: block;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  background: var(--bg-alt);
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius);
+}
+.dk-hero-figure img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 600ms var(--transition);
+}
+.dk-hero a:hover .dk-hero-figure img { transform: scale(1.02); }
+.dk-hero-title {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  max-width: 22ch;
+  margin-top: .8rem;
+  color: var(--ink);
+  font-variation-settings: "opsz" 60;
+}
+.dk-hero-title a { background-image: linear-gradient(var(--accent), var(--accent)); background-size: 0 1.5px; background-position: 0 100%; background-repeat: no-repeat; transition: background-size 300ms var(--transition); padding-bottom: 2px; }
+.dk-hero-title a:hover { background-size: 100% 1.5px; }
+.dk-hero-excerpt {
+  font-size: 1.125rem; color: var(--ink-soft);
+  max-width: 60ch; margin-top: 1rem; line-height: 1.6;
+}
+.dk-hero-meta { margin-top: 1.25rem; }
+
+.dk-section-title {
+  font-family: var(--mono); font-size: .82rem;
+  text-transform: uppercase; letter-spacing: .14em;
+  color: var(--ink-mute);
+  width: var(--container);
+  margin: 0 auto 1.25rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--rule);
+  font-weight: 500;
+}
+
+.dk-grid {
+  width: var(--container);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: clamp(1.25rem, 2.5vw, 2.5rem) 2rem;
+  padding-bottom: 4rem;
+}
+.dk-card { grid-column: span 4; display: flex; flex-direction: column; gap: .75rem; }
+.dk-card.is-large { grid-column: span 8; }
+.dk-card.is-wide { grid-column: span 6; }
+.dk-card-figure {
+  display: block;
+  aspect-ratio: 16/10;
+  background: var(--bg-alt);
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+.dk-card.is-large .dk-card-figure { aspect-ratio: 4/3; }
+.dk-card-figure img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 600ms var(--transition);
+}
+.dk-card:hover .dk-card-figure img { transform: scale(1.025); }
+.dk-card-title {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+.dk-card.is-large .dk-card-title { font-size: clamp(1.7rem, 2.6vw, 2.2rem); line-height: 1.15; }
+.dk-card-title a:hover { color: var(--accent); }
+.dk-card-excerpt {
+  font-size: .98rem; color: var(--ink-soft);
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.dk-card-meta { margin-top: auto; padding-top: .4rem; }
+
+@media (max-width: 960px) {
+  .dk-card, .dk-card.is-large, .dk-card.is-wide { grid-column: span 6; }
+}
+@media (max-width: 600px) {
+  .dk-card, .dk-card.is-large, .dk-card.is-wide { grid-column: span 12; }
+  .dk-card-figure { aspect-ratio: 16/9; }
+}
+
+/* -- 7. Archive header --------------------------------------- */
+.dk-page-header {
+  width: var(--container);
+  margin: clamp(2rem, 5vw, 4rem) auto 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--rule);
+}
+.dk-page-header h1 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-top: .5rem;
+  font-variation-settings: "opsz" 48;
+}
+.dk-page-header p { color: var(--ink-soft); margin-top: .75rem; max-width: 60ch; }
+
+/* -- 8. Article page ----------------------------------------- */
+.dk-article {
+  width: var(--container);
+  margin: clamp(1.5rem, 4vw, 3rem) auto 0;
+}
+.dk-breadcrumb {
+  font-family: var(--mono);
+  font-size: .78rem;
+  color: var(--ink-mute);
+  letter-spacing: .04em;
+  margin-bottom: 1.25rem;
+  display: flex; gap: .5rem; flex-wrap: wrap;
+}
+.dk-breadcrumb a { color: var(--ink-mute); transition: color var(--transition); }
+.dk-breadcrumb a:hover { color: var(--accent); }
+.dk-breadcrumb [aria-current] { color: var(--ink); }
+
+.dk-article-header {
+  width: var(--measure);
+  margin-inline: auto;
+  margin-bottom: 2.5rem;
+}
+.dk-article-title {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  margin: .75rem 0 1.25rem;
+  color: var(--ink);
+  font-variation-settings: "opsz" 96;
+}
+.dk-article-meta {
+  display: flex; flex-wrap: wrap; gap: 1.25rem;
+  font-family: var(--mono);
+  font-size: .82rem;
+  color: var(--ink-mute);
+  letter-spacing: .02em;
+}
+.dk-article-meta span { display: inline-flex; align-items: center; gap: .4rem; }
+.dk-article-meta a { color: var(--ink-soft); }
+.dk-article-meta a:hover { color: var(--accent); }
+.dk-article-meta svg { width: 14px; height: 14px; }
+
+.dk-article-hero {
+  width: var(--container);
+  margin: 0 auto 3rem;
+  aspect-ratio: 16/9;
+  background: var(--bg-alt);
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+.dk-article-hero img { width: 100%; height: 100%; object-fit: cover; }
+
+/* -- 9. Prose / entry-content styles ------------------------- */
+.dk-prose {
+  width: var(--measure);
+  margin-inline: auto;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: var(--ink);
+}
+.dk-prose > * + * { margin-top: 1.4rem; }
+.dk-prose p { color: var(--ink); }
+.dk-prose strong { color: var(--ink); font-weight: 600; }
+.dk-prose em { color: var(--ink); }
+.dk-prose a {
+  color: var(--ink);
+  background-image: linear-gradient(var(--accent), var(--accent));
+  background-size: 100% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 1px;
+  transition: background-size var(--transition);
+}
+.dk-prose a:hover { background-size: 100% 1.5em; color: var(--bg); padding: 0 2px; }
+.dk-prose h2 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(1.5rem, 2.4vw, 1.9rem);
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  margin-top: 3rem;
+  color: var(--ink);
+}
+.dk-prose h3 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-top: 2.25rem;
+  line-height: 1.3;
+}
+.dk-prose h4 { font-weight: 600; margin-top: 1.5rem; }
+.dk-prose ul, .dk-prose ol { padding-left: 1.5rem; }
+.dk-prose ul li, .dk-prose ol li { margin-top: .5rem; }
+.dk-prose ul li::marker { color: var(--accent); }
+.dk-prose blockquote {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.35rem;
+  line-height: 1.45;
+  border-left: 3px solid var(--accent);
+  padding: .25rem 0 .25rem 1.5rem;
+  margin-block: 2rem;
+  color: var(--ink);
+  font-variation-settings: "opsz" 36;
+}
+.dk-prose blockquote p { font-size: inherit; }
+.dk-prose code {
+  font-family: var(--mono);
+  font-size: .92em;
+  background: var(--bg-alt);
+  padding: .12em .42em;
+  border-radius: 3px;
+}
+.dk-prose pre {
+  background: var(--bg-alt);
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius);
+  overflow-x: auto;
+  border: 1px solid var(--rule);
+  font-size: .92rem;
+}
+.dk-prose pre code { background: none; padding: 0; }
+.dk-prose img {
+  width: 100%;
+  border-radius: var(--radius);
+  margin-block: 2rem;
+}
+.dk-prose figure { margin-block: 2rem; }
+.dk-prose figcaption {
+  font-family: var(--mono);
+  font-size: .8rem;
+  color: var(--ink-mute);
+  margin-top: .6rem;
+  text-align: center;
+}
+.dk-prose hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin-block: 3rem;
+  width: 50%;
+  margin-inline: auto;
+}
+.dk-prose table {
+  width: 100%; border-collapse: collapse;
+  font-size: .98rem;
+  margin-block: 2rem;
+}
+.dk-prose th, .dk-prose td {
+  border-bottom: 1px solid var(--rule);
+  padding: .75rem .5rem;
+  text-align: left;
+}
+.dk-prose th { color: var(--ink-mute); font-family: var(--mono); font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; font-weight: 500; }
+
+/* -- 10. Article footer (tags / bio / notice / related) ------ */
+.dk-article-footer {
+  width: var(--measure);
+  margin: 3.5rem auto 0;
+}
+.dk-tags {
+  display: flex; flex-wrap: wrap; gap: .4rem;
+  margin-bottom: 2.5rem;
+}
+.dk-tag {
+  font-family: var(--mono);
+  font-size: .78rem;
+  letter-spacing: .04em;
+  text-transform: lowercase;
+  padding: .25rem .65rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  color: var(--ink-soft);
+  transition: border-color var(--transition), color var(--transition);
+}
+.dk-tag:hover { border-color: var(--accent); color: var(--accent); }
+.dk-tag::before { content: "#"; opacity: .6; margin-right: 1px; }
+
+.dk-author-bio {
+  display: flex; gap: 1.25rem; align-items: flex-start;
+  padding: 2rem 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.dk-author-bio img { width: 64px; height: 64px; border-radius: 50%; flex-shrink: 0; }
+.dk-author-bio strong {
+  font-family: var(--serif); font-size: 1.1rem;
+  font-weight: 600; color: var(--ink);
+  display: block; margin-bottom: .3rem;
+}
+.dk-author-bio p { color: var(--ink-soft); font-size: .98rem; line-height: 1.55; }
+
+.dk-comments-notice {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--accent-soft);
+  border-left: 2px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.dk-comments-notice strong {
+  display: block; color: var(--accent-ink); font-weight: 600;
+  margin-bottom: .35rem;
+}
+.dk-comments-notice { color: var(--ink-soft); font-size: .96rem; line-height: 1.55; }
+:root[data-theme="dark"] .dk-comments-notice strong,
+:root[data-theme="auto"] .dk-comments-notice strong { color: var(--accent); }
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="auto"] .dk-comments-notice strong { color: var(--accent); }
+}
+
+.dk-related {
+  margin-top: 4rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--rule);
+}
+.dk-related h2 {
+  font-family: var(--mono);
+  font-size: .82rem;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--ink-mute);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+.dk-related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+@media (max-width: 720px) { .dk-related-grid { grid-template-columns: 1fr; } }
+.dk-related-card-figure {
+  aspect-ratio: 16/10; background: var(--bg-alt);
+  border-radius: var(--radius); overflow: hidden;
+  margin-bottom: .8rem;
+}
+.dk-related-card-figure img { width: 100%; height: 100%; object-fit: cover; }
+.dk-related-card-title {
+  font-family: var(--serif); font-weight: 600;
+  font-size: 1.1rem; line-height: 1.25;
+  color: var(--ink);
+  display: block;
+}
+.dk-related-card-title:hover { color: var(--accent); }
+.dk-related-card-meta { font-family: var(--mono); font-size: .76rem; color: var(--ink-mute); margin-top: .4rem; }
+
+/* -- 11. Footer ---------------------------------------------- */
+.dk-footer {
+  margin-top: 6rem;
+  border-top: 1px solid var(--rule);
+  background: var(--bg);
+}
+.dk-footer-inner {
+  width: var(--container);
+  margin-inline: auto;
+  padding: 4rem 0 2rem;
+  container-type: inline-size;
+}
+.dk-footer-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+@media (max-width: 720px) { .dk-footer-cols { grid-template-columns: 1fr; gap: 2.5rem; } }
+.dk-footer-cols h4 {
+  font-family: var(--mono);
+  font-size: .76rem;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--ink-mute);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.dk-footer-cols ul { list-style: none; padding: 0; }
+.dk-footer-cols li { margin-bottom: .5rem; }
+.dk-footer-cols a {
+  color: var(--ink-soft);
+  font-size: .94rem;
+  transition: color var(--transition);
+}
+.dk-footer-cols a:hover { color: var(--accent); }
+
+.dk-footer-wordmark {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-style: normal;
+  font-size: clamp(1.8rem, 8.4cqw, 6.5rem);
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 1rem 0 2rem;
+  font-variation-settings: "opsz" 144;
+  white-space: nowrap;
+}
+.dk-footer-wordmark em {
+  color: var(--accent);
+  font-style: italic;
+  font-weight: 500;
+  margin-right: .15ch;
+}
+
+.dk-footer-bottom {
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--mono);
+  font-size: .78rem;
+  color: var(--ink-mute);
+  letter-spacing: .03em;
+}
+
+/* -- 12. News / archive list -------------------------------- */
+.dk-news-list {
+  width: var(--measure); margin-inline: auto;
+}
+.dk-news-item {
+  padding: 2rem 0;
+  border-top: 1px solid var(--rule);
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  gap: 1.5rem;
+  align-items: baseline;
+}
+.dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-item time {
+  font-family: var(--mono);
+  font-size: .82rem;
+  color: var(--ink-mute);
+  letter-spacing: .04em;
+}
+.dk-news-item h2 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  color: var(--ink);
+  letter-spacing: -0.015em;
+}
+.dk-news-item h2 a:hover { color: var(--accent); }
+.dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
+@media (max-width: 560px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+}
+
+/* -- 13. Search results ------------------------------------- */
+.dk-search-box {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 1.1rem;
+  font-family: var(--sans);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--bg-alt);
+  color: var(--ink);
+  margin-bottom: 2rem;
+  transition: border-color var(--transition);
+}
+.dk-search-box:focus { outline: none; border-color: var(--accent); }
+.dk-search-result {
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--rule);
+}
+.dk-search-result h3 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.25;
+}
+.dk-search-result h3 a:hover { color: var(--accent); }
+.dk-search-result .cats {
+  font-family: var(--mono);
+  font-size: .76rem;
+  color: var(--ink-mute);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  margin: .35rem 0;
+}
+.dk-search-result p { color: var(--ink-soft); }
+.dk-search-empty {
+  padding: 3rem 0;
+  text-align: center;
+  font-family: var(--mono);
+  color: var(--ink-mute);
+}
+
+/* -- 14. Contact form (read-only demo) ---------------------- */
+.dk-form { display: grid; gap: .75rem; max-width: 540px; }
+.dk-form input, .dk-form textarea {
+  padding: .75rem 1rem;
+  border: 1px solid var(--rule);
+  background: var(--bg-alt);
+  border-radius: var(--radius);
+  font-family: var(--sans);
+}
+.dk-form input:focus, .dk-form textarea:focus { outline: none; border-color: var(--accent); }
+.dk-form button {
+  font-family: var(--mono);
+  font-size: .85rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  padding: .85rem 1.4rem;
+  background: var(--ink);
+  color: var(--bg);
+  border-radius: var(--radius);
+  font-weight: 500;
+  width: max-content;
+  transition: background var(--transition);
+}
+.dk-form button:hover { background: var(--accent); color: var(--bg); }
+.dk-contact-info {
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  background: var(--bg-alt);
+  border-radius: var(--radius);
+  font-family: var(--mono);
+  font-size: .9rem;
+  line-height: 1.9;
+}
+.dk-contact-info strong { color: var(--ink-mute); font-weight: 500; font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; margin-right: .5rem; }
+
+/* -- 15. 404 page ------------------------------------------- */
+.dk-404 {
+  width: var(--container);
+  margin: 4rem auto;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+.dk-404 .num {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: clamp(6rem, 18vw, 14rem);
+  line-height: .9;
+  color: var(--accent);
+  letter-spacing: -0.06em;
+  font-variation-settings: "opsz" 144;
+}
+.dk-404 p {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  color: var(--ink-soft);
+  margin: 1rem auto 2.5rem;
+  max-width: 36ch;
+  font-style: italic;
+}
+.dk-404 a.cta {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: .85rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  padding: .85rem 1.6rem;
+  background: var(--ink);
+  color: var(--bg);
+  border-radius: var(--radius);
+}
+.dk-404 a.cta:hover { background: var(--accent); }
+
+/* -- 16. Pagination link (More →) --------------------------- */
+.dk-more {
+  width: var(--container);
+  margin: 0 auto 4rem;
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--rule);
+}
+.dk-more a {
+  font-family: var(--mono);
+  font-size: .85rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--accent);
+  display: inline-flex; align-items: center; gap: .5rem;
+  padding: .85rem 1.4rem;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  transition: all var(--transition);
+}
+.dk-more a:hover { border-color: var(--accent); background: var(--accent-soft); }
+
+/* -- 17. Print ---------------------------------------------- */
+@media print {
+  .dk-nav, .dk-footer, .dk-related, .dk-comments-notice,
+  .dk-author-bio, .dk-progress, .dk-mobile-overlay, .dk-breadcrumb,
+  .dk-tags, .dk-skip { display: none !important; }
+  body { color: #000; background: #fff; }
+  .dk-article, .dk-prose, .dk-article-header, .dk-article-hero { width: 100% !important; }
+  .dk-prose a::after { content: " (" attr(href) ")"; font-size: .8em; color: #555; }
+  .dk-article-title { font-size: 28pt !important; }
+  article { page-break-inside: avoid; }
+}
+
+/* -- 18. Reduced motion ------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+}
+</style>
+<script>(function(){try{var t=localStorage.getItem('dk-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<script defer src="../../wp-content/themes/dk-modern/dk-modern.js?v=3"></script>
+</head>
+<body class="dk-body dk-archive">
+<svg style="position:absolute;width:0;height:0" aria-hidden="true" focusable="false">
+<defs>
+<symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"></path></symbol>
+<symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m6 6 12 12M18 6 6 18"></path></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></symbol>
+<symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"></path></symbol>
+</defs></svg>
+<a class="dk-skip" href="#main">Skip to content</a>
+<header class="dk-nav" role="banner">
+  <div class="dk-nav-inner">
+    <a class="dk-wordmark" href="../../index.html" aria-label="Digital Karachi — home"><em>Digital</em> Karachi</a>
+    <nav class="dk-nav-links" aria-label="Primary">
+      <a href="../../index.html">Blog</a>
+      <a href="../../news/index.html">Tech updates</a>
+      <a href="../../about/index.html">About</a>
+      <a href="../../contact/index.html">Contact</a>
+    </nav>
+    <div class="dk-nav-tools">
+      <a class="dk-icon-btn" href="../../search/index.html" aria-label="Search"><svg width="18" height="18"><use href="#i-search"/></svg></a>
+      <button class="dk-icon-btn dk-theme-toggle" aria-label="Toggle colour theme" type="button"><svg class="dk-i-moon" width="18" height="18"><use href="#i-moon"/></svg><svg class="dk-i-sun" width="18" height="18"><use href="#i-sun"/></svg></button>
+      <button class="dk-icon-btn dk-mobile-menu-btn" aria-label="Open menu" type="button"><svg width="20" height="20"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+<div class="dk-mobile-overlay" hidden data-open="false" aria-label="Site navigation">
+  <button class="dk-icon-btn dk-close" aria-label="Close menu" type="button"><svg width="22" height="22"><use href="#i-close"/></svg></button>
+  <a href="../../index.html">Blog</a>
+  <a href="../../news/index.html">Tech updates</a>
+  <a href="../../about/index.html">About</a>
+  <a href="../../contact/index.html">Contact</a>
+  <a href="../../search/index.html">Search</a>
+</div>
+<div class="dk-progress" hidden></div>
+<main id="main">
+
+<header class="dk-page-header">
+  <div class="dk-eyebrow">Tag</div>
+  <h1>#security-best-practices</h1>
+  <p class="archive-description">Articles tagged <strong>#security-best-practices</strong>.</p>
+</header>
+<section class="dk-grid">
+
+<article class="dk-card">
+  <a class="dk-card-figure" href="../../encryption-at-rest-in-transit-and-in-use-a-practical-guide/index.html" aria-hidden="true" tabindex="-1"><img src="../../wp-content/uploads/placeholder.svg" alt="Encryption at Rest, in Transit, and in Use: A Practical Guide" decoding="async" loading="lazy" /></a>
+  <div class="dk-eyebrow"><a href="../../category/security/index.html">Security</a></div>
+  <h2 class="dk-card-title"><a href="../../encryption-at-rest-in-transit-and-in-use-a-practical-guide/index.html">Encryption at Rest, in Transit, and in Use: A Practical Guide</a></h2>
+  <p class="dk-card-excerpt">Learn the fundamentals of encryption to protect your data across all environments—rest, transit, and use. Essential for every tech professional.</p>
+  <div class="dk-card-meta"><time datetime="2025-08-06T09:00:00+05:00">6 August 2025</time></div>
+</article>
+
+<article class="dk-card">
+  <a class="dk-card-figure" href="../../mobile-app-security-certificate-pinning-and-beyond/index.html" aria-hidden="true" tabindex="-1"><img src="../../wp-content/uploads/placeholder.svg" alt="Mobile App Security: Certificate Pinning And Beyond" decoding="async" loading="lazy" /></a>
+  <div class="dk-eyebrow"><a href="../../category/security/index.html">Security</a></div>
+  <h2 class="dk-card-title"><a href="../../mobile-app-security-certificate-pinning-and-beyond/index.html">Mobile App Security: Certificate Pinning And Beyond</a></h2>
+  <p class="dk-card-excerpt">Explore the critical role of certificate pinning in securing mobile apps and discover advanced security measures to protect sensitive data.</p>
+  <div class="dk-card-meta"><time datetime="2024-06-03T09:00:00+05:00">3 June 2024</time></div>
+</article>
+</section>
+
+</main>
+<footer class="dk-footer" role="contentinfo">
+  <div class="dk-footer-inner">
+    <div class="dk-footer-cols">
+      <div>
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="../../index.html">Blog</a></li>
+          <li><a href="../../news/index.html">Tech updates</a></li>
+          <li><a href="../../about/index.html">About</a></li>
+          <li><a href="../../contact/index.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Topics</h4>
+        <ul>
+          <li><a href="../../category/artificial-intelligence-ai/index.html">Artificial Intelligence</a></li>
+          <li><a href="../../category/security/index.html">Cybersecurity</a></li>
+          <li><a href="../../category/data-science/index.html">Data Science</a></li>
+          <li><a href="../../category/cloud-computing/index.html">Cloud Computing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <ul>
+          <li><a href="../../feed/index.xml">RSS feed</a></li>
+          <li><a href="../../privacy-policy/index.html">Privacy</a></li>
+          <li><a href="../../sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="dk-footer-wordmark" aria-hidden="true"><em>Digital</em> Karachi</div>
+    <div class="dk-footer-bottom">
+      <span>© Digital Karachi · Where Innovation Thrives</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

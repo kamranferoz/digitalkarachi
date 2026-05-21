@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security – Digital Karachi</title>
+    <link>https://digitalkarachi.com/</link>
+    <description>Latest articles in Security from Digital Karachi.</description>
+    <language>en-us</language>
+    <atom:link href="https://digitalkarachi.com/category/security/feed/" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Container Security: A Layered Approach</title>
+      <link>https://digitalkarachi.com/container-security-a-layered-approach/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/container-security-a-layered-approach/</guid>
+      <pubDate>2026-05-06T09:00:00+05:00</pubDate>
+      <description>Container security has become an essential aspect of modern software development, especially as more organizations adopt containerized applications. This shift towards containers presents unique challenges, requiring a comprehensive and layered approach to ensure the integrity and confidentiality of sensitive data. 
+ Understanding Container Security 
+ Containers bundle application code with its d</description>
+    </item>
+    <item>
+      <title>Threat Modeling For Small Engineering Teams</title>
+      <link>https://digitalkarachi.com/threat-modeling-for-small-engineering-teams/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/threat-modeling-for-small-engineering-teams/</guid>
+      <pubDate>2026-03-28T09:00:00+05:00</pubDate>
+      <description>Threat modeling is a structured approach to identifying, analyzing, and mitigating security risks. For small engineering teams, it’s not just about protecting sensitive information but also ensuring the application&#x27;s integrity and availability.  Defining Threat Modeling  Threat modeling involves systematically considering potential threats against an asset or system. This process helps teams prio</description>
+    </item>
+    <item>
+      <title>API Security: Rate Limits, Auth, and Abuse Prevention</title>
+      <link>https://digitalkarachi.com/api-security-rate-limits-auth-and-abuse-prevention/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/api-security-rate-limits-auth-and-abuse-prevention/</guid>
+      <pubDate>2026-02-17T09:00:00+05:00</pubDate>
+      <description>APIs are the backbone of modern applications, enabling seamless communication between different services. However, they can also be a gateway for abuse if not properly secured. Effective security measures like rate limits, robust authentication, and preventive strategies against abuse are crucial to protect your API and maintain its performance.  Understanding Rate Limits  A rate limit is a strat</description>
+    </item>
+    <item>
+      <title>Network Segmentation Patterns For Hybrid Cloud</title>
+      <link>https://digitalkarachi.com/network-segmentation-patterns-for-hybrid-cloud/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/network-segmentation-patterns-for-hybrid-cloud/</guid>
+      <pubDate>2026-01-09T09:00:00+05:00</pubDate>
+      <description>Network segmentation is a critical security measure in modern hybrid cloud architectures, helping organizations isolate workloads and minimize the risk of breaches. By dividing the network into smaller segments, companies can apply different security policies to each segment, ensuring that sensitive data remains protected even if one part of the network is compromised. 
+
+ Understanding Hybrid Clo</description>
+    </item>
+    <item>
+      <title>AI In Cybersecurity: Separating Capability From Theater</title>
+      <link>https://digitalkarachi.com/ai-in-cybersecurity-separating-capability-from-theater/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/ai-in-cybersecurity-separating-capability-from-theater/</guid>
+      <pubDate>2025-12-01T09:00:00+05:00</pubDate>
+      <description>As the digital landscape continues to evolve at breakneck speed, cybersecurity has become a critical concern for businesses of all sizes. The promise of artificial intelligence (AI) in enhancing security measures seems too good to pass up, with many vendors touting their offerings as the ultimate panacea. However, beneath the hype and buzzwords lies a stark reality: not all AI solutions are creat</description>
+    </item>
+    <item>
+      <title>Cloud Iam Hardening: The High-leverage Policies</title>
+      <link>https://digitalkarachi.com/cloud-iam-hardening-the-high-leverage-policies/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/cloud-iam-hardening-the-high-leverage-policies/</guid>
+      <pubDate>2025-10-23T09:00:00+05:00</pubDate>
+      <description>Cloud Identity and Access Management (IAM) is often overlooked, yet it forms the cornerstone of security in modern cloud environments. Hardening IAM policies can significantly reduce the risk of unauthorized access and data breaches. This article delves into best practices for securing your cloud resources through robust IAM hardening. 
+ Understanding Cloud IAM 
+ Cloud Identity and Access Managem</description>
+    </item>
+    <item>
+      <title>Securing Remote Workforce Endpoints Without Locking Them Down</title>
+      <link>https://digitalkarachi.com/securing-remote-workforce-endpoints-without-locking-them-down/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/securing-remote-workforce-endpoints-without-locking-them-down/</guid>
+      <pubDate>2025-09-14T09:00:00+05:00</pubDate>
+      <description>As more companies adopt flexible work policies, securing endpoints used by remote employees has become a critical challenge. Traditional security measures often require locking down these devices to enforce corporate policies, which can significantly impact employee productivity and user experience. 
+ Understanding the Challenges 
+ The primary issue with traditional endpoint management is that it</description>
+    </item>
+    <item>
+      <title>Encryption at Rest, in Transit, and in Use: A Practical Guide</title>
+      <link>https://digitalkarachi.com/encryption-at-rest-in-transit-and-in-use-a-practical-guide/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/encryption-at-rest-in-transit-and-in-use-a-practical-guide/</guid>
+      <pubDate>2025-08-06T09:00:00+05:00</pubDate>
+      <description>Encrypting data is crucial in today&#x27;s digital landscape where cybersecurity threats are on the rise. Whether it’s protecting sensitive information at rest, during transmission, or while being processed by applications, encryption plays a vital role in ensuring privacy and security.  Encryption Basics  At its core, encryption converts data into a coded format that can only be decoded using specifi</description>
+    </item>
+    <item>
+      <title>The State of Post-Quantum Cryptography Migration</title>
+      <link>https://digitalkarachi.com/the-state-of-post-quantum-cryptography-migration/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/the-state-of-post-quantum-cryptography-migration/</guid>
+      <pubDate>2025-06-28T09:00:00+05:00</pubDate>
+      <description>Post-quantum cryptography (PQC) has emerged as a critical cornerstone for future-proofing security against quantum computing threats. As advancements in quantum technology continue to outpace current cryptographic methods, the urgency of migrating legacy systems to PQC is at an all-time high. 
+
+ The Threat of Quantum Computing 
+ Quantum computers have the potential to break widely used public-key</description>
+    </item>
+    <item>
+      <title>Web App Security: The OWASP Top 10 in Plain English</title>
+      <link>https://digitalkarachi.com/web-app-security-the-owasp-top-10-in-plain-english/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/web-app-security-the-owasp-top-10-in-plain-english/</guid>
+      <pubDate>2025-05-20T09:00:00+05:00</pubDate>
+      <description>Web applications are a critical component of modern digital infrastructure, handling sensitive data and transactions. However, they remain vulnerable to various security threats. The Open Web Application Security Project (OWASP) has identified the top ten risks that web developers must address to ensure their applications are secure. This article breaks down these risks in plain English for engin</description>
+    </item>
+    <item>
+      <title>Detection Engineering: Writing Better Alerts</title>
+      <link>https://digitalkarachi.com/detection-engineering-writing-better-alerts/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/detection-engineering-writing-better-alerts/</guid>
+      <pubDate>2025-04-11T09:00:00+05:00</pubDate>
+      <description>Effective alerting is a cornerstone of modern cybersecurity, yet it&#x27;s often overlooked. Poorly written alerts can lead to overwhelming noise and missed threats, eroding the trust in your security operations center (SOC). This article explores best practices for writing better alerts in detection engineering, focusing on minimizing false positives, automating processes, and ensuring efficient inci</description>
+    </item>
+    <item>
+      <title>Secrets Management: Rotating Keys Without Breaking Production</title>
+      <link>https://digitalkarachi.com/secrets-management-rotating-keys-without-breaking-production/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/secrets-management-rotating-keys-without-breaking-production/</guid>
+      <pubDate>2025-03-03T09:00:00+05:00</pubDate>
+      <description>Key rotation is a critical security practice that ensures the ongoing protection of data by replacing old encryption keys with new ones. However, performing this task in a production environment can be challenging without causing service disruptions or downtime. This article provides a comprehensive guide on how to rotate keys securely and seamlessly. 
+
+ Understanding Key Rotation 
+ The process o</description>
+    </item>
+    <item>
+      <title>Tabletop Exercises: Turning Postmortems into Preparedness</title>
+      <link>https://digitalkarachi.com/tabletop-exercises-turning-postmortems-into-preparedness/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/tabletop-exercises-turning-postmortems-into-preparedness/</guid>
+      <pubDate>2025-01-23T09:00:00+05:00</pubDate>
+      <description>Tabletop exercises are a critical yet often overlooked component of modern security strategies. They serve as a structured way to simulate scenarios and test response plans, moving beyond the reactive nature of traditional postmortem analyses. 
+
+ Understanding Tabletop Exercises 
+ A tabletop exercise involves a group discussion where participants act out a hypothetical scenario under realistic co</description>
+    </item>
+    <item>
+      <title>Incident Response Runbooks Every Startup Needs</title>
+      <link>https://digitalkarachi.com/incident-response-runbooks-every-startup-needs/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/incident-response-runbooks-every-startup-needs/</guid>
+      <pubDate>2024-12-15T09:00:00+05:00</pubDate>
+      <description>When a security breach occurs, the immediate actions taken can mean the difference between mitigating damage or facing catastrophic consequences. For startups, establishing robust incident response runbooks is essential to handle cyber threats effectively. This guide outlines key components and best practices for crafting comprehensive incident response plans that every startup should adopt. 
+
+ U</description>
+    </item>
+    <item>
+      <title>Tabletop Exercises: Making Postmortem Analysis Mean Business</title>
+      <link>https://digitalkarachi.com/tabletop-exercises-making-postmortem-analysis-mean-business/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/tabletop-exercises-making-postmortem-analysis-mean-business/</guid>
+      <pubDate>2024-11-06T09:00:00+05:00</pubDate>
+      <description>Every major security incident leaves behind a valuable lesson. Yet, most organizations treat postmortems as mere afterthoughts, focusing on blame rather than learning and improvement. A more effective approach is to use tabletop exercises to turn these lessons into actionable preparedness. 
+ Understanding Tabletop Exercises 
+ A tabletop exercise involves a simulated scenario where participants di</description>
+    </item>
+    <item>
+      <title>Phishing-Resistant MFA: What&#x27;s Actually Available in 2026</title>
+      <link>https://digitalkarachi.com/phishing-resistant-mfa-what-s-actually-available-in-2026/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/phishing-resistant-mfa-what-s-actually-available-in-2026/</guid>
+      <pubDate>2024-09-28T09:00:00+05:00</pubDate>
+      <description>As cyber threats continue to evolve, multi-factor authentication (MFA) has become a cornerstone of cybersecurity. By 2026, several advancements in MFA have emerged that significantly enhance resistance against phishing attacks, making digital security more robust than ever before. 
+
+ Introduction to Phishing-Resistant MFA 
+ Multifactor authentication (MFA) is a method of computer and network acce</description>
+    </item>
+    <item>
+      <title>Supply Chain Attacks: The Realistic Defenses</title>
+      <link>https://digitalkarachi.com/supply-chain-attacks-the-realistic-defenses/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/supply-chain-attacks-the-realistic-defenses/</guid>
+      <pubDate>2024-08-20T09:00:00+05:00</pubDate>
+      <description>Supply chain attacks have become increasingly common, targeting not just the end-user but also the suppliers and vendors that form the backbone of an organization&#x27;s tech infrastructure. These sophisticated cyber-attacks can infiltrate entire ecosystems through seemingly innocuous software updates or third-party services, leading to significant data breaches and system compromises. Understanding t</description>
+    </item>
+    <item>
+      <title>Securing CI/CD Pipelines Against Malicious Dependencies</title>
+      <link>https://digitalkarachi.com/securing-ci-cd-pipelines-against-malicious-dependencies/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/securing-ci-cd-pipelines-against-malicious-dependencies/</guid>
+      <pubDate>2024-07-12T09:00:00+05:00</pubDate>
+      <description>As software development accelerates, the importance of securing continuous integration and continuous deployment (CI/CD) pipelines cannot be overstated. Modern development practices often rely on open-source libraries and packages, but these can introduce security risks if not properly vetted. This article explores strategies to secure CI/CD pipelines against malicious dependencies. 
+ Understandi</description>
+    </item>
+    <item>
+      <title>Mobile App Security: Certificate Pinning And Beyond</title>
+      <link>https://digitalkarachi.com/mobile-app-security-certificate-pinning-and-beyond/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/mobile-app-security-certificate-pinning-and-beyond/</guid>
+      <pubDate>2024-06-03T09:00:00+05:00</pubDate>
+      <description>Certificate pinning is a vital technique for enhancing the security of mobile applications by ensuring that only trusted server certificates are accepted. However, it&#x27;s just one piece in a complex puzzle of security measures necessary to protect user data and application integrity. 
+ Understanding Certificate Pinning 
+ Certificate pinning involves embedding the public key or certificate details d</description>
+    </item>
+    <item>
+      <title>Zero-Trust Architecture: Beyond Marketing Slides</title>
+      <link>https://digitalkarachi.com/zero-trust-architecture-beyond-marketing-slides/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/zero-trust-architecture-beyond-marketing-slides/</guid>
+      <pubDate>2024-04-25T09:00:00+05:00</pubDate>
+      <description>Zero-trust architecture has become a buzzword, but its true value lies beyond the marketing slides. As organizations increasingly embrace cloud services and remote work, implementing zero-trust principles is crucial for maintaining robust security posture. 
+ What Is Zero-Trust Architecture? 
+ Zero-trust (ZT) architecture fundamentally changes how we think about network security by operating under</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,23 @@
+{
+  "slug": "discovering-a-treasure-trove-of-simple-svg-format-icons",
+  "title": "Discovering A Treasure Trove of Simple SVG Format Icons",
+  "date_iso": "2023-09-30T10:12:21+01:00",
+  "categories": [
+    "blog"
+  ],
+  "tags": [
+    "svg",
+    "icons",
+    "design",
+    "open source",
+    "ui",
+    "free resources"
+  ],
+  "excerpt": "Simple Icons is a free SVG icon library covering more than 2,800 brands. For designers, marketers and developers, it is the kind of resource you wish you had found years ago.",
+  "body_html": "<p>Once in a while you stumble across a free resource so well-made you wonder how you ever lived without it. <strong>Simple Icons</strong> is one of those. It is an open-source SVG icon set covering more than 2,800 popular brands — every logo you have ever needed for a \"Sign in with…\" button, a footer, a press page or a pitch deck.</p>\n\n<h2>What it is</h2>\n<ul>\n  <li>Every icon is a single, hand-optimised SVG.</li>\n  <li>Every icon is monochrome by default, with the official brand colour available as a CSS variable.</li>\n  <li>The library is MIT-licensed; the icons themselves remain under the original brand owners' trademark.</li>\n</ul>\n\n<h2>Why it beats the alternatives</h2>\n<p>Compared to the usual mishmash of PNGs scraped from press kits or auto-traced from random JPEGs:</p>\n<ul>\n  <li><strong>Consistent stroke weights</strong> — your \"Sign in with Google\" button no longer looks heavier than the \"Sign in with Apple\" one beside it.</li>\n  <li><strong>Perfect scaling</strong> — vectors all the way down. They look right at 16 px and at 480 px.</li>\n  <li><strong>Genuinely up-to-date</strong> — brand logo refreshes (Twitter to X, Facebook's blue, Meta's wordmark) typically land within hours.</li>\n</ul>\n\n<h2>How to use it</h2>\n<p>Three sensible patterns:</p>\n<ol>\n  <li><strong>Inline SVG</strong> — copy-paste the markup into your HTML. Best for performance.</li>\n  <li><strong>npm package</strong> — <code>npm i simple-icons</code> and import only the brands you need. Best for components.</li>\n  <li><strong>CDN</strong> — pull individual icons from <code>jsdelivr</code>. Best for one-off pages.</li>\n</ol>\n\n<h2>A small caveat</h2>\n<p>Trademark law still applies. Just because the SVG is MIT-licensed does not give you permission to use, say, the Adidas wordmark on your own product. The library makes the icons easy to access; it does not absolve you of the brand-use rules.</p>\n\n<h2>The bigger lesson</h2>\n<p>The best web-design resources of the last decade have all been community-driven and free: TailwindCSS, Heroicons, Unsplash, Simple Icons. We forget how recently the same designers were paying $99 a month for icon-set subscriptions. The open-source design community is one of the quiet success stories of the last ten years — worth supporting, occasionally with a GitHub star or a Patreon dollar.</p>",
+  "image": null,
+  "source": "archived",
+  "source_urls": [
+    "https://digitalkarachi.com/discovering-a-treasure-trove-of-simple-svg-format-icons/"
+  ]
+}

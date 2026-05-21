@@ -1,0 +1,106 @@
+name: Daily content + build
+
+on:
+  schedule:
+    # 05:30 UTC daily = 10:30 PKT
+    - cron: "30 5 * * *"
+  workflow_dispatch:
+    inputs:
+      news_count:
+        description: "Number of news items to generate"
+        default: "2"
+      model:
+        description: "Ollama model"
+        default: "qwen2.5:3b-instruct"
+      dry_run:
+        description: "Skip writes / commit"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-content
+  cancel-in-progress: false
+
+jobs:
+  generate-and-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      OLLAMA_MODEL: ${{ github.event.inputs.model || 'qwen2.5:3b-instruct' }}
+      OLLAMA_URL: http://127.0.0.1:11434
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Cache Ollama models
+        id: ollama-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.ollama/models
+          key: ollama-${{ env.OLLAMA_MODEL }}-v1
+
+      - name: Install Ollama
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          ollama --version
+
+      - name: Start Ollama server
+        run: |
+          nohup ollama serve > ollama.log 2>&1 &
+          for i in $(seq 1 30); do
+            if curl -sf "$OLLAMA_URL/api/tags" > /dev/null; then
+              echo "Ollama is up"
+              exit 0
+            fi
+            sleep 1
+          done
+          echo "Ollama failed to start" >&2
+          cat ollama.log
+          exit 1
+
+      - name: Pull model (if not cached)
+        run: ollama pull "$OLLAMA_MODEL"
+
+      - name: Health check
+        run: python3 generate.py health --model "$OLLAMA_MODEL"
+
+      - name: Generate daily content
+        run: |
+          python3 generate.py daily \
+            --news "${{ github.event.inputs.news_count || '2' }}" \
+            --model "$OLLAMA_MODEL" \
+            ${{ github.event.inputs.dry_run == 'true' && '--dry-run' || '' }}
+
+      - name: Build site
+        run: python3 build.py
+
+      - name: Commit + push generated content
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/ site/
+          git commit -m "chore(content): daily content + rebuild ($(date -u +%Y-%m-%d))"
+          git push
+
+      - name: Upload Ollama log on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ollama-log
+          path: ollama.log
+          if-no-files-found: ignore

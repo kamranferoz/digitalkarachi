@@ -1,0 +1,33 @@
+{
+  "slug": "the-truth-about-full-stack-data-scientists",
+  "title": "The Truth About Full-Stack Data Scientists",
+  "date_iso": "2024-03-20T03:20:34+00:00",
+  "categories": [
+    "blog",
+    "data-science",
+    "technology"
+  ],
+  "tags": [
+    "ai",
+    "artificial intelligence",
+    "building data science teams",
+    "data engineering",
+    "data science",
+    "data science engineering",
+    "data science teams",
+    "failed data stories",
+    "full stack data scientist",
+    "machine learning",
+    "machine learning workflows",
+    "MLOps",
+    "no silver bullet",
+    "software engineering"
+  ],
+  "excerpt": "Borrowing from Software Development. Data science draws heavily from software development – think DevOps evolving into MLOps. The 'full-stack data scientist' has become the must-have hire.",
+  "body_html": "<p>Every recruiter on LinkedIn is hunting for \"full-stack data scientists\" right now. The phrase sounds delicious — one person who can collect data, train models, push them to production and explain results to the CEO. In practice, it is also one of the most misunderstood job titles of the decade.</p>\n\n<h2>Borrowing from software development</h2>\n<p>Data science has spent the last five years quietly importing the entire software engineering toolbox. DevOps became MLOps. Continuous integration became continuous training. Git became DVC. So it was inevitable that we would also borrow the <em>full-stack engineer</em> archetype — somebody who can move fluidly across the layers of the application.</p>\n\n<h2>What \"full-stack\" really means in data science</h2>\n<p>A reasonable definition includes the ability to:</p>\n<ul>\n  <li>Negotiate access to raw data sources and build the ingestion pipelines.</li>\n  <li>Model the problem statistically and choose an appropriate ML approach.</li>\n  <li>Train, evaluate and version the model with reproducible pipelines.</li>\n  <li>Containerise and deploy the model behind a real-time or batch API.</li>\n  <li>Set up the monitoring, alerting and retraining schedule.</li>\n  <li>Explain trade-offs to non-technical stakeholders.</li>\n</ul>\n<p>Notice that this is roughly the job description of three separate specialists. Which is exactly why most \"full-stack\" hires fail.</p>\n\n<h2>Why most full-stack hires fail</h2>\n<p>There is <strong>no silver bullet</strong>. The Brooks essay of 1986 applies word-for-word to ML in 2024: complexity is the essence, not the accident. A person who is genuinely strong at all six bullets above does exist, but the supply is roughly one in five hundred working data scientists. Hiring with that filter is statistically the same as hiring a unicorn.</p>\n\n<h2>A better model: T-shaped, swarm-deployed</h2>\n<p>The teams I have seen consistently ship ML products use a different shape:</p>\n<ol>\n  <li>Each engineer is <strong>deep in one column</strong> of the stack (data, modelling, ops or product).</li>\n  <li>Each engineer is <strong>literate across the other columns</strong> — they can read the code, run the pipeline, debug a deployment.</li>\n  <li>The team rotates ownership of the end-to-end pipeline every quarter so no single person becomes the bottleneck.</li>\n</ol>\n<p>This is the T-shape that the design world has used for two decades. It scales; the unicorn does not.</p>\n\n<h2>What this means for your next hire</h2>\n<p>Stop writing job ads that demand seven years of Spark, Kubernetes, PyTorch, dbt, Airflow, Looker, Snowflake, Terraform <em>and</em> the ability to \"drive business outcomes\". You are not going to find that person, and if you do, you cannot afford to keep them.</p>\n<p>Instead, hire for:</p>\n<ul>\n  <li>Curiosity that survives boring data-quality work.</li>\n  <li>Strong opinions about what to <em>not</em> build.</li>\n  <li>One genuine depth — even if it is \"just\" SQL.</li>\n</ul>\n<p>The \"full-stack data scientist\" myth is the modern equivalent of the rock-star developer of 2010. We eventually grew out of that one. We will grow out of this one, too.</p>",
+  "image": "wp-content/uploads/2024/03/full-stack.webp",
+  "source": "archived",
+  "source_urls": [
+    "https://digitalkarachi.com/the-truth-about-full-stack-data-scientists/"
+  ]
+}

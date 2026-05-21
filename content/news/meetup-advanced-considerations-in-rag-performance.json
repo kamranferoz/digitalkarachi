@@ -1,0 +1,8 @@
+{
+  "slug": "meetup-advanced-considerations-in-rag-performance",
+  "title": "Meetup: Advanced Considerations in RAG Performance",
+  "date_iso": "2024-03-20",
+  "body": "Our Karachi AI meetup on March 28 will dig into the realities of running Retrieval-Augmented Generation in production: vector index choice, chunking strategies, hybrid retrieval, latency budgeting and the painful question of evaluation. Bring laptops.",
+  "source": "archived",
+  "source_urls": []
+}

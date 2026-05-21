@@ -1,0 +1,24 @@
+{
+  "slug": "mastering-prompt-engineering",
+  "title": "Mastering Prompt Engineering",
+  "date_iso": "2023-09-27T07:02:58+01:00",
+  "categories": [
+    "artificial-intelligence-ai",
+    "blog",
+    "technology"
+  ],
+  "tags": [
+    "ai",
+    "prompt engineering",
+    "llm",
+    "chatgpt",
+    "productivity"
+  ],
+  "excerpt": "Prompt engineering is the new SQL — a small, learnable craft that punches far above its weight. Here is what actually moves the needle.",
+  "body_html": "<p>Prompt engineering is the closest thing the AI era has to <em>typing</em> — a small, almost embarrassingly simple skill that turns out to make a huge difference in productivity. It is not a job title. It is a craft. Here is what actually matters once you get past the LinkedIn fluff.</p>\n\n<h2>The four principles</h2>\n<h3>1. Be specific about the output shape</h3>\n<p>Models are obedient about format. If you want JSON, say \"return strict JSON only, with keys A, B, C and no markdown fences\". If you want a five-bullet summary, ask for exactly five bullets. Vague output requests produce vague outputs.</p>\n\n<h3>2. Give role, then context, then task</h3>\n<p>The order matters more than people think. The model is doing prefix-conditioned generation; the first tokens disproportionately shape the rest. <code>You are a senior security analyst…</code> followed by the relevant context, followed by the question, beats the reverse every time.</p>\n\n<h3>3. Show, don't just tell</h3>\n<p>One or two worked examples (few-shot) lifts performance dramatically on most extraction and classification tasks. The examples don't need to be representative; they need to be <em>format-correct</em>.</p>\n\n<h3>4. Decompose</h3>\n<p>Hard prompts work better as a chain of small ones. \"Summarise then critique then rewrite\" beats \"do all three at once\". Chain-of-thought is just this principle in disguise.</p>\n\n<h2>The five anti-patterns</h2>\n<ol>\n  <li><strong>The kitchen sink</strong>. Three pages of instructions confuse the model rather than constrain it. Aim for the shortest prompt that produces the right output.</li>\n  <li><strong>Politeness inflation</strong>. \"Please could you possibly, if you don't mind…\" wastes tokens and does not improve quality. Be direct.</li>\n  <li><strong>Negative-only constraints</strong>. \"Do not include X\" is much weaker than \"Include only A, B, C\".</li>\n  <li><strong>Ambiguous quantifiers</strong>. \"A few\", \"some\", \"comprehensive\" mean different things to different models. Use numbers.</li>\n  <li><strong>Trusting the first response</strong>. Always sample twice on important outputs and compare.</li>\n</ol>\n\n<h2>System vs user prompts</h2>\n<p>The system prompt is the model's persona and rules; the user prompt is the question. Treat them like a contract: the system prompt is the constitution, the user prompt is the day's law. Avoid putting volatile facts in the system prompt — it makes them hard to update.</p>\n\n<h2>The honest truth</h2>\n<p>Most \"prompt engineers\" are not engineers and there is rarely much to engineer. The real skill is <strong>understanding the underlying task well enough to describe it precisely</strong>. That is the same skill that makes a good product manager, a good lawyer, a good editor. Prompt engineering is just that skill applied to a particularly literal new colleague.</p>\n\n<h2>One trick worth memorising</h2>\n<blockquote><p>\"Before you answer, restate the problem in your own words. Then list any assumptions. Then answer.\"</p></blockquote>\n<p>That single instruction lifts accuracy on multi-step reasoning tasks by a measurable margin across every model I have tested. Steal it shamelessly.</p>",
+  "image": null,
+  "source": "archived",
+  "source_urls": [
+    "https://digitalkarachi.com/mastering-prompt-engineering/"
+  ]
+}

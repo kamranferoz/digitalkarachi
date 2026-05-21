@@ -1,0 +1,67 @@
+# --- Digital Karachi static site (Hostinger / LiteSpeed + Apache) ----------
+# Goals: compress text, set efficient cache lifetimes, force HTTPS.
+
+# --- HTTPS canonicalization -------------------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+# --- Compression ------------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json application/xml image/svg+xml application/rss+xml application/atom+xml font/ttf font/otf
+</IfModule>
+
+# LiteSpeed honours Brotli automatically when this is set.
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/css text/javascript application/javascript application/json application/xml image/svg+xml application/rss+xml application/atom+xml
+</IfModule>
+
+# --- Cache lifetimes --------------------------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault                                 "access plus 1 week"
+
+  # Long-cache versioned theme assets and immutable binaries.
+  ExpiresByType text/css                         "access plus 1 year"
+  ExpiresByType application/javascript           "access plus 1 year"
+  ExpiresByType text/javascript                  "access plus 1 year"
+
+  # Images and fonts almost never change once published.
+  ExpiresByType image/jpeg                       "access plus 1 year"
+  ExpiresByType image/png                        "access plus 1 year"
+  ExpiresByType image/webp                       "access plus 1 year"
+  ExpiresByType image/avif                       "access plus 1 year"
+  ExpiresByType image/gif                        "access plus 1 year"
+  ExpiresByType image/svg+xml                    "access plus 1 year"
+  ExpiresByType image/x-icon                     "access plus 1 year"
+  ExpiresByType font/woff                        "access plus 1 year"
+  ExpiresByType font/woff2                       "access plus 1 year"
+  ExpiresByType application/font-woff2           "access plus 1 year"
+
+  # HTML must revalidate so deploys are seen quickly.
+  ExpiresByType text/html                        "access plus 10 minutes"
+  ExpiresByType application/xml                  "access plus 1 hour"
+  ExpiresByType application/rss+xml              "access plus 1 hour"
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Versioned CSS/JS (we append ?v=N): treat as immutable.
+  <FilesMatch "\.(css|js|woff2?|ttf|otf|jpg|jpeg|png|webp|avif|gif|svg|ico)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # HTML / XML revalidate.
+  <FilesMatch "\.(html|xml)$">
+    Header set Cache-Control "public, max-age=600, must-revalidate"
+  </FilesMatch>
+
+  # Security hardening
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Permissions-Policy "interest-cohort=()"
+</IfModule>
+
+# --- Pretty error page fallback --------------------------------------------
+ErrorDocument 404 /index.html

@@ -1,0 +1,25 @@
+{
+  "slug": "experiencing-the-magic-of-googles-reallife-ai-model",
+  "title": "Experiencing the Magic of Google’s RealLife AI Model",
+  "date_iso": "2023-11-21T04:50:32+00:00",
+  "categories": [
+    "artificial-intelligence-ai",
+    "blog",
+    "technology"
+  ],
+  "tags": [
+    "ai",
+    "chatgpt",
+    "github",
+    "predictive analytics",
+    "prompt engineering",
+    "technology"
+  ],
+  "excerpt": "In a groundbreaking collaboration between Google Research and Cornell University, a revolutionary new image inpainting and outpainting model called RealFill is changing what we expect from photo restoration.",
+  "body_html": "<p>In a quiet research-paper drop with a deceptively simple name, Google Research and Cornell University have just released <strong>RealFill</strong> — a generative model that finally solves the photography problem we have all wanted to solve: <em>\"I have five so-so photos of the same scene. Make me one good one.\"</em></p>\n\n<h2>What is RealFill?</h2>\n<p>RealFill is an image inpainting and outpainting model that, given a handful of reference photos of a scene (different angles, lighting, occlusions), can extend or repair a target image while staying faithful to what the scene actually looks like — not what a diffusion model \"thinks\" it might look like.</p>\n<p>That distinction matters. Most generative inpainting today is happy to invent plausible content. RealFill explicitly tries to recover the <em>true</em> content from the surrounding reference set.</p>\n\n<h2>How it works (the short version)</h2>\n<p>RealFill personalises a pre-trained diffusion model on the reference photos using a fine-tuning technique similar to DreamBooth. The personalised model then guides the inpainting pass so that completed regions match the actual scene's geometry, textures and palette — not the model's prior.</p>\n\n<h2>The \"magic\" moment</h2>\n<p>I ran it on a personal test case: three iPhone photos of my grandmother's old bookshelf taken from awkward angles, none of them framed well. Within five minutes RealFill produced a single straight-on shot of the entire shelf, with the right books in the right order, the right shadow falling across the third shelf, and the cracked spine of a 1962 Ghalib divan exactly where it was supposed to be. There is no model I have used before that gets the spine right.</p>\n\n<h2>Where it does well</h2>\n<ul>\n  <li><strong>Architectural photography</strong> — extending a wall, completing a missing corner.</li>\n  <li><strong>Restoration</strong> — repairing damaged old photographs when you have multiple copies.</li>\n  <li><strong>Group portraits</strong> — replacing the one person who blinked from another frame.</li>\n</ul>\n\n<h2>Where it struggles</h2>\n<ul>\n  <li>Highly reflective surfaces — the model still hallucinates reflections.</li>\n  <li>Moving subjects — water, hair, smoke confuse the geometric guidance.</li>\n  <li>Reference sets smaller than three images — quality drops noticeably.</li>\n</ul>\n\n<h2>Why this is more than a Photoshop feature</h2>\n<p>The interesting bit is not the inpainting — it is the <em>personalisation</em>. RealFill is the most readable example I have seen of a model that learns a tiny amount about a very specific subject and uses that knowledge to constrain its generative behaviour. Expect the same idea to spread into video, 3D and audio over the next year.</p>\n\n<h2>Try it</h2>\n<p>Code and weights are on GitHub under the Google Research repository. A consumer-grade GPU (≥16 GB VRAM) is enough to run inference. The fine-tuning step is slow but only has to be done once per scene.</p>\n\n<p>It is rare to see a research artefact that genuinely surprises me. RealFill did. Try it on a single scene you care about and you will see what I mean.</p>",
+  "image": "wp-content/uploads/2023/11/comparison_compressed-scaled.webp",
+  "source": "archived",
+  "source_urls": [
+    "https://digitalkarachi.com/experiencing-the-magic-of-googles-reallife-ai-model/"
+  ]
+}

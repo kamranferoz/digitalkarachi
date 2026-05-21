@@ -1,0 +1,25 @@
+{
+  "slug": "free-hosting",
+  "title": "FREE Hosting!",
+  "date_iso": "2023-09-27T08:08:17+01:00",
+  "categories": [
+    "blog",
+    "technology"
+  ],
+  "tags": [
+    "hosting",
+    "free",
+    "vercel",
+    "netlify",
+    "cloudflare",
+    "hostinger",
+    "developer tools"
+  ],
+  "excerpt": "Free hosting still exists in 2023 — but the modern flavour is platform-as-a-service (Vercel, Netlify, Cloudflare Pages, Hostinger free plans). Here is what each one is actually good for.",
+  "body_html": "<p>\"Free hosting\" used to be a punchline — the kind of service that splattered banner ads across your site and quietly oversold its servers. In 2023 the picture is wildly different. Modern free-tier hosting is good enough that most small-business and portfolio sites <em>should</em> start there. Here is a practical map of what to use, and when.</p>\n\n<h2>Static sites: Cloudflare Pages, Netlify, Vercel</h2>\n<p>If your site is HTML/CSS/JS (a marketing page, a blog, a portfolio, a documentation site), all three of these are genuinely free and very fast:</p>\n<ul>\n  <li><strong>Cloudflare Pages</strong> — generous bandwidth, the fastest global edge, the simplest custom-domain flow. My personal default.</li>\n  <li><strong>Netlify</strong> — best DX (deploy previews, form handling, identity) but the bandwidth cap (100 GB/month) is real if you go viral.</li>\n  <li><strong>Vercel</strong> — best Next.js integration, slightly more aggressive paid wall on serverless functions.</li>\n</ul>\n\n<h2>Dynamic apps: Render, Railway, Fly.io free tiers</h2>\n<p>If you need a real backend, things get nuancier. The honest tradeoffs:</p>\n<ul>\n  <li><strong>Render</strong> — free static services and a small free PostgreSQL. Background workers cost money.</li>\n  <li><strong>Railway</strong> — generous one-off credit, but no permanent free tier anymore.</li>\n  <li><strong>Fly.io</strong> — free three shared CPUs plus 3 GB volume. Best for hobby-scale APIs.</li>\n</ul>\n\n<h2>WordPress and cPanel: Hostinger, InfinityFree, 000webhost</h2>\n<p>If you want classic shared hosting (FTP, MySQL, one-click WordPress) for free:</p>\n<ul>\n  <li><strong>Hostinger free plan</strong> — trial-style, but useful for a quick demo.</li>\n  <li><strong>InfinityFree</strong> — genuinely permanent free, but only basic PHP/MySQL.</li>\n  <li><strong>000webhost</strong> — surprisingly stable, with daily downtime windows. Fine for hobby sites.</li>\n</ul>\n\n<h2>The catch nobody mentions</h2>\n<p>Free hosting is free in money but expensive in <strong>portability</strong>. The platforms differentiate on edge functions, environment variables, build pipelines and proprietary extensions. The more you lean into the free-tier-specific features, the harder it gets to leave when you outgrow the tier.</p>\n<p>Mitigation: keep the application logic platform-agnostic (containerised or framework-standard) and treat the platform-specific bits as thin glue.</p>\n\n<h2>Recommendation by use-case</h2>\n<table>\n  <thead><tr><th>If you need…</th><th>Use</th></tr></thead>\n  <tbody>\n    <tr><td>A portfolio or static blog</td><td>Cloudflare Pages</td></tr>\n    <tr><td>A Next.js marketing site</td><td>Vercel</td></tr>\n    <tr><td>A WordPress prototype</td><td>InfinityFree or 000webhost</td></tr>\n    <tr><td>A hobby API</td><td>Fly.io</td></tr>\n    <tr><td>A small SaaS that might grow</td><td>Render free + Supabase free</td></tr>\n  </tbody>\n</table>\n\n<p>You don't need to spend a dollar to ship a real product in 2023. You just need to pick the right free tier — and make sure you can leave it cleanly when the bills finally start.</p>",
+  "image": null,
+  "source": "archived",
+  "source_urls": [
+    "https://digitalkarachi.com/free-hosting/"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "slug": "emerging-trends-in-cybersecurity",
+  "title": "Emerging Trends in Cybersecurity",
+  "date_iso": "2023-09-26T07:48:32+01:00",
+  "categories": [
+    "blog",
+    "security",
+    "technology"
+  ],
+  "tags": [
+    "cybersecurity",
+    "security",
+    "ai security",
+    "post quantum",
+    "zero trust",
+    "trends"
+  ],
+  "excerpt": "From AI-driven defence to post-quantum cryptography, cybersecurity in 2023 is changing faster than most teams can keep up. Here is what to actually pay attention to.",
+  "body_html": "<p>Cybersecurity in 2023 is one of those fields where the pace of change has finally exceeded the pace of the conference circuit. By the time a trend gets a keynote, it is usually old. Here are the five trends actually worth tracking — and the noise to safely ignore.</p>\n\n<h2>1. AI on both sides</h2>\n<p>The defence side gets the breathless press releases, but the attacker side is moving just as fast. The realistic picture:</p>\n<ul>\n  <li><strong>Defenders</strong> get faster triage, better anomaly detection, and the ability to summarise alerts in plain English.</li>\n  <li><strong>Attackers</strong> get scaled spear-phishing, deepfake voice for vishing, and faster vulnerability research.</li>\n</ul>\n<p>Net effect: the floor of attacker capability is rising. Unsophisticated attackers can now pull off mid-tier campaigns. Plan for that.</p>\n\n<h2>2. Post-quantum cryptography is no longer theoretical</h2>\n<p>NIST finalised the first batch of post-quantum standards (Kyber, Dilithium, Falcon, SPHINCS+) in 2022. The cryptographic libraries are already shipping. If you have not started planning your <strong>crypto-agility</strong> migration, 2024 is the year. Particularly for any data that needs to remain confidential past 2030 — that data is being recorded today for future decryption.</p>\n\n<h2>3. Identity is the new perimeter</h2>\n<p>\"Zero trust\" was a slogan five years ago. It is finally an architecture today. The practical implications:</p>\n<ul>\n  <li>Phishing-resistant MFA (passkeys, FIDO2) becomes the default.</li>\n  <li>Service-to-service auth moves from network ACLs to workload identity (SPIFFE, OIDC).</li>\n  <li>The CISO conversation shifts from \"firewalls\" to \"identity hygiene\".</li>\n</ul>\n\n<h2>4. The software supply chain</h2>\n<p>SolarWinds, Log4Shell, MOVEit. Each of these was a supply-chain incident, not a perimeter incident. SBOMs, signed builds, dependency pinning and reproducible builds have moved from \"nice to have\" to \"audit requirement\". Particularly for any organisation supplying federal or critical-infrastructure customers.</p>\n\n<h2>5. The privacy regulator finally has teeth</h2>\n<p>GDPR, CCPA, India's DPDP Act, Pakistan's draft PDP bill — the pattern is the same. Regulators have moved from \"issuing guidance\" to \"imposing nine-figure fines\". Privacy engineering is now a board-level concern. The teams that built data lineage and consent infrastructure in 2022 are reaping the benefits today.</p>\n\n<h2>What to ignore</h2>\n<ul>\n  <li>Anything described as a \"single pane of glass\". The pane of glass is in your head.</li>\n  <li>Anything where the demo runs faster than your actual data ingestion pipeline.</li>\n  <li>Conference vendors selling \"ChatGPT for security\" without a clear data-handling policy.</li>\n</ul>\n\n<h2>What to do this quarter</h2>\n<ol>\n  <li>Inventory your cryptographic dependencies.</li>\n  <li>Enrol every employee in phishing-resistant MFA.</li>\n  <li>Generate an SBOM for at least one production service.</li>\n  <li>Read the privacy law that applies to <em>your</em> jurisdiction. Yes, all of it.</li>\n</ol>\n\n<p>None of those four items is a procurement decision. All of them will pay for themselves the first time something goes wrong.</p>",
+  "image": null,
+  "source": "archived",
+  "source_urls": [
+    "https://digitalkarachi.com/emerging-trends-in-cybersecurity/"
+  ]
+}

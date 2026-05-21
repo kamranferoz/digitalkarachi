@@ -1,0 +1,154 @@
+/**
+Theme Name: Impressive Blog
+Theme URI: https://ascendoor.com/themes/impressive-blog/
+Author: Ascendoor
+Author URI: https://ascendoor.com/
+Version: 1.0.2
+Requires PHP: 7.4
+Tested up to: 6.2
+Requires at least: 5.0
+Template: city-blog
+Text Domain: impressive-blog
+Description: Impressive Blog ( child of City Blog ) is a highly versatile and visually stunning theme designed for bloggers and columnists. Its minimal and mobile-friendly layout makes it perfect for personal, lifestyle, health and fitness, cooking, beauty and fashion, travel, and various other blog genres. With multiple Google font options, a wide selection of colors, and various layout choices, you can create a magazine, newspaper, or blog that perfectly suits your style and content. The theme also offers RTL support, show/hide settings, and different front page sections, giving you complete control over your site's appearance and functionality. Elevate your online presence and provide an exceptional browsing experience for your readers with Impressive Blog. Demo link: Check the demo at: https://demos.ascendoor.com/impressive-blog/
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: custom-background, custom-logo, custom-colors, custom-menu, featured-images, threaded-comments, translation-ready, theme-options, footer-widgets, full-width-template, left-sidebar, right-sidebar, news, blog
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Impressive Blog is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/* Elements
+--------------------------------------------- */
+:root {
+	--primary-color: #018e27;
+}
+
+.section-header .section-title-icon svg .shape-main {
+	fill: var(--theme-color);
+}
+
+/* Banner Sections
+ ========================================================================== */
+@media (min-width: 600px) {
+	.banner-section.banner-style-4 .banner-slider .mag-post-single {
+		display: block;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		min-height: 450px;
+		padding: 50px 0;
+		background: transparent;
+	}
+}
+
+@media (min-width: 600px) {
+	.banner-section.banner-style-4 .banner-slider .mag-post-single .mag-post-img {
+		position: absolute;
+		height: 100%;
+		width: calc(60% - 50px);
+		background-size: cover;
+		background-position: 50%;
+		inset-inline-start: 0;
+		top: 0;
+	}
+}
+
+@media (min-width: 600px) {
+	.banner-section.banner-style-4 .banner-slider .mag-post-single .mag-post-detail {
+		position: relative;
+		z-index: 2;
+		width: 50%;
+		padding: 50px;
+		background-color: var(--light-bg-color);
+	}
+}
+
+@media (max-width: 600px) {
+	.banner-section.banner-style-4 .banner-slider .mag-post-single {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.banner-section.banner-style-4 .banner-slider .mag-post-single .mag-post-img {
+		width: 100%;
+	}
+
+	.banner-section.banner-style-4 .banner-slider .mag-post-single .mag-post-img+.mag-post-detail,
+	.banner-section.banner-style-4 .banner-slider .mag-post-single .mag-post-detail {
+		width: 100%;
+		padding: 30px;
+	}
+}
+
+.banner-section.banner-style-4 .banner-slider.city-blog-carousel-slider-navigation .slick-arrow {
+	visibility: visible;
+	opacity: 1;
+	top: unset;
+	transform: unset;
+	bottom: 0;
+	border: 1px solid var(--clr-foreground);
+	color: var(--clr-foreground);
+	background-color: var(--clr-background);
+}
+
+.banner-section.banner-style-4 .banner-slider.city-blog-carousel-slider-navigation .slick-arrow::after {
+	border-top-color: var(--clr-foreground);
+}
+
+.banner-section.banner-style-4 .banner-slider.city-blog-carousel-slider-navigation .slick-arrow:focus,
+.banner-section.banner-style-4 .banner-slider.city-blog-carousel-slider-navigation .slick-arrow:hover {
+	border: 1px solid var(--theme-color);
+	color: var(--theme-color);
+}
+
+.banner-section.banner-style-4 .banner-slider.city-blog-carousel-slider-navigation .slick-arrow:focus::after,
+.banner-section.banner-style-4 .banner-slider.city-blog-carousel-slider-navigation .slick-arrow:hover::after {
+	border-top-color: var(--theme-color);
+}
+
+.banner-section.banner-style-4 .banner-slider.city-blog-carousel-slider-navigation .slick-arrow.slick-prev {
+	inset-inline-start: unset;
+	inset-inline-end: 50px;
+}
+
+.banner-section.banner-style-4 .banner-slider.city-blog-carousel-slider-navigation .slick-dots {
+	position: unset;
+}
+
+.banner-section.banner-style-4 .banner-slider.city-blog-carousel-slider-navigation .slick-dots li button {
+	background-color: var(--clr-foreground);
+}
+
+.banner-section.banner-style-4 .banner-slider.city-blog-carousel-slider-navigation .slick-dots li.slick-active button {
+	background-color: var(--primary-color);
+}
+
+/* Post Carousel Sections
+ ========================================================================== */
+.impressive-blog-post-carousel-section .impressive-blog-post-carousel-section-wrapper.post-carousel {
+	overflow: hidden;
+}
+
+.impressive-blog-post-carousel-section .impressive-blog-post-carousel-section-wrapper.post-carousel .slick-list {
+	margin: 0 -5px;
+}
+
+.impressive-blog-post-carousel-section .impressive-blog-post-carousel-section-wrapper.post-carousel .slick-list .slick-track .slick-slide {
+	padding: 0 5px;
+}
+
+/* Trending Carousel Sections
+	========================================================================== */
+aside#secondary.widget-area .city-blog-trending-carousel-section .city-blog-trending-carousel-section-wrapper .mag-post-single.list-design .mag-post-title,
+.footer-widget-single .city-blog-trending-carousel-section .city-blog-trending-carousel-section-wrapper .mag-post-single.list-design .mag-post-title,
+.secondary-widgets-section .city-blog-trending-carousel-section .city-blog-trending-carousel-section-wrapper .mag-post-single.list-design .mag-post-title {
+	margin-bottom: 10px;
+}

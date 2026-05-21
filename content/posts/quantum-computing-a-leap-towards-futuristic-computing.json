@@ -1,0 +1,25 @@
+{
+  "slug": "quantum-computing-a-leap-towards-futuristic-computing",
+  "title": "Quantum Computing: A Leap Towards Futuristic Computing",
+  "date_iso": "2023-09-25T07:52:23+01:00",
+  "categories": [
+    "blog",
+    "quantum-computing",
+    "technology"
+  ],
+  "tags": [
+    "quantum computing",
+    "technology",
+    "ibm",
+    "google",
+    "future computing",
+    "cryptography"
+  ],
+  "excerpt": "Quantum computing is finally crossing the line from physics demo to credible engineering — and the implications for cryptography, chemistry and optimisation are bigger than the hype suggests.",
+  "body_html": "<p>For thirty years <strong>quantum computing</strong> has occupied a strange place in the technology imagination: simultaneously over-hyped and under-appreciated. The hype is usually about timelines. The under-appreciation is about what it will actually be used for. Both are now starting to correct.</p>\n\n<h2>The five-second primer</h2>\n<p>A classical bit is 0 or 1. A quantum bit (<em>qubit</em>) is a superposition of both, and pairs of qubits can be entangled so that operating on one instantly constrains the other. Together those two properties let a quantum computer explore certain solution spaces exponentially faster than a classical machine. The catch: only <em>certain</em> spaces. Most computing tasks gain nothing from quantum.</p>\n\n<h2>Where we actually are</h2>\n<p>The most useful number is <strong>logical qubits</strong> — physical qubits stabilised by error correction so they behave reliably. Today's frontier:</p>\n<ul>\n  <li>IBM's Heron processor: 133 physical qubits, single-digit logical qubits with surface-code correction.</li>\n  <li>Google's Sycamore line: similar ballpark, different error-correction approach.</li>\n  <li>IonQ and Quantinuum: trapped-ion machines with higher gate fidelity but lower qubit counts.</li>\n</ul>\n<p>The consensus expert view is that 100 reliable <em>logical</em> qubits is the threshold for practical advantage on real problems. We are roughly five to seven years away.</p>\n\n<h2>What quantum will (and won't) disrupt</h2>\n<h3>Disrupted</h3>\n<ul>\n  <li><strong>Quantum chemistry</strong> — simulating molecules with electron-level accuracy. Drug discovery and battery design are the obvious beneficiaries.</li>\n  <li><strong>Specific optimisation</strong> — certain combinatorial problems (logistics, portfolio, scheduling) admit quantum speedups.</li>\n  <li><strong>Cryptography</strong> — Shor's algorithm breaks RSA and ECC at scale. This is why everyone is rushing post-quantum cryptography <em>now</em>.</li>\n</ul>\n\n<h3>Not disrupted</h3>\n<ul>\n  <li>General-purpose computing (your laptop, your phone, the cloud) — quantum is a co-processor, not a replacement.</li>\n  <li>Most machine learning — the speedups are real but modest.</li>\n  <li>Anything I/O bound — quantum doesn't help with reading data off a disk.</li>\n</ul>\n\n<h2>The geopolitical layer</h2>\n<p>Quantum is rapidly becoming a strategic technology. The US CHIPS Act, the EU Quantum Flagship, China's national lab investments and India's National Quantum Mission together represent more than $50B in public spending in this decade. For Pakistan, the practical question is whether to invest in <em>research</em> (slow, expensive) or in <em>algorithms</em> (cheap, immediately useful). The honest answer is: do the second now, and let the first follow when university funding allows.</p>\n\n<h2>What to do today</h2>\n<ol>\n  <li>Audit any system that relies on RSA/ECC for long-lived secrets. Migration plan to post-quantum cryptography should already exist.</li>\n  <li>If you are in chemistry, materials or pharma — pilot a quantum chemistry workflow on IBM Quantum or AWS Braket. Free credits exist.</li>\n  <li>Otherwise — ignore the quantum hype cycle and revisit in 2026. You are not missing anything.</li>\n</ol>\n<p>Quantum computing is a leap. It is just a leap to a very specific place. The teams that pay attention now will be ready when it lands; the teams that ignore it entirely will find themselves needing to migrate cryptography in a hurry.</p>",
+  "image": null,
+  "source": "archived",
+  "source_urls": [
+    "https://digitalkarachi.com/quantum-computing-a-leap-towards-futuristic-computing/"
+  ]
+}

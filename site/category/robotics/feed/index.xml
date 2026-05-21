@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Robotics – Digital Karachi</title>
+    <link>https://digitalkarachi.com/</link>
+    <description>Latest articles in Robotics from Digital Karachi.</description>
+    <language>en-us</language>
+    <atom:link href="https://digitalkarachi.com/category/robotics/feed/" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Robotics Curricula For South Asian Universities</title>
+      <link>https://digitalkarachi.com/robotics-curricula-for-south-asian-universities/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/robotics-curricula-for-south-asian-universities/</guid>
+      <pubDate>2026-04-30T09:00:00+05:00</pubDate>
+      <description>Robotics is increasingly becoming a critical field for technological advancement across the globe. However, its educational footprint in South Asian universities remains underdeveloped compared to more advanced regions. This article delves into the current state of robotics curricula in countries like India, Pakistan, and Bangladesh, highlighting challenges and potential solutions. 
+ Current Stat</description>
+    </item>
+    <item>
+      <title>Robotics In Construction: The Slow Revolution</title>
+      <link>https://digitalkarachi.com/robotics-in-construction-the-slow-revolution/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/robotics-in-construction-the-slow-revolution/</guid>
+      <pubDate>2026-03-22T09:00:00+05:00</pubDate>
+      <description>The construction industry, long resistant to change, is slowly embracing robotics and automation. While traditional building methods remain dominant, a new wave of autonomous machines and robotic systems is making its mark, transforming the way we build structures. 
+
+ Autonomous Excavators and Diggers 
+ One of the first areas where robots have made significant inroads is in excavation work. Auton</description>
+    </item>
+    <item>
+      <title>Robot Perception: The Sensor Stack</title>
+      <link>https://digitalkarachi.com/robot-perception-the-sensor-stack/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/robot-perception-the-sensor-stack/</guid>
+      <pubDate>2026-02-11T09:00:00+05:00</pubDate>
+      <description>Robot perception is a cornerstone of autonomous systems, enabling robots to understand their environment and make informed decisions. At the heart of this capability lies the sensor stack, which gathers data from various sensors to create a coherent picture of the surroundings.  The Importance of Sensor Fusion  Sensor fusion is essential for reliable perception in robotics. By integrating data fr</description>
+    </item>
+    <item>
+      <title>Robotic-process Automation Vs. Physical Robots: When Each Wins</title>
+      <link>https://digitalkarachi.com/robotic-process-automation-vs-physical-robots-when-each-wins/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/robotic-process-automation-vs-physical-robots-when-each-wins/</guid>
+      <pubDate>2026-01-03T09:00:00+05:00</pubDate>
+      <description>Robotic Process Automation (RPA) and physical robots are two powerful tools that can transform workflows in industries ranging from finance to manufacturing. While RPA excels at automating repetitive tasks, physical robots handle complex, dynamic environments with greater flexibility. This article explores the unique strengths of both approaches and provides guidance on when each is most effectiv</description>
+    </item>
+    <item>
+      <title>Robot Teleoperation: When Remote Control Is the Answer</title>
+      <link>https://digitalkarachi.com/robot-teleoperation-when-remote-control-is-the-answer/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/robot-teleoperation-when-remote-control-is-the-answer/</guid>
+      <pubDate>2025-11-25T09:00:00+05:00</pubDate>
+      <description>Imagine a scenario where a surgeon performs surgery thousands of miles away or a robot explores the depths of the ocean without risking human life. This is not science fiction; it&#x27;s the future of robotics through teleoperation. 
+
+ Teleoperation 101 
+
+ Teleoperation, also known as remote control or robotic telepresence, involves operating a robot from a distance. Unlike autonomous systems that ope</description>
+    </item>
+    <item>
+      <title>Surgical Robotics: The Regulatory and Engineering Bar</title>
+      <link>https://digitalkarachi.com/surgical-robotics-the-regulatory-and-engineering-bar/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/surgical-robotics-the-regulatory-and-engineering-bar/</guid>
+      <pubDate>2025-10-17T09:00:00+05:00</pubDate>
+      <description>The field of surgical robotics has seen significant advancements, but behind every successful deployment lies a robust framework of regulatory oversight and intricate engineering solutions. 
+ Regulatory Landscape 
+ Surgical robots are subject to stringent regulations due to their critical role in patient care. In the United States, the Food and Drug Administration (FDA) oversees these devices thr</description>
+    </item>
+    <item>
+      <title>Soft Robotics: Beyond Research Labs Into Everyday Use</title>
+      <link>https://digitalkarachi.com/soft-robotics-beyond-research-labs-into-everyday-use/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/soft-robotics-beyond-research-labs-into-everyday-use/</guid>
+      <pubDate>2025-09-08T09:00:00+05:00</pubDate>
+      <description>Imagine a robotic arm that can gently pick up an egg without breaking it or imagine a soft exoskeleton that enhances human mobility. These are just some of the applications that soft robotics, once confined to research and development labs, is now bringing into our everyday lives.  Introduction To Soft Robotics  Soft robotics involves the design and fabrication of robots that mimic biological org</description>
+    </item>
+    <item>
+      <title>Robotics Startups: The Capital Intensity Problem</title>
+      <link>https://digitalkarachi.com/robotics-startups-the-capital-intensity-problem/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/robotics-startups-the-capital-intensity-problem/</guid>
+      <pubDate>2025-07-31T09:00:00+05:00</pubDate>
+      <description>The path to innovation in robotics is paved with technical prowess and financial challenges. For robotics startups, the journey from concept to commercial success often hinges on overcoming a significant obstacle: capital intensity. This article delves into the intricacies of this problem, exploring its roots, implications, and potential solutions.  Understanding Capital Intensity  Capital intens</description>
+    </item>
+    <item>
+      <title>Mobile Robots in Hospitals: Revolutionizing Logistics and Disinfection</title>
+      <link>https://digitalkarachi.com/mobile-robots-in-hospitals-revolutionizing-logistics-and-disinfection/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/mobile-robots-in-hospitals-revolutionizing-logistics-and-disinfection/</guid>
+      <pubDate>2025-06-22T09:00:00+05:00</pubDate>
+      <description>Mobile robots have emerged as game-changers in the healthcare sector, particularly in hospitals. Their ability to perform tasks such as logistics and disinfection is revolutionizing how these institutions operate, improving efficiency, reducing costs, and enhancing patient care. 
+
+ Introduction to Mobile Robots in Healthcare 
+ Hospitals face numerous challenges daily, from managing large volumes</description>
+    </item>
+    <item>
+      <title>Robotics For Elder Care: The Human Factors</title>
+      <link>https://digitalkarachi.com/robotics-for-elder-care-the-human-factors/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/robotics-for-elder-care-the-human-factors/</guid>
+      <pubDate>2025-05-14T09:00:00+05:00</pubDate>
+      <description>As the global population ages, the need for innovative solutions in elder care has never been more pressing. Robotic companions offer a promising avenue to assist the elderly with daily tasks and emotional support. However, designing these robots requires careful consideration of human factors that can make or break their effectiveness and acceptance. 
+
+ Understanding Human Needs 
+ The primary go</description>
+    </item>
+    <item>
+      <title>Manipulation: Still the Hardest Problem in Robotics</title>
+      <link>https://digitalkarachi.com/manipulation-still-the-hardest-problem-in-robotics/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/manipulation-still-the-hardest-problem-in-robotics/</guid>
+      <pubDate>2025-04-05T09:00:00+05:00</pubDate>
+      <description>Robotics has seen incredible advancements, with autonomous vehicles, drones, and industrial robots dominating headlines. Yet, one core challenge persists: the ability of robots to manipulate objects with dexterity similar to human hands. This issue, known as &#x27;manipulation,&#x27; remains a significant hurdle in the field of robotics.  Introduction to Manipulation  The manipulation problem in robotics i</description>
+    </item>
+    <item>
+      <title>Warehouse Robotics: The Architecture Of Fulfillment Automation</title>
+      <link>https://digitalkarachi.com/warehouse-robotics-the-architecture-of-fulfillment-automation/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/warehouse-robotics-the-architecture-of-fulfillment-automation/</guid>
+      <pubDate>2025-02-25T09:00:00+05:00</pubDate>
+      <description>Modern warehouses are increasingly adopting robotic automation to enhance efficiency, reduce costs, and improve accuracy. Warehouse robotics encompasses a broad range of technologies and systems designed to streamline operations, from the movement of goods via autonomous mobile robots (AMRs) to sophisticated inventory management platforms. This article delves into the architecture of fulfillment</description>
+    </item>
+    <item>
+      <title>COBOTS: Collaborative Robots in Small Manufacturing</title>
+      <link>https://digitalkarachi.com/cobots-collaborative-robots-in-small-manufacturing/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/cobots-collaborative-robots-in-small-manufacturing/</guid>
+      <pubDate>2025-01-17T09:00:00+05:00</pubDate>
+      <description>Cobots, or collaborative robots, have become a game-changer in small-scale manufacturing. Unlike traditional industrial robots that require extensive safety guarding and are often prohibitively expensive for smaller businesses, cobots work alongside human workers to increase efficiency and reduce the risk of workplace injuries. 
+ Why Cobots Are Essential 
+ The primary advantage of cobots is their</description>
+    </item>
+    <item>
+      <title>Robots in Universities: How South Asian Institutions Are Preparing Future Innovators</title>
+      <link>https://digitalkarachi.com/robots-in-universities-how-south-asian-institutions-are-preparing-future-innovators/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/robots-in-universities-how-south-asian-institutions-are-preparing-future-innovators/</guid>
+      <pubDate>2024-12-09T09:00:00+05:00</pubDate>
+      <description>With the rapid advancement of technology, robotics is no longer just a niche field but a crucial skill set for future engineers and innovators. As South Asian universities look to modernize their curricula, they are increasingly incorporating robotics programs that prepare students for an AI-driven world. 
+ Identifying the Need 
+ The demand for skilled professionals in robotics is growing globall</description>
+    </item>
+    <item>
+      <title>ROS 2 in Production: The Patterns That Survive</title>
+      <link>https://digitalkarachi.com/ros-2-in-production-the-patterns-that-survive/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/ros-2-in-production-the-patterns-that-survive/</guid>
+      <pubDate>2024-10-31T09:00:00+05:00</pubDate>
+      <description>Robot Operating System (ROS) 2 has evolved from a research-oriented framework into a powerful tool for industrial robotics applications. This article explores the essential patterns that make ROS 2 effective in production, focusing on reliability, scalability, and maintainability. 
+ Maintainable Code Practices 
+ Writing clean, modular code is crucial in any software project, but it&#x27;s especially i</description>
+    </item>
+    <item>
+      <title>Robotics Safety Standards: A Practitioner&#x27;s Overview</title>
+      <link>https://digitalkarachi.com/robotics-safety-standards-a-practitioner-s-overview/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/robotics-safety-standards-a-practitioner-s-overview/</guid>
+      <pubDate>2024-09-22T09:00:00+05:00</pubDate>
+      <description>As robotics technology continues to advance, ensuring the safety of these systems has become paramount. This article provides a comprehensive overview for practitioners in the field, covering key international standards and best practices that can help safeguard both human operators and the machines themselves. 
+ Safety Standards Overview 
+ The landscape of robotics safety is complex, with multip</description>
+    </item>
+    <item>
+      <title>Drone-mounted Manipulators: The New Frontier</title>
+      <link>https://digitalkarachi.com/drone-mounted-manipulators-the-new-frontier/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/drone-mounted-manipulators-the-new-frontier/</guid>
+      <pubDate>2024-08-14T09:00:00+05:00</pubDate>
+      <description>Drone-mounted manipulators represent a significant leap forward in automation technology. These devices combine the precision of robotic arms with the mobility and reach of drones, opening up new possibilities across various industries. As drones become more sophisticated, they can now perform complex tasks that were previously impossible or too dangerous for traditional robots. 
+ Introduction to</description>
+    </item>
+    <item>
+      <title>Humanoid Robots in 2026: Hype vs Deployment Reality</title>
+      <link>https://digitalkarachi.com/humanoid-robots-in-2026-hype-vs-deployment-reality/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/humanoid-robots-in-2026-hype-vs-deployment-reality/</guid>
+      <pubDate>2024-07-06T09:00:00+05:00</pubDate>
+      <description>As we approach the horizon of 2026, humanoid robots have become a focal point in discussions about future technologies. From science fiction to real-world applications, these human-shaped machines promise to revolutionize industries from healthcare to manufacturing. However, are their capabilities living up to expectations?  Hype Around Humanoid Robots  The excitement surrounding humanoid robots</description>
+    </item>
+    <item>
+      <title>6 Open-Source Robotics Platforms to Explore</title>
+      <link>https://digitalkarachi.com/6-open-source-robotics-platforms-to-explore/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/6-open-source-robotics-platforms-to-explore/</guid>
+      <pubDate>2024-05-28T09:00:00+05:00</pubDate>
+      <description>As the field of robotics continues to evolve, developers and researchers are increasingly turning to open-source platforms for their flexibility and cost-effectiveness. These platforms not only provide a solid foundation but also encourage community-driven innovation and collaboration.  What Are Open-Source Robotics Platforms?  Open-source robotics platforms offer the source code, documentation,</description>
+    </item>
+    <item>
+      <title>Agricultural Robotics: Harvesting At Scale</title>
+      <link>https://digitalkarachi.com/agricultural-robotics-harvesting-at-scale/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/agricultural-robotics-harvesting-at-scale/</guid>
+      <pubDate>2024-04-19T09:00:00+05:00</pubDate>
+      <description>As the global population continues to grow, so does the need for efficient and sustainable agricultural practices. Enter agricultural robotics: a rapidly advancing field that is transforming how we harvest crops at scale. 
+ Introduction to Agricultural Robotics 
+ Agricultural robots are designed to perform tasks traditionally done by human labor, such as planting, monitoring, and harvesting. Thes</description>
+    </item>
+  </channel>
+</rss>

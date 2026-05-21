@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Artificial Intelligence (AI) – Digital Karachi</title>
+    <link>https://digitalkarachi.com/</link>
+    <description>Latest articles in Artificial Intelligence (AI) from Digital Karachi.</description>
+    <language>en-us</language>
+    <atom:link href="https://digitalkarachi.com/category/artificial-intelligence-ai/feed/" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Building a Domain-Specific Evaluation Harness for LLMs</title>
+      <link>https://digitalkarachi.com/building-a-domain-specific-evaluation-harness-for-llms/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/building-a-domain-specific-evaluation-harness-for-llms/</guid>
+      <pubDate>2026-05-03T09:00:00+05:00</pubDate>
+      <description>Large language models (LLMs) have become ubiquitous in various industries due to their ability to handle complex tasks. However, their performance can vary significantly depending on the domain they operate in. Building a domain-specific evaluation harness is crucial for ensuring that these models are reliable and effective within specific contexts. 
+
+ Understanding Domain-Specific Evaluation 
+ E</description>
+    </item>
+    <item>
+      <title>Hybrid Search: A Blend Of Lexical And Vector Retrieval</title>
+      <link>https://digitalkarachi.com/hybrid-search-a-blend-of-lexical-and-vector-retrieval/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/hybrid-search-a-blend-of-lexical-and-vector-retrieval/</guid>
+      <pubDate>2026-03-25T09:00:00+05:00</pubDate>
+      <description>Searching large datasets for precise information has become a critical task in today&#x27;s data-driven world. Hybrid search, which combines the strengths of lexical and vector retrieval techniques, offers a robust solution to this challenge. 
+ The Lexical Approach 
+ Lexical search, based on keyword matching, is straightforward but limited in its ability to understand context or complex queries. It re</description>
+    </item>
+    <item>
+      <title>How Embeddings Encode Meaning and Where Abstraction Leaks</title>
+      <link>https://digitalkarachi.com/how-embeddings-encode-meaning-and-where-abstraction-leaks/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/how-embeddings-encode-meaning-and-where-abstraction-leaks/</guid>
+      <pubDate>2026-02-14T09:00:00+05:00</pubDate>
+      <description>Embeddings have revolutionized natural language processing (NLP) by transforming text into numerical vectors that capture semantic and syntactic information. These vectors allow machines to understand the nuances of human language, driving advancements in tasks such as sentiment analysis, machine translation, and content generation. However, beneath their surface lies a complex web of abstraction</description>
+    </item>
+    <item>
+      <title>AI Red-Teaming: Structured Adversarial Testing for LLM Apps</title>
+      <link>https://digitalkarachi.com/ai-red-teaming-structured-adversarial-testing-for-llm-apps/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/ai-red-teaming-structured-adversarial-testing-for-llm-apps/</guid>
+      <pubDate>2026-01-06T09:00:00+05:00</pubDate>
+      <description>As large language models (LLMs) become more prevalent in our daily lives, the need to test their robustness against adversarial attacks has never been greater. Red-teaming is a structured approach that can help identify vulnerabilities and ensure the security of these powerful tools. This article will explore how red-teaming works, its benefits, and best practices for integrating it into the deve</description>
+    </item>
+    <item>
+      <title>Designing AI Features That Fail Gracefully</title>
+      <link>https://digitalkarachi.com/designing-ai-features-that-fail-gracefully/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/designing-ai-features-that-fail-gracefully/</guid>
+      <pubDate>2025-11-28T09:00:00+05:00</pubDate>
+      <description>AI features are ubiquitous in modern applications, but they can introduce unexpected issues. When something goes wrong, the system must fail gracefully to maintain trust and usability. This article explores key strategies for designing AI systems that handle errors effectively without compromising user experience or system integrity.  Understanding Graceful Failure  Graceful failure is an essenti</description>
+    </item>
+    <item>
+      <title>Multi-Modal AI: Beyond the Demos into Practical Use Cases</title>
+      <link>https://digitalkarachi.com/multi-modal-ai-beyond-the-demos-into-practical-use-cases/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/multi-modal-ai-beyond-the-demos-into-practical-use-cases/</guid>
+      <pubDate>2025-10-20T09:00:00+05:00</pubDate>
+      <description>As artificial intelligence (AI) continues to evolve, the integration of multiple data types—such as text, images, and audio—has become increasingly vital. This evolution has given rise to multi-modal AI systems that can process and analyze diverse forms of data simultaneously. While many demonstrations highlight these capabilities in exciting but limited ways, multi-modal AI’s true potential lies</description>
+    </item>
+    <item>
+      <title>Evaluating LLM Applications Without Falling for Vibes-Based Testing</title>
+      <link>https://digitalkarachi.com/evaluating-llm-applications-without-falling-for-vibes-based-testing/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/evaluating-llm-applications-without-falling-for-vibes-based-testing/</guid>
+      <pubDate>2025-09-11T09:00:00+05:00</pubDate>
+      <description>As the hype around large language models (LLMs) continues to grow, it&#x27;s crucial for developers and product managers to evaluate these tools with a critical eye. Simply relying on &#x27;vibes&#x27; or surface-level impressions can lead to suboptimal choices that don&#x27;t meet your actual needs. This article outlines key strategies for objectively assessing LLM applications. 
+ Understanding the Basics 
+ A large</description>
+    </item>
+    <item>
+      <title>Small Language Models Are Quietly Winning The Enterprise</title>
+      <link>https://digitalkarachi.com/small-language-models-are-quietly-winning-the-enterprise/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/small-language-models-are-quietly-winning-the-enterprise/</guid>
+      <pubDate>2025-08-03T09:00:00+05:00</pubDate>
+      <description>Small language models have quietly taken a significant foothold in enterprise technology. While large language models receive the majority of media attention due to their high-profile applications, smaller models are proving to be more practical and versatile for many business needs. 
+ What Are Small Language Models? 
+ Small language models typically refer to those with fewer parameters—often in</description>
+    </item>
+    <item>
+      <title>Synthetic Data Generation: An Underrated Production Tool</title>
+      <link>https://digitalkarachi.com/synthetic-data-generation-an-underrated-production-tool/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/synthetic-data-generation-an-underrated-production-tool/</guid>
+      <pubDate>2025-06-25T09:00:00+05:00</pubDate>
+      <description>Artificial intelligence has transformed industries by automating processes, improving decision-making, and enhancing customer experiences. Yet, a critical aspect of AI development often remains overlooked: the quality and quantity of training data. Synthetic data generation emerges as an innovative solution to address these challenges, offering privacy-preserving alternatives that can significant</description>
+    </item>
+    <item>
+      <title>How Transformer Attention Actually Works Explained For Engineers</title>
+      <link>https://digitalkarachi.com/how-transformer-attention-actually-works-explained-for-engineers/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/how-transformer-attention-actually-works-explained-for-engineers/</guid>
+      <pubDate>2025-05-17T09:00:00+05:00</pubDate>
+      <description>Transformer models have become the backbone of many natural language processing (NLP) applications, powering everything from chatbots to machine translation. At their core is the attention mechanism—a powerful concept that allows each position in a sequence to attend to all other positions. This article delves into how transformer attention actually works, providing an engineer-friendly explanati</description>
+    </item>
+    <item>
+      <title>On-Device AI: What Runs Locally in 2026 and What Doesn’t</title>
+      <link>https://digitalkarachi.com/on-device-ai-what-runs-locally-in-2026-and-what-doesn-t/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/on-device-ai-what-runs-locally-in-2026-and-what-doesn-t/</guid>
+      <pubDate>2025-04-08T09:00:00+05:00</pubDate>
+      <description>In 2026, on-device AI has become a cornerstone for applications requiring real-time processing, low latency, and enhanced user privacy. This shift is driven by advancements in hardware and software that enable complex computations to be performed locally without relying heavily on cloud infrastructure. 
+ Advancements in Hardware 
+ The advent of powerful yet efficient chips designed specifically f</description>
+    </item>
+    <item>
+      <title>Synthetic Data Generation: An Untapped Production Powerhouse</title>
+      <link>https://digitalkarachi.com/synthetic-data-generation-an-untapped-production-powerhouse/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/synthetic-data-generation-an-untapped-production-powerhouse/</guid>
+      <pubDate>2025-02-28T09:00:00+05:00</pubDate>
+      <description>Imagine a scenario where your AI models can be trained with vast amounts of diverse, synthetic data, crafted to perfection for every use case. Synthetic data generation is not just another buzzword; it&#x27;s an underutilized tool that offers unparalleled flexibility and control in the realm of machine learning.  What Is Synthetic Data?  Synthetic data refers to artificially generated data that mimics</description>
+    </item>
+    <item>
+      <title>Orchestration Patterns For AI Agents In Production</title>
+      <link>https://digitalkarachi.com/orchestration-patterns-for-ai-agents-in-production/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/orchestration-patterns-for-ai-agents-in-production/</guid>
+      <pubDate>2025-01-20T09:00:00+05:00</pubDate>
+      <description>Deploying AI agents into production environments can be a complex task, requiring careful planning and execution to ensure they perform optimally. This article explores the orchestration patterns that have proven effective for integrating modern transformer models and other AI technologies in real-world applications. 
+ Understanding the Role of AI Agents 
+ An AI agent is an autonomous or semi-aut</description>
+    </item>
+    <item>
+      <title>Guardrails for AI Products: Input Filters, Output Validators, Audit Logs</title>
+      <link>https://digitalkarachi.com/guardrails-for-ai-products-input-filters-output-validators-audit-logs/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/guardrails-for-ai-products-input-filters-output-validators-audit-logs/</guid>
+      <pubDate>2024-12-12T09:00:00+05:00</pubDate>
+      <description>As artificial intelligence (AI) becomes more integrated into our daily lives, ensuring the reliability, security, and compliance of AI products has become paramount. This article delves into implementing essential guardrails such as input filters, output validators, and audit logs to protect against errors and potential misuse. 
+ Input Filters: The First Line of Defense 
+ Input filters are critic</description>
+    </item>
+    <item>
+      <title>Why Context Windows Are Not the Bottleneck You Think</title>
+      <link>https://digitalkarachi.com/why-context-windows-are-not-the-bottleneck-you-think/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/why-context-windows-are-not-the-bottleneck-you-think/</guid>
+      <pubDate>2024-11-03T09:00:00+05:00</pubDate>
+      <description>When discussing large language models (LLMs), context windows frequently come up as a potential bottleneck. But is this really the case? Let’s dive into why context windows are often not the limiting factor you might think, and what truly matters more in the realm of AI. 
+
+ Understanding Context Windows 
+ A context window defines how much historical information an LLM can remember or process at o</description>
+    </item>
+    <item>
+      <title>Practical Prompt Engineering Patterns That Survive Model Upgrades</title>
+      <link>https://digitalkarachi.com/practical-prompt-engineering-patterns-that-survive-model-upgrades/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/practical-prompt-engineering-patterns-that-survive-model-upgrades/</guid>
+      <pubDate>2024-09-25T09:00:00+05:00</pubDate>
+      <description>As artificial intelligence (AI) models continue to upgrade, maintaining the effectiveness of your prompts becomes increasingly critical. This article explores practical patterns and strategies for prompt engineering that ensure your queries remain robust even as model architectures evolve.  Understanding Model Upgrades  New AI models often come with enhanced capabilities and performance optimizat</description>
+    </item>
+    <item>
+      <title>The Hidden Cost of Fine-Tuning vs. Prompting for Production Models</title>
+      <link>https://digitalkarachi.com/the-hidden-cost-of-fine-tuning-vs-prompting-for-production-models/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/the-hidden-cost-of-fine-tuning-vs-prompting-for-production-models/</guid>
+      <pubDate>2024-08-17T09:00:00+05:00</pubDate>
+      <description>When deploying an artificial intelligence model, engineers often face a crucial decision: should they fine-tune a pre-existing model or use prompting techniques? Each approach has its own set of hidden costs that can significantly impact the overall performance and budget. This article delves into these considerations to help you make informed decisions for your next project. 
+ Fine-Tuning Models</description>
+    </item>
+    <item>
+      <title>Token-economics: Making LLM Features Sustainable</title>
+      <link>https://digitalkarachi.com/token-economics-making-llm-features-sustainable/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/token-economics-making-llm-features-sustainable/</guid>
+      <pubDate>2024-07-09T09:00:00+05:00</pubDate>
+      <description>Token economics, a critical component of modern artificial intelligence (AI) systems, refers to the economic framework that underpins how these models are developed, deployed, and maintained. For large language models (LLMs), token economics plays an essential role in ensuring long-term sustainability and financial viability. This article delves into the nuances of token economics, focusing on ho</description>
+    </item>
+    <item>
+      <title>Retrieval-augmented Generation: When It Helps And When It Hurts</title>
+      <link>https://digitalkarachi.com/retrieval-augmented-generation-when-it-helps-and-when-it-hurts/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/retrieval-augmented-generation-when-it-helps-and-when-it-hurts/</guid>
+      <pubDate>2024-05-31T09:00:00+05:00</pubDate>
+      <description>Retrieval-Augmented Generation (RAG) has emerged as a powerful technique in natural language processing, enhancing the capabilities of modern transformer models by integrating external knowledge. However, its success is not universal; RAG can significantly boost performance or fall short depending on the use case and implementation details.  What Is Retrieval-Augmented Generation?  RAG combines t</description>
+    </item>
+    <item>
+      <title>The Architecture Of A Modern Rag Pipeline: End-to-end</title>
+      <link>https://digitalkarachi.com/the-architecture-of-a-modern-rag-pipeline-end-to-end/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/the-architecture-of-a-modern-rag-pipeline-end-to-end/</guid>
+      <pubDate>2024-04-22T09:00:00+05:00</pubDate>
+      <description>The modern Retrieval-Augmented Generation (RAG) pipeline is a powerful tool in the realm of artificial intelligence, offering a blend of efficiency and accuracy. By leveraging both retrieval and generative models, RAG systems can answer complex questions with high precision while maintaining the speed required for real-time applications.  Data Sourcing  The foundation of any effective RAG pipelin</description>
+    </item>
+  </channel>
+</rss>

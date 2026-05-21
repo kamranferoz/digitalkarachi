@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Science – Digital Karachi</title>
+    <link>https://digitalkarachi.com/</link>
+    <description>Latest articles in Data Science from Digital Karachi.</description>
+    <language>en-us</language>
+    <atom:link href="https://digitalkarachi.com/category/data-science/feed/" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Notebook Discipline: When to Graduate to Scripts and Tests</title>
+      <link>https://digitalkarachi.com/notebook-discipline-when-to-graduate-to-scripts-and-tests/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/notebook-discipline-when-to-graduate-to-scripts-and-tests/</guid>
+      <pubDate>2026-04-24T09:00:00+05:00</pubDate>
+      <description>Whether you&#x27;re a seasoned data scientist or just starting out, your journey often begins with interactive Jupyter Notebooks. These tools are powerful for prototyping and experimentation, but as projects grow in complexity, maintaining code quality becomes increasingly important. This article explores the transition from notebooks to more robust script-based development practices, emphasizing the</description>
+    </item>
+    <item>
+      <title>The Case for Product Analytics Over Event-Warehouse Sprawl</title>
+      <link>https://digitalkarachi.com/the-case-for-product-analytics-over-event-warehouse-sprawl/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/the-case-for-product-analytics-over-event-warehouse-sprawl/</guid>
+      <pubDate>2026-03-16T09:00:00+05:00</pubDate>
+      <description>Modern software products are increasingly complex, with multiple touchpoints and intricate interactions. While traditional event warehouses have been the norm for capturing raw data, they often lead to sprawl that complicates analysis and hampers decision-making. This article explores why consolidating data into a comprehensive product analytics platform can provide greater insights and drive bet</description>
+    </item>
+    <item>
+      <title>Funnel Analytics: Instrumentation Patterns That Scale</title>
+      <link>https://digitalkarachi.com/funnel-analytics-instrumentation-patterns-that-scale/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/funnel-analytics-instrumentation-patterns-that-scale/</guid>
+      <pubDate>2026-02-05T09:00:00+05:00</pubDate>
+      <description>Funnel analytics are essential for understanding the user journey from initial interaction to conversion. Yet, implementing a robust funnel analysis system that scales with growth can be complex. This article outlines key instrumentation patterns and best practices to ensure your funnel analytics remain effective and efficient as your application evolves.  Understanding Funnel Analytics  Funnel a</description>
+    </item>
+    <item>
+      <title>A Working Introduction to Bayesian A/B Testing</title>
+      <link>https://digitalkarachi.com/a-working-introduction-to-bayesian-a-b-testing/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/a-working-introduction-to-bayesian-a-b-testing/</guid>
+      <pubDate>2025-12-28T09:00:00+05:00</pubDate>
+      <description>Bayesian A/B testing offers a powerful approach to making informed decisions by leveraging the principles of Bayesian statistics. Unlike traditional frequentist methods, which rely on p-values and confidence intervals, Bayesian A/B testing allows you to incorporate prior knowledge into your analysis, leading to more accurate and actionable insights. 
+ Introduction to Bayesian A/B Testing 
+ A/B te</description>
+    </item>
+    <item>
+      <title>Cohort Analysis: The Methodology And The Pitfalls</title>
+      <link>https://digitalkarachi.com/cohort-analysis-the-methodology-and-the-pitfalls/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/cohort-analysis-the-methodology-and-the-pitfalls/</guid>
+      <pubDate>2025-11-19T09:00:00+05:00</pubDate>
+      <description>Cohort analysis is a crucial tool for data scientists and product managers seeking to understand the performance of user groups over time. By dividing users into cohorts based on common characteristics, such as sign-up date or initial purchase, businesses can track trends, predict future behavior, and optimize strategies. However, this powerful method also comes with significant pitfalls that can</description>
+    </item>
+    <item>
+      <title>Data-quality Monitoring: The Unappreciated Reliability Problem</title>
+      <link>https://digitalkarachi.com/data-quality-monitoring-the-unappreciated-reliability-problem/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/data-quality-monitoring-the-unappreciated-reliability-problem/</guid>
+      <pubDate>2025-10-11T09:00:00+05:00</pubDate>
+      <description>Data quality monitoring has emerged as a critical yet undervalued aspect of modern data science and analytics. While data is often seen as the new oil, its value diminishes significantly when that oil is contaminated or misdirected. Yet, despite its importance, many organizations still struggle to prioritize or effectively implement robust data quality monitoring systems. 
+ THE VALUE OF DATA QUAL</description>
+    </item>
+    <item>
+      <title>Customer Segmentation: From RFM to Embedding-Based Clusters</title>
+      <link>https://digitalkarachi.com/customer-segmentation-from-rfm-to-embedding-based-clusters/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/customer-segmentation-from-rfm-to-embedding-based-clusters/</guid>
+      <pubDate>2025-09-02T09:00:00+05:00</pubDate>
+      <description>Customer segmentation is a cornerstone of effective marketing and personalization strategies, helping businesses tailor their offerings to specific groups within their customer base. Traditionally, companies have relied on Recency-Frequency-Monetary (RFM) analysis for segmenting customers. However, as data science advances, embedding-based clustering emerges as a powerful alternative that can off</description>
+    </item>
+    <item>
+      <title>Building a Data Team&#x27;s First Quarter from Scratch</title>
+      <link>https://digitalkarachi.com/building-a-data-team-s-first-quarter-from-scratch/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/building-a-data-team-s-first-quarter-from-scratch/</guid>
+      <pubDate>2025-07-25T09:00:00+05:00</pubDate>
+      <description>Starting a new data team can be overwhelming, especially during the initial phases. The first quarter sets the tone for future success. Whether you&#x27;re a startup or part of an established company embarking on this journey, here&#x27;s a comprehensive guide to help you navigate through your first three months. 
+
+ Setting Clear Objectives and Goals 
+ The foundation of any successful data team is clear ob</description>
+    </item>
+    <item>
+      <title>Statistical Significance for Product Teams, Without the Jargon</title>
+      <link>https://digitalkarachi.com/statistical-significance-for-product-teams-without-the-jargon/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/statistical-significance-for-product-teams-without-the-jargon/</guid>
+      <pubDate>2025-06-16T09:00:00+05:00</pubDate>
+      <description>Statistical significance is a critical concept for any product team aiming to validate the effectiveness of their features and experiments. However, many teams struggle with its implementation due to the jargon-heavy nature of statistical analysis. This article demystifies the concept by breaking it down into simple terms and practical steps, ensuring you can confidently apply these techniques in</description>
+    </item>
+    <item>
+      <title>Modern Data Stack: Components, Costs, And Trade-offs</title>
+      <link>https://digitalkarachi.com/modern-data-stack-components-costs-and-trade-offs/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/modern-data-stack-components-costs-and-trade-offs/</guid>
+      <pubDate>2025-05-08T09:00:00+05:00</pubDate>
+      <description>The modern data stack has evolved significantly from its early days, driven by advancements in technology and changing business needs. This article delves into the key components of a contemporary data infrastructure, the associated costs, and the trade-offs organizations face when choosing their tech stack.  Key Components of the Modern Data Stack  A modern data stack typically comprises several</description>
+    </item>
+    <item>
+      <title>Data Contracts: Bringing Schema Discipline To Producers</title>
+      <link>https://digitalkarachi.com/data-contracts-bringing-schema-discipline-to-producers/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/data-contracts-bringing-schema-discipline-to-producers/</guid>
+      <pubDate>2025-03-30T09:00:00+05:00</pubDate>
+      <description>Data contracts, a recent innovation in data management, are transforming the landscape of how producers handle schema discipline. By formalizing and enforcing data structures, these contracts ensure that datasets remain consistent across various systems and services. This article explores the importance of data contracts, their implementation strategies, and real-world benefits. 
+ What Are Data C</description>
+    </item>
+    <item>
+      <title>Geospatial Analytics: Tools and Techniques for Non-Experts</title>
+      <link>https://digitalkarachi.com/geospatial-analytics-tools-and-techniques-for-non-experts/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/geospatial-analytics-tools-and-techniques-for-non-experts/</guid>
+      <pubDate>2025-02-19T09:00:00+05:00</pubDate>
+      <description>Geospatial analytics has become a cornerstone in understanding and interpreting location-based data, providing businesses with powerful tools to make informed decisions. While traditionally seen as a domain for specialists, modern advancements have made it more accessible than ever before. This article explores the key tools and techniques that non-experts can use to harness the power of geospati</description>
+    </item>
+    <item>
+      <title>Why Data Lineage Matters for Trust</title>
+      <link>https://digitalkarachi.com/why-data-lineage-matters-for-trust/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/why-data-lineage-matters-for-trust/</guid>
+      <pubDate>2025-01-11T09:00:00+05:00</pubDate>
+      <description>Data lineage provides a comprehensive audit trail of how data is generated, transformed, stored, and used. This transparency ensures that decisions based on data are reliable and trustworthy. 
+ Understanding Data Lineage 
+ Data lineage involves documenting every step in the lifecycle of your data—from its source to its final destination or usage. It helps you trace where a piece of data came from</description>
+    </item>
+    <item>
+      <title>Designing Dashboards People Actually Use</title>
+      <link>https://digitalkarachi.com/designing-dashboards-people-actually-use/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/designing-dashboards-people-actually-use/</guid>
+      <pubDate>2024-12-03T09:00:00+05:00</pubDate>
+      <description>Data dashboards are the digital windows through which businesses observe their performance. Yet, creating a dashboard that not only looks good but is actually useful can be challenging. This guide delves into best practices and design principles to help you build dashboards people will use regularly. 
+ Understanding Your Audience 
+ The first step in designing an effective dashboard is understandi</description>
+    </item>
+    <item>
+      <title>Storytelling with Data: Principles from Journalism for Analysts</title>
+      <link>https://digitalkarachi.com/storytelling-with-data-principles-from-journalism-for-analysts/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/storytelling-with-data-principles-from-journalism-for-analysts/</guid>
+      <pubDate>2024-10-25T09:00:00+05:00</pubDate>
+      <description>Effective communication of data insights is crucial for decision-making in today&#x27;s data-driven world. By adopting principles from journalism, analysts can transform complex data into clear, engaging narratives that resonate with stakeholders. This article explores key storytelling techniques and best practices.  Understanding the Audience  In journalism, understanding your audience is paramount t</description>
+    </item>
+    <item>
+      <title>Reverse ETL: Closing the Loop from Warehouse to Operations</title>
+      <link>https://digitalkarachi.com/reverse-etl-closing-the-loop-from-warehouse-to-operations/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/reverse-etl-closing-the-loop-from-warehouse-to-operations/</guid>
+      <pubDate>2024-09-16T09:00:00+05:00</pubDate>
+      <description>Reverse ETL is reshaping the landscape of modern data management by enabling businesses to push data from their warehouses back into operational systems. This process closes the loop, ensuring that insights generated in analytics platforms are acted upon immediately and efficiently. 
+ Understanding Reverse ETL 
+ Reverse ETL involves extracting data from a Data Warehouse or Data Lake, transforming</description>
+    </item>
+    <item>
+      <title>Sampling Strategies For Streaming Analytics</title>
+      <link>https://digitalkarachi.com/sampling-strategies-for-streaming-analytics/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/sampling-strategies-for-streaming-analytics/</guid>
+      <pubDate>2024-08-08T09:00:00+05:00</pubDate>
+      <description>Streaming analytics has become a crucial component in modern data processing, enabling real-time decision-making. However, handling the sheer volume of data can be overwhelming. Sampling strategies offer a practical solution to manage and analyze streaming data efficiently. 
+ Data Volume Challenges 
+ As more devices connect to the internet, the amount of streaming data continues to grow exponenti</description>
+    </item>
+    <item>
+      <title>Survival Analysis for Churn Modeling: A Comprehensive Guide</title>
+      <link>https://digitalkarachi.com/survival-analysis-for-churn-modeling-a-comprehensive-guide/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/survival-analysis-for-churn-modeling-a-comprehensive-guide/</guid>
+      <pubDate>2024-06-30T09:00:00+05:00</pubDate>
+      <description>Survival analysis is a powerful technique used to model the time until an event occurs. In the context of churn modeling, it can provide deep insights into customer behavior and help predict when customers are likely to leave.  Understanding Survival Analysis  Survival analysis focuses on the duration for which a subject has survived or remains in a particular state before experiencing an event.</description>
+    </item>
+    <item>
+      <title>Experimentation Platforms: Build vs. Buy in 2026</title>
+      <link>https://digitalkarachi.com/experimentation-platforms-build-vs-buy-in-2026/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/experimentation-platforms-build-vs-buy-in-2026/</guid>
+      <pubDate>2024-05-22T09:00:00+05:00</pubDate>
+      <description>As of 2026, organizations are increasingly focused on enhancing their ability to rapidly test and deploy data-driven initiatives. This often involves the choice between building an in-house experimentation platform or purchasing a pre-built solution from the market. 
+ Understanding the Landscape 
+ The decision to build versus buy hinges on several critical factors, including technical expertise,</description>
+    </item>
+    <item>
+      <title>SQL Patterns That Distinguish Senior Data Analysts</title>
+      <link>https://digitalkarachi.com/sql-patterns-that-distinguish-senior-data-analysts/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/sql-patterns-that-distinguish-senior-data-analysts/</guid>
+      <pubDate>2024-04-13T09:00:00+05:00</pubDate>
+      <description>As a senior data analyst, you&#x27;re expected to go beyond basic SQL queries. You need to optimize performance, handle complex datasets, and ensure your queries are efficient and scalable. This article explores six key patterns that set apart junior from senior analysts.  Data Partitioning for Scalability  Junior analysts often write simple, linear queries without considering the scale of their data.</description>
+    </item>
+  </channel>
+</rss>

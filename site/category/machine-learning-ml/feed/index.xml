@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning (ML) – Digital Karachi</title>
+    <link>https://digitalkarachi.com/</link>
+    <description>Latest articles in Machine Learning (ML) from Digital Karachi.</description>
+    <language>en-us</language>
+    <atom:link href="https://digitalkarachi.com/category/machine-learning-ml/feed/" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns</title>
+      <link>https://digitalkarachi.com/hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/</guid>
+      <pubDate>2026-05-18T09:00:00+05:00</pubDate>
+      <description>Hyperparameter tuning is a critical step in machine learning model development. While it can significantly enhance model performance, the process often comes with significant costs—both computational and financial. This article delves into strategies for effective hyperparameter tuning within budget constraints, highlighting Bayesian methods as a promising approach to achieve asymptotic returns o</description>
+    </item>
+    <item>
+      <title>Feature Engineering in the Age of Foundation Models</title>
+      <link>https://digitalkarachi.com/feature-engineering-in-the-age-of-foundation-models/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/feature-engineering-in-the-age-of-foundation-models/</guid>
+      <pubDate>2026-04-09T09:00:00+05:00</pubDate>
+      <description>Feature engineering, once considered an art form, is evolving in the era of foundation models. As these large pretrained models become more prevalent, engineers are reevaluating their roles and methodologies to remain relevant. 
+ Understanding Feature Engineering 
+ Feature engineering involves selecting, creating, and transforming raw data into features that improve the performance of machine lea</description>
+    </item>
+    <item>
+      <title>The Lifecycle of a Production ML Model: End-to-End</title>
+      <link>https://digitalkarachi.com/the-lifecycle-of-a-production-ml-model-end-to-end/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/the-lifecycle-of-a-production-ml-model-end-to-end/</guid>
+      <pubDate>2026-03-01T09:00:00+05:00</pubDate>
+      <description>Deploying a successful machine learning (ML) model is like launching a spaceship: it involves rigorous testing, meticulous planning, and ongoing management to ensure its reliability in the real world. This article takes you through every phase of this journey, from conception to continuous improvement.  Conceptualization  The first step in creating an ML model is defining the problem and gatherin</description>
+    </item>
+    <item>
+      <title>Active Learning: Getting More from Each Labeling Dollar</title>
+      <link>https://digitalkarachi.com/active-learning-getting-more-from-each-labeling-dollar/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/active-learning-getting-more-from-each-labeling-dollar/</guid>
+      <pubDate>2026-01-21T09:00:00+05:00</pubDate>
+      <description>Active learning is a powerful technique that helps engineers and data scientists make the most of their limited labeled data, thereby reducing costs and improving model performance. By intelligently selecting which data points to label next, active learning can accelerate the training process and lead to more accurate models. 
+ Understanding Active Learning 
+ In traditional machine learning workf</description>
+    </item>
+    <item>
+      <title>Cross-Validation Strategies That Don&#x27;t Leak</title>
+      <link>https://digitalkarachi.com/cross-validation-strategies-that-don-t-leak/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/cross-validation-strategies-that-don-t-leak/</guid>
+      <pubDate>2025-12-13T09:00:00+05:00</pubDate>
+      <description>Data leakage can severely undermine the effectiveness of a model, leading to overly optimistic performance estimates during cross-validation. This article explores various strategies that prevent data leakage while ensuring robust model evaluation.  Understanding Data Leakage  Data leakage occurs when information not available at test time is used in the training process, leading to models that p</description>
+    </item>
+    <item>
+      <title>Recommender Systems Beyond Collaborative Filtering</title>
+      <link>https://digitalkarachi.com/recommender-systems-beyond-collaborative-filtering/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/recommender-systems-beyond-collaborative-filtering/</guid>
+      <pubDate>2025-11-04T09:00:00+05:00</pubDate>
+      <description>Collaborative filtering has long been the backbone of many online recommendation engines. However, as user data grows increasingly complex, the limitations of this approach become evident. Modern recommender systems are evolving to incorporate more sophisticated models that leverage content information and hybrid approaches to offer richer and more personalized recommendations.  Content-Based Fil</description>
+    </item>
+    <item>
+      <title>Time-Series Forecasting: When Stats Models Outshine Deep Learning</title>
+      <link>https://digitalkarachi.com/time-series-forecasting-when-stats-models-outshine-deep-learning/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/time-series-forecasting-when-stats-models-outshine-deep-learning/</guid>
+      <pubDate>2025-09-26T09:00:00+05:00</pubDate>
+      <description>Time-series forecasting is a critical task across various industries, from financial markets to environmental science. While deep learning has dominated much of the machine learning landscape, statistical models often remain superior for certain types of time-series data due to their interpretability and robust performance. 
+
+ Understanding Time-Series Data 
+
+ Time-series data are sequential obse</description>
+    </item>
+    <item>
+      <title>ML System Design Interviews Decoded</title>
+      <link>https://digitalkarachi.com/ml-system-design-interviews-decoded/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/ml-system-design-interviews-decoded/</guid>
+      <pubDate>2025-08-18T09:00:00+05:00</pubDate>
+      <description>Machine learning (ML) has become a cornerstone of modern software development, driving advancements in everything from recommendation systems to autonomous vehicles. As the demand for skilled ML engineers grows, so does the importance of excelling in system design interviews. These interviews are designed to test not just your knowledge but also your ability to think through complex problems and</description>
+    </item>
+    <item>
+      <title>Building A Personal ML Reproducibility Checklist</title>
+      <link>https://digitalkarachi.com/building-a-personal-ml-reproducibility-checklist/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/building-a-personal-ml-reproducibility-checklist/</guid>
+      <pubDate>2025-07-10T09:00:00+05:00</pubDate>
+      <description>Reproducibility is a cornerstone of scientific research and engineering. In the rapidly evolving field of machine learning, ensuring that experiments can be replicated and results verified is crucial for building trust and improving model performance.  Why Reproducibility Matters  Maintaining reproducibility in your machine learning projects not only enhances the credibility of your work but also</description>
+    </item>
+    <item>
+      <title>Why Your Model&#x27;s Probabilities Probably Lie: The Need for Calibration</title>
+      <link>https://digitalkarachi.com/why-your-model-s-probabilities-probably-lie-the-need-for-calibration/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/why-your-model-s-probabilities-probably-lie-the-need-for-calibration/</guid>
+      <pubDate>2025-06-01T09:00:00+05:00</pubDate>
+      <description>Machine learning (ML) models are powerful tools that predict outcomes, classify data, and estimate probabilities. However, many ML practitioners underestimate the importance of ensuring these probability estimates are accurate. This article explores why calibration is crucial for model reliability and introduces common techniques to improve it. 
+
+ Why Calibration Matters 
+ When you train a machin</description>
+    </item>
+    <item>
+      <title>Bias And Fairness Audits In Machine Learning Pipelines</title>
+      <link>https://digitalkarachi.com/bias-and-fairness-audits-in-machine-learning-pipelines/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/bias-and-fairness-audits-in-machine-learning-pipelines/</guid>
+      <pubDate>2025-04-23T09:00:00+05:00</pubDate>
+      <description>Bias in machine learning (ML) systems can have serious real-world consequences. From discriminatory hiring practices to biased criminal risk assessments, the impact of bias extends beyond just ethical concerns—it can also lead to legal and financial repercussions. This article explores how to conduct comprehensive bias and fairness audits in ML pipelines to ensure that your models are fair and un</description>
+    </item>
+    <item>
+      <title>Gradient Boosting: Why It Still Rules Kaggle</title>
+      <link>https://digitalkarachi.com/gradient-boosting-why-it-still-rules-kaggle/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/gradient-boosting-why-it-still-rules-kaggle/</guid>
+      <pubDate>2025-03-15T09:00:00+05:00</pubDate>
+      <description>Gradient boosting has maintained its dominance on Kaggle, the platform where data scientists compete to build the best predictive models. This article explores why gradient boosting remains a go-to technique for winning competitions and offers insights into its enduring appeal. 
+ Understanding Gradient Boosting 
+ Gradient boosting is an ensemble method that builds multiple weak learners sequentia</description>
+    </item>
+    <item>
+      <title>Causal Inference for ML Practitioners: A Working Introduction</title>
+      <link>https://digitalkarachi.com/causal-inference-for-ml-practitioners-a-working-introduction/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/causal-inference-for-ml-practitioners-a-working-introduction/</guid>
+      <pubDate>2025-02-04T09:00:00+05:00</pubDate>
+      <description>Causal inference is a powerful tool that helps us understand the underlying relationships between variables. In machine learning, this technique can significantly improve model accuracy and ensure that predictions are reliable and actionable. This article introduces causal inference concepts, its practical applications, and best practices for implementation. 
+ Understanding Causality 
+ Causality</description>
+    </item>
+    <item>
+      <title>Choosing The Right Loss Function For Imbalanced Classification</title>
+      <link>https://digitalkarachi.com/choosing-the-right-loss-function-for-imbalanced-classification/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/choosing-the-right-loss-function-for-imbalanced-classification/</guid>
+      <pubDate>2024-12-27T09:00:00+05:00</pubDate>
+      <description>When dealing with imbalanced classification problems, choosing the right loss function can significantly impact a machine learning model&#x27;s ability to generalize and perform accurately. Despite its importance, this choice is often overlooked or misunderstood by many practitioners. 
+ Understanding Imbalanced Classification 
+ Imbalanced datasets are common in real-world scenarios where one class (th</description>
+    </item>
+    <item>
+      <title>Anomaly Detection in Unlabeled Telemetry Streams: A Practical Guide</title>
+      <link>https://digitalkarachi.com/anomaly-detection-in-unlabeled-telemetry-streams-a-practical-guide/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/anomaly-detection-in-unlabeled-telemetry-streams-a-practical-guide/</guid>
+      <pubDate>2024-11-18T09:00:00+05:00</pubDate>
+      <description>Unlabeled telemetry streams are a common source of big data challenges. These streams, often generated from network devices, IoT sensors, or application logs, contain vast amounts of unstructured information that can be difficult to analyze. Anomaly detection in such environments is crucial for identifying potential issues before they become critical. In this article, we&#x27;ll explore practical meth</description>
+    </item>
+    <item>
+      <title>Drift Detection: Methods That Actually Work In The Real World</title>
+      <link>https://digitalkarachi.com/drift-detection-methods-that-actually-work-in-the-real-world/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/drift-detection-methods-that-actually-work-in-the-real-world/</guid>
+      <pubDate>2024-10-10T09:00:00+05:00</pubDate>
+      <description>Machine learning models are only as good as the data they&#x27;re trained on. But what happens when that data changes? Drift detection is crucial for maintaining model performance, yet many methods fall short in real-world scenarios. In this article, we&#x27;ll explore six effective drift detection techniques that can help you keep your models accurate and reliable.  Understanding Data Drift  Data drift oc</description>
+    </item>
+    <item>
+      <title>Why Feature Stores Became Indispensable and When They’re Overkill</title>
+      <link>https://digitalkarachi.com/why-feature-stores-became-indispensable-and-when-they-re-overkill/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/why-feature-stores-became-indispensable-and-when-they-re-overkill/</guid>
+      <pubDate>2024-09-01T09:00:00+05:00</pubDate>
+      <description>Modern machine learning (ML) pipelines rely on a robust data management strategy to ensure that models are built on the most relevant and up-to-date features. Feature stores have emerged as a crucial component in this landscape, offering centralized repositories for ML feature sets. However, their utility is not universal, and deciding whether they are indispensable or overkill requires careful c</description>
+    </item>
+    <item>
+      <title>MLOps without the Buzzwords: The Minimum Viable Platform</title>
+      <link>https://digitalkarachi.com/mlops-without-the-buzzwords-the-minimum-viable-platform/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/mlops-without-the-buzzwords-the-minimum-viable-platform/</guid>
+      <pubDate>2024-07-24T09:00:00+05:00</pubDate>
+      <description>Building an effective Machine Learning Operations (MLOps) platform doesn’t always require the latest buzzwords or complex tools. By focusing on a minimal viable setup, you can streamline your workflow and ensure that your models are reliable and deployable. 
+
+ Why MLOps? 
+ MLOps is crucial for managing the lifecycle of machine learning projects from development to deployment. It ensures consisten</description>
+    </item>
+    <item>
+      <title>The Lifecycle of a Production ML Model: From Training to Deployment</title>
+      <link>https://digitalkarachi.com/the-lifecycle-of-a-production-ml-model-from-training-to-deployment/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/the-lifecycle-of-a-production-ml-model-from-training-to-deployment/</guid>
+      <pubDate>2024-06-15T09:00:00+05:00</pubDate>
+      <description>The journey of a machine learning (ML) model from conception to deployment is both intricate and critical. This lifecycle encompasses various stages, each demanding meticulous attention to ensure the model performs optimally in production environments. 
+ Preparation: Data Gathering and Cleaning 
+ Data preparation is often underestimated but is crucial for a successful ML project. This phase invol</description>
+    </item>
+    <item>
+      <title>Why Your Model&#x27;s Probabilities Are Probably Off And What To Do About It</title>
+      <link>https://digitalkarachi.com/why-your-model-s-probabilities-are-probably-off-and-what-to-do-about-it/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/why-your-model-s-probabilities-are-probably-off-and-what-to-do-about-it/</guid>
+      <pubDate>2024-05-07T09:00:00+05:00</pubDate>
+      <description>When training a machine learning (ML) model, the goal is not just to make accurate predictions but also to have reliable probability estimates that reflect the true likelihood of an event. However, in practice, many models produce probabilities that are poorly calibrated, meaning they don&#x27;t accurately represent the actual outcomes. This can lead to suboptimal decision-making and wasted resources.</description>
+    </item>
+  </channel>
+</rss>

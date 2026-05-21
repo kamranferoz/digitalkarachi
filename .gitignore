@@ -1,0 +1,22 @@
+# Logs
+logs/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Generator runtime state (kept locally so re-runs don't re-publish news)
+content/.seen_urls.json

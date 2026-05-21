@@ -1,0 +1,114 @@
+# DigitalKarachi.com — Restored from the Wayback Machine
+
+A static restoration of [digitalkarachi.com](https://digitalkarachi.com/) built from snapshots in the Internet Archive's Wayback Machine.
+
+## What was restored
+
+The Wayback Machine only archived two HTML pages from this WordPress blog:
+
+| Page | Source snapshot |
+| --- | --- |
+| `site/index.html` (home) | `https://web.archive.org/web/20250415221512id_/https://digitalkarachi.com/` |
+| `site/page/2/index.html` (older posts) | `https://web.archive.org/web/20241008165748id_/https://digitalkarachi.com/page/2/` |
+
+Together they list 20 blog post titles (10 per page). **The individual post pages themselves were never archived**, so post links that point to articles fall back to a Wayback "nearest snapshot" redirect:
+
+```
+https://web.archive.org/web/2/https://digitalkarachi.com/<slug>/
+```
+
+These will return a Wayback "page not in archive" message — the underlying content does not exist anywhere on the public web.
+
+> **Phase 2:** because the individual post pages were never archived, this restoration now also ships a generator (`build.py`) that creates inner pages with **freshly authored** original content based on each post's title, tag set and home-page excerpt. These are clearly marked as restoration content, not authentic archives. See [Phase 2 — full multi-page site](#phase-2--full-multi-page-site) below.
+
+All site assets that *were* archived have been downloaded and rewired to local paths:
+
+- Theme CSS/JS — `site/wp-content/themes/city-blog/` and `impressive-blog/`
+- Plugin assets — `site/wp-content/plugins/sp-news-and-widget/` and `wpforms-lite/`
+- Logo, favicons, post thumbnails — `site/wp-content/uploads/2023..2024/`
+- Font CSS — `site/wp-content/fonts/`
+- `zxcvbn-async.min.js` — `site/wp-includes/js/`
+
+A few WordPress core scripts (jQuery, jquery-migrate, MonsterInsights gtag wrapper, etc.) were *not* archived. Links to them remain in the HTML as absolute `https://digitalkarachi.com/...` URLs and will 404, but the page still renders — the news ticker, slick slider and a few interactive bits will simply not initialise.
+
+## Site contents (as of the restored snapshot)
+
+Tagline: **"Where Innovation Thrives"** — a personal/blog site about AI, tech and Karachi.
+
+Posts visible on the restored pages:
+
+**Page 1 (`site/index.html`)**
+
+1. Pakistan's Business Bonanza: 3 Days to Launch Your Success at ChaiCon
+2. 2026 Sky Breakthrough: UK's Epic Drone Taxi Launch
+3. The Truth About Full-Stack Data Scientists
+4. Artificial Intelligence Takes Center Stage at World Economic Forum
+5. Bard: Your AI Companion for YouTube Video Exploration
+6. Transforming Cyber Threat Intelligence with Language Models and GPT-3
+7. Experiencing the Magic of Google's RealLife AI Model
+8. PhD Research Making Waves in the Medical Imaging Market: A Spotlight on AI for MRI Patents
+9. Pioneering the Next Frontier: AI and Its Unstoppable Rise
+10. How AI is Transforming the Retail Industry
+
+**Page 2 (`site/page/2/index.html`)** — older posts (titles only, see the page).
+
+## Viewing locally
+
+```bash
+cd site
+python3 -m http.server 8080
+# open http://localhost:8080/
+```
+
+## Re-running the restore
+
+`restore.py` is idempotent: it queries the Wayback Machine CDX API for every archived URL under `digitalkarachi.com`, downloads each at its latest 200-status snapshot using the `id_` (raw) modifier, mirrors the URL paths into the target directory, then rewrites:
+
+- Wayback prefix paths back to canonical URLs.
+- `https://digitalkarachi.com/...` references to local relative paths when the target was archived.
+- Unarchived page links to `https://web.archive.org/web/2/...` (Wayback "nearest snapshot" redirect).
+
+```bash
+python3 restore.py site
+```
+
+> **Note:** the script intentionally pins the homepage to the `20250415221512` snapshot and `page/2/` to `20241008165748` because the newest snapshot of the domain (July 2025) is a Hostinger "parked domain" page rather than the real site. If you re-run `restore.py`, refetch those two HTML files manually at the pinned timestamps as the script otherwise picks the newest.
+
+## Caveats
+
+- This is a static, read-only mirror — there is no PHP/WordPress backend.
+- Search, comments, the contact form (wpforms), login and the news-ticker widget rely on jQuery and PHP endpoints that aren't available.
+- The MonsterInsights / Google Analytics tracking blocks are intact but inert (no `gtag.js` loaded).
+- All content remains © its original authors at digitalkarachi.com. This restoration is for archival/preservation purposes only.
+
+## Phase 2 — full multi-page site
+
+To turn the two-page mirror into a navigable site with working inner pages, run:
+
+```bash
+python3 build.py
+```
+
+`build.py` reuses the archived `site/index.html` as the canonical theme template (so styling, fonts and assets stay identical) and generates:
+
+| Page type | Path | Source of content |
+| --- | --- | --- |
+| Single post (×20) | `site/<slug>/index.html` | `posts_content.py` — original prose written from each title's premise |
+| Category archive (×14) | `site/category/<cat>/index.html` | Posts filed under each WordPress category |
+| Tag archive (×~150) | `site/tag/<tag>/index.html` | One per unique tag across all posts |
+| Author archive | `site/author/digitalkarachi-com/index.html` | All 20 posts |
+| News index + items (×6) | `site/news/index.html` + `site/news/<slug>/index.html` | Headlines pulled from the home-page news ticker, summary text re-written |
+| About | `site/about/index.html` | Hand-written |
+| Contact | `site/contact/index.html` | Static read-only form |
+| Privacy Policy | `site/privacy-policy/index.html` | Hand-written |
+| Search | `site/search/index.html` | Client-side JSON-index search over all post titles + excerpts |
+
+Additional fixes the generator applies:
+
+- Replaces the 10 unarchived hero images on `page/2/` with a themed SVG placeholder (`site/wp-content/uploads/placeholder.svg`).
+- Rewrites all `https://web.archive.org/web/2/...` placeholder navigation links on `index.html` and `page/2/index.html` to the local pages it just generated.
+- Adds **About** and **Contact** links to the primary navigation menu across every page.
+- Updates each page's `<title>`, `<meta description>` and `<link rel="canonical">`.
+
+The post bodies and the news-item summaries are **freshly written**, not recovered from any archive. They follow the tags and excerpts shown on the original home page and aim to be plausible, useful articles in the spirit of the original publication, but they are not the author's own words.
+

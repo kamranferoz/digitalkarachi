@@ -1,0 +1,35 @@
+{
+  "slug": "transforming-cyber-threat-intelligence-with-language-models-and-gpt-3",
+  "title": "Transforming Cyber Threat Intelligence with Language Models and GPT-3",
+  "date_iso": "2023-11-22T10:09:04+00:00",
+  "categories": [
+    "artificial-intelligence-ai",
+    "blog",
+    "security",
+    "technology"
+  ],
+  "tags": [
+    "ai agents",
+    "ai in cybersecurity",
+    "cybersecurity",
+    "data privacy",
+    "deep learning",
+    "few shot learning",
+    "gpt-3",
+    "knowledge retrieval",
+    "language models",
+    "machine learning",
+    "natural language processing",
+    "openai",
+    "prompt engineering",
+    "rag",
+    "threat intelligence"
+  ],
+  "excerpt": "Threat Intelligence (TI) is a complex field whose aim is to understand and predict threats based on data collected across the internet, dark web and incident reports.",
+  "body_html": "<p><strong>Threat Intelligence (TI)</strong> is a complex field whose aim is to understand and predict threats based on data collected across the open internet, dark-web forums, vendor advisories and post-incident reports. For two decades, the workflow has been the same: highly trained analysts read enormous amounts of unstructured text, then write neat structured reports. Large language models are about to upend every step of that pipeline.</p>\n\n<h2>The bottleneck nobody talks about</h2>\n<p>The hard part of TI has never been the data — there is too much of it. The hard part is converting prose into structured indicators of compromise (IoCs), TTPs and MITRE ATT&amp;CK mappings, and doing it fast enough to matter. A senior analyst can read about 20,000 words of threat reporting per day. The internet produces more than that every minute.</p>\n\n<h2>Where GPT-class models actually help</h2>\n<h3>1. Few-shot IoC extraction</h3>\n<p>Given five examples of \"extract every IP, domain, hash, CVE and malware family from this paragraph\", GPT-3.5 reaches roughly 92% recall on standard TI benchmarks. That is good enough to use as an analyst's first pass, with a human reviewing the 8%.</p>\n\n<h3>2. ATT&amp;CK mapping</h3>\n<p>Mapping a narrative (\"the actor used a scheduled task to maintain persistence\") to a specific ATT&amp;CK technique (T1053.005) used to take an experienced analyst 15 minutes per report. A retrieval-augmented LLM does it in under three seconds, with the citation embedded.</p>\n\n<h3>3. Cross-language correlation</h3>\n<p>A surprising amount of high-signal TI is in Russian, Mandarin, Persian and Arabic. Translation quality is now good enough that a single English-speaking analyst can run a multilingual workflow that previously required a small team.</p>\n\n<h2>The RAG pattern for TI</h2>\n<p>Retrieval-Augmented Generation is the architecture that actually works in production:</p>\n<ol>\n  <li>Ingest reports, blogs, forum dumps into a vector database keyed by sentence embeddings.</li>\n  <li>For a given question (e.g. \"what is APT41's latest C2 infrastructure?\") retrieve the top-K relevant chunks.</li>\n  <li>Pass them as context to the LLM and demand a citation for every claim.</li>\n  <li>Refuse to answer if the citations don't exist — this is the single most important guardrail.</li>\n</ol>\n\n<h2>Where it still fails</h2>\n<ul>\n  <li><strong>Novel actors</strong>: zero-shot reasoning about a never-before-seen group is unreliable.</li>\n  <li><strong>Attribution</strong>: LLMs will happily over-attribute on weak evidence if you let them.</li>\n  <li><strong>Adversarial poisoning</strong>: threat actors are already seeding fake reports to manipulate downstream RAG pipelines.</li>\n</ul>\n\n<h2>What this means for the analyst's job</h2>\n<p>It does not eliminate the analyst. It eliminates the boring 80% of the analyst's day — extraction, mapping, translation, summary — and concentrates their time on the 20% that actually requires judgement: attribution, prediction and writing the briefing the CISO will read.</p>\n<p>The TI teams that lean into this shift in 2024 will produce more, better, faster intelligence than the teams that don't. The gap will compound.</p>",
+  "image": "wp-content/uploads/2023/11/threatIntelligence.webp",
+  "source": "archived",
+  "source_urls": [
+    "https://digitalkarachi.com/transforming-cyber-threat-intelligence-with-language-models-and-gpt-3/"
+  ]
+}

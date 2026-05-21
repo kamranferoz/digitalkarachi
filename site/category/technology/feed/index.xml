@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technology – Digital Karachi</title>
+    <link>https://digitalkarachi.com/</link>
+    <description>Latest articles in Technology from Digital Karachi.</description>
+    <language>en-us</language>
+    <atom:link href="https://digitalkarachi.com/category/technology/feed/" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Object Storage as a Primary Database: Emerging Patterns in Cloud Computing</title>
+      <link>https://digitalkarachi.com/object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/</guid>
+      <pubDate>2026-05-21T09:00:00+05:00</pubDate>
+      <description>Object storage has long been seen as an efficient solution for storing large amounts of unstructured data. As cloud computing continues to evolve, this technology is increasingly being considered not just a supplementary layer but also a primary database for many applications. 
+ Why Object Storage? 
+ Object storage excels in handling massive volumes of unstructured data like images, videos, and l</description>
+    </item>
+    <item>
+      <title>Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns</title>
+      <link>https://digitalkarachi.com/hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/</guid>
+      <pubDate>2026-05-18T09:00:00+05:00</pubDate>
+      <description>Hyperparameter tuning is a critical step in machine learning model development. While it can significantly enhance model performance, the process often comes with significant costs—both computational and financial. This article delves into strategies for effective hyperparameter tuning within budget constraints, highlighting Bayesian methods as a promising approach to achieve asymptotic returns o</description>
+    </item>
+    <item>
+      <title>Spatial Audio: The Unlocked Potential For Immersive VR Experiences</title>
+      <link>https://digitalkarachi.com/spatial-audio-the-unlocked-potential-for-immersive-vr-experiences/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/spatial-audio-the-unlocked-potential-for-immersive-vr-experiences/</guid>
+      <pubDate>2026-05-15T09:00:00+05:00</pubDate>
+      <description>Imagine standing in a bustling market square, the sound of distant street vendors blending with the murmur of nearby chatter and footsteps. In virtual reality (VR), this level of auditory realism can transform simple games into lifelike environments. Yet, despite its potential, spatial audio often takes a backseat to other VR features. 
+ Understanding Spatial Audio in VR 
+ Spatial audio refers to</description>
+    </item>
+    <item>
+      <title>Inspection Drones for Infrastructure: The Workflow</title>
+      <link>https://digitalkarachi.com/inspection-drones-for-infrastructure-the-workflow/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/inspection-drones-for-infrastructure-the-workflow/</guid>
+      <pubDate>2026-05-12T09:00:00+05:00</pubDate>
+      <description>The use of inspection drones in infrastructure projects has become indispensable for modern engineers and construction managers. These unmanned aerial vehicles (UAVs) offer a range of benefits, from reducing costs to enhancing safety, making them a key player in the industry&#x27;s digital transformation. 
+ Introduction 
+ Inspection drones are designed to autonomously fly over infrastructure projects</description>
+    </item>
+    <item>
+      <title>Container Security: A Layered Approach</title>
+      <link>https://digitalkarachi.com/container-security-a-layered-approach/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/container-security-a-layered-approach/</guid>
+      <pubDate>2026-05-06T09:00:00+05:00</pubDate>
+      <description>Container security has become an essential aspect of modern software development, especially as more organizations adopt containerized applications. This shift towards containers presents unique challenges, requiring a comprehensive and layered approach to ensure the integrity and confidentiality of sensitive data. 
+ Understanding Container Security 
+ Containers bundle application code with its d</description>
+    </item>
+    <item>
+      <title>Building a Domain-Specific Evaluation Harness for LLMs</title>
+      <link>https://digitalkarachi.com/building-a-domain-specific-evaluation-harness-for-llms/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/building-a-domain-specific-evaluation-harness-for-llms/</guid>
+      <pubDate>2026-05-03T09:00:00+05:00</pubDate>
+      <description>Large language models (LLMs) have become ubiquitous in various industries due to their ability to handle complex tasks. However, their performance can vary significantly depending on the domain they operate in. Building a domain-specific evaluation harness is crucial for ensuring that these models are reliable and effective within specific contexts. 
+
+ Understanding Domain-Specific Evaluation 
+ E</description>
+    </item>
+    <item>
+      <title>Robotics Curricula For South Asian Universities</title>
+      <link>https://digitalkarachi.com/robotics-curricula-for-south-asian-universities/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/robotics-curricula-for-south-asian-universities/</guid>
+      <pubDate>2026-04-30T09:00:00+05:00</pubDate>
+      <description>Robotics is increasingly becoming a critical field for technological advancement across the globe. However, its educational footprint in South Asian universities remains underdeveloped compared to more advanced regions. This article delves into the current state of robotics curricula in countries like India, Pakistan, and Bangladesh, highlighting challenges and potential solutions. 
+ Current Stat</description>
+    </item>
+    <item>
+      <title>Industrial-iot In Pakistan: An Emerging Opportunity</title>
+      <link>https://digitalkarachi.com/industrial-iot-in-pakistan-an-emerging-opportunity/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/industrial-iot-in-pakistan-an-emerging-opportunity/</guid>
+      <pubDate>2026-04-27T09:00:00+05:00</pubDate>
+      <description>The Industrial Internet of Things (IIoT) represents a pivotal shift in how industries operate, offering unprecedented levels of automation, efficiency, and data-driven decision-making. In Pakistan, this technological revolution is not just a distant promise but an emerging opportunity for businesses looking to enhance their operations and stay competitive in the global market. 
+ Understanding IIo</description>
+    </item>
+    <item>
+      <title>Notebook Discipline: When to Graduate to Scripts and Tests</title>
+      <link>https://digitalkarachi.com/notebook-discipline-when-to-graduate-to-scripts-and-tests/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/notebook-discipline-when-to-graduate-to-scripts-and-tests/</guid>
+      <pubDate>2026-04-24T09:00:00+05:00</pubDate>
+      <description>Whether you&#x27;re a seasoned data scientist or just starting out, your journey often begins with interactive Jupyter Notebooks. These tools are powerful for prototyping and experimentation, but as projects grow in complexity, maintaining code quality becomes increasingly important. This article explores the transition from notebooks to more robust script-based development practices, emphasizing the</description>
+    </item>
+    <item>
+      <title>Why HTTP/3 Matters More Than You Think</title>
+      <link>https://digitalkarachi.com/why-http-3-matters-more-than-you-think/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/why-http-3-matters-more-than-you-think/</guid>
+      <pubDate>2026-04-21T09:00:00+05:00</pubDate>
+      <description>HTTP/3, the latest version of the Hypertext Transfer Protocol, introduces significant advancements over its predecessors. Its primary focus is on improving performance and reliability, making it a cornerstone for modern web development. 
+ Data-Driven Performance 
+ The introduction of QUIC (Quick UDP Internet Connection) in HTTP/3 marks a paradigm shift from TCP to an unreliable datagram protocol.</description>
+    </item>
+    <item>
+      <title>Variational Quantum Algorithms: The Near-time Toolkit</title>
+      <link>https://digitalkarachi.com/variational-quantum-algorithms-the-near-time-toolkit/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/variational-quantum-algorithms-the-near-time-toolkit/</guid>
+      <pubDate>2026-04-18T09:00:00+05:00</pubDate>
+      <description>Variational Quantum Algorithms (VQAs) have emerged as a pragmatic solution in the burgeoning field of near-term quantum computing. Unlike full-scale quantum computers, VQAs are designed to leverage current hardware limitations by harnessing classical optimization techniques alongside quantum computing principles. These algorithms promise immediate real-world applications without requiring the qua</description>
+    </item>
+    <item>
+      <title>Tokenized Real-world Assets: Regulatory And Technical Realities</title>
+      <link>https://digitalkarachi.com/tokenized-real-world-assets-regulatory-and-technical-realities/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/tokenized-real-world-assets-regulatory-and-technical-realities/</guid>
+      <pubDate>2026-04-15T09:00:00+05:00</pubDate>
+      <description>Tokenization has emerged as a transformative tool for transforming real-world assets into digital equivalents. This process enables greater liquidity, transparency, and accessibility but is fraught with both regulatory complexities and technological hurdles.  DEFINING TOKENIZED ASSETS  A tokenized asset refers to the representation of any physical or intangible property in blockchain form. These</description>
+    </item>
+    <item>
+      <title>GitOps for Infrastructure: Workflows That Don&#x27;t Paint You Into a Corner</title>
+      <link>https://digitalkarachi.com/gitops-for-infrastructure-workflows-that-don-t-paint-you-into-a-corner/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/gitops-for-infrastructure-workflows-that-don-t-paint-you-into-a-corner/</guid>
+      <pubDate>2026-04-12T09:00:00+05:00</pubDate>
+      <description>GitOps has emerged as a pivotal practice for managing cloud infrastructure. By treating infrastructure as code and automating its deployment through Git repositories, teams can achieve greater consistency, reliability, and agility. However, not all GitOps implementations are created equal; some can lead to rigid workflows that limit flexibility.  Understanding the Core Principles of GitOps  The p</description>
+    </item>
+    <item>
+      <title>Feature Engineering in the Age of Foundation Models</title>
+      <link>https://digitalkarachi.com/feature-engineering-in-the-age-of-foundation-models/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/feature-engineering-in-the-age-of-foundation-models/</guid>
+      <pubDate>2026-04-09T09:00:00+05:00</pubDate>
+      <description>Feature engineering, once considered an art form, is evolving in the era of foundation models. As these large pretrained models become more prevalent, engineers are reevaluating their roles and methodologies to remain relevant. 
+ Understanding Feature Engineering 
+ Feature engineering involves selecting, creating, and transforming raw data into features that improve the performance of machine lea</description>
+    </item>
+    <item>
+      <title>Avatars In Social VR: Identity, Expression, And Moderation</title>
+      <link>https://digitalkarachi.com/avatars-in-social-vr-identity-expression-and-moderation/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/avatars-in-social-vr-identity-expression-and-moderation/</guid>
+      <pubDate>2026-04-06T09:00:00+05:00</pubDate>
+      <description>In the realm of social virtual reality (VR), avatars serve as digital representations of individuals, blending personalization with interaction. As these digital personas become increasingly integral to online communication and community building, questions around identity management and expression have emerged. This article delves into the complexities of managing avatars in social VR environmen</description>
+    </item>
+    <item>
+      <title>FPV Racing Technology&#x27;s Commercial Spillover: Beyond the Drone Racer</title>
+      <link>https://digitalkarachi.com/fpv-racing-technology-s-commercial-spillover-beyond-the-drone-racer/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/fpv-racing-technology-s-commercial-spillover-beyond-the-drone-racer/</guid>
+      <pubDate>2026-04-03T09:00:00+05:00</pubDate>
+      <description>The world of FPV racing has evolved from a niche hobby into a dynamic technological landscape. Beyond the thrill of aerial racing, advancements in FPV technology have found applications across various industries, from autonomous vehicle development to precision agriculture and beyond. 
+ FPV Technology: A Primer 
+ First-person view (FPV) is a unique perspective that allows pilots to see what their</description>
+    </item>
+    <item>
+      <title>Threat Modeling For Small Engineering Teams</title>
+      <link>https://digitalkarachi.com/threat-modeling-for-small-engineering-teams/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/threat-modeling-for-small-engineering-teams/</guid>
+      <pubDate>2026-03-28T09:00:00+05:00</pubDate>
+      <description>Threat modeling is a structured approach to identifying, analyzing, and mitigating security risks. For small engineering teams, it’s not just about protecting sensitive information but also ensuring the application&#x27;s integrity and availability.  Defining Threat Modeling  Threat modeling involves systematically considering potential threats against an asset or system. This process helps teams prio</description>
+    </item>
+    <item>
+      <title>Hybrid Search: A Blend Of Lexical And Vector Retrieval</title>
+      <link>https://digitalkarachi.com/hybrid-search-a-blend-of-lexical-and-vector-retrieval/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/hybrid-search-a-blend-of-lexical-and-vector-retrieval/</guid>
+      <pubDate>2026-03-25T09:00:00+05:00</pubDate>
+      <description>Searching large datasets for precise information has become a critical task in today&#x27;s data-driven world. Hybrid search, which combines the strengths of lexical and vector retrieval techniques, offers a robust solution to this challenge. 
+ The Lexical Approach 
+ Lexical search, based on keyword matching, is straightforward but limited in its ability to understand context or complex queries. It re</description>
+    </item>
+    <item>
+      <title>Robotics In Construction: The Slow Revolution</title>
+      <link>https://digitalkarachi.com/robotics-in-construction-the-slow-revolution/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/robotics-in-construction-the-slow-revolution/</guid>
+      <pubDate>2026-03-22T09:00:00+05:00</pubDate>
+      <description>The construction industry, long resistant to change, is slowly embracing robotics and automation. While traditional building methods remain dominant, a new wave of autonomous machines and robotic systems is making its mark, transforming the way we build structures. 
+
+ Autonomous Excavators and Diggers 
+ One of the first areas where robots have made significant inroads is in excavation work. Auton</description>
+    </item>
+    <item>
+      <title>Securing IoT Fleets: Provisioning, Rotation, Attestation</title>
+      <link>https://digitalkarachi.com/securing-iot-fleets-provisioning-rotation-attestation/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/securing-iot-fleets-provisioning-rotation-attestation/</guid>
+      <pubDate>2026-03-19T09:00:00+05:00</pubDate>
+      <description>As the Internet of Things (IoT) continues to grow, securing fleets of connected devices becomes increasingly critical. This article explores key security practices—provisioning, rotation, and attestation—that are essential for maintaining the integrity and confidentiality of your IoT ecosystem. 
+ Provisioning: Initial Security Setup 
+ The first step in securing an IoT fleet is proper provisioning</description>
+    </item>
+  </channel>
+</rss>

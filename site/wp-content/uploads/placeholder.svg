@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1640 664" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#16a34a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1640" height="664" fill="url(#g)"/>
+  <text x="50%" y="48%" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="68" font-weight="700" fill="#ffffff" text-anchor="middle">Digital Karachi</text>
+  <text x="50%" y="58%" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="32" fill="#d1fae5" text-anchor="middle">Where Innovation Thrives</text>
+</svg>

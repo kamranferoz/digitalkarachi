@@ -1,0 +1,22 @@
+{
+  "slug": "how-to-keep-yourself-productive-while-managing-a-team",
+  "title": "How to Keep Yourself Productive While Managing a Team",
+  "date_iso": "2023-09-21T06:16:58+01:00",
+  "categories": [
+    "blog",
+    "management"
+  ],
+  "tags": [
+    "management",
+    "productivity",
+    "leadership",
+    "engineering management"
+  ],
+  "excerpt": "Managers who came from individual-contributor roles often discover, painfully, that the skills that made them great ICs actively work against them as managers. Here is what to do about it.",
+  "body_html": "<p>Most engineering managers came from individual-contributor roles, were promoted because they were excellent at <em>making</em> things, and then discovered, painfully, that the skills that made them great ICs actively work against them as managers. Productivity, in particular, becomes a problem they had never thought about until it stopped working.</p>\n\n<h2>The first thing to accept</h2>\n<p>You are no longer measured by what <em>you</em> ship. You are measured by what your team ships. Your calendar will fill with one-to-ones, design reviews, hiring loops and incident retros. The instinct to \"just code a little bit each day\" will quietly cost you weeks per quarter, because every coding session takes you off the critical path of unblocking your team.</p>\n\n<h2>A workable model</h2>\n<p>I have stolen this from three managers I worked under, all of whom shipped a lot:</p>\n\n<h3>1. Protect mornings ruthlessly</h3>\n<p>The first two hours of your day are when your team is mostly online but their meeting load hasn't started. That is the window for your <em>deep work</em>: writing the document, doing the planning, drafting the difficult email. Block it on the calendar and defend it like your job depends on it (because it does).</p>\n\n<h3>2. Batch the management interrupts</h3>\n<p>One-to-ones, syncs and reviews all go in the afternoon. Even a 15-minute \"quick chat\" in the morning destroys an hour of deep work. Push back politely on AM scheduling.</p>\n\n<h3>3. Have a weekly \"no-meeting\" day</h3>\n<p>Pick one. Defend it. Use it for the work that takes four uninterrupted hours — performance reviews, technical strategy, hiring decisions. Without this day, those documents stretch out for weeks.</p>\n\n<h3>4. Write more, decide more</h3>\n<p>Your team's productivity is bottlenecked on your decisions, not on your code. The single highest-leverage thing you can do is make the next ten decisions faster — even if some of them are wrong. A reversible bad decision today beats a perfect decision in two weeks.</p>\n\n<h2>The traps</h2>\n<ul>\n  <li><strong>Becoming the most-helpful debugger</strong>. Easy in the short term, fatal in the long term. Your team has to learn to debug without you or they will never grow.</li>\n  <li><strong>Saying yes to every meeting</strong>. The default invite is not a binding contract. \"Skip — please share notes\" is a complete sentence.</li>\n  <li><strong>Skipping one-to-ones</strong>. The most common shortcut. Also the one that costs the most retention.</li>\n  <li><strong>Working evenings</strong>. Your team copies your habits, not your words.</li>\n</ul>\n\n<h2>A small habit that matters</h2>\n<p>End every Friday with three things: who on the team is blocked, what decision is overdue, and one thing you will personally do differently next week. Write it down. Re-read it on Monday. The compounding effect is enormous.</p>\n\n<h2>The honest truth</h2>\n<p>Engineering management is the only role I know of where the productivity gains come from doing <em>less</em>. The instinct is to fill the calendar to prove you are working hard. The reality is the opposite: protect the white space, defend the deep work, write more, decide more, and let the team ship. That is the productive manager.</p>",
+  "image": null,
+  "source": "archived",
+  "source_urls": [
+    "https://digitalkarachi.com/how-to-keep-yourself-productive-while-managing-a-team/"
+  ]
+}
