@@ -691,6 +691,7 @@ def render_post_page(post, all_posts):
         "@context": "https://schema.org", "@type": "Article",
         "headline": post["title"], "description": desc,
         "datePublished": post["date_iso"],
+        "dateModified": post.get("date_modified") or post["date_iso"],
         "author": {"@type": "Person", "name": "digitalkarachi.com",
                    "url": "https://digitalkarachi.com/author/digitalkarachi-com/"},
         "publisher": {"@type": "Organization", "name": "Digital Karachi",
@@ -1266,6 +1267,9 @@ def write_seo_files(all_posts):
         f"\nSitemap: {SITE_BASE}/sitemap.xml\n"
     )
     (SITE / "robots.txt").write_text(robots, encoding="utf-8")
+
+    # Custom-domain marker for GitHub Pages
+    (SITE / "CNAME").write_text("digitalkarachi.com\n", encoding="utf-8")
 
     # RSS feed (newest 20 posts by date)
     posts_sorted = sorted(
