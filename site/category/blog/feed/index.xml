@@ -7,6 +7,13 @@
     <language>en-us</language>
     <atom:link href="https://digitalkarachi.com/category/blog/feed/" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Art of Saying No in Product Roadmaps: A Modern Guide</title>
+      <link>https://digitalkarachi.com/art-of-saying-no-in-product-roadmaps-a-modern-guide/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/art-of-saying-no-in-product-roadmaps-a-modern-guide/</guid>
+      <pubDate>2026-05-22T09:00:00+05:00</pubDate>
+      <description>Product roadmaps often feel like a race to the finish line, where every project seems vital and important. However, saying no is an essential skill for leaders to maintain focus and ensure that product development aligns with strategic goals.  The Importance of Saying No in Product Roadmaps  Saying no is not about being negative or dismissive; it&#x27;s a proactive approach to managing resources and p</description>
+    </item>
+    <item>
       <title>Object Storage as a Primary Database: Emerging Patterns in Cloud Computing</title>
       <link>https://digitalkarachi.com/object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/</link>
       <guid isPermaLink="true">https://digitalkarachi.com/object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/</guid>
@@ -158,15 +165,6 @@
       <guid isPermaLink="true">https://digitalkarachi.com/threat-modeling-for-small-engineering-teams/</guid>
       <pubDate>2026-03-28T09:00:00+05:00</pubDate>
       <description>Threat modeling is a structured approach to identifying, analyzing, and mitigating security risks. For small engineering teams, it’s not just about protecting sensitive information but also ensuring the application&#x27;s integrity and availability.  Defining Threat Modeling  Threat modeling involves systematically considering potential threats against an asset or system. This process helps teams prio</description>
-    </item>
-    <item>
-      <title>Hybrid Search: A Blend Of Lexical And Vector Retrieval</title>
-      <link>https://digitalkarachi.com/hybrid-search-a-blend-of-lexical-and-vector-retrieval/</link>
-      <guid isPermaLink="true">https://digitalkarachi.com/hybrid-search-a-blend-of-lexical-and-vector-retrieval/</guid>
-      <pubDate>2026-03-25T09:00:00+05:00</pubDate>
-      <description>Searching large datasets for precise information has become a critical task in today&#x27;s data-driven world. Hybrid search, which combines the strengths of lexical and vector retrieval techniques, offers a robust solution to this challenge. 
- The Lexical Approach 
- Lexical search, based on keyword matching, is straightforward but limited in its ability to understand context or complex queries. It re</description>
     </item>
   </channel>
 </rss>

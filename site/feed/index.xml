@@ -7,6 +7,13 @@
     <language>en-us</language>
     <atom:link href="https://digitalkarachi.com/feed/" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Art of Saying No in Product Roadmaps: A Modern Guide</title>
+      <link>https://digitalkarachi.com/art-of-saying-no-in-product-roadmaps-a-modern-guide/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/art-of-saying-no-in-product-roadmaps-a-modern-guide/</guid>
+      <pubDate>2026-05-22T09:00:00+05:00</pubDate>
+      <description>Product roadmaps often feel like a race to the finish line, where every project seems vital and important. However, saying no is an essential skill for leaders to maintain focus and ensure that product development aligns with strategic goals.  The Importance of Saying No in Product Roadmaps  Saying no is not about being negative or dismissive; it&#x27;s a proactive approach to managing resources and p</description>
+    </item>
+    <item>
       <title>Object Storage as a Primary Database: Emerging Patterns in Cloud Computing</title>
       <link>https://digitalkarachi.com/object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/</link>
       <guid isPermaLink="true">https://digitalkarachi.com/object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/</guid>
@@ -405,13 +412,6 @@
       <description>Bayesian A/B testing offers a powerful approach to making informed decisions by leveraging the principles of Bayesian statistics. Unlike traditional frequentist methods, which rely on p-values and confidence intervals, Bayesian A/B testing allows you to incorporate prior knowledge into your analysis, leading to more accurate and actionable insights. 
  Introduction to Bayesian A/B Testing 
  A/B te</description>
-    </item>
-    <item>
-      <title>API Design Lessons from a Decade of REST and GraphQL</title>
-      <link>https://digitalkarachi.com/api-design-lessons-from-a-decade-of-rest-and-graphql/</link>
-      <guid isPermaLink="true">https://digitalkarachi.com/api-design-lessons-from-a-decade-of-rest-and-graphql/</guid>
-      <pubDate>2025-12-25T09:00:00+05:00</pubDate>
-      <description>For a decade, developers have been navigating the ever-evolving landscape of API design. As we look back at this period, two protocols stand out: REST and GraphQL. Both have their strengths and weaknesses, offering valuable lessons in efficiency, scalability, and developer experience.  Understanding REST  REST (Representational State Transfer) has been the de facto standard for building web APIs</description>
     </item>
   </channel>
 </rss>
