@@ -116,7 +116,7 @@ def generate_blog(
         date_display=_date_display(date_iso),
     )
 
-    MIN_WORDS = 500
+    MIN_WORDS = 800
     MAX_ATTEMPTS = 3
     last_short_wc: int | None = None
     data: dict | None = None

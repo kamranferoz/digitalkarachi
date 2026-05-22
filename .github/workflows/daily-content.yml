@@ -11,7 +11,7 @@ on:
         default: "2"
       model:
         description: "Ollama model"
-        default: "qwen2.5:3b-instruct"
+        default: "qwen2.5:7b-instruct"
       dry_run:
         description: "Skip writes / commit"
         type: boolean
@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 45
     env:
-      OLLAMA_MODEL: ${{ github.event.inputs.model || 'qwen2.5:3b-instruct' }}
+      OLLAMA_MODEL: ${{ github.event.inputs.model || 'qwen2.5:7b-instruct' }}
       OLLAMA_URL: http://127.0.0.1:11434
     steps:
       - uses: actions/checkout@v4
