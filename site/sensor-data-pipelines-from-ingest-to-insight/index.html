@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -915,7 +930,7 @@ a:focus-visible, button:focus-visible {
 <div class="dk-progress" hidden></div>
 <main id="main">
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Sensor Data Pipelines: From Ingest to Insight", "description": "Learn how to efficiently process and derive value from sensor data, essential for IoT applications in various industries.", "datePublished": "2026-02-08T09:00:00+05:00", "dateModified": "2026-02-08T09:00:00+05:00", "author": {"@type": "Person", "name": "digitalkarachi.com", "url": "https://digitalkarachi.com/author/digitalkarachi-com/"}, "publisher": {"@type": "Organization", "name": "Digital Karachi", "logo": {"@type": "ImageObject", "url": "https://digitalkarachi.com/wp-content/uploads/2023/09/DK-Logo-light.png"}}, "mainEntityOfPage": "https://digitalkarachi.com/sensor-data-pipelines-from-ingest-to-insight/", "articleSection": "Internet of Things (IoT)", "keywords": "internet-of-things, sensor-data, data-pipelines, cloud-services, big-data", "image": "https://picsum.photos/seed/sensor-data-pipelines-from-ingest-to-insight/1200/630"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalkarachi.com/"}, {"@type": "ListItem", "position": 2, "name": "Internet of Things (IoT)", "item": "https://digitalkarachi.com/category/internet-of-things-iot/"}, {"@type": "ListItem", "position": 3, "name": "Sensor Data Pipelines: From Ingest to Insight", "item": "https://digitalkarachi.com/sensor-data-pipelines-from-ingest-to-insight/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Sensor Data Pipelines: From Ingest to Insight", "description": "Learn how to efficiently process and derive value from sensor data, essential for IoT applications in various industries.", "datePublished": "2026-02-08T09:00:00+05:00", "dateModified": "2026-02-08T09:00:00+05:00", "author": {"@type": "Person", "name": "digitalkarachi.com", "url": "https://digitalkarachi.com/author/digitalkarachi-com/"}, "publisher": {"@type": "Organization", "name": "Digital Karachi", "logo": {"@type": "ImageObject", "url": "https://digitalkarachi.com/wp-content/uploads/2023/09/DK-Logo-light.png"}}, "mainEntityOfPage": "https://digitalkarachi.com/sensor-data-pipelines-from-ingest-to-insight/", "articleSection": "Internet of Things (IoT)", "keywords": "internet-of-things, sensor-data, data-pipelines, cloud-services, big-data", "image": "https://loremflickr.com/1200/630/iot,sensor,data,internet-of-things?lock=3972673994"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalkarachi.com/"}, {"@type": "ListItem", "position": 2, "name": "Internet of Things (IoT)", "item": "https://digitalkarachi.com/category/internet-of-things-iot/"}, {"@type": "ListItem", "position": 3, "name": "Sensor Data Pipelines: From Ingest to Insight", "item": "https://digitalkarachi.com/sensor-data-pipelines-from-ingest-to-insight/"}]}</script>
 <article class="dk-article">
   <nav class="dk-breadcrumb" aria-label="Breadcrumb">
     <a href="../index.html">Home</a><span>/</span>
@@ -931,7 +946,7 @@ a:focus-visible, button:focus-visible {
       <span><svg width="14" height="14"><use href="#i-clock"/></svg>2 min read</span>
     </div>
   </header>
-  <figure class="dk-article-hero"><img src="https://picsum.photos/seed/sensor-data-pipelines-from-ingest-to-insight/1200/630" alt="Sensor Data Pipelines: From Ingest to Insight" width="1200" height="630" decoding="async" loading="eager" fetchpriority="high" /></figure>
+  <figure class="dk-article-hero"><img src="https://loremflickr.com/1200/630/iot,sensor,data,internet-of-things?lock=3972673994" alt="Sensor Data Pipelines: From Ingest to Insight" width="1200" height="630" decoding="async" loading="eager" fetchpriority="high" /></figure>
   <div class="dk-prose">
 <p>IoT devices generate vast amounts of raw data that can provide critical insights when properly processed. Building a robust sensor data pipeline is crucial for extracting value from these streams. This article explores the key steps and technologies involved in creating an effective sensor data pipeline, from data ingestion to actionable insights.</p><h2>Data Ingestion: The First Step</h2><p>IoT sensors often generate data at a high frequency, making real-time or near-real-time processing essential. Common methods of data ingestion include direct streaming from sensors to cloud services, using message brokers like Apache Kafka, or leveraging edge devices for initial filtering and aggregation.</p><p>Modern IoT systems can utilize modern transformer models for anomaly detection during the ingestion phase, identifying unusual patterns that might require further analysis. This early filtering reduces the load on downstream processes and enhances overall efficiency.</p><h2>Data Processing: From Raw Streams to Structured Data</h2><p>Once data is ingested, it needs to be processed into a structured format suitable for analysis. Stream processing frameworks like Apache Flink or Spark Streaming are popular choices due to their ability to handle high throughput and stateful operations.</p><ul><li>Flink provides strong consistency guarantees and fault tolerance, making it ideal for critical applications where data integrity is paramount.</li><li>Spark Streaming offers a more flexible approach with its micro-batch processing model, which can be beneficial in scenarios requiring less stringent real-time requirements.</li></ul><h2>Data Storage: Choosing the Right Solution</h2><p>Selecting an appropriate storage solution depends on the specific needs of your application. Options range from traditional relational databases to NoSQL stores and modern time-series databases like InfluxDB or OpenTSDB, which are optimized for high-velocity data ingestion.</p><p>For large-scale IoT deployments, leading cloud providers offer managed services that simplify setup and scaling, such as Amazon Kinesis Data Firehose or Google Cloud Bigtable. These platforms provide built-in support for complex queries and real-time analytics, streamlining the development process significantly.</p><h2>Analyzing Sensor Data: Insights and Machine Learning</h2><p>With data ingested, processed, and stored, the next step is to derive actionable insights through analysis. This can involve simple aggregation and visualization or more advanced machine learning techniques for predictive maintenance, anomaly detection, or pattern recognition.</p><p>Machine learning models built using tools like TensorFlow or PyTorch can be deployed on cloud platforms or edge devices, depending on resource constraints. Real-time analytics engines like Apache Pinot enable fast query performance even as data volumes grow, ensuring timely decision-making in dynamic environments.</p><h2>Real-Time Dashboards and Notifications</h2><p>To make the insights actionable, real-time dashboards are essential for monitoring key metrics. Tools like Grafana or Tableau can be integrated into existing systems to provide visual summaries of sensor data, alerting stakeholders to critical events in near real-time.</p><ol><li>Grafana excels in creating customizable and interactive dashboards, supporting multiple data sources including cloud-native services and on-premises databases.</li><li>Tableau offers a more intuitive interface for business users to explore data interactively without needing deep technical expertise.</li></ol><h2>Conclusion</h2><p>Building an effective sensor data pipeline involves careful planning and selection of the right tools. From robust ingestion methods to advanced analytics, each step is crucial in ensuring that sensor data can be turned into valuable insights. As IoT deployments continue to grow, so too will the importance of well-architected data pipelines in driving innovation and efficiency across industries.</p>
   </div>
@@ -952,17 +967,17 @@ a:focus-visible, button:focus-visible {
       <h2>Related reading</h2>
       <div class="dk-related-grid">
         <article class="dk-related-card">
-          <a class="dk-related-card-figure" href="../art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/art-of-saying-no-in-product-roadmaps-a-modern-guide/1200/630" alt="Art of Saying No in Product Roadmaps: A Modern Guide" width="1200" height="630" decoding="async" loading="lazy" /></a>
+          <a class="dk-related-card-figure" href="../art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/business,office,saying,product?lock=970349815" alt="Art of Saying No in Product Roadmaps: A Modern Guide" width="1200" height="630" decoding="async" loading="lazy" /></a>
           <a class="dk-related-card-title" href="../art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html">Art of Saying No in Product Roadmaps: A Modern Guide</a>
           <div class="dk-related-card-meta"><time datetime="2026-05-22T09:00:00+05:00">22 May 2026</time></div>
         </article>
         <article class="dk-related-card">
-          <a class="dk-related-card-figure" href="../object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/1200/630" alt="Object Storage as a Primary Database: Emerging Patterns in Cloud Computing" width="1200" height="630" decoding="async" loading="lazy" /></a>
+          <a class="dk-related-card-figure" href="../object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cloud,server,object,storage?lock=3582842096" alt="Object Storage as a Primary Database: Emerging Patterns in Cloud Computing" width="1200" height="630" decoding="async" loading="lazy" /></a>
           <a class="dk-related-card-title" href="../object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html">Object Storage as a Primary Database: Emerging Patterns in Cloud Computing</a>
           <div class="dk-related-card-meta"><time datetime="2026-05-21T09:00:00+05:00">21 May 2026</time></div>
         </article>
         <article class="dk-related-card">
-          <a class="dk-related-card-figure" href="../hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/1200/630" alt="Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns" width="1200" height="630" decoding="async" loading="lazy" /></a>
+          <a class="dk-related-card-figure" href="../hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/machine-learning,data,hyperparameter,tuning?lock=2373282527" alt="Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns" width="1200" height="630" decoding="async" loading="lazy" /></a>
           <a class="dk-related-card-title" href="../hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html">Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns</a>
           <div class="dk-related-card-meta"><time datetime="2026-05-18T09:00:00+05:00">18 May 2026</time></div>
         </article></div>

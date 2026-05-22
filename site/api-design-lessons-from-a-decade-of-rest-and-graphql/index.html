@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -915,7 +930,7 @@ a:focus-visible, button:focus-visible {
 <div class="dk-progress" hidden></div>
 <main id="main">
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "API Design Lessons from a Decade of REST and GraphQL", "description": "Learn the key principles and best practices in designing efficient and scalable APIs using REST and GraphQL, based on real-world experiences over the past ", "datePublished": "2025-12-25T09:00:00+05:00", "dateModified": "2025-12-25T09:00:00+05:00", "author": {"@type": "Person", "name": "digitalkarachi.com", "url": "https://digitalkarachi.com/author/digitalkarachi-com/"}, "publisher": {"@type": "Organization", "name": "Digital Karachi", "logo": {"@type": "ImageObject", "url": "https://digitalkarachi.com/wp-content/uploads/2023/09/DK-Logo-light.png"}}, "mainEntityOfPage": "https://digitalkarachi.com/api-design-lessons-from-a-decade-of-rest-and-graphql/", "articleSection": "Technology", "keywords": "api-design, rest, graphql, microservices, scalability", "image": "https://picsum.photos/seed/api-design-lessons-from-a-decade-of-rest-and-graphql/1200/630"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalkarachi.com/"}, {"@type": "ListItem", "position": 2, "name": "Technology", "item": "https://digitalkarachi.com/category/technology/"}, {"@type": "ListItem", "position": 3, "name": "API Design Lessons from a Decade of REST and GraphQL", "item": "https://digitalkarachi.com/api-design-lessons-from-a-decade-of-rest-and-graphql/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "API Design Lessons from a Decade of REST and GraphQL", "description": "Learn the key principles and best practices in designing efficient and scalable APIs using REST and GraphQL, based on real-world experiences over the past ", "datePublished": "2025-12-25T09:00:00+05:00", "dateModified": "2025-12-25T09:00:00+05:00", "author": {"@type": "Person", "name": "digitalkarachi.com", "url": "https://digitalkarachi.com/author/digitalkarachi-com/"}, "publisher": {"@type": "Organization", "name": "Digital Karachi", "logo": {"@type": "ImageObject", "url": "https://digitalkarachi.com/wp-content/uploads/2023/09/DK-Logo-light.png"}}, "mainEntityOfPage": "https://digitalkarachi.com/api-design-lessons-from-a-decade-of-rest-and-graphql/", "articleSection": "Technology", "keywords": "api-design, rest, graphql, microservices, scalability", "image": "https://loremflickr.com/1200/630/technology,computer,design,lessons?lock=2094388752"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalkarachi.com/"}, {"@type": "ListItem", "position": 2, "name": "Technology", "item": "https://digitalkarachi.com/category/technology/"}, {"@type": "ListItem", "position": 3, "name": "API Design Lessons from a Decade of REST and GraphQL", "item": "https://digitalkarachi.com/api-design-lessons-from-a-decade-of-rest-and-graphql/"}]}</script>
 <article class="dk-article">
   <nav class="dk-breadcrumb" aria-label="Breadcrumb">
     <a href="../index.html">Home</a><span>/</span>
@@ -931,7 +946,7 @@ a:focus-visible, button:focus-visible {
       <span><svg width="14" height="14"><use href="#i-clock"/></svg>4 min read</span>
     </div>
   </header>
-  <figure class="dk-article-hero"><img src="https://picsum.photos/seed/api-design-lessons-from-a-decade-of-rest-and-graphql/1200/630" alt="API Design Lessons from a Decade of REST and GraphQL" width="1200" height="630" decoding="async" loading="eager" fetchpriority="high" /></figure>
+  <figure class="dk-article-hero"><img src="https://loremflickr.com/1200/630/technology,computer,design,lessons?lock=2094388752" alt="API Design Lessons from a Decade of REST and GraphQL" width="1200" height="630" decoding="async" loading="eager" fetchpriority="high" /></figure>
   <div class="dk-prose">
 <p>For a decade, developers have been navigating the ever-evolving landscape of API design. As we look back at this period, two protocols stand out: REST and GraphQL. Both have their strengths and weaknesses, offering valuable lessons in efficiency, scalability, and developer experience.</p><h2>Understanding REST</h2><p>REST (Representational State Transfer) has been the de facto standard for building web APIs since its introduction. It is based on a client-server model with stateless interactions and leverages HTTP methods like GET, POST, PUT, DELETE to manipulate resources.</p><p>A common mistake in early REST implementations was overly complex resource structures. For example, returning entire entity graphs rather than just the requested data can lead to excessive data transfer and performance issues. A better approach is to focus on the specific data required by clients and optimize accordingly.</p><h3>Resource-Oriented Design</h3><ul><li>In RESTful APIs, resources should be designed around nouns that represent the objects in your domain. For example, a user or an order rather than a more generic resource like 'data'.</li><li>Use HTTP methods appropriately: GET for read-only operations, POST for creating new resources, PUT for updating existing ones, and DELETE for removals.</li></ul><p>A concrete example is the popular Twitter API. Early versions returned full user profiles with unnecessary details, which was inefficient. Over time, they optimized to return only essential data by default, allowing clients to fetch additional fields as needed using query parameters or separate requests.</p><h2>Introducing GraphQL</h2><p>GraphQL emerged in 2015 and quickly gained popularity due to its powerful querying capabilities. Unlike REST, which requires a predefined set of endpoints, GraphQL allows clients to request exactly the data they need in a single request.</p><p>One of the key lessons from early GraphQL implementations is avoiding over-fetching or under-fetching data. Over-fetching can lead to unnecessary bandwidth usage and server load, while under-fetching might result in multiple round-trips for the same application logic.</p><h3>Data Fetching Patterns</h3><ul><li>Optimize your schema by carefully defining types and fields. Avoid complex nested structures unless absolutely necessary. Use scalars, enums, unions, and interfaces to provide flexibility while maintaining clarity.</li><li>Implement caching strategies at the client and server levels. Utilize techniques like fragment caching or conditional fetching based on the latest metadata from the server.</li></ul><p>A real-world example is a news application that needs to display articles with associated authors and categories. Instead of querying each article individually, clients can request all necessary data in one GraphQL query. This reduces network overhead and improves user experience by providing all needed information upfront.</p><h2>Combining REST and GraphQL</h2><p>As organizations grow and their API needs become more complex, combining REST and GraphQL can provide a flexible solution that caters to different client requirements and use cases. For instance:</p><ul><li>Public APIs might leverage REST due to its simplicity and widespread support.</li><li>Internal or highly specific client applications can benefit from the powerful querying capabilities of GraphQL.</li></ul><h3>Hybrid Approaches</h3><p>One common hybrid approach is using a REST API for CRUD operations while integrating GraphQL for more complex queries. This allows you to maintain a clean, stateless interface for simple interactions and leverage GraphQL’s flexibility for advanced data fetching scenarios.</p><p>An example of this combination can be seen in modern e-commerce platforms. The public-facing API might use REST to handle order creation, product updates, and inventory management, while internal tools like analytics dashboards or inventory management systems could use GraphQL to fetch detailed sales reports, customer preferences, and supplier information efficiently.</p><h2>Scalability Considerations</h2><p>No matter which protocol you choose, scalability is a critical factor in long-term API design. Modern applications often handle a vast array of clients, from mobile devices to complex web apps and server-side integrations.</p><p>To ensure your API can scale effectively:</p><ul><li>Implement rate limiting and throttling mechanisms to prevent abuse and protect the backend infrastructure.</li><li>Use caching aggressively at both client and server levels. Redis or Memcached can be used for storing frequently accessed data, reducing load on the database.</li><li>Load balance your API endpoints across multiple servers if you expect high traffic volumes.</li></ul><p>A best practice in RESTful APIs is to use versioning to manage changes over time. For example, you might have v1 of an API for backward compatibility and introduce new features in v2 without breaking existing clients.</p><h3>Microservices Architecture</h3><ol><li>Consider using a microservices architecture where each service exposes its own REST or GraphQL API based on specific use cases. This approach allows independent scaling and maintenance of different components.</li><li>Implement circuit breakers to handle failures gracefully in distributed systems, ensuring that one failing service does not bring down the entire system.</li></ol><p>In conclusion, both REST and GraphQL have their strengths and can be effectively combined to meet diverse API needs. By applying key lessons from a decade of experience, you can design efficient, scalable, and developer-friendly APIs that serve your organization's long-term goals.</p>
   </div>
@@ -952,17 +967,17 @@ a:focus-visible, button:focus-visible {
       <h2>Related reading</h2>
       <div class="dk-related-grid">
         <article class="dk-related-card">
-          <a class="dk-related-card-figure" href="../art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/art-of-saying-no-in-product-roadmaps-a-modern-guide/1200/630" alt="Art of Saying No in Product Roadmaps: A Modern Guide" width="1200" height="630" decoding="async" loading="lazy" /></a>
+          <a class="dk-related-card-figure" href="../art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/business,office,saying,product?lock=970349815" alt="Art of Saying No in Product Roadmaps: A Modern Guide" width="1200" height="630" decoding="async" loading="lazy" /></a>
           <a class="dk-related-card-title" href="../art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html">Art of Saying No in Product Roadmaps: A Modern Guide</a>
           <div class="dk-related-card-meta"><time datetime="2026-05-22T09:00:00+05:00">22 May 2026</time></div>
         </article>
         <article class="dk-related-card">
-          <a class="dk-related-card-figure" href="../object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/1200/630" alt="Object Storage as a Primary Database: Emerging Patterns in Cloud Computing" width="1200" height="630" decoding="async" loading="lazy" /></a>
+          <a class="dk-related-card-figure" href="../object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cloud,server,object,storage?lock=3582842096" alt="Object Storage as a Primary Database: Emerging Patterns in Cloud Computing" width="1200" height="630" decoding="async" loading="lazy" /></a>
           <a class="dk-related-card-title" href="../object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html">Object Storage as a Primary Database: Emerging Patterns in Cloud Computing</a>
           <div class="dk-related-card-meta"><time datetime="2026-05-21T09:00:00+05:00">21 May 2026</time></div>
         </article>
         <article class="dk-related-card">
-          <a class="dk-related-card-figure" href="../hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/1200/630" alt="Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns" width="1200" height="630" decoding="async" loading="lazy" /></a>
+          <a class="dk-related-card-figure" href="../hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/machine-learning,data,hyperparameter,tuning?lock=2373282527" alt="Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns" width="1200" height="630" decoding="async" loading="lazy" /></a>
           <a class="dk-related-card-title" href="../hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html">Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns</a>
           <div class="dk-related-card-meta"><time datetime="2026-05-18T09:00:00+05:00">18 May 2026</time></div>
         </article></div>

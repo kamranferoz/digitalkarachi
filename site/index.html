@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -875,7 +890,7 @@ a:focus-visible, button:focus-visible {
 </style>
 <script>(function(){try{var t=localStorage.getItem('dk-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <script defer src="wp-content/themes/dk-modern/dk-modern.js?v=3"></script>
-<link rel="preload" as="image" href="https://picsum.photos/seed/art-of-saying-no-in-product-roadmaps-a-modern-guide/1200/630" fetchpriority="high">
+<link rel="preload" as="image" href="https://loremflickr.com/1200/630/business,office,saying,product?lock=970349815" fetchpriority="high">
 </head>
 <body class="dk-body dk-home">
 <svg style="position:absolute;width:0;height:0" aria-hidden="true" focusable="false">
@@ -919,7 +934,7 @@ a:focus-visible, button:focus-visible {
 
 <section class="dk-hero" aria-label="Featured article">
   <a href="art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html" aria-label="Art of Saying No in Product Roadmaps: A Modern Guide">
-    <figure class="dk-hero-figure"><img src="https://picsum.photos/seed/art-of-saying-no-in-product-roadmaps-a-modern-guide/1200/630" alt="Art of Saying No in Product Roadmaps: A Modern Guide" width="1200" height="630" decoding="async" loading="eager" fetchpriority="high" /></figure>
+    <figure class="dk-hero-figure"><img src="https://loremflickr.com/1200/630/business,office,saying,product?lock=970349815" alt="Art of Saying No in Product Roadmaps: A Modern Guide" width="1200" height="630" decoding="async" loading="eager" fetchpriority="high" /></figure>
   </a>
   <div class="dk-eyebrow"><a href="category/management/index.html">Management</a> · Featured</div>
   <h1 class="dk-hero-title"><a href="art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html">Art of Saying No in Product Roadmaps: A Modern Guide</a></h1>
@@ -930,63 +945,63 @@ a:focus-visible, button:focus-visible {
 <section class="dk-grid">
 
 <article class="dk-card is-large">
-  <a class="dk-card-figure" href="object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/1200/630" alt="Object Storage as a Primary Database: Emerging Patterns in Cloud Computing" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cloud,server,object,storage?lock=3582842096" alt="Object Storage as a Primary Database: Emerging Patterns in Cloud Computing" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="category/cloud-computing/index.html">Cloud Computing</a></div>
   <h2 class="dk-card-title"><a href="object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html">Object Storage as a Primary Database: Emerging Patterns in Cloud Computing</a></h2>
   <p class="dk-card-excerpt">Explore how object storage is evolving beyond its traditional role to become a primary database for modern applications, offering scalability and cost-efficiency.</p>
   <div class="dk-card-meta"><time datetime="2026-05-21T09:00:00+05:00">21 May 2026</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/1200/630" alt="Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/machine-learning,data,hyperparameter,tuning?lock=2373282527" alt="Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="category/machine-learning-ml/index.html">Machine Learning (ML)</a></div>
   <h2 class="dk-card-title"><a href="hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html">Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns</a></h2>
   <p class="dk-card-excerpt">Explore the nuances of hyperparameter tuning in machine learning models, focusing on budget constraints, Bayesian optimization techniques, and long-term performance improvements.</p>
   <div class="dk-card-meta"><time datetime="2026-05-18T09:00:00+05:00">18 May 2026</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="spatial-audio-the-unlocked-potential-for-immersive-vr-experiences/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/spatial-audio-the-unlocked-potential-for-immersive-vr-experiences/1200/630" alt="Spatial Audio: The Unlocked Potential For Immersive VR Experiences" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="spatial-audio-the-unlocked-potential-for-immersive-vr-experiences/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/vr,headset,spatial,audio?lock=1578702867" alt="Spatial Audio: The Unlocked Potential For Immersive VR Experiences" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="category/virtual-reality-vr/index.html">Virtual Reality (VR)</a></div>
   <h2 class="dk-card-title"><a href="spatial-audio-the-unlocked-potential-for-immersive-vr-experiences/index.html">Spatial Audio: The Unlocked Potential For Immersive VR Experiences</a></h2>
   <p class="dk-card-excerpt">Spatial audio in virtual reality enhances realism, but its full potential remains underutilized. Learn how to elevate your VR experiences with these techniques.</p>
   <div class="dk-card-meta"><time datetime="2026-05-15T09:00:00+05:00">15 May 2026</time></div>
 </article>
 <article class="dk-card is-wide">
-  <a class="dk-card-figure" href="inspection-drones-for-infrastructure-the-workflow/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/inspection-drones-for-infrastructure-the-workflow/1200/630" alt="Inspection Drones for Infrastructure: The Workflow" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="inspection-drones-for-infrastructure-the-workflow/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,inspection,drones?lock=842819963" alt="Inspection Drones for Infrastructure: The Workflow" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="category/drone/index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="inspection-drones-for-infrastructure-the-workflow/index.html">Inspection Drones for Infrastructure: The Workflow</a></h2>
   <p class="dk-card-excerpt">Discover the comprehensive workflow of using inspection drones in infrastructure projects to improve efficiency, safety, and accuracy.</p>
   <div class="dk-card-meta"><time datetime="2026-05-12T09:00:00+05:00">12 May 2026</time></div>
 </article>
 <article class="dk-card is-wide">
-  <a class="dk-card-figure" href="running-effective-1-1s-that-actually-develop-people/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/running-effective-1-1s-that-actually-develop-people/1200/630" alt="Running Effective 1:1s That Actually Develop People" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="running-effective-1-1s-that-actually-develop-people/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/business,office,running,effective?lock=2573762007" alt="Running Effective 1:1s That Actually Develop People" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="category/management/index.html">Management</a></div>
   <h2 class="dk-card-title"><a href="running-effective-1-1s-that-actually-develop-people/index.html">Running Effective 1:1s That Actually Develop People</a></h2>
   <p class="dk-card-excerpt">How to make one-on-one meetings productive and impactful in a tech management role.</p>
   <div class="dk-card-meta"><time datetime="2026-05-09T09:00:00+05:00">9 May 2026</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="container-security-a-layered-approach/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/container-security-a-layered-approach/1200/630" alt="Container Security: A Layered Approach" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="container-security-a-layered-approach/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cybersecurity,lock,container,security?lock=2265741965" alt="Container Security: A Layered Approach" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="category/security/index.html">Security</a></div>
   <h2 class="dk-card-title"><a href="container-security-a-layered-approach/index.html">Container Security: A Layered Approach</a></h2>
   <p class="dk-card-excerpt">Modern applications are increasingly built in containers, but securing these complex environments requires a multifaceted strategy to protect both data and systems.</p>
   <div class="dk-card-meta"><time datetime="2026-05-06T09:00:00+05:00">6 May 2026</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="building-a-domain-specific-evaluation-harness-for-llms/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/building-a-domain-specific-evaluation-harness-for-llms/1200/630" alt="Building a Domain-Specific Evaluation Harness for LLMs" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="building-a-domain-specific-evaluation-harness-for-llms/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/ai,technology,building,domain-specific?lock=712130101" alt="Building a Domain-Specific Evaluation Harness for LLMs" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="category/artificial-intelligence-ai/index.html">Artificial Intelligence (AI)</a></div>
   <h2 class="dk-card-title"><a href="building-a-domain-specific-evaluation-harness-for-llms/index.html">Building a Domain-Specific Evaluation Harness for LLMs</a></h2>
   <p class="dk-card-excerpt">Learn how to create a robust evaluation framework tailored for large language models in specific domains like finance, healthcare, and legal.</p>
   <div class="dk-card-meta"><time datetime="2026-05-03T09:00:00+05:00">3 May 2026</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="robotics-curricula-for-south-asian-universities/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/robotics-curricula-for-south-asian-universities/1200/630" alt="Robotics Curricula For South Asian Universities" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="robotics-curricula-for-south-asian-universities/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,curricula,education?lock=1326972793" alt="Robotics Curricula For South Asian Universities" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="category/robotics/index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="robotics-curricula-for-south-asian-universities/index.html">Robotics Curricula For South Asian Universities</a></h2>
   <p class="dk-card-excerpt">Exploring the current landscape of robotics education in South Asia, challenges faced by universities, and potential solutions.</p>
   <div class="dk-card-meta"><time datetime="2026-04-30T09:00:00+05:00">30 April 2026</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="industrial-iot-in-pakistan-an-emerging-opportunity/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/industrial-iot-in-pakistan-an-emerging-opportunity/1200/630" alt="Industrial-iot In Pakistan: An Emerging Opportunity" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="industrial-iot-in-pakistan-an-emerging-opportunity/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/iot,sensor,industrial-iot,pakistan?lock=4113999571" alt="Industrial-iot In Pakistan: An Emerging Opportunity" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="category/internet-of-things-iot/index.html">Internet of Things (IoT)</a></div>
   <h2 class="dk-card-title"><a href="industrial-iot-in-pakistan-an-emerging-opportunity/index.html">Industrial-iot In Pakistan: An Emerging Opportunity</a></h2>
   <p class="dk-card-excerpt">Pakistan’s industrial sector is poised to transform with the advent of IoT, enhancing productivity and competitiveness.</p>

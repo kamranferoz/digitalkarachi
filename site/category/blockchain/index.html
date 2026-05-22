@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -923,7 +938,7 @@ a:focus-visible, button:focus-visible {
 <section class="dk-grid">
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../tokenized-real-world-assets-regulatory-and-technical-realities/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/tokenized-real-world-assets-regulatory-and-technical-realities/1200/630" alt="Tokenized Real-world Assets: Regulatory And Technical Realities" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../tokenized-real-world-assets-regulatory-and-technical-realities/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,tokenized,real-world?lock=3240980892" alt="Tokenized Real-world Assets: Regulatory And Technical Realities" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../tokenized-real-world-assets-regulatory-and-technical-realities/index.html">Tokenized Real-world Assets: Regulatory And Technical Realities</a></h2>
   <p class="dk-card-excerpt">Explore the current landscape of tokenized assets, understanding both regulatory challenges and technical solutions.</p>
@@ -931,7 +946,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../layer-2-scaling-the-2026-landscape/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/layer-2-scaling-the-2026-landscape/1200/630" alt="Layer-2 Scaling: The 2026 Landscape" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../layer-2-scaling-the-2026-landscape/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,layer,scaling?lock=1322726240" alt="Layer-2 Scaling: The 2026 Landscape" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../layer-2-scaling-the-2026-landscape/index.html">Layer-2 Scaling: The 2026 Landscape</a></h2>
   <p class="dk-card-excerpt">Exploring the current state and future trends of Layer-2 solutions in blockchain technology.</p>
@@ -939,7 +954,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../zero-knowledge-proofs-beyond-privacy-into-authentication-and-more/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/zero-knowledge-proofs-beyond-privacy-into-authentication-and-more/1200/630" alt="Zero-Knowledge Proofs: Beyond Privacy into Authentication and More" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../zero-knowledge-proofs-beyond-privacy-into-authentication-and-more/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,zero-knowledge,proofs?lock=1271813177" alt="Zero-Knowledge Proofs: Beyond Privacy into Authentication and More" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../zero-knowledge-proofs-beyond-privacy-into-authentication-and-more/index.html">Zero-Knowledge Proofs: Beyond Privacy into Authentication and More</a></h2>
   <p class="dk-card-excerpt">Explores how zero-knowledge proofs (ZKPs) extend beyond privacy to enhance authentication, supply chain verification, and more in blockchain technology.</p>
@@ -947,7 +962,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../mev-what-it-is-and-why-builders-should-care/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/mev-what-it-is-and-why-builders-should-care/1200/630" alt="MEV: What It Is And Why Builders Should Care" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../mev-what-it-is-and-why-builders-should-care/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,builders,care?lock=3472501045" alt="MEV: What It Is And Why Builders Should Care" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../mev-what-it-is-and-why-builders-should-care/index.html">MEV: What It Is And Why Builders Should Care</a></h2>
   <p class="dk-card-excerpt">Understand what MEV is, its implications on blockchain security and efficiency, and why developers must address it in their projects.</p>
@@ -955,7 +970,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../cross-chain-bridges-the-security-postmortem/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/cross-chain-bridges-the-security-postmortem/1200/630" alt="Cross-Chain Bridges: The Security Postmortem" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../cross-chain-bridges-the-security-postmortem/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,cross-chain,bridges?lock=3023720675" alt="Cross-Chain Bridges: The Security Postmortem" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../cross-chain-bridges-the-security-postmortem/index.html">Cross-Chain Bridges: The Security Postmortem</a></h2>
   <p class="dk-card-excerpt">An in-depth analysis of cross-chain bridges, their security challenges, and the strategies to mitigate them.</p>
@@ -963,7 +978,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../building-a-wallet-ux-that-doesn-t-scare-normal-users/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/building-a-wallet-ux-that-doesn-t-scare-normal-users/1200/630" alt="Building a Wallet UX That Doesn&#x27;t Scare Normal Users" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../building-a-wallet-ux-that-doesn-t-scare-normal-users/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,building,wallet?lock=966073997" alt="Building a Wallet UX That Doesn&#x27;t Scare Normal Users" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../building-a-wallet-ux-that-doesn-t-scare-normal-users/index.html">Building a Wallet UX That Doesn&#x27;t Scare Normal Users</a></h2>
   <p class="dk-card-excerpt">Creating an intuitive and secure cryptocurrency wallet experience is crucial for broader adoption. Here’s how to design with the user in mind.</p>
@@ -971,7 +986,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../crypto-in-remittances-the-pakistan-corridor-opportunity/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/crypto-in-remittances-the-pakistan-corridor-opportunity/1200/630" alt="Crypto In Remittances: The Pakistan Corridor Opportunity" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../crypto-in-remittances-the-pakistan-corridor-opportunity/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,remittances?lock=2048640271" alt="Crypto In Remittances: The Pakistan Corridor Opportunity" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../crypto-in-remittances-the-pakistan-corridor-opportunity/index.html">Crypto In Remittances: The Pakistan Corridor Opportunity</a></h2>
   <p class="dk-card-excerpt">Exploring blockchain’s potential to revolutionize remittances in Pakistan, a market ripe for disruption.</p>
@@ -979,7 +994,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../account-abstraction-what-it-changes-for-end-users/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/account-abstraction-what-it-changes-for-end-users/1200/630" alt="Account-abstraction: What It Changes For End Users" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../account-abstraction-what-it-changes-for-end-users/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,account-abstraction,changes?lock=1581694974" alt="Account-abstraction: What It Changes For End Users" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../account-abstraction-what-it-changes-for-end-users/index.html">Account-abstraction: What It Changes For End Users</a></h2>
   <p class="dk-card-excerpt">Account abstraction is transforming blockchain interactions by simplifying user experiences, making crypto more accessible to everyone.</p>
@@ -987,7 +1002,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../restaking-and-shared-security-the-new-primitives/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/restaking-and-shared-security-the-new-primitives/1200/630" alt="Restaking and Shared Security: The New Primitives" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../restaking-and-shared-security-the-new-primitives/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,restaking,shared?lock=1550404238" alt="Restaking and Shared Security: The New Primitives" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../restaking-and-shared-security-the-new-primitives/index.html">Restaking and Shared Security: The New Primitives</a></h2>
   <p class="dk-card-excerpt">Blockchain networks are evolving beyond simple validation to incorporate restaking and shared security mechanisms that enhance both decentralization and efficiency.</p>
@@ -995,7 +1010,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../on-rapms-and-off-ramps-the-unsexy-infrastructure-that-matters/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/on-rapms-and-off-ramps-the-unsexy-infrastructure-that-matters/1200/630" alt="On-rapms And Off-ramps: The Unsexy Infrastructure That Matters" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../on-rapms-and-off-ramps-the-unsexy-infrastructure-that-matters/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,on-rapms,off-ramps?lock=328124575" alt="On-rapms And Off-ramps: The Unsexy Infrastructure That Matters" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../on-rapms-and-off-ramps-the-unsexy-infrastructure-that-matters/index.html">On-rapms And Off-ramps: The Unsexy Infrastructure That Matters</a></h2>
   <p class="dk-card-excerpt">Understanding on-ramps and off-ramps is crucial for blockchain adoption, yet these technical building blocks often go unnoticed.</p>
@@ -1003,7 +1018,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../bitcoin-as-treasury-the-corporate-playbook/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/bitcoin-as-treasury-the-corporate-playbook/1200/630" alt="Bitcoin as Treasury: The Corporate Playbook" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../bitcoin-as-treasury-the-corporate-playbook/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,bitcoin,treasury?lock=3868917776" alt="Bitcoin as Treasury: The Corporate Playbook" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../bitcoin-as-treasury-the-corporate-playbook/index.html">Bitcoin as Treasury: The Corporate Playbook</a></h2>
   <p class="dk-card-excerpt">How corporations are using Bitcoin to manage risk, diversify assets, and enhance liquidity in their financial strategies.</p>
@@ -1011,7 +1026,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../smart-contract-auditing-a-practitioner-s-checklist/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/smart-contract-auditing-a-practitioner-s-checklist/1200/630" alt="Smart Contract Auditing: A Practitioner&#x27;s Checklist" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../smart-contract-auditing-a-practitioner-s-checklist/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,smart,contract?lock=2486705933" alt="Smart Contract Auditing: A Practitioner&#x27;s Checklist" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../smart-contract-auditing-a-practitioner-s-checklist/index.html">Smart Contract Auditing: A Practitioner&#x27;s Checklist</a></h2>
   <p class="dk-card-excerpt">Learn the essential steps to ensure your smart contracts are secure and reliable, avoiding common pitfalls in deployment.</p>
@@ -1019,7 +1034,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../daos-as-governance-experiments-what-worked-what-didn-t/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/daos-as-governance-experiments-what-worked-what-didn-t/1200/630" alt="DAOs as Governance Experiments: What Worked, What Didn&#x27;t" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../daos-as-governance-experiments-what-worked-what-didn-t/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,daos,governance?lock=2049863500" alt="DAOs as Governance Experiments: What Worked, What Didn&#x27;t" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../daos-as-governance-experiments-what-worked-what-didn-t/index.html">DAOs as Governance Experiments: What Worked, What Didn&#x27;t</a></h2>
   <p class="dk-card-excerpt">Decentralized autonomous organizations (dao) have emerged as key players in blockchain governance, but their successes and failures offer valuable lessons for future projects.</p>
@@ -1027,7 +1042,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../account-abstraction-a-game-changer-for-blockchain-users/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/account-abstraction-a-game-changer-for-blockchain-users/1200/630" alt="Account Abstraction: A Game-Changer for Blockchain Users" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../account-abstraction-a-game-changer-for-blockchain-users/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,account,abstraction?lock=3573364514" alt="Account Abstraction: A Game-Changer for Blockchain Users" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../account-abstraction-a-game-changer-for-blockchain-users/index.html">Account Abstraction: A Game-Changer for Blockchain Users</a></h2>
   <p class="dk-card-excerpt">Revolutionizing User Experience in Blockchain by Simplifying Wallet Interactions and Enhancing Security.</p>
@@ -1035,7 +1050,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../permissioned-blockchains-in-enterprise-the-honest-assessment/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/permissioned-blockchains-in-enterprise-the-honest-assessment/1200/630" alt="Permissioned Blockchains In Enterprise: The Honest Assessment" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../permissioned-blockchains-in-enterprise-the-honest-assessment/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,permissioned,blockchains?lock=489275751" alt="Permissioned Blockchains In Enterprise: The Honest Assessment" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../permissioned-blockchains-in-enterprise-the-honest-assessment/index.html">Permissioned Blockchains In Enterprise: The Honest Assessment</a></h2>
   <p class="dk-card-excerpt">An in-depth look at the practical applications and limitations of permissioned blockchains in enterprise settings.</p>
@@ -1043,7 +1058,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../stablecoins-for-cross-border-payments-in-emerging-markets/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/stablecoins-for-cross-border-payments-in-emerging-markets/1200/630" alt="Stablecoins For Cross-border Payments In Emerging Markets" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../stablecoins-for-cross-border-payments-in-emerging-markets/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,stablecoins,cross-border?lock=2270409295" alt="Stablecoins For Cross-border Payments In Emerging Markets" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../stablecoins-for-cross-border-payments-in-emerging-markets/index.html">Stablecoins For Cross-border Payments In Emerging Markets</a></h2>
   <p class="dk-card-excerpt">Stablecoins are transforming cross-border payments in emerging markets, offering faster and cheaper transactions compared to traditional methods.</p>
@@ -1051,7 +1066,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../nft-utility-beyond-jpegs-from-tickets-to-credentials/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/nft-utility-beyond-jpegs-from-tickets-to-credentials/1200/630" alt="NFT Utility Beyond JPEGs: From Tickets to Credentials" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../nft-utility-beyond-jpegs-from-tickets-to-credentials/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,utility,beyond?lock=1000158965" alt="NFT Utility Beyond JPEGs: From Tickets to Credentials" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../nft-utility-beyond-jpegs-from-tickets-to-credentials/index.html">NFT Utility Beyond JPEGs: From Tickets to Credentials</a></h2>
   <p class="dk-card-excerpt">Non-fungible tokens (NFTs) are revolutionizing beyond digital art. Learn how they are being used for tickets, credentials, and memberships.</p>
@@ -1059,7 +1074,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../oracles-the-trust-layer-that-breaks-defi/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/oracles-the-trust-layer-that-breaks-defi/1200/630" alt="Oracles: The Trust Layer That Breaks Defi" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../oracles-the-trust-layer-that-breaks-defi/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,oracles,trust?lock=3793699314" alt="Oracles: The Trust Layer That Breaks Defi" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../oracles-the-trust-layer-that-breaks-defi/index.html">Oracles: The Trust Layer That Breaks Defi</a></h2>
   <p class="dk-card-excerpt">Oracles are essential in blockchain applications but pose significant challenges, especially in decentralized finance (DeFi). Explore how these smart contracts connectors affect th…</p>
@@ -1067,7 +1082,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../on-chain-identity-the-patterns-that-are-working/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/on-chain-identity-the-patterns-that-are-working/1200/630" alt="On-chain Identity: The Patterns That Are Working" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../on-chain-identity-the-patterns-that-are-working/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,on-chain,identity?lock=525773750" alt="On-chain Identity: The Patterns That Are Working" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../on-chain-identity-the-patterns-that-are-working/index.html">On-chain Identity: The Patterns That Are Working</a></h2>
   <p class="dk-card-excerpt">Discover the emerging trends and best practices in on-chain identity solutions that are reshaping decentralized systems.</p>
@@ -1075,7 +1090,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../privacy-coins-in-2026-technical-and-regulatory-snapshot/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/privacy-coins-in-2026-technical-and-regulatory-snapshot/1200/630" alt="Privacy Coins in 2026: Technical and Regulatory Snapshot" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../privacy-coins-in-2026-technical-and-regulatory-snapshot/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,privacy,coins?lock=172605718" alt="Privacy Coins in 2026: Technical and Regulatory Snapshot" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../privacy-coins-in-2026-technical-and-regulatory-snapshot/index.html">Privacy Coins in 2026: Technical and Regulatory Snapshot</a></h2>
   <p class="dk-card-excerpt">Explore the evolution of privacy coins by 2026, their technical advancements, and how regulatory landscapes are shaping their future.</p>

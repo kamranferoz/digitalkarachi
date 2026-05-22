@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -923,7 +938,7 @@ a:focus-visible, button:focus-visible {
 <section class="dk-grid">
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../tokenized-real-world-assets-regulatory-and-technical-realities/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/tokenized-real-world-assets-regulatory-and-technical-realities/1200/630" alt="Tokenized Real-world Assets: Regulatory And Technical Realities" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../tokenized-real-world-assets-regulatory-and-technical-realities/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,tokenized,real-world?lock=3240980892" alt="Tokenized Real-world Assets: Regulatory And Technical Realities" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/blockchain/index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../tokenized-real-world-assets-regulatory-and-technical-realities/index.html">Tokenized Real-world Assets: Regulatory And Technical Realities</a></h2>
   <p class="dk-card-excerpt">Explore the current landscape of tokenized assets, understanding both regulatory challenges and technical solutions.</p>
@@ -931,7 +946,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../drone-pilot-certification-guidelines-around-the-world/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/drone-pilot-certification-guidelines-around-the-world/1200/630" alt="Drone-pilot-certification-guidelines-around-the-world" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../drone-pilot-certification-guidelines-around-the-world/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,drone-pilot-certification-guidelines-around-the-world,certification?lock=3108743129" alt="Drone-pilot-certification-guidelines-around-the-world" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/drone/index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../drone-pilot-certification-guidelines-around-the-world/index.html">Drone-pilot-certification-guidelines-around-the-world</a></h2>
   <p class="dk-card-excerpt">Explore the diverse landscape of drone pilot certification programs and their global standards.</p>
@@ -939,7 +954,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../beyond-visual-line-of-sight-the-regulatory-shift-in-2026/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/beyond-visual-line-of-sight-the-regulatory-shift-in-2026/1200/630" alt="Beyond Visual Line of Sight: The Regulatory Shift in 2026" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../beyond-visual-line-of-sight-the-regulatory-shift-in-2026/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,beyond,visual?lock=2406528031" alt="Beyond Visual Line of Sight: The Regulatory Shift in 2026" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/drone/index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../beyond-visual-line-of-sight-the-regulatory-shift-in-2026/index.html">Beyond Visual Line of Sight: The Regulatory Shift in 2026</a></h2>
   <p class="dk-card-excerpt">In 2026, a significant change in drone regulations opens up new possibilities for industries like agriculture and delivery services.</p>
@@ -947,7 +962,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../privacy-coins-in-2026-technical-and-regulatory-snapshot/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/privacy-coins-in-2026-technical-and-regulatory-snapshot/1200/630" alt="Privacy Coins in 2026: Technical and Regulatory Snapshot" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../privacy-coins-in-2026-technical-and-regulatory-snapshot/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,privacy,coins?lock=172605718" alt="Privacy Coins in 2026: Technical and Regulatory Snapshot" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/blockchain/index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../privacy-coins-in-2026-technical-and-regulatory-snapshot/index.html">Privacy Coins in 2026: Technical and Regulatory Snapshot</a></h2>
   <p class="dk-card-excerpt">Explore the evolution of privacy coins by 2026, their technical advancements, and how regulatory landscapes are shaping their future.</p>

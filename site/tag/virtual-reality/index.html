@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -923,7 +938,7 @@ a:focus-visible, button:focus-visible {
 <section class="dk-grid">
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../spatial-audio-the-unlocked-potential-for-immersive-vr-experiences/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/spatial-audio-the-unlocked-potential-for-immersive-vr-experiences/1200/630" alt="Spatial Audio: The Unlocked Potential For Immersive VR Experiences" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../spatial-audio-the-unlocked-potential-for-immersive-vr-experiences/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/vr,headset,spatial,audio?lock=1578702867" alt="Spatial Audio: The Unlocked Potential For Immersive VR Experiences" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/virtual-reality-vr/index.html">Virtual Reality (VR)</a></div>
   <h2 class="dk-card-title"><a href="../../spatial-audio-the-unlocked-potential-for-immersive-vr-experiences/index.html">Spatial Audio: The Unlocked Potential For Immersive VR Experiences</a></h2>
   <p class="dk-card-excerpt">Spatial audio in virtual reality enhances realism, but its full potential remains underutilized. Learn how to elevate your VR experiences with these techniques.</p>
@@ -931,7 +946,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../avatars-in-social-vr-identity-expression-and-moderation/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/avatars-in-social-vr-identity-expression-and-moderation/1200/630" alt="Avatars In Social VR: Identity, Expression, And Moderation" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../avatars-in-social-vr-identity-expression-and-moderation/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/vr,headset,avatars,social?lock=3781838396" alt="Avatars In Social VR: Identity, Expression, And Moderation" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/virtual-reality-vr/index.html">Virtual Reality (VR)</a></div>
   <h2 class="dk-card-title"><a href="../../avatars-in-social-vr-identity-expression-and-moderation/index.html">Avatars In Social VR: Identity, Expression, And Moderation</a></h2>
   <p class="dk-card-excerpt">Understanding avatars in social virtual reality involves exploring their impact on identity and expression while navigating the challenges of effective moderation.</p>
@@ -939,7 +954,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../cinematic-vr-the-storytelling-grammar/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/cinematic-vr-the-storytelling-grammar/1200/630" alt="Cinematic VR: The Storytelling Grammar" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../cinematic-vr-the-storytelling-grammar/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/vr,headset,cinematic,storytelling?lock=4154602792" alt="Cinematic VR: The Storytelling Grammar" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/virtual-reality-vr/index.html">Virtual Reality (VR)</a></div>
   <h2 class="dk-card-title"><a href="../../cinematic-vr-the-storytelling-grammar/index.html">Cinematic VR: The Storytelling Grammar</a></h2>
   <p class="dk-card-excerpt">Understanding the unique grammar of cinematic virtual reality for immersive storytelling.</p>
@@ -947,7 +962,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../spatial-computing-the-design-language-emerging/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/spatial-computing-the-design-language-emerging/1200/630" alt="Spatial Computing: The Design Language Emerging" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../spatial-computing-the-design-language-emerging/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/vr,headset,spatial,computing?lock=2205746738" alt="Spatial Computing: The Design Language Emerging" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/virtual-reality-vr/index.html">Virtual Reality (VR)</a></div>
   <h2 class="dk-card-title"><a href="../../spatial-computing-the-design-language-emerging/index.html">Spatial Computing: The Design Language Emerging</a></h2>
   <p class="dk-card-excerpt">Spatial computing is reshaping virtual reality by enabling more intuitive and immersive experiences through better understanding of spatial relationships.</p>
@@ -955,7 +970,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../vr-in-healthcare-beyond-pain-management/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/vr-in-healthcare-beyond-pain-management/1200/630" alt="VR In Healthcare: Beyond Pain Management" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../vr-in-healthcare-beyond-pain-management/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/vr,headset,healthcare,beyond?lock=3485252368" alt="VR In Healthcare: Beyond Pain Management" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/virtual-reality-vr/index.html">Virtual Reality (VR)</a></div>
   <h2 class="dk-card-title"><a href="../../vr-in-healthcare-beyond-pain-management/index.html">VR In Healthcare: Beyond Pain Management</a></h2>
   <p class="dk-card-excerpt">Virtual reality is transforming healthcare beyond just pain management, with applications in therapy, training, and patient engagement.</p>
@@ -963,7 +978,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../vr-for-therapy-clinical-evidence-and-gaps/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/vr-for-therapy-clinical-evidence-and-gaps/1200/630" alt="VR For Therapy: Clinical Evidence And Gaps" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../vr-for-therapy-clinical-evidence-and-gaps/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/vr,headset,therapy,clinical?lock=2475965155" alt="VR For Therapy: Clinical Evidence And Gaps" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/virtual-reality-vr/index.html">Virtual Reality (VR)</a></div>
   <h2 class="dk-card-title"><a href="../../vr-for-therapy-clinical-evidence-and-gaps/index.html">VR For Therapy: Clinical Evidence And Gaps</a></h2>
   <p class="dk-card-excerpt">Virtual reality is transforming therapy, but its clinical effectiveness and adoption face significant challenges.</p>
@@ -971,7 +986,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../building-vr-apps-with-unity-in-2026/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/building-vr-apps-with-unity-in-2026/1200/630" alt="Building VR Apps with Unity in 2026" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../building-vr-apps-with-unity-in-2026/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/vr,headset,building,apps?lock=2416859622" alt="Building VR Apps with Unity in 2026" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/virtual-reality-vr/index.html">Virtual Reality (VR)</a></div>
   <h2 class="dk-card-title"><a href="../../building-vr-apps-with-unity-in-2026/index.html">Building VR Apps with Unity in 2026</a></h2>
   <p class="dk-card-excerpt">Discover the latest trends and best practices for developing virtual reality applications using Unity, a leading game development engine.</p>
@@ -979,7 +994,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../locomotion-in-vr-comfort-vs-immersion/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/locomotion-in-vr-comfort-vs-immersion/1200/630" alt="Locomotion In VR: Comfort Vs. Immersion" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../locomotion-in-vr-comfort-vs-immersion/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/vr,headset,locomotion,comfort?lock=3673200018" alt="Locomotion In VR: Comfort Vs. Immersion" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/virtual-reality-vr/index.html">Virtual Reality (VR)</a></div>
   <h2 class="dk-card-title"><a href="../../locomotion-in-vr-comfort-vs-immersion/index.html">Locomotion In VR: Comfort Vs. Immersion</a></h2>
   <p class="dk-card-excerpt">Navigating the trade-offs between comfort and immersion in virtual reality experiences.</p>
@@ -987,7 +1002,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../headset-hardware-in-2026-a-buyer-s-snapshot/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/headset-hardware-in-2026-a-buyer-s-snapshot/1200/630" alt="Headset Hardware in 2026: A Buyer&#x27;s Snapshot" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../headset-hardware-in-2026-a-buyer-s-snapshot/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/vr,headset,hardware,virtual-reality?lock=1346496120" alt="Headset Hardware in 2026: A Buyer&#x27;s Snapshot" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/virtual-reality-vr/index.html">Virtual Reality (VR)</a></div>
   <h2 class="dk-card-title"><a href="../../headset-hardware-in-2026-a-buyer-s-snapshot/index.html">Headset Hardware in 2026: A Buyer&#x27;s Snapshot</a></h2>
   <p class="dk-card-excerpt">Explore the latest trends and must-know features of VR headsets as we gear up for the year 2026.</p>
@@ -995,7 +1010,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../haptics-in-vr-the-next-frontier-of-immersion/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/haptics-in-vr-the-next-frontier-of-immersion/1200/630" alt="Haptics in VR: The Next Frontier of Immersion" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../haptics-in-vr-the-next-frontier-of-immersion/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/vr,headset,haptics,next?lock=2991875591" alt="Haptics in VR: The Next Frontier of Immersion" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/virtual-reality-vr/index.html">Virtual Reality (VR)</a></div>
   <h2 class="dk-card-title"><a href="../../haptics-in-vr-the-next-frontier-of-immersion/index.html">Haptics in VR: The Next Frontier of Immersion</a></h2>
   <p class="dk-card-excerpt">Learn how haptic technology is revolutionizing virtual reality, enhancing user interaction and making experiences more realistic.</p>
@@ -1003,7 +1018,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../eye-tracking-in-vr-privacy-and-possibility/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/eye-tracking-in-vr-privacy-and-possibility/1200/630" alt="Eye Tracking in VR: Privacy and Possibility" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../eye-tracking-in-vr-privacy-and-possibility/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/vr,headset,tracking,privacy?lock=224147829" alt="Eye Tracking in VR: Privacy and Possibility" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/virtual-reality-vr/index.html">Virtual Reality (VR)</a></div>
   <h2 class="dk-card-title"><a href="../../eye-tracking-in-vr-privacy-and-possibility/index.html">Eye Tracking in VR: Privacy and Possibility</a></h2>
   <p class="dk-card-excerpt">Eye tracking technology in virtual reality (VR) enhances user experience but raises complex privacy concerns that must be addressed.</p>
@@ -1011,7 +1026,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../vr-for-remote-collaboration-lessons-from-production-deployments/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/vr-for-remote-collaboration-lessons-from-production-deployments/1200/630" alt="VR For Remote Collaboration: Lessons From Production Deployments" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../vr-for-remote-collaboration-lessons-from-production-deployments/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/vr,headset,remote,collaboration?lock=3705692111" alt="VR For Remote Collaboration: Lessons From Production Deployments" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/virtual-reality-vr/index.html">Virtual Reality (VR)</a></div>
   <h2 class="dk-card-title"><a href="../../vr-for-remote-collaboration-lessons-from-production-deployments/index.html">VR For Remote Collaboration: Lessons From Production Deployments</a></h2>
   <p class="dk-card-excerpt">Virtual reality (VR) enhances remote collaboration, offering immersive experiences and improving productivity. Learn from real-world implementations.</p>
@@ -1019,7 +1034,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../vr-for-education-the-curricula-that-work/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/vr-for-education-the-curricula-that-work/1200/630" alt="VR For Education: The Curricula That Work" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../vr-for-education-the-curricula-that-work/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/vr,headset,education,curricula?lock=1781663407" alt="VR For Education: The Curricula That Work" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/virtual-reality-vr/index.html">Virtual Reality (VR)</a></div>
   <h2 class="dk-card-title"><a href="../../vr-for-education-the-curricula-that-work/index.html">VR For Education: The Curricula That Work</a></h2>
   <p class="dk-card-excerpt">Explore how virtual reality transforms teaching methods, focusing on subjects like history, science, and language arts.</p>
@@ -1027,7 +1042,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../vr-for-architecture-and-real-estate-walkthroughs-revolutionizing-spatial-visualization/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/vr-for-architecture-and-real-estate-walkthroughs-revolutionizing-spatial-visualization/1200/630" alt="VR For Architecture And Real Estate Walkthroughs: Revolutionizing Spatial Visualization" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../vr-for-architecture-and-real-estate-walkthroughs-revolutionizing-spatial-visualization/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/vr,headset,architecture,real?lock=3219062621" alt="VR For Architecture And Real Estate Walkthroughs: Revolutionizing Spatial Visualization" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/virtual-reality-vr/index.html">Virtual Reality (VR)</a></div>
   <h2 class="dk-card-title"><a href="../../vr-for-architecture-and-real-estate-walkthroughs-revolutionizing-spatial-visualization/index.html">VR For Architecture And Real Estate Walkthroughs: Revolutionizing Spatial Visualization</a></h2>
   <p class="dk-card-excerpt">Virtual reality transforms architectural and real estate projects, offering immersive experiences that enhance communication and decision-making.</p>
@@ -1035,7 +1050,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../vr-fitness-the-category-that-surprised-the-industry/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/vr-fitness-the-category-that-surprised-the-industry/1200/630" alt="VR Fitness: The Category That Surprised the Industry" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../vr-fitness-the-category-that-surprised-the-industry/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/vr,headset,fitness,category?lock=618540591" alt="VR Fitness: The Category That Surprised the Industry" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/virtual-reality-vr/index.html">Virtual Reality (VR)</a></div>
   <h2 class="dk-card-title"><a href="../../vr-fitness-the-category-that-surprised-the-industry/index.html">VR Fitness: The Category That Surprised the Industry</a></h2>
   <p class="dk-card-excerpt">Virtual reality fitness has seen an unexpected rise, transforming how we exercise and socialize.</p>
@@ -1043,7 +1058,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../vr-in-architecture-and-real-estate-a-walkthrough-to-the-future/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/vr-in-architecture-and-real-estate-a-walkthrough-to-the-future/1200/630" alt="VR in Architecture and Real Estate: A Walkthrough to the Future" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../vr-in-architecture-and-real-estate-a-walkthrough-to-the-future/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/vr,headset,architecture,real?lock=1220213907" alt="VR in Architecture and Real Estate: A Walkthrough to the Future" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/virtual-reality-vr/index.html">Virtual Reality (VR)</a></div>
   <h2 class="dk-card-title"><a href="../../vr-in-architecture-and-real-estate-a-walkthrough-to-the-future/index.html">VR in Architecture and Real Estate: A Walkthrough to the Future</a></h2>
   <p class="dk-card-excerpt">Virtual reality transforms architectural designs and real estate tours, offering immersive experiences that enhance client engagement.</p>
@@ -1051,7 +1066,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../passthrough-ar-the-new-default-for-headsets/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/passthrough-ar-the-new-default-for-headsets/1200/630" alt="Passthrough AR: The New Default for Headsets" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../passthrough-ar-the-new-default-for-headsets/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/vr,headset,passthrough,default?lock=3069950030" alt="Passthrough AR: The New Default for Headsets" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/virtual-reality-vr/index.html">Virtual Reality (VR)</a></div>
   <h2 class="dk-card-title"><a href="../../passthrough-ar-the-new-default-for-headsets/index.html">Passthrough AR: The New Default for Headsets</a></h2>
   <p class="dk-card-excerpt">Exploring the future of mixed reality and how passthrough augmented reality is shaping our virtual experiences.</p>
@@ -1059,7 +1074,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../performance-optimization-for-mobile-vr/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/performance-optimization-for-mobile-vr/1200/630" alt="Performance Optimization For Mobile VR" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../performance-optimization-for-mobile-vr/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/vr,headset,performance,optimization?lock=1000118369" alt="Performance Optimization For Mobile VR" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/virtual-reality-vr/index.html">Virtual Reality (VR)</a></div>
   <h2 class="dk-card-title"><a href="../../performance-optimization-for-mobile-vr/index.html">Performance Optimization For Mobile VR</a></h2>
   <p class="dk-card-excerpt">Mobile virtual reality (VR) is transforming how we interact with digital content, but optimizing performance remains a critical challenge.</p>

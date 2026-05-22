@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -915,7 +930,7 @@ a:focus-visible, button:focus-visible {
 <div class="dk-progress" hidden></div>
 <main id="main">
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Quantum-as-a-service: Cloud Landscape Expands", "description": "Explore the evolving landscape of quantum computing as a service and how leading cloud providers are integrating this transformative technology.", "datePublished": "2024-09-10T09:00:00+05:00", "dateModified": "2024-09-10T09:00:00+05:00", "author": {"@type": "Person", "name": "digitalkarachi.com", "url": "https://digitalkarachi.com/author/digitalkarachi-com/"}, "publisher": {"@type": "Organization", "name": "Digital Karachi", "logo": {"@type": "ImageObject", "url": "https://digitalkarachi.com/wp-content/uploads/2023/09/DK-Logo-light.png"}}, "mainEntityOfPage": "https://digitalkarachi.com/quantum-as-a-service-cloud-landscape-expands/", "articleSection": "Quantum Computing", "keywords": "quantum-computing, cloud-services, qubits, simulators, gate-model", "image": "https://picsum.photos/seed/quantum-as-a-service-cloud-landscape-expands/1200/630"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalkarachi.com/"}, {"@type": "ListItem", "position": 2, "name": "Quantum Computing", "item": "https://digitalkarachi.com/category/quantum-computing/"}, {"@type": "ListItem", "position": 3, "name": "Quantum-as-a-service: Cloud Landscape Expands", "item": "https://digitalkarachi.com/quantum-as-a-service-cloud-landscape-expands/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Quantum-as-a-service: Cloud Landscape Expands", "description": "Explore the evolving landscape of quantum computing as a service and how leading cloud providers are integrating this transformative technology.", "datePublished": "2024-09-10T09:00:00+05:00", "dateModified": "2024-09-10T09:00:00+05:00", "author": {"@type": "Person", "name": "digitalkarachi.com", "url": "https://digitalkarachi.com/author/digitalkarachi-com/"}, "publisher": {"@type": "Organization", "name": "Digital Karachi", "logo": {"@type": "ImageObject", "url": "https://digitalkarachi.com/wp-content/uploads/2023/09/DK-Logo-light.png"}}, "mainEntityOfPage": "https://digitalkarachi.com/quantum-as-a-service-cloud-landscape-expands/", "articleSection": "Quantum Computing", "keywords": "quantum-computing, cloud-services, qubits, simulators, gate-model", "image": "https://loremflickr.com/1200/630/quantum,physics,quantum-as-a-service,cloud?lock=2811517902"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalkarachi.com/"}, {"@type": "ListItem", "position": 2, "name": "Quantum Computing", "item": "https://digitalkarachi.com/category/quantum-computing/"}, {"@type": "ListItem", "position": 3, "name": "Quantum-as-a-service: Cloud Landscape Expands", "item": "https://digitalkarachi.com/quantum-as-a-service-cloud-landscape-expands/"}]}</script>
 <article class="dk-article">
   <nav class="dk-breadcrumb" aria-label="Breadcrumb">
     <a href="../index.html">Home</a><span>/</span>
@@ -931,7 +946,7 @@ a:focus-visible, button:focus-visible {
       <span><svg width="14" height="14"><use href="#i-clock"/></svg>2 min read</span>
     </div>
   </header>
-  <figure class="dk-article-hero"><img src="https://picsum.photos/seed/quantum-as-a-service-cloud-landscape-expands/1200/630" alt="Quantum-as-a-service: Cloud Landscape Expands" width="1200" height="630" decoding="async" loading="eager" fetchpriority="high" /></figure>
+  <figure class="dk-article-hero"><img src="https://loremflickr.com/1200/630/quantum,physics,quantum-as-a-service,cloud?lock=2811517902" alt="Quantum-as-a-service: Cloud Landscape Expands" width="1200" height="630" decoding="async" loading="eager" fetchpriority="high" /></figure>
   <div class="dk-prose">
 <p>Quantum computing is no longer confined to academic research labs. With the rise of quantum-as-a-service (QaaS) offerings, cloud providers are democratizing access to this cutting-edge technology. This shift signifies a significant step towards practical applications in fields ranging from cryptography to drug discovery.</p><h2>Introduction to Quantum-as-a-Service</h2><p>The concept of QaaS involves providing quantum computing resources over the internet, making it accessible and usable for developers and researchers without requiring them to invest in expensive hardware. This model mirrors the success of classical cloud services, which have made computing more scalable and cost-effective.</p><p>Leading cloud providers such as Amazon Web Services (AWS), Microsoft Azure, and Google Cloud are increasingly integrating quantum capabilities into their platforms. By offering QaaS, these companies aim to accelerate innovation in sectors where classical computers fall short due to the limitations of computational complexity.</p><h2>The Role of Leading Cloud Providers</h2><ul><li>AWS offers Braket, a service that enables users to test and develop quantum algorithms on Amazon’s cloud infrastructure. It includes various simulators for gate-model quantum computers, allowing developers to experiment with different architectures without needing physical access to qubits.</li><li>Microsoft Azure provides Azure Quantum, which integrates tools like Q# programming language and Microsoft's Visual Studio Code extensions. This service supports a range of use cases from finance to logistics by leveraging both classical and quantum computing resources.</li><li>Google Cloud offers Anthropic, a platform that combines its advanced AI capabilities with quantum technologies. This integration is particularly promising for applications requiring both traditional machine learning and quantum processing power.</li></ul><h2>Simulators vs. Real Quantum Hardware</h2><p>While cloud providers are increasingly making real quantum hardware accessible through QaaS platforms, simulators remain a crucial component of the ecosystem. These virtual environments allow developers to run complex algorithms without the immediate need for physical qubits. For example:</p><ul><li>The IBM Quantum Experience provides access to real quantum processors but also includes a simulator that can handle much larger problem sizes.</li><li>D-Wave Systems, known for its gate-model and annealing technologies, offers a cloud-based platform where users can experiment with both simulated and actual hardware.</li></ul><p>The choice between simulators and real quantum hardware depends on the specific application. Simulators are ideal for testing and prototyping algorithms, while access to real hardware is necessary for validating these algorithms in practical scenarios.</p><h2>Challenges and Future Directions</h2><p>Despite the progress made in QaaS, several challenges remain. One major issue is the stability of qubits, which are notoriously prone to errors due to decoherence. Cloud providers must continuously improve error correction techniques to ensure reliable results from quantum computations.</p><p>Another challenge lies in the complexity of programming models for quantum computers. While languages like Q# and Python with Qiskit have been developed to make quantum computing more accessible, there is still a need for developers who are skilled in both classical and quantum coding paradigms.</p><h2>Conclusion</h2><p>The expansion of quantum-as-a-service into the cloud landscape marks a pivotal moment for researchers and industry professionals. As these platforms continue to evolve, they promise to bring quantum computing closer to mainstream use cases, driving innovation across various sectors.</p>
   </div>
@@ -952,17 +967,17 @@ a:focus-visible, button:focus-visible {
       <h2>Related reading</h2>
       <div class="dk-related-grid">
         <article class="dk-related-card">
-          <a class="dk-related-card-figure" href="../art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/art-of-saying-no-in-product-roadmaps-a-modern-guide/1200/630" alt="Art of Saying No in Product Roadmaps: A Modern Guide" width="1200" height="630" decoding="async" loading="lazy" /></a>
+          <a class="dk-related-card-figure" href="../art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/business,office,saying,product?lock=970349815" alt="Art of Saying No in Product Roadmaps: A Modern Guide" width="1200" height="630" decoding="async" loading="lazy" /></a>
           <a class="dk-related-card-title" href="../art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html">Art of Saying No in Product Roadmaps: A Modern Guide</a>
           <div class="dk-related-card-meta"><time datetime="2026-05-22T09:00:00+05:00">22 May 2026</time></div>
         </article>
         <article class="dk-related-card">
-          <a class="dk-related-card-figure" href="../object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/1200/630" alt="Object Storage as a Primary Database: Emerging Patterns in Cloud Computing" width="1200" height="630" decoding="async" loading="lazy" /></a>
+          <a class="dk-related-card-figure" href="../object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cloud,server,object,storage?lock=3582842096" alt="Object Storage as a Primary Database: Emerging Patterns in Cloud Computing" width="1200" height="630" decoding="async" loading="lazy" /></a>
           <a class="dk-related-card-title" href="../object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html">Object Storage as a Primary Database: Emerging Patterns in Cloud Computing</a>
           <div class="dk-related-card-meta"><time datetime="2026-05-21T09:00:00+05:00">21 May 2026</time></div>
         </article>
         <article class="dk-related-card">
-          <a class="dk-related-card-figure" href="../hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/1200/630" alt="Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns" width="1200" height="630" decoding="async" loading="lazy" /></a>
+          <a class="dk-related-card-figure" href="../hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/machine-learning,data,hyperparameter,tuning?lock=2373282527" alt="Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns" width="1200" height="630" decoding="async" loading="lazy" /></a>
           <a class="dk-related-card-title" href="../hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html">Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns</a>
           <div class="dk-related-card-meta"><time datetime="2026-05-18T09:00:00+05:00">18 May 2026</time></div>
         </article></div>

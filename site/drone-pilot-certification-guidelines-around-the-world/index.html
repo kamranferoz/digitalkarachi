@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -915,7 +930,7 @@ a:focus-visible, button:focus-visible {
 <div class="dk-progress" hidden></div>
 <main id="main">
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Drone-pilot-certification-guidelines-around-the-world", "description": "Explore the diverse landscape of drone pilot certification programs and their global standards.", "datePublished": "2024-06-09T09:00:00+05:00", "dateModified": "2024-06-09T09:00:00+05:00", "author": {"@type": "Person", "name": "digitalkarachi.com", "url": "https://digitalkarachi.com/author/digitalkarachi-com/"}, "publisher": {"@type": "Organization", "name": "Digital Karachi", "logo": {"@type": "ImageObject", "url": "https://digitalkarachi.com/wp-content/uploads/2023/09/DK-Logo-light.png"}}, "mainEntityOfPage": "https://digitalkarachi.com/drone-pilot-certification-guidelines-around-the-world/", "articleSection": "Drone", "keywords": "drone, certification, pilot, regulation, global", "image": "https://picsum.photos/seed/drone-pilot-certification-guidelines-around-the-world/1200/630"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalkarachi.com/"}, {"@type": "ListItem", "position": 2, "name": "Drone", "item": "https://digitalkarachi.com/category/drone/"}, {"@type": "ListItem", "position": 3, "name": "Drone-pilot-certification-guidelines-around-the-world", "item": "https://digitalkarachi.com/drone-pilot-certification-guidelines-around-the-world/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Drone-pilot-certification-guidelines-around-the-world", "description": "Explore the diverse landscape of drone pilot certification programs and their global standards.", "datePublished": "2024-06-09T09:00:00+05:00", "dateModified": "2024-06-09T09:00:00+05:00", "author": {"@type": "Person", "name": "digitalkarachi.com", "url": "https://digitalkarachi.com/author/digitalkarachi-com/"}, "publisher": {"@type": "Organization", "name": "Digital Karachi", "logo": {"@type": "ImageObject", "url": "https://digitalkarachi.com/wp-content/uploads/2023/09/DK-Logo-light.png"}}, "mainEntityOfPage": "https://digitalkarachi.com/drone-pilot-certification-guidelines-around-the-world/", "articleSection": "Drone", "keywords": "drone, certification, pilot, regulation, global", "image": "https://loremflickr.com/1200/630/drone,aerial,drone-pilot-certification-guidelines-around-the-world,certification?lock=3108743129"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalkarachi.com/"}, {"@type": "ListItem", "position": 2, "name": "Drone", "item": "https://digitalkarachi.com/category/drone/"}, {"@type": "ListItem", "position": 3, "name": "Drone-pilot-certification-guidelines-around-the-world", "item": "https://digitalkarachi.com/drone-pilot-certification-guidelines-around-the-world/"}]}</script>
 <article class="dk-article">
   <nav class="dk-breadcrumb" aria-label="Breadcrumb">
     <a href="../index.html">Home</a><span>/</span>
@@ -931,7 +946,7 @@ a:focus-visible, button:focus-visible {
       <span><svg width="14" height="14"><use href="#i-clock"/></svg>2 min read</span>
     </div>
   </header>
-  <figure class="dk-article-hero"><img src="https://picsum.photos/seed/drone-pilot-certification-guidelines-around-the-world/1200/630" alt="Drone-pilot-certification-guidelines-around-the-world" width="1200" height="630" decoding="async" loading="eager" fetchpriority="high" /></figure>
+  <figure class="dk-article-hero"><img src="https://loremflickr.com/1200/630/drone,aerial,drone-pilot-certification-guidelines-around-the-world,certification?lock=3108743129" alt="Drone-pilot-certification-guidelines-around-the-world" width="1200" height="630" decoding="async" loading="eager" fetchpriority="high" /></figure>
   <div class="dk-prose">
 <p>Drone technology has rapidly evolved, transforming industries from agriculture to film production. However, as its adoption increases, so does the need for standardized certification programs. This article explores the global landscape of drone pilot certifications and their varied standards.</p><h2>Introduction</h2><p>The rise of drones in various sectors necessitates a clear understanding of regulatory frameworks and certification requirements. Certification ensures pilots have the necessary skills and knowledge to operate drones safely, legally, and effectively. While there is no single global standard, several countries and international bodies have established their own guidelines.</p><h2>United States</h2><p>In the United States, the Federal Aviation Administration (FAA) is responsible for regulating drone operations. The FAA's Part 107 certification program requires pilots to pass a multiple-choice exam on drone regulations, operations, and airspace awareness. This certification covers both recreational and commercial drones. While it provides a comprehensive set of rules and guidelines, the program does not include hands-on flight training.</p><ul><li>Passing the FAA Part 107 test is mandatory for anyone operating drones for business purposes in the U.S.</li></ul><h2>European Union</h2><p>The European Union’s certification framework, known as U-Space, aims to harmonize drone operations across member states. The Single European Sky Air Traffic Management (SESAR) initiative sets out a series of standards and guidelines for drone operators. However, each country within the EU has its own implementation details, leading to some variability in requirements.</p><ul><li>The Basic UAS Operator Certificate is one of several certifications available under the EASA framework, designed for commercial operations and beyond visual line-of-sight (BVLOS) flights.</li></ul><h2>Asia-Pacific Region</h2><p>In Asia, countries like Japan and South Korea have developed detailed certification programs. In Japan, the Civil Aviation Bureau requires commercial drone operators to pass a written exam and complete 15 hours of flight training. South Korea has a more streamlined process with a written test and practical flying exercises.</p><ul><li>China’s Civil Aviation Administration (CAA) mandates that all commercial drones be registered, and it offers certification courses for pilots operating in specific areas like agriculture or construction.</li></ul><h2>Africa</h2><p>African countries vary widely in their drone regulations. Countries such as South Africa and Kenya have established local authorities to oversee drone operations. The Civil Aviation Authority of South Africa (CAASA) requires operators to pass a written test, while the Kenya Civil Aviation Authority (KCAA) offers training programs tailored for specific industries.</p><ul><li>While there is no single African-wide certification program, countries are increasingly working towards harmonized standards.</li></ul><h2>International Standards</h2><p>Beyond national regulations, international bodies such as the International Civil Aviation Organization (ICAO) and the World Drone Summit (WDS) play a crucial role. The ICAO's guidelines provide a framework for countries to develop their own drone policies, ensuring safety and interoperability across borders.</p><p>The WDS focuses on promoting best practices in drone technology and regulations, often hosting conferences where industry experts discuss emerging trends and challenges.</p><ol><li>The WDS has initiated several projects aimed at standardizing training programs globally, making it easier for pilots to transfer their skills between different countries.</li></ol><h2>Conclusion</h2><p>The global landscape of drone pilot certification is complex but evolving. As the technology continues to grow, so too will the need for robust and adaptable certification programs. Pilots should stay informed about local regulations and consider pursuing advanced training to remain competitive in a rapidly changing industry.</p>
   </div>
@@ -952,17 +967,17 @@ a:focus-visible, button:focus-visible {
       <h2>Related reading</h2>
       <div class="dk-related-grid">
         <article class="dk-related-card">
-          <a class="dk-related-card-figure" href="../art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/art-of-saying-no-in-product-roadmaps-a-modern-guide/1200/630" alt="Art of Saying No in Product Roadmaps: A Modern Guide" width="1200" height="630" decoding="async" loading="lazy" /></a>
+          <a class="dk-related-card-figure" href="../art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/business,office,saying,product?lock=970349815" alt="Art of Saying No in Product Roadmaps: A Modern Guide" width="1200" height="630" decoding="async" loading="lazy" /></a>
           <a class="dk-related-card-title" href="../art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html">Art of Saying No in Product Roadmaps: A Modern Guide</a>
           <div class="dk-related-card-meta"><time datetime="2026-05-22T09:00:00+05:00">22 May 2026</time></div>
         </article>
         <article class="dk-related-card">
-          <a class="dk-related-card-figure" href="../object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/1200/630" alt="Object Storage as a Primary Database: Emerging Patterns in Cloud Computing" width="1200" height="630" decoding="async" loading="lazy" /></a>
+          <a class="dk-related-card-figure" href="../object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cloud,server,object,storage?lock=3582842096" alt="Object Storage as a Primary Database: Emerging Patterns in Cloud Computing" width="1200" height="630" decoding="async" loading="lazy" /></a>
           <a class="dk-related-card-title" href="../object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html">Object Storage as a Primary Database: Emerging Patterns in Cloud Computing</a>
           <div class="dk-related-card-meta"><time datetime="2026-05-21T09:00:00+05:00">21 May 2026</time></div>
         </article>
         <article class="dk-related-card">
-          <a class="dk-related-card-figure" href="../hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/1200/630" alt="Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns" width="1200" height="630" decoding="async" loading="lazy" /></a>
+          <a class="dk-related-card-figure" href="../hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/machine-learning,data,hyperparameter,tuning?lock=2373282527" alt="Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns" width="1200" height="630" decoding="async" loading="lazy" /></a>
           <a class="dk-related-card-title" href="../hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html">Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns</a>
           <div class="dk-related-card-meta"><time datetime="2026-05-18T09:00:00+05:00">18 May 2026</time></div>
         </article></div>

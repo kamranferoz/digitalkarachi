@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -920,70 +935,70 @@ a:focus-visible, button:focus-visible {
 <section class="dk-grid">
 
 <article class="dk-card is-large">
-  <a class="dk-card-figure" href="../../api-design-lessons-from-a-decade-of-rest-and-graphql/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/api-design-lessons-from-a-decade-of-rest-and-graphql/1200/630" alt="API Design Lessons from a Decade of REST and GraphQL" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../api-design-lessons-from-a-decade-of-rest-and-graphql/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/technology,computer,design,lessons?lock=2094388752" alt="API Design Lessons from a Decade of REST and GraphQL" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/technology/index.html">Technology</a></div>
   <h2 class="dk-card-title"><a href="../../api-design-lessons-from-a-decade-of-rest-and-graphql/index.html">API Design Lessons from a Decade of REST and GraphQL</a></h2>
   <p class="dk-card-excerpt">Learn the key principles and best practices in designing efficient and scalable APIs using REST and GraphQL, based on real-world experiences over the past decade.</p>
   <div class="dk-card-meta"><time datetime="2025-12-25T09:00:00+05:00">25 December 2025</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../quantum-optimization-revisiting-combinatorial-problems/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/quantum-optimization-revisiting-combinatorial-problems/1200/630" alt="Quantum Optimization: Revisiting Combinatorial Problems" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../quantum-optimization-revisiting-combinatorial-problems/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/quantum,physics,optimization,quantum-computing?lock=2195554670" alt="Quantum Optimization: Revisiting Combinatorial Problems" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/quantum-computing/index.html">Quantum Computing</a></div>
   <h2 class="dk-card-title"><a href="../../quantum-optimization-revisiting-combinatorial-problems/index.html">Quantum Optimization: Revisiting Combinatorial Problems</a></h2>
   <p class="dk-card-excerpt">Exploring the potential of quantum computing in solving complex combinatorial challenges with emerging algorithms and hardware.</p>
   <div class="dk-card-meta"><time datetime="2025-12-22T09:00:00+05:00">22 December 2025</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../mev-what-it-is-and-why-builders-should-care/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/mev-what-it-is-and-why-builders-should-care/1200/630" alt="MEV: What It Is And Why Builders Should Care" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../mev-what-it-is-and-why-builders-should-care/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,builders,care?lock=3472501045" alt="MEV: What It Is And Why Builders Should Care" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/blockchain/index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../mev-what-it-is-and-why-builders-should-care/index.html">MEV: What It Is And Why Builders Should Care</a></h2>
   <p class="dk-card-excerpt">Understand what MEV is, its implications on blockchain security and efficiency, and why developers must address it in their projects.</p>
   <div class="dk-card-meta"><time datetime="2025-12-19T09:00:00+05:00">19 December 2025</time></div>
 </article>
 <article class="dk-card is-wide">
-  <a class="dk-card-figure" href="../../cold-start-economics-optimizing-serverless-for-latency-sensitive-workloads/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/cold-start-economics-optimizing-serverless-for-latency-sensitive-workloads/1200/630" alt="Cold-start Economics: Optimizing Serverless For Latency-sensitive Workloads" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../cold-start-economics-optimizing-serverless-for-latency-sensitive-workloads/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cloud,server,cold-start,economics?lock=4195035228" alt="Cold-start Economics: Optimizing Serverless For Latency-sensitive Workloads" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/cloud-computing/index.html">Cloud Computing</a></div>
   <h2 class="dk-card-title"><a href="../../cold-start-economics-optimizing-serverless-for-latency-sensitive-workloads/index.html">Cold-start Economics: Optimizing Serverless For Latency-sensitive Workloads</a></h2>
   <p class="dk-card-excerpt">Explore strategies to minimize cold start impact and ensure responsiveness in serverless architectures for real-time applications.</p>
   <div class="dk-card-meta"><time datetime="2025-12-16T09:00:00+05:00">16 December 2025</time></div>
 </article>
 <article class="dk-card is-wide">
-  <a class="dk-card-figure" href="../../cross-validation-strategies-that-don-t-leak/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/cross-validation-strategies-that-don-t-leak/1200/630" alt="Cross-Validation Strategies That Don&#x27;t Leak" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../cross-validation-strategies-that-don-t-leak/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/machine-learning,data,cross-validation,strategies?lock=734425824" alt="Cross-Validation Strategies That Don&#x27;t Leak" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/machine-learning-ml/index.html">Machine Learning (ML)</a></div>
   <h2 class="dk-card-title"><a href="../../cross-validation-strategies-that-don-t-leak/index.html">Cross-Validation Strategies That Don&#x27;t Leak</a></h2>
   <p class="dk-card-excerpt">Exploring advanced techniques to prevent data leakage in machine learning models without compromising accuracy.</p>
   <div class="dk-card-meta"><time datetime="2025-12-13T09:00:00+05:00">13 December 2025</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../webxr-building-cross-platform-immersive-experiences/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/webxr-building-cross-platform-immersive-experiences/1200/630" alt="Webxr: Building Cross-platform Immersive Experiences" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../webxr-building-cross-platform-immersive-experiences/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/vr,headset,webxr,building?lock=3224344391" alt="Webxr: Building Cross-platform Immersive Experiences" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/virtual-reality-vr/index.html">Virtual Reality (VR)</a></div>
   <h2 class="dk-card-title"><a href="../../webxr-building-cross-platform-immersive-experiences/index.html">Webxr: Building Cross-platform Immersive Experiences</a></h2>
   <p class="dk-card-excerpt">WebXR is revolutionizing immersive web content but faces challenges in adoption and consistency across browsers.</p>
   <div class="dk-card-meta"><time datetime="2025-12-10T09:00:00+05:00">10 December 2025</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../fpv-racing-technology-s-commercial-spillover-from-race-tracks-to-real-world-applications/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/fpv-racing-technology-s-commercial-spillover-from-race-tracks-to-real-world-applications/1200/630" alt="FPV Racing Technology&#x27;s Commercial Spillover: From Race Tracks to Real-World Applications" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../fpv-racing-technology-s-commercial-spillover-from-race-tracks-to-real-world-applications/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,racing,technology?lock=4001226580" alt="FPV Racing Technology&#x27;s Commercial Spillover: From Race Tracks to Real-World Applications" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/drone/index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../fpv-racing-technology-s-commercial-spillover-from-race-tracks-to-real-world-applications/index.html">FPV Racing Technology&#x27;s Commercial Spillover: From Race Tracks to Real-World Applications</a></h2>
   <p class="dk-card-excerpt">Explore how the cutting-edge technology behind FPV (First Person View) drone racing is transforming industries beyond hobbyist enthusiasts.</p>
   <div class="dk-card-meta"><time datetime="2025-12-07T09:00:00+05:00">7 December 2025</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../redesign-your-engineering-hire-process-the-loop-you-ve-never-heard-about/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/redesign-your-engineering-hire-process-the-loop-you-ve-never-heard-about/1200/630" alt="Redesign Your Engineering Hire Process: The Loop You’ve Never Heard About" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../redesign-your-engineering-hire-process-the-loop-you-ve-never-heard-about/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/business,office,redesign,engineering?lock=4066853074" alt="Redesign Your Engineering Hire Process: The Loop You’ve Never Heard About" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/management/index.html">Management</a></div>
   <h2 class="dk-card-title"><a href="../../redesign-your-engineering-hire-process-the-loop-you-ve-never-heard-about/index.html">Redesign Your Engineering Hire Process: The Loop You’ve Never Heard About</a></h2>
   <p class="dk-card-excerpt">Redesign your engineering interview process by focusing on real-world problem-solving and collaboration skills, not just coding tests.</p>
   <div class="dk-card-meta"><time datetime="2025-12-04T09:00:00+05:00">4 December 2025</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../ai-in-cybersecurity-separating-capability-from-theater/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/ai-in-cybersecurity-separating-capability-from-theater/1200/630" alt="AI In Cybersecurity: Separating Capability From Theater" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../ai-in-cybersecurity-separating-capability-from-theater/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cybersecurity,lock,separating,ai?lock=3485473734" alt="AI In Cybersecurity: Separating Capability From Theater" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/security/index.html">Security</a></div>
   <h2 class="dk-card-title"><a href="../../ai-in-cybersecurity-separating-capability-from-theater/index.html">AI In Cybersecurity: Separating Capability From Theater</a></h2>
   <p class="dk-card-excerpt">Artificial intelligence promises transformative security but often falls short in practical application, leaving organizations wary of overpromised and underdelivered solutions.</p>
   <div class="dk-card-meta"><time datetime="2025-12-01T09:00:00+05:00">1 December 2025</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../designing-ai-features-that-fail-gracefully/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/designing-ai-features-that-fail-gracefully/1200/630" alt="Designing AI Features That Fail Gracefully" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../designing-ai-features-that-fail-gracefully/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/ai,technology,designing,features?lock=1506888943" alt="Designing AI Features That Fail Gracefully" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/artificial-intelligence-ai/index.html">Artificial Intelligence (AI)</a></div>
   <h2 class="dk-card-title"><a href="../../designing-ai-features-that-fail-gracefully/index.html">Designing AI Features That Fail Gracefully</a></h2>
   <p class="dk-card-excerpt">Learn how to build AI systems that handle errors gracefully without compromising user experience or system integrity.</p>

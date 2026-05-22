@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -923,7 +938,7 @@ a:focus-visible, button:focus-visible {
 <section class="dk-grid">
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../robotics-curricula-for-south-asian-universities/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/robotics-curricula-for-south-asian-universities/1200/630" alt="Robotics Curricula For South Asian Universities" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../robotics-curricula-for-south-asian-universities/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,curricula,education?lock=1326972793" alt="Robotics Curricula For South Asian Universities" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../robotics-curricula-for-south-asian-universities/index.html">Robotics Curricula For South Asian Universities</a></h2>
   <p class="dk-card-excerpt">Exploring the current landscape of robotics education in South Asia, challenges faced by universities, and potential solutions.</p>
@@ -931,7 +946,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../robotics-in-construction-the-slow-revolution/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/robotics-in-construction-the-slow-revolution/1200/630" alt="Robotics In Construction: The Slow Revolution" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../robotics-in-construction-the-slow-revolution/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,construction?lock=2530543537" alt="Robotics In Construction: The Slow Revolution" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../robotics-in-construction-the-slow-revolution/index.html">Robotics In Construction: The Slow Revolution</a></h2>
   <p class="dk-card-excerpt">How autonomous machines are reshaping the construction industry with slow but steady progress.</p>
@@ -939,7 +954,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../robot-perception-the-sensor-stack/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/robot-perception-the-sensor-stack/1200/630" alt="Robot Perception: The Sensor Stack" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../robot-perception-the-sensor-stack/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,perception,sensor-stack?lock=400690991" alt="Robot Perception: The Sensor Stack" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../robot-perception-the-sensor-stack/index.html">Robot Perception: The Sensor Stack</a></h2>
   <p class="dk-card-excerpt">A comprehensive guide to understanding the critical role of sensor stacks in modern robotics.</p>
@@ -947,7 +962,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../robotic-process-automation-vs-physical-robots-when-each-wins/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/robotic-process-automation-vs-physical-robots-when-each-wins/1200/630" alt="Robotic-process Automation Vs. Physical Robots: When Each Wins" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../robotic-process-automation-vs-physical-robots-when-each-wins/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,robotic-process,automation?lock=3304310337" alt="Robotic-process Automation Vs. Physical Robots: When Each Wins" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../robotic-process-automation-vs-physical-robots-when-each-wins/index.html">Robotic-process Automation Vs. Physical Robots: When Each Wins</a></h2>
   <p class="dk-card-excerpt">Explore the strengths of RPA and physical robots in automation, understanding when each is best suited for your workflow.</p>
@@ -955,7 +970,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../robot-teleoperation-when-remote-control-is-the-answer/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/robot-teleoperation-when-remote-control-is-the-answer/1200/630" alt="Robot Teleoperation: When Remote Control Is the Answer" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../robot-teleoperation-when-remote-control-is-the-answer/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,teleoperation?lock=2383204426" alt="Robot Teleoperation: When Remote Control Is the Answer" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../robot-teleoperation-when-remote-control-is-the-answer/index.html">Robot Teleoperation: When Remote Control Is the Answer</a></h2>
   <p class="dk-card-excerpt">Learn how remote control enables precise and efficient operation of robots in various industries, from manufacturing to space exploration.</p>
@@ -963,7 +978,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../surgical-robotics-the-regulatory-and-engineering-bar/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/surgical-robotics-the-regulatory-and-engineering-bar/1200/630" alt="Surgical Robotics: The Regulatory and Engineering Bar" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../surgical-robotics-the-regulatory-and-engineering-bar/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,surgical,surgical-robotics?lock=3532156349" alt="Surgical Robotics: The Regulatory and Engineering Bar" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../surgical-robotics-the-regulatory-and-engineering-bar/index.html">Surgical Robotics: The Regulatory and Engineering Bar</a></h2>
   <p class="dk-card-excerpt">Exploring the complexities of regulatory compliance and engineering challenges in surgical robotics.</p>
@@ -971,7 +986,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../soft-robotics-beyond-research-labs-into-everyday-use/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/soft-robotics-beyond-research-labs-into-everyday-use/1200/630" alt="Soft Robotics: Beyond Research Labs Into Everyday Use" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../soft-robotics-beyond-research-labs-into-everyday-use/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,soft,soft-robotics?lock=1643704541" alt="Soft Robotics: Beyond Research Labs Into Everyday Use" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../soft-robotics-beyond-research-labs-into-everyday-use/index.html">Soft Robotics: Beyond Research Labs Into Everyday Use</a></h2>
   <p class="dk-card-excerpt">From medical devices to industrial automation, soft robotics is transforming industries with its adaptability and safety.</p>
@@ -979,7 +994,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../robotics-startups-the-capital-intensity-problem/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/robotics-startups-the-capital-intensity-problem/1200/630" alt="Robotics Startups: The Capital Intensity Problem" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../robotics-startups-the-capital-intensity-problem/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,startups?lock=3599399905" alt="Robotics Startups: The Capital Intensity Problem" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../robotics-startups-the-capital-intensity-problem/index.html">Robotics Startups: The Capital Intensity Problem</a></h2>
   <p class="dk-card-excerpt">Exploring the financial challenges faced by robotics startups as they scale, from hardware development to market competition.</p>
@@ -987,7 +1002,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../mobile-robots-in-hospitals-revolutionizing-logistics-and-disinfection/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/mobile-robots-in-hospitals-revolutionizing-logistics-and-disinfection/1200/630" alt="Mobile Robots in Hospitals: Revolutionizing Logistics and Disinfection" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../mobile-robots-in-hospitals-revolutionizing-logistics-and-disinfection/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,mobile,robots?lock=3305427241" alt="Mobile Robots in Hospitals: Revolutionizing Logistics and Disinfection" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../mobile-robots-in-hospitals-revolutionizing-logistics-and-disinfection/index.html">Mobile Robots in Hospitals: Revolutionizing Logistics and Disinfection</a></h2>
   <p class="dk-card-excerpt">Explore how mobile robots are transforming hospital operations, enhancing logistics efficiency and streamlining disinfection processes.</p>
@@ -995,7 +1010,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../robotics-for-elder-care-the-human-factors/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/robotics-for-elder-care-the-human-factors/1200/630" alt="Robotics For Elder Care: The Human Factors" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../robotics-for-elder-care-the-human-factors/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,elder,elder-care?lock=171211461" alt="Robotics For Elder Care: The Human Factors" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../robotics-for-elder-care-the-human-factors/index.html">Robotics For Elder Care: The Human Factors</a></h2>
   <p class="dk-card-excerpt">Exploring the challenges and considerations in designing robots for elder care to ensure they are both helpful and humane.</p>
@@ -1003,7 +1018,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../manipulation-still-the-hardest-problem-in-robotics/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/manipulation-still-the-hardest-problem-in-robotics/1200/630" alt="Manipulation: Still the Hardest Problem in Robotics" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../manipulation-still-the-hardest-problem-in-robotics/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,manipulation,still?lock=379066359" alt="Manipulation: Still the Hardest Problem in Robotics" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../manipulation-still-the-hardest-problem-in-robotics/index.html">Manipulation: Still the Hardest Problem in Robotics</a></h2>
   <p class="dk-card-excerpt">Why dexterous robotic manipulation remains a challenging frontier despite advances in AI and hardware.</p>
@@ -1011,7 +1026,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../warehouse-robotics-the-architecture-of-fulfillment-automation/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/warehouse-robotics-the-architecture-of-fulfillment-automation/1200/630" alt="Warehouse Robotics: The Architecture Of Fulfillment Automation" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../warehouse-robotics-the-architecture-of-fulfillment-automation/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,warehouse,warehouse-robotics?lock=2023680114" alt="Warehouse Robotics: The Architecture Of Fulfillment Automation" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../warehouse-robotics-the-architecture-of-fulfillment-automation/index.html">Warehouse Robotics: The Architecture Of Fulfillment Automation</a></h2>
   <p class="dk-card-excerpt">Discover the key components and systems powering today’s advanced warehouse robotics, from autonomous mobile robots to AI-driven inventory management.</p>
@@ -1019,7 +1034,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../cobots-collaborative-robots-in-small-manufacturing/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/cobots-collaborative-robots-in-small-manufacturing/1200/630" alt="COBOTS: Collaborative Robots in Small Manufacturing" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../cobots-collaborative-robots-in-small-manufacturing/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,cobots,collaborative?lock=3391303109" alt="COBOTS: Collaborative Robots in Small Manufacturing" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../cobots-collaborative-robots-in-small-manufacturing/index.html">COBOTS: Collaborative Robots in Small Manufacturing</a></h2>
   <p class="dk-card-excerpt">Learn how cobots are revolutionizing small manufacturing by enhancing safety and productivity without the high costs of traditional automation.</p>
@@ -1027,7 +1042,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../robots-in-universities-how-south-asian-institutions-are-preparing-future-innovators/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/robots-in-universities-how-south-asian-institutions-are-preparing-future-innovators/1200/630" alt="Robots in Universities: How South Asian Institutions Are Preparing Future Innovators" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../robots-in-universities-how-south-asian-institutions-are-preparing-future-innovators/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,robots,universities?lock=2730537825" alt="Robots in Universities: How South Asian Institutions Are Preparing Future Innovators" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../robots-in-universities-how-south-asian-institutions-are-preparing-future-innovators/index.html">Robots in Universities: How South Asian Institutions Are Preparing Future Innovators</a></h2>
   <p class="dk-card-excerpt">South Asian universities are increasingly integrating robotics into their curricula to equip students with essential skills for the future. Here’s how these institutions are shapin…</p>
@@ -1035,7 +1050,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../ros-2-in-production-the-patterns-that-survive/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/ros-2-in-production-the-patterns-that-survive/1200/630" alt="ROS 2 in Production: The Patterns That Survive" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../ros-2-in-production-the-patterns-that-survive/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,production,patterns?lock=650147161" alt="ROS 2 in Production: The Patterns That Survive" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../ros-2-in-production-the-patterns-that-survive/index.html">ROS 2 in Production: The Patterns That Survive</a></h2>
   <p class="dk-card-excerpt">Discover the best practices and design patterns for implementing ROS 2 in real-world production environments, focusing on reliability, scalability, and maintainability.</p>
@@ -1043,7 +1058,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../robotics-safety-standards-a-practitioner-s-overview/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/robotics-safety-standards-a-practitioner-s-overview/1200/630" alt="Robotics Safety Standards: A Practitioner&#x27;s Overview" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../robotics-safety-standards-a-practitioner-s-overview/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,safety,safety-standards?lock=2848897026" alt="Robotics Safety Standards: A Practitioner&#x27;s Overview" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../robotics-safety-standards-a-practitioner-s-overview/index.html">Robotics Safety Standards: A Practitioner&#x27;s Overview</a></h2>
   <p class="dk-card-excerpt">Understand the crucial safety standards in robotics to ensure your projects are both effective and secure.</p>
@@ -1051,7 +1066,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../drone-mounted-manipulators-the-new-frontier/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/drone-mounted-manipulators-the-new-frontier/1200/630" alt="Drone-mounted Manipulators: The New Frontier" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../drone-mounted-manipulators-the-new-frontier/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,drone-mounted,manipulators?lock=3447520257" alt="Drone-mounted Manipulators: The New Frontier" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../drone-mounted-manipulators-the-new-frontier/index.html">Drone-mounted Manipulators: The New Frontier</a></h2>
   <p class="dk-card-excerpt">Explore the transformative potential of drone-mounted manipulators in industries from construction to manufacturing, and how they are revolutionizing tasks traditionally performed …</p>
@@ -1059,7 +1074,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../humanoid-robots-in-2026-hype-vs-deployment-reality/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/humanoid-robots-in-2026-hype-vs-deployment-reality/1200/630" alt="Humanoid Robots in 2026: Hype vs Deployment Reality" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../humanoid-robots-in-2026-hype-vs-deployment-reality/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,humanoid,robots?lock=658034309" alt="Humanoid Robots in 2026: Hype vs Deployment Reality" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../humanoid-robots-in-2026-hype-vs-deployment-reality/index.html">Humanoid Robots in 2026: Hype vs Deployment Reality</a></h2>
   <p class="dk-card-excerpt">Exploring the current state of humanoid robotics in 2026, separating the reality from the hype.</p>
@@ -1067,7 +1082,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../6-open-source-robotics-platforms-to-explore/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/6-open-source-robotics-platforms-to-explore/1200/630" alt="6 Open-Source Robotics Platforms to Explore" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../6-open-source-robotics-platforms-to-explore/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,open-source?lock=2792028225" alt="6 Open-Source Robotics Platforms to Explore" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../6-open-source-robotics-platforms-to-explore/index.html">6 Open-Source Robotics Platforms to Explore</a></h2>
   <p class="dk-card-excerpt">Discover six open-source robotics platforms that can empower your next project with flexible and customizable solutions.</p>
@@ -1075,7 +1090,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../agricultural-robotics-harvesting-at-scale/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/agricultural-robotics-harvesting-at-scale/1200/630" alt="Agricultural Robotics: Harvesting At Scale" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../agricultural-robotics-harvesting-at-scale/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,agricultural,agriculture?lock=1115264669" alt="Agricultural Robotics: Harvesting At Scale" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../agricultural-robotics-harvesting-at-scale/index.html">Agricultural Robotics: Harvesting At Scale</a></h2>
   <p class="dk-card-excerpt">How autonomous machines are transforming modern farming practices to increase efficiency and sustainability.</p>
@@ -1083,7 +1098,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../sim-to-real-transfer-for-robot-learning-realizing-potential/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/sim-to-real-transfer-for-robot-learning-realizing-potential/1200/630" alt="Sim-to-real Transfer For Robot Learning: Realizing Potential" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../sim-to-real-transfer-for-robot-learning-realizing-potential/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,sim-to-real,transfer?lock=3302647549" alt="Sim-to-real Transfer For Robot Learning: Realizing Potential" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../sim-to-real-transfer-for-robot-learning-realizing-potential/index.html">Sim-to-real Transfer For Robot Learning: Realizing Potential</a></h2>
   <p class="dk-card-excerpt">Sim-to-real transfer in robotics is a promising technique that bridges the gap between simulation and real-world applications, enabling faster deployment of advanced robot systems.</p>

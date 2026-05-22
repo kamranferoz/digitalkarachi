@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -920,70 +935,70 @@ a:focus-visible, button:focus-visible {
 <section class="dk-grid">
 
 <article class="dk-card is-large">
-  <a class="dk-card-figure" href="../../survival-analysis-for-churn-modeling-a-comprehensive-guide/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/survival-analysis-for-churn-modeling-a-comprehensive-guide/1200/630" alt="Survival Analysis for Churn Modeling: A Comprehensive Guide" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../survival-analysis-for-churn-modeling-a-comprehensive-guide/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/data,analytics,survival,analysis?lock=2435375741" alt="Survival Analysis for Churn Modeling: A Comprehensive Guide" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/data-science/index.html">Data Science</a></div>
   <h2 class="dk-card-title"><a href="../../survival-analysis-for-churn-modeling-a-comprehensive-guide/index.html">Survival Analysis for Churn Modeling: A Comprehensive Guide</a></h2>
   <p class="dk-card-excerpt">Learn how to apply survival analysis techniques in churn modeling, enhancing your predictive capabilities and business insights.</p>
   <div class="dk-card-meta"><time datetime="2024-06-30T09:00:00+05:00">30 June 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../infrastructure-as-code-patterns-that-scale-to-large-teams/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/infrastructure-as-code-patterns-that-scale-to-large-teams/1200/630" alt="Infrastructure-as-code Patterns That Scale to Large Teams" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../infrastructure-as-code-patterns-that-scale-to-large-teams/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/technology,computer,infrastructure-as-code,patterns?lock=3426937404" alt="Infrastructure-as-code Patterns That Scale to Large Teams" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/technology/index.html">Technology</a></div>
   <h2 class="dk-card-title"><a href="../../infrastructure-as-code-patterns-that-scale-to-large-teams/index.html">Infrastructure-as-code Patterns That Scale to Large Teams</a></h2>
   <p class="dk-card-excerpt">Mastering infrastructure as code (IaC) is essential for managing complex systems in large organizations. Learn proven patterns that ensure consistency, security, and efficiency.</p>
   <div class="dk-card-meta"><time datetime="2024-06-27T09:00:00+05:00">27 June 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../quantum-resistant-cryptography-the-migration-roadmap/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/quantum-resistant-cryptography-the-migration-roadmap/1200/630" alt="Quantum-Resistant Cryptography: The Migration Roadmap" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../quantum-resistant-cryptography-the-migration-roadmap/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/quantum,physics,quantum-resistant,cryptography?lock=2002238424" alt="Quantum-Resistant Cryptography: The Migration Roadmap" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/quantum-computing/index.html">Quantum Computing</a></div>
   <h2 class="dk-card-title"><a href="../../quantum-resistant-cryptography-the-migration-roadmap/index.html">Quantum-Resistant Cryptography: The Migration Roadmap</a></h2>
   <p class="dk-card-excerpt">Understanding the critical steps organizations must take to secure their data against quantum threats.</p>
   <div class="dk-card-meta"><time datetime="2024-06-24T09:00:00+05:00">24 June 2024</time></div>
 </article>
 <article class="dk-card is-wide">
-  <a class="dk-card-figure" href="../../oracles-the-trust-layer-that-breaks-defi/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/oracles-the-trust-layer-that-breaks-defi/1200/630" alt="Oracles: The Trust Layer That Breaks Defi" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../oracles-the-trust-layer-that-breaks-defi/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,oracles,trust?lock=3793699314" alt="Oracles: The Trust Layer That Breaks Defi" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/blockchain/index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../oracles-the-trust-layer-that-breaks-defi/index.html">Oracles: The Trust Layer That Breaks Defi</a></h2>
   <p class="dk-card-excerpt">Oracles are essential in blockchain applications but pose significant challenges, especially in decentralized finance (DeFi). Explore how these smart contracts connectors affect th…</p>
   <div class="dk-card-meta"><time datetime="2024-06-21T09:00:00+05:00">21 June 2024</time></div>
 </article>
 <article class="dk-card is-wide">
-  <a class="dk-card-figure" href="../../right-sizing-compute-the-underused-autoscaling-levers/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/right-sizing-compute-the-underused-autoscaling-levers/1200/630" alt="Right-Sizing Compute: The Underused Autoscaling Levers" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../right-sizing-compute-the-underused-autoscaling-levers/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cloud,server,right-sizing,compute?lock=205783872" alt="Right-Sizing Compute: The Underused Autoscaling Levers" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/cloud-computing/index.html">Cloud Computing</a></div>
   <h2 class="dk-card-title"><a href="../../right-sizing-compute-the-underused-autoscaling-levers/index.html">Right-Sizing Compute: The Underused Autoscaling Levers</a></h2>
   <p class="dk-card-excerpt">Learn how to optimize cloud resources by mastering autoscaling, a powerful yet often underutilized tool.</p>
   <div class="dk-card-meta"><time datetime="2024-06-18T09:00:00+05:00">18 June 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../the-lifecycle-of-a-production-ml-model-from-training-to-deployment/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/the-lifecycle-of-a-production-ml-model-from-training-to-deployment/1200/630" alt="The Lifecycle of a Production ML Model: From Training to Deployment" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../the-lifecycle-of-a-production-ml-model-from-training-to-deployment/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/machine-learning,data,lifecycle,production?lock=2660316416" alt="The Lifecycle of a Production ML Model: From Training to Deployment" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/machine-learning-ml/index.html">Machine Learning (ML)</a></div>
   <h2 class="dk-card-title"><a href="../../the-lifecycle-of-a-production-ml-model-from-training-to-deployment/index.html">The Lifecycle of a Production ML Model: From Training to Deployment</a></h2>
   <p class="dk-card-excerpt">Explore the essential steps in deploying an effective machine learning model, from data preparation and training to monitoring and maintenance.</p>
   <div class="dk-card-meta"><time datetime="2024-06-15T09:00:00+05:00">15 June 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../passthrough-ar-the-new-default-for-headsets/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/passthrough-ar-the-new-default-for-headsets/1200/630" alt="Passthrough AR: The New Default for Headsets" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../passthrough-ar-the-new-default-for-headsets/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/vr,headset,passthrough,default?lock=3069950030" alt="Passthrough AR: The New Default for Headsets" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/virtual-reality-vr/index.html">Virtual Reality (VR)</a></div>
   <h2 class="dk-card-title"><a href="../../passthrough-ar-the-new-default-for-headsets/index.html">Passthrough AR: The New Default for Headsets</a></h2>
   <p class="dk-card-excerpt">Exploring the future of mixed reality and how passthrough augmented reality is shaping our virtual experiences.</p>
   <div class="dk-card-meta"><time datetime="2024-06-12T09:00:00+05:00">12 June 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../drone-pilot-certification-guidelines-around-the-world/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/drone-pilot-certification-guidelines-around-the-world/1200/630" alt="Drone-pilot-certification-guidelines-around-the-world" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../drone-pilot-certification-guidelines-around-the-world/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,drone-pilot-certification-guidelines-around-the-world,certification?lock=3108743129" alt="Drone-pilot-certification-guidelines-around-the-world" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/drone/index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../drone-pilot-certification-guidelines-around-the-world/index.html">Drone-pilot-certification-guidelines-around-the-world</a></h2>
   <p class="dk-card-excerpt">Explore the diverse landscape of drone pilot certification programs and their global standards.</p>
   <div class="dk-card-meta"><time datetime="2024-06-09T09:00:00+05:00">9 June 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../remote-first-compensation-navigating-bands-geography-and-fairness/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/remote-first-compensation-navigating-bands-geography-and-fairness/1200/630" alt="Remote-First Compensation: Navigating Bands, Geography, and Fairness" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../remote-first-compensation-navigating-bands-geography-and-fairness/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/business,office,remote-first,compensation?lock=103587325" alt="Remote-First Compensation: Navigating Bands, Geography, and Fairness" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/management/index.html">Management</a></div>
   <h2 class="dk-card-title"><a href="../../remote-first-compensation-navigating-bands-geography-and-fairness/index.html">Remote-First Compensation: Navigating Bands, Geography, and Fairness</a></h2>
   <p class="dk-card-excerpt">How to establish fair compensation strategies for remote-first teams across diverse geographical locations.</p>
   <div class="dk-card-meta"><time datetime="2024-06-06T09:00:00+05:00">6 June 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../mobile-app-security-certificate-pinning-and-beyond/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/mobile-app-security-certificate-pinning-and-beyond/1200/630" alt="Mobile App Security: Certificate Pinning And Beyond" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../mobile-app-security-certificate-pinning-and-beyond/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cybersecurity,lock,mobile,security?lock=265254024" alt="Mobile App Security: Certificate Pinning And Beyond" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/security/index.html">Security</a></div>
   <h2 class="dk-card-title"><a href="../../mobile-app-security-certificate-pinning-and-beyond/index.html">Mobile App Security: Certificate Pinning And Beyond</a></h2>
   <p class="dk-card-excerpt">Explore the critical role of certificate pinning in securing mobile apps and discover advanced security measures to protect sensitive data.</p>

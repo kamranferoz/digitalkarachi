@@ -3,7 +3,7 @@ and re-written article bodies. Uses the existing archived index.html as the
 canonical header/footer template so styling stays identical to the original
 city-blog WordPress theme.
 """
-import re, os, json, html, shutil, sys
+import re, os, json, html, shutil, sys, hashlib
 from pathlib import Path
 from collections import defaultdict
 
@@ -23,13 +23,91 @@ POSTS_PER_PAGE = 10
 # 1. Load metadata for all 20 posts by parsing the existing index + page/2
 # ---------------------------------------------------------------------------
 # ---------------------------------------------------------------------------
-# Featured-image fallback: deterministic Picsum URL keyed by post slug.
-# Used when a post has no archived hero image (`p.image is None`).
-# Picsum returns a different random photo per seed but the same one each call.
+# Featured-image fallback: deterministic, *topic-relevant* image URL.
+# Uses loremflickr.com which returns a Flickr CC image matching the tags.
+# Keywords are derived from the post's category + first 1–2 title nouns; the
+# `lock` query param hashes the slug so the same image is returned every time.
 # ---------------------------------------------------------------------------
-def featured_image_url(slug: str, category: str | None = None) -> str:
-    # 1200x630 = ideal OG / Twitter card aspect.
-    return f"https://picsum.photos/seed/{slug}/1200/630"
+_IMG_STOPWORDS = set("""
+the a an and or of for with from to in on by is are was were be been being
+this that these those it its as at into about over under between among
+across through against without within around your you we our their how why
+what when where which who whose will would can could should may might must
+not no but if then than so very just more most some any all each every other
+""".split())
+
+# Category slug -> ordered list of search keywords for image relevance.
+_CAT_IMG_KEYWORDS = {
+    "artificial-intelligence-ai": ["ai", "technology"],
+    "machine-learning-ml":        ["machine-learning", "data"],
+    "data-science":               ["data", "analytics"],
+    "cloud-computing":            ["cloud", "server"],
+    "quantum-computing":          ["quantum", "physics"],
+    "blockchain":                 ["blockchain", "crypto"],
+    "drone":                      ["drone", "aerial"],
+    "robotics":                   ["robot", "robotics"],
+    "security":                   ["cybersecurity", "lock"],
+    "internet-of-things-iot":     ["iot", "sensor"],
+    "virtual-reality-vr":         ["vr", "headset"],
+    "technology":                 ["technology", "computer"],
+    "management":                 ["business", "office"],
+    "blog":                       ["technology"],
+}
+
+def _image_keywords_from_title(title: str, n: int = 2) -> list[str]:
+    """Pick up to `n` salient lower-case keywords from a title."""
+    out = []
+    for w in re.findall(r"[A-Za-z][A-Za-z\-]+", title or ""):
+        w = w.lower().strip("-")
+        if len(w) < 4 or w in _IMG_STOPWORDS:
+            continue
+        if w in out:
+            continue
+        out.append(w)
+        if len(out) >= n:
+            break
+    return out
+
+def _loremflickr_url(keywords: list[str], slug: str, w: int = 1200, h: int = 630) -> str:
+    """Deterministic Flickr-backed image URL matching the given keywords."""
+    kws = [k for k in keywords if k] or ["technology"]
+    # loremflickr accepts up to ~4 comma-separated tags reliably.
+    tags = ",".join(kws[:4])
+    lock = int(hashlib.md5(slug.encode("utf-8")).hexdigest()[:8], 16)
+    return f"https://loremflickr.com/{w}/{h}/{tags}?lock={lock}"
+
+def featured_image_url(slug: str, title: str = "",
+                       categories: list[str] | None = None,
+                       tags: list[str] | None = None) -> str:
+    """Return a deterministic, topic-relevant 1200x630 hero URL for a post."""
+    kws: list[str] = []
+    # 1. Category-driven keywords (skip generic 'blog' until last).
+    cats = [c for c in (categories or []) if c != "blog"] + \
+           [c for c in (categories or []) if c == "blog"]
+    for c in cats:
+        for k in _CAT_IMG_KEYWORDS.get(c, []):
+            if k not in kws:
+                kws.append(k)
+        if len(kws) >= 2:
+            break
+    # 2. Title-derived keywords for specificity.
+    for w in _image_keywords_from_title(title, n=2):
+        if w not in kws:
+            kws.append(w)
+    # 3. Author-supplied tags (best signal if present).
+    for t in (tags or [])[:2]:
+        t = re.sub(r"[^a-z0-9\-]+", "", (t or "").lower())
+        if t and t not in kws:
+            kws.append(t)
+    return _loremflickr_url(kws or ["technology"], slug)
+
+def news_image_url(slug: str, title: str = "") -> str:
+    """Topic-relevant hero URL for a Tech-update item."""
+    kws = ["news", "technology"]
+    for w in _image_keywords_from_title(title, n=2):
+        if w not in kws:
+            kws.append(w)
+    return _loremflickr_url(kws, slug)
 
 
 def _is_external_img(path: str) -> bool:
@@ -398,8 +476,7 @@ def parse_posts():
         if p.image:
             img = p.image
         else:
-            primary_cat = p.categories[0] if p.categories else None
-            img = featured_image_url(p.slug, primary_cat)
+            img = featured_image_url(p.slug, p.title, p.categories, p.tags)
         posts[p.slug] = dict(
             id=str(idx),
             slug=p.slug,
@@ -959,6 +1036,10 @@ def reading_time(body_html):
 def render_news_item(news_slug, title, date_iso, body, current_path):
     news_link = rel(current_path, "news/index.html")
     home_link = rel(current_path, "index.html")
+    hero_src = news_image_url(news_slug, title)
+    hero_img = responsive_img_attrs(current_path, hero_src,
+        "(max-width: 760px) 100vw, 760px", title, eager=True,
+        klass="dk-article-hero-img")
     main = f'''
 <article class="dk-article">
   <nav class="dk-breadcrumb" aria-label="Breadcrumb">
@@ -973,6 +1054,7 @@ def render_news_item(news_slug, title, date_iso, body, current_path):
       <span><time datetime="{date_iso}">{date_iso}</time></span>
     </div>
   </header>
+  <figure class="dk-article-hero">{hero_img}</figure>
   <div class="dk-prose">
     <p>{html.escape(body)}</p>
     <p><a href="{news_link}">← Back to all tech updates</a></p>
@@ -1247,8 +1329,13 @@ def main():
     news_main_cards = ""
     for slug, title, date_iso, body in NEWS_ITEMS:
         write(f"news/{slug}/index.html", render_news_item(slug, title, date_iso, body, f"news/{slug}/index.html"))
+        thumb_src = news_image_url(slug, title)
+        thumb_img = responsive_img_attrs("news/index.html", thumb_src,
+            "(max-width: 760px) 100vw, 200px", title, eager=False,
+            klass="dk-news-thumb")
         news_main_cards += f'''
         <article class="dk-news-item">
+          <a class="dk-news-thumb-link" href="{slug}/" aria-hidden="true" tabindex="-1">{thumb_img}</a>
           <time datetime="{date_iso}">{date_iso}</time>
           <div>
             <h2><a href="{slug}/">{html.escape(title)}</a></h2>

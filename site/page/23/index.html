@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -920,70 +935,70 @@ a:focus-visible, button:focus-visible {
 <section class="dk-grid">
 
 <article class="dk-card is-large">
-  <a class="dk-card-figure" href="../../nft-utility-beyond-jpegs-from-tickets-to-credentials/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/nft-utility-beyond-jpegs-from-tickets-to-credentials/1200/630" alt="NFT Utility Beyond JPEGs: From Tickets to Credentials" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../nft-utility-beyond-jpegs-from-tickets-to-credentials/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,utility,beyond?lock=1000158965" alt="NFT Utility Beyond JPEGs: From Tickets to Credentials" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/blockchain/index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../nft-utility-beyond-jpegs-from-tickets-to-credentials/index.html">NFT Utility Beyond JPEGs: From Tickets to Credentials</a></h2>
   <p class="dk-card-excerpt">Non-fungible tokens (NFTs) are revolutionizing beyond digital art. Learn how they are being used for tickets, credentials, and memberships.</p>
   <div class="dk-card-meta"><time datetime="2024-07-30T09:00:00+05:00">30 July 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../budget-friendly-disaster-recovery-for-startups/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/budget-friendly-disaster-recovery-for-startups/1200/630" alt="Budget-friendly Disaster Recovery For Startups" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../budget-friendly-disaster-recovery-for-startups/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cloud,server,budget-friendly,disaster?lock=461280447" alt="Budget-friendly Disaster Recovery For Startups" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/cloud-computing/index.html">Cloud Computing</a></div>
   <h2 class="dk-card-title"><a href="../../budget-friendly-disaster-recovery-for-startups/index.html">Budget-friendly Disaster Recovery For Startups</a></h2>
   <p class="dk-card-excerpt">Discover cost-effective strategies for disaster recovery without breaking the bank.</p>
   <div class="dk-card-meta"><time datetime="2024-07-27T09:00:00+05:00">27 July 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../mlops-without-the-buzzwords-the-minimum-viable-platform/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/mlops-without-the-buzzwords-the-minimum-viable-platform/1200/630" alt="MLOps without the Buzzwords: The Minimum Viable Platform" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../mlops-without-the-buzzwords-the-minimum-viable-platform/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/machine-learning,data,mlops,buzzwords?lock=4136124051" alt="MLOps without the Buzzwords: The Minimum Viable Platform" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/machine-learning-ml/index.html">Machine Learning (ML)</a></div>
   <h2 class="dk-card-title"><a href="../../mlops-without-the-buzzwords-the-minimum-viable-platform/index.html">MLOps without the Buzzwords: The Minimum Viable Platform</a></h2>
   <p class="dk-card-excerpt">Learn how to build a practical MLOps setup that focuses on simplicity and effectiveness, avoiding unnecessary complexity.</p>
   <div class="dk-card-meta"><time datetime="2024-07-24T09:00:00+05:00">24 July 2024</time></div>
 </article>
 <article class="dk-card is-wide">
-  <a class="dk-card-figure" href="../../vr-in-architecture-and-real-estate-a-walkthrough-to-the-future/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/vr-in-architecture-and-real-estate-a-walkthrough-to-the-future/1200/630" alt="VR in Architecture and Real Estate: A Walkthrough to the Future" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../vr-in-architecture-and-real-estate-a-walkthrough-to-the-future/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/vr,headset,architecture,real?lock=1220213907" alt="VR in Architecture and Real Estate: A Walkthrough to the Future" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/virtual-reality-vr/index.html">Virtual Reality (VR)</a></div>
   <h2 class="dk-card-title"><a href="../../vr-in-architecture-and-real-estate-a-walkthrough-to-the-future/index.html">VR in Architecture and Real Estate: A Walkthrough to the Future</a></h2>
   <p class="dk-card-excerpt">Virtual reality transforms architectural designs and real estate tours, offering immersive experiences that enhance client engagement.</p>
   <div class="dk-card-meta"><time datetime="2024-07-21T09:00:00+05:00">21 July 2024</time></div>
 </article>
 <article class="dk-card is-wide">
-  <a class="dk-card-figure" href="../../counter-drone-systems-detection-and-mitigation/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/counter-drone-systems-detection-and-mitigation/1200/630" alt="Counter-drone Systems: Detection and Mitigation" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../counter-drone-systems-detection-and-mitigation/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,counter-drone,systems?lock=3096518596" alt="Counter-drone Systems: Detection and Mitigation" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/drone/index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../counter-drone-systems-detection-and-mitigation/index.html">Counter-drone Systems: Detection and Mitigation</a></h2>
   <p class="dk-card-excerpt">Learn about the latest technologies in counter-drone systems to protect against unauthorized drone intrusions.</p>
   <div class="dk-card-meta"><time datetime="2024-07-18T09:00:00+05:00">18 July 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../cross-functional-partnership-the-em-pm-design-triangle/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/cross-functional-partnership-the-em-pm-design-triangle/1200/630" alt="Cross-functional Partnership: The EM-PM-Design Triangle" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../cross-functional-partnership-the-em-pm-design-triangle/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/business,office,cross-functional,partnership?lock=574280835" alt="Cross-functional Partnership: The EM-PM-Design Triangle" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/management/index.html">Management</a></div>
   <h2 class="dk-card-title"><a href="../../cross-functional-partnership-the-em-pm-design-triangle/index.html">Cross-functional Partnership: The EM-PM-Design Triangle</a></h2>
   <p class="dk-card-excerpt">Mastering the dynamics of the EM-PM-design triangle is essential for effective cross-functional collaboration, driving innovation and product success.</p>
   <div class="dk-card-meta"><time datetime="2024-07-15T09:00:00+05:00">15 July 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../securing-ci-cd-pipelines-against-malicious-dependencies/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/securing-ci-cd-pipelines-against-malicious-dependencies/1200/630" alt="Securing CI/CD Pipelines Against Malicious Dependencies" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../securing-ci-cd-pipelines-against-malicious-dependencies/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cybersecurity,lock,securing,pipelines?lock=2277059962" alt="Securing CI/CD Pipelines Against Malicious Dependencies" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/security/index.html">Security</a></div>
   <h2 class="dk-card-title"><a href="../../securing-ci-cd-pipelines-against-malicious-dependencies/index.html">Securing CI/CD Pipelines Against Malicious Dependencies</a></h2>
   <p class="dk-card-excerpt">Learn how to protect your Continuous Integration/Continuous Deployment (CI/CD) pipelines from malicious dependencies that could compromise your applications.</p>
   <div class="dk-card-meta"><time datetime="2024-07-12T09:00:00+05:00">12 July 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../token-economics-making-llm-features-sustainable/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/token-economics-making-llm-features-sustainable/1200/630" alt="Token-economics: Making LLM Features Sustainable" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../token-economics-making-llm-features-sustainable/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/ai,technology,token-economics,making?lock=3560025876" alt="Token-economics: Making LLM Features Sustainable" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/artificial-intelligence-ai/index.html">Artificial Intelligence (AI)</a></div>
   <h2 class="dk-card-title"><a href="../../token-economics-making-llm-features-sustainable/index.html">Token-economics: Making LLM Features Sustainable</a></h2>
   <p class="dk-card-excerpt">Exploring the role of token economics in ensuring long-term sustainability and financial viability of language model features.</p>
   <div class="dk-card-meta"><time datetime="2024-07-09T09:00:00+05:00">9 July 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../humanoid-robots-in-2026-hype-vs-deployment-reality/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/humanoid-robots-in-2026-hype-vs-deployment-reality/1200/630" alt="Humanoid Robots in 2026: Hype vs Deployment Reality" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../humanoid-robots-in-2026-hype-vs-deployment-reality/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,humanoid,robots?lock=658034309" alt="Humanoid Robots in 2026: Hype vs Deployment Reality" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/robotics/index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../humanoid-robots-in-2026-hype-vs-deployment-reality/index.html">Humanoid Robots in 2026: Hype vs Deployment Reality</a></h2>
   <p class="dk-card-excerpt">Exploring the current state of humanoid robotics in 2026, separating the reality from the hype.</p>
   <div class="dk-card-meta"><time datetime="2024-07-06T09:00:00+05:00">6 July 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../iot-in-retail-from-inventory-to-in-store-analytics/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/iot-in-retail-from-inventory-to-in-store-analytics/1200/630" alt="IoT In Retail: From Inventory To In-store Analytics" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../iot-in-retail-from-inventory-to-in-store-analytics/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/iot,sensor,retail,inventory?lock=2970325264" alt="IoT In Retail: From Inventory To In-store Analytics" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/internet-of-things-iot/index.html">Internet of Things (IoT)</a></div>
   <h2 class="dk-card-title"><a href="../../iot-in-retail-from-inventory-to-in-store-analytics/index.html">IoT In Retail: From Inventory To In-store Analytics</a></h2>
   <p class="dk-card-excerpt">How Internet of Things is transforming retail by improving inventory management and enhancing customer experiences.</p>

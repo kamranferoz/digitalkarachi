@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -928,6 +943,7 @@ a:focus-visible, button:focus-visible {
       <span><time datetime="2026-05-21">2026-05-21</time></span>
     </div>
   </header>
+  <figure class="dk-article-hero"><img class="dk-article-hero-img" src="https://loremflickr.com/1200/630/news,technology,anker,earbuds?lock=1525972680" alt="Anker’s New Earbuds Offer Superior Call Quality" width="1200" height="630" decoding="async" loading="eager" fetchpriority="high" /></figure>
   <div class="dk-prose">
     <p>Soundcore, Anker&#x27;s audio brand, has expanded its market reach with the release of the Liberty 5 Pro and Liberty 5 Pro Max earbuds. These new models feature Anker&#x27;s latest Thus chip, which boasts enhanced processing power compared to previous Soundcore offerings. The result is praised for offering the best call quality heard by the reviewer so far. With this move into premium territory, Anker aims to attract more high-end consumers in its market segment.</p>
     <p><a href="../index.html">← Back to all tech updates</a></p>

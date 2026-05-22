@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -923,7 +938,7 @@ a:focus-visible, button:focus-visible {
 <section class="dk-grid">
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../building-a-domain-specific-evaluation-harness-for-llms/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/building-a-domain-specific-evaluation-harness-for-llms/1200/630" alt="Building a Domain-Specific Evaluation Harness for LLMs" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../building-a-domain-specific-evaluation-harness-for-llms/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/ai,technology,building,domain-specific?lock=712130101" alt="Building a Domain-Specific Evaluation Harness for LLMs" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/artificial-intelligence-ai/index.html">Artificial Intelligence (AI)</a></div>
   <h2 class="dk-card-title"><a href="../../building-a-domain-specific-evaluation-harness-for-llms/index.html">Building a Domain-Specific Evaluation Harness for LLMs</a></h2>
   <p class="dk-card-excerpt">Learn how to create a robust evaluation framework tailored for large language models in specific domains like finance, healthcare, and legal.</p>
@@ -931,7 +946,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../ai-in-cybersecurity-separating-capability-from-theater/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/ai-in-cybersecurity-separating-capability-from-theater/1200/630" alt="AI In Cybersecurity: Separating Capability From Theater" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../ai-in-cybersecurity-separating-capability-from-theater/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cybersecurity,lock,separating,ai?lock=3485473734" alt="AI In Cybersecurity: Separating Capability From Theater" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/security/index.html">Security</a></div>
   <h2 class="dk-card-title"><a href="../../ai-in-cybersecurity-separating-capability-from-theater/index.html">AI In Cybersecurity: Separating Capability From Theater</a></h2>
   <p class="dk-card-excerpt">Artificial intelligence promises transformative security but often falls short in practical application, leaving organizations wary of overpromised and underdelivered solutions.</p>
@@ -939,7 +954,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../multi-modal-ai-beyond-the-demos-into-practical-use-cases/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/multi-modal-ai-beyond-the-demos-into-practical-use-cases/1200/630" alt="Multi-Modal AI: Beyond the Demos into Practical Use Cases" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../multi-modal-ai-beyond-the-demos-into-practical-use-cases/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/ai,technology,multi-modal,beyond?lock=1216909644" alt="Multi-Modal AI: Beyond the Demos into Practical Use Cases" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/artificial-intelligence-ai/index.html">Artificial Intelligence (AI)</a></div>
   <h2 class="dk-card-title"><a href="../../multi-modal-ai-beyond-the-demos-into-practical-use-cases/index.html">Multi-Modal AI: Beyond the Demos into Practical Use Cases</a></h2>
   <p class="dk-card-excerpt">Explore how multi-modal AI is transforming industries with practical applications beyond simple demonstrations.</p>
@@ -947,7 +962,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../small-language-models-are-quietly-winning-the-enterprise/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/small-language-models-are-quietly-winning-the-enterprise/1200/630" alt="Small Language Models Are Quietly Winning The Enterprise" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../small-language-models-are-quietly-winning-the-enterprise/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/ai,technology,small,language?lock=2038522206" alt="Small Language Models Are Quietly Winning The Enterprise" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/artificial-intelligence-ai/index.html">Artificial Intelligence (AI)</a></div>
   <h2 class="dk-card-title"><a href="../../small-language-models-are-quietly-winning-the-enterprise/index.html">Small Language Models Are Quietly Winning The Enterprise</a></h2>
   <p class="dk-card-excerpt">Enterprise adoption of small language models is growing, offering flexibility and cost efficiency without sacrificing performance.</p>
@@ -955,7 +970,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../synthetic-data-generation-an-underrated-production-tool/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/synthetic-data-generation-an-underrated-production-tool/1200/630" alt="Synthetic Data Generation: An Underrated Production Tool" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../synthetic-data-generation-an-underrated-production-tool/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/ai,technology,synthetic,data?lock=2421056359" alt="Synthetic Data Generation: An Underrated Production Tool" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/artificial-intelligence-ai/index.html">Artificial Intelligence (AI)</a></div>
   <h2 class="dk-card-title"><a href="../../synthetic-data-generation-an-underrated-production-tool/index.html">Synthetic Data Generation: An Underrated Production Tool</a></h2>
   <p class="dk-card-excerpt">Explore the benefits and applications of synthetic data in AI development, highlighting its underutilized potential.</p>
@@ -963,7 +978,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../on-device-ai-what-runs-locally-in-2026-and-what-doesn-t/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/on-device-ai-what-runs-locally-in-2026-and-what-doesn-t/1200/630" alt="On-Device AI: What Runs Locally in 2026 and What Doesn’t" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../on-device-ai-what-runs-locally-in-2026-and-what-doesn-t/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/ai,technology,on-device,runs?lock=3139147071" alt="On-Device AI: What Runs Locally in 2026 and What Doesn’t" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/artificial-intelligence-ai/index.html">Artificial Intelligence (AI)</a></div>
   <h2 class="dk-card-title"><a href="../../on-device-ai-what-runs-locally-in-2026-and-what-doesn-t/index.html">On-Device AI: What Runs Locally in 2026 and What Doesn’t</a></h2>
   <p class="dk-card-excerpt">Explore the future of AI processing where data is analyzed without cloud interference, enhancing privacy and performance.</p>
@@ -971,7 +986,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../practical-prompt-engineering-patterns-that-survive-model-upgrades/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/practical-prompt-engineering-patterns-that-survive-model-upgrades/1200/630" alt="Practical Prompt Engineering Patterns That Survive Model Upgrades" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../practical-prompt-engineering-patterns-that-survive-model-upgrades/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/ai,technology,practical,prompt?lock=3650454471" alt="Practical Prompt Engineering Patterns That Survive Model Upgrades" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/artificial-intelligence-ai/index.html">Artificial Intelligence (AI)</a></div>
   <h2 class="dk-card-title"><a href="../../practical-prompt-engineering-patterns-that-survive-model-upgrades/index.html">Practical Prompt Engineering Patterns That Survive Model Upgrades</a></h2>
   <p class="dk-card-excerpt">Learn essential prompt engineering strategies that ensure your AI queries remain effective even as models evolve.</p>
@@ -979,7 +994,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../the-hidden-cost-of-fine-tuning-vs-prompting-for-production-models/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/the-hidden-cost-of-fine-tuning-vs-prompting-for-production-models/1200/630" alt="The Hidden Cost of Fine-Tuning vs. Prompting for Production Models" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../the-hidden-cost-of-fine-tuning-vs-prompting-for-production-models/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/ai,technology,hidden,cost?lock=1830181413" alt="The Hidden Cost of Fine-Tuning vs. Prompting for Production Models" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/artificial-intelligence-ai/index.html">Artificial Intelligence (AI)</a></div>
   <h2 class="dk-card-title"><a href="../../the-hidden-cost-of-fine-tuning-vs-prompting-for-production-models/index.html">The Hidden Cost of Fine-Tuning vs. Prompting for Production Models</a></h2>
   <p class="dk-card-excerpt">Exploring the trade-offs between fine-tuning and prompting in AI model deployment to find the most cost-effective solution.</p>
@@ -987,7 +1002,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../token-economics-making-llm-features-sustainable/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/token-economics-making-llm-features-sustainable/1200/630" alt="Token-economics: Making LLM Features Sustainable" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../token-economics-making-llm-features-sustainable/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/ai,technology,token-economics,making?lock=3560025876" alt="Token-economics: Making LLM Features Sustainable" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/artificial-intelligence-ai/index.html">Artificial Intelligence (AI)</a></div>
   <h2 class="dk-card-title"><a href="../../token-economics-making-llm-features-sustainable/index.html">Token-economics: Making LLM Features Sustainable</a></h2>
   <p class="dk-card-excerpt">Exploring the role of token economics in ensuring long-term sustainability and financial viability of language model features.</p>
@@ -995,7 +1010,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../retrieval-augmented-generation-when-it-helps-and-when-it-hurts/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/retrieval-augmented-generation-when-it-helps-and-when-it-hurts/1200/630" alt="Retrieval-augmented Generation: When It Helps And When It Hurts" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../retrieval-augmented-generation-when-it-helps-and-when-it-hurts/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/ai,technology,retrieval-augmented,generation?lock=1081593343" alt="Retrieval-augmented Generation: When It Helps And When It Hurts" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/artificial-intelligence-ai/index.html">Artificial Intelligence (AI)</a></div>
   <h2 class="dk-card-title"><a href="../../retrieval-augmented-generation-when-it-helps-and-when-it-hurts/index.html">Retrieval-augmented Generation: When It Helps And When It Hurts</a></h2>
   <p class="dk-card-excerpt">Retrieval-augmented generation (RAG) boosts AI models by integrating external knowledge, but its effectiveness depends on how it’s used.</p>
@@ -1003,7 +1018,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../the-architecture-of-a-modern-rag-pipeline-end-to-end/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/the-architecture-of-a-modern-rag-pipeline-end-to-end/1200/630" alt="The Architecture Of A Modern Rag Pipeline: End-to-end" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../the-architecture-of-a-modern-rag-pipeline-end-to-end/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/ai,technology,architecture,modern?lock=3577484499" alt="The Architecture Of A Modern Rag Pipeline: End-to-end" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/artificial-intelligence-ai/index.html">Artificial Intelligence (AI)</a></div>
   <h2 class="dk-card-title"><a href="../../the-architecture-of-a-modern-rag-pipeline-end-to-end/index.html">The Architecture Of A Modern Rag Pipeline: End-to-end</a></h2>
   <p class="dk-card-excerpt">Discover the intricate architecture of a modern retrieval-augmented generation (RAG) pipeline, from data sourcing to model deployment.</p>

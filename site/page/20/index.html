@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -920,70 +935,70 @@ a:focus-visible, button:focus-visible {
 <section class="dk-grid">
 
 <article class="dk-card is-large">
-  <a class="dk-card-figure" href="../../wearable-health-devices-the-data-architecture/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/wearable-health-devices-the-data-architecture/1200/630" alt="Wearable Health Devices: The Data Architecture" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../wearable-health-devices-the-data-architecture/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/iot,sensor,wearable,health?lock=2768181368" alt="Wearable Health Devices: The Data Architecture" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/internet-of-things-iot/index.html">Internet of Things (IoT)</a></div>
   <h2 class="dk-card-title"><a href="../../wearable-health-devices-the-data-architecture/index.html">Wearable Health Devices: The Data Architecture</a></h2>
   <p class="dk-card-excerpt">Understanding how data from wearable devices is collected, processed, and utilized in modern health applications.</p>
   <div class="dk-card-meta"><time datetime="2024-10-28T09:00:00+05:00">28 October 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../storytelling-with-data-principles-from-journalism-for-analysts/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/storytelling-with-data-principles-from-journalism-for-analysts/1200/630" alt="Storytelling with Data: Principles from Journalism for Analysts" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../storytelling-with-data-principles-from-journalism-for-analysts/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/data,analytics,storytelling,data-science?lock=3907129366" alt="Storytelling with Data: Principles from Journalism for Analysts" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/data-science/index.html">Data Science</a></div>
   <h2 class="dk-card-title"><a href="../../storytelling-with-data-principles-from-journalism-for-analysts/index.html">Storytelling with Data: Principles from Journalism for Analysts</a></h2>
   <p class="dk-card-excerpt">Learn how to effectively communicate insights using techniques borrowed from journalism to make your data stories compelling and impactful.</p>
   <div class="dk-card-meta"><time datetime="2024-10-25T09:00:00+05:00">25 October 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../the-quiet-rise-of-webassembly-outside-the-browser/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/the-quiet-rise-of-webassembly-outside-the-browser/1200/630" alt="The Quiet Rise Of Webassembly Outside The Browser" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../the-quiet-rise-of-webassembly-outside-the-browser/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/technology,computer,quiet,rise?lock=672211392" alt="The Quiet Rise Of Webassembly Outside The Browser" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/technology/index.html">Technology</a></div>
   <h2 class="dk-card-title"><a href="../../the-quiet-rise-of-webassembly-outside-the-browser/index.html">The Quiet Rise Of Webassembly Outside The Browser</a></h2>
   <p class="dk-card-excerpt">WebAssembly is transforming server-side development and edge computing, enabling faster and more efficient applications beyond the browser.</p>
   <div class="dk-card-meta"><time datetime="2024-10-22T09:00:00+05:00">22 October 2024</time></div>
 </article>
 <article class="dk-card is-wide">
-  <a class="dk-card-figure" href="../../quantum-computing-in-2026-where-we-actually-are/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/quantum-computing-in-2026-where-we-actually-are/1200/630" alt="Quantum Computing in 2026: Where We Actually Are" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../quantum-computing-in-2026-where-we-actually-are/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/quantum,physics,computing,quantum-computing?lock=2560649685" alt="Quantum Computing in 2026: Where We Actually Are" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/quantum-computing/index.html">Quantum Computing</a></div>
   <h2 class="dk-card-title"><a href="../../quantum-computing-in-2026-where-we-actually-are/index.html">Quantum Computing in 2026: Where We Actually Are</a></h2>
   <p class="dk-card-excerpt">The real-world progress of quantum computing in 2026, from technological advancements to industry adoption.</p>
   <div class="dk-card-meta"><time datetime="2024-10-19T09:00:00+05:00">19 October 2024</time></div>
 </article>
 <article class="dk-card is-wide">
-  <a class="dk-card-figure" href="../../permissioned-blockchains-in-enterprise-the-honest-assessment/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/permissioned-blockchains-in-enterprise-the-honest-assessment/1200/630" alt="Permissioned Blockchains In Enterprise: The Honest Assessment" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../permissioned-blockchains-in-enterprise-the-honest-assessment/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,permissioned,blockchains?lock=489275751" alt="Permissioned Blockchains In Enterprise: The Honest Assessment" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/blockchain/index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../permissioned-blockchains-in-enterprise-the-honest-assessment/index.html">Permissioned Blockchains In Enterprise: The Honest Assessment</a></h2>
   <p class="dk-card-excerpt">An in-depth look at the practical applications and limitations of permissioned blockchains in enterprise settings.</p>
   <div class="dk-card-meta"><time datetime="2024-10-16T09:00:00+05:00">16 October 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../disaster-recovery-on-a-startup-budget/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/disaster-recovery-on-a-startup-budget/1200/630" alt="Disaster Recovery on a Startup Budget" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../disaster-recovery-on-a-startup-budget/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cloud,server,disaster,recovery?lock=910736956" alt="Disaster Recovery on a Startup Budget" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/cloud-computing/index.html">Cloud Computing</a></div>
   <h2 class="dk-card-title"><a href="../../disaster-recovery-on-a-startup-budget/index.html">Disaster Recovery on a Startup Budget</a></h2>
   <p class="dk-card-excerpt">Learn how to implement robust disaster recovery strategies without breaking the bank.</p>
   <div class="dk-card-meta"><time datetime="2024-10-13T09:00:00+05:00">13 October 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../drift-detection-methods-that-actually-work-in-the-real-world/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/drift-detection-methods-that-actually-work-in-the-real-world/1200/630" alt="Drift Detection: Methods That Actually Work In The Real World" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../drift-detection-methods-that-actually-work-in-the-real-world/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/machine-learning,data,drift,detection?lock=3796185762" alt="Drift Detection: Methods That Actually Work In The Real World" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/machine-learning-ml/index.html">Machine Learning (ML)</a></div>
   <h2 class="dk-card-title"><a href="../../drift-detection-methods-that-actually-work-in-the-real-world/index.html">Drift Detection: Methods That Actually Work In The Real World</a></h2>
   <p class="dk-card-excerpt">Learn about drift detection methods that can reliably identify data changes in your machine learning models, ensuring they stay effective over time.</p>
   <div class="dk-card-meta"><time datetime="2024-10-10T09:00:00+05:00">10 October 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../vr-for-architecture-and-real-estate-walkthroughs-revolutionizing-spatial-visualization/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/vr-for-architecture-and-real-estate-walkthroughs-revolutionizing-spatial-visualization/1200/630" alt="VR For Architecture And Real Estate Walkthroughs: Revolutionizing Spatial Visualization" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../vr-for-architecture-and-real-estate-walkthroughs-revolutionizing-spatial-visualization/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/vr,headset,architecture,real?lock=3219062621" alt="VR For Architecture And Real Estate Walkthroughs: Revolutionizing Spatial Visualization" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/virtual-reality-vr/index.html">Virtual Reality (VR)</a></div>
   <h2 class="dk-card-title"><a href="../../vr-for-architecture-and-real-estate-walkthroughs-revolutionizing-spatial-visualization/index.html">VR For Architecture And Real Estate Walkthroughs: Revolutionizing Spatial Visualization</a></h2>
   <p class="dk-card-excerpt">Virtual reality transforms architectural and real estate projects, offering immersive experiences that enhance communication and decision-making.</p>
   <div class="dk-card-meta"><time datetime="2024-10-07T09:00:00+05:00">7 October 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../drone-insurance-basics-and-what-you-need-to-know/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/drone-insurance-basics-and-what-you-need-to-know/1200/630" alt="DRONE-INSURANCE-Basics-and-What-You-Need-to-Know" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../drone-insurance-basics-and-what-you-need-to-know/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,drone-insurance-basics-and-what-you-need-to-know,insurance?lock=2445167156" alt="DRONE-INSURANCE-Basics-and-What-You-Need-to-Know" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/drone/index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../drone-insurance-basics-and-what-you-need-to-know/index.html">DRONE-INSURANCE-Basics-and-What-You-Need-to-Know</a></h2>
   <p class="dk-card-excerpt">Understanding the crucial aspects of drone insurance, including coverage types and essential considerations for operators.</p>
   <div class="dk-card-meta"><time datetime="2024-10-04T09:00:00+05:00">4 October 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../postmortems-that-change-behavior-not-paperwork/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/postmortems-that-change-behavior-not-paperwork/1200/630" alt="Postmortems That Change Behavior Not Paperwork" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../postmortems-that-change-behavior-not-paperwork/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/business,office,postmortems,change?lock=1328044680" alt="Postmortems That Change Behavior Not Paperwork" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/management/index.html">Management</a></div>
   <h2 class="dk-card-title"><a href="../../postmortems-that-change-behavior-not-paperwork/index.html">Postmortems That Change Behavior Not Paperwork</a></h2>
   <p class="dk-card-excerpt">Learn how to conduct effective postmortems that lead to actionable changes, not just paperwork. Discover best practices for modern teams.</p>

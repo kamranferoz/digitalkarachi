@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -915,7 +930,7 @@ a:focus-visible, button:focus-visible {
 <div class="dk-progress" hidden></div>
 <main id="main">
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Building A Culture Of Writing In Engineering Teams", "description": "Learn how to foster a writing culture that enhances communication, collaboration, and technical documentation in your engineering team.", "datePublished": "2024-04-28T09:00:00+05:00", "dateModified": "2024-04-28T09:00:00+05:00", "author": {"@type": "Person", "name": "digitalkarachi.com", "url": "https://digitalkarachi.com/author/digitalkarachi-com/"}, "publisher": {"@type": "Organization", "name": "Digital Karachi", "logo": {"@type": "ImageObject", "url": "https://digitalkarachi.com/wp-content/uploads/2023/09/DK-Logo-light.png"}}, "mainEntityOfPage": "https://digitalkarachi.com/building-a-culture-of-writing-in-engineering-teams/", "articleSection": "Management", "keywords": "engineering, communication, documentation, team-culture, productivity", "image": "https://picsum.photos/seed/building-a-culture-of-writing-in-engineering-teams/1200/630"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalkarachi.com/"}, {"@type": "ListItem", "position": 2, "name": "Management", "item": "https://digitalkarachi.com/category/management/"}, {"@type": "ListItem", "position": 3, "name": "Building A Culture Of Writing In Engineering Teams", "item": "https://digitalkarachi.com/building-a-culture-of-writing-in-engineering-teams/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Building A Culture Of Writing In Engineering Teams", "description": "Learn how to foster a writing culture that enhances communication, collaboration, and technical documentation in your engineering team.", "datePublished": "2024-04-28T09:00:00+05:00", "dateModified": "2024-04-28T09:00:00+05:00", "author": {"@type": "Person", "name": "digitalkarachi.com", "url": "https://digitalkarachi.com/author/digitalkarachi-com/"}, "publisher": {"@type": "Organization", "name": "Digital Karachi", "logo": {"@type": "ImageObject", "url": "https://digitalkarachi.com/wp-content/uploads/2023/09/DK-Logo-light.png"}}, "mainEntityOfPage": "https://digitalkarachi.com/building-a-culture-of-writing-in-engineering-teams/", "articleSection": "Management", "keywords": "engineering, communication, documentation, team-culture, productivity", "image": "https://loremflickr.com/1200/630/business,office,building,culture?lock=3882138687"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalkarachi.com/"}, {"@type": "ListItem", "position": 2, "name": "Management", "item": "https://digitalkarachi.com/category/management/"}, {"@type": "ListItem", "position": 3, "name": "Building A Culture Of Writing In Engineering Teams", "item": "https://digitalkarachi.com/building-a-culture-of-writing-in-engineering-teams/"}]}</script>
 <article class="dk-article">
   <nav class="dk-breadcrumb" aria-label="Breadcrumb">
     <a href="../index.html">Home</a><span>/</span>
@@ -931,7 +946,7 @@ a:focus-visible, button:focus-visible {
       <span><svg width="14" height="14"><use href="#i-clock"/></svg>3 min read</span>
     </div>
   </header>
-  <figure class="dk-article-hero"><img src="https://picsum.photos/seed/building-a-culture-of-writing-in-engineering-teams/1200/630" alt="Building A Culture Of Writing In Engineering Teams" width="1200" height="630" decoding="async" loading="eager" fetchpriority="high" /></figure>
+  <figure class="dk-article-hero"><img src="https://loremflickr.com/1200/630/business,office,building,culture?lock=3882138687" alt="Building A Culture Of Writing In Engineering Teams" width="1200" height="630" decoding="async" loading="eager" fetchpriority="high" /></figure>
   <div class="dk-prose">
 <p>Effective communication is crucial for any engineering team's success. Yet, many teams struggle with clear and concise documentation, often relying on verbal or ad-hoc methods that can lead to misunderstandings and knowledge silos. Building a culture of writing within your engineering organization can significantly enhance collaboration, reduce technical debt, and improve overall productivity.</p><h2>Why Writing Matters in Engineering</h2><ul><li>Clear communication: Writing forces engineers to articulate their thoughts clearly and precisely, reducing the likelihood of misinterpretation.</li><li>Knowledge retention: Documentation ensures that critical information is not lost when team members leave or join projects.</li><li>Collaborative efficiency: Well-written documentation serves as a reference for all team members, promoting faster problem-solving and decision-making.</li></ul><p>Creating a culture of writing involves more than just mandating documentation. It requires a mindset shift and the right tools to support engineers in their efforts. Here’s how you can build this culture effectively.</p><h2>Fostering a Writing Mindset</h2><p>The first step is to make writing a natural part of your team's workflow. Encourage engineers to document their thoughts, experiments, and findings throughout the development process. This can start with simple practices like:</p><ul><li>Writing brief problem reports when encountering bugs or issues.</li><li>Documenting code changes in pull request descriptions.</li><li>Creating detailed design documents for complex features.</li></ul><h3>Set Expectations</h3><p>Clearly communicate the importance of documentation to your team. Make it a non-negotiable part of their responsibilities. For example, you might include documentation requirements in sprint planning or code reviews. Highlight that well-documented work is not only helpful but also reflects positively on an engineer’s ability to communicate effectively.</p><h3>Lead by Example</h3><p>As a leader, demonstrate the value of writing through your own actions. Regularly share how you use documentation in your daily work and discuss its benefits during team meetings. This sets a positive example and encourages others to follow suit.</p><h2>Providing the Right Tools</h2><p>Effective tools can make a significant difference in whether engineers are willing to document their work. Choose tools that integrate seamlessly with your existing development processes and provide the necessary features for writing, such as:</p><ul><li>Markdown editors for concise documentation.</li><li>Note-taking apps like Notion or Obsidian for organizing thoughts and ideas.</li><li>Version control systems that support branching and merging of documentation alongside code changes.</li></ul><h3>Training and Support</h3><p>To ensure engineers are comfortable using these tools, provide training sessions or workshops. Offer ongoing support through documentation guides, tutorials, and frequent check-ins to address any issues or concerns they might have.</p><h2>Incorporating Writing into the Development Lifecycle</h2><p>Integrating writing into your development lifecycle ensures that it is a continuous practice rather than an occasional activity. Here are some strategies to achieve this:</p><ul><li><strong>Documentation as part of code reviews:</strong> Require that all pull requests include documentation for new features or changes. Use automated tools like ReadTheDocs to ensure consistency and quality.</li><li><strong>Regular retrospectives:</strong> Dedicate time during team meetings to discuss what was well-documented and where there were gaps. Use this feedback to improve your processes continuously.</li><li><strong>Knowledge sharing sessions:</strong> Host regular sessions where engineers can share their writing experiences, tips, and best practices. This fosters a community of writers within the team.</li></ul><h2>Maintaining Consistency and Quality</h2><p>A culture of writing is only effective if it maintains consistency in quality. Here are some methods to ensure high-quality documentation:</p><ul><li><strong>Style guides:</strong> Develop and enforce a style guide that defines the tone, format, and structure of your technical documents. This helps maintain a uniform look and feel across all documentation.</li><li><strong>Peer reviews:</strong> Implement peer review processes for critical documentation to ensure accuracy and clarity. Use tools like GitLab’s commitlint or GitHub Actions to automate some aspects of this process.</li></ul><h3>Continuous Improvement</h3><p>To keep the writing culture vibrant, continuously seek feedback from your team on what is working and what can be improved. Regularly update your documentation practices based on these insights to stay relevant and effective.</p><h2>Conclusion</h2><p>Building a culture of writing in engineering teams is not just about improving technical communication; it’s about fostering an environment where knowledge is shared, and everyone feels empowered to contribute effectively. By prioritizing clear documentation, providing the right tools, and integrating writing into your development lifecycle, you can create a more cohesive and productive team.</p>
   </div>
@@ -952,17 +967,17 @@ a:focus-visible, button:focus-visible {
       <h2>Related reading</h2>
       <div class="dk-related-grid">
         <article class="dk-related-card">
-          <a class="dk-related-card-figure" href="../art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/art-of-saying-no-in-product-roadmaps-a-modern-guide/1200/630" alt="Art of Saying No in Product Roadmaps: A Modern Guide" width="1200" height="630" decoding="async" loading="lazy" /></a>
+          <a class="dk-related-card-figure" href="../art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/business,office,saying,product?lock=970349815" alt="Art of Saying No in Product Roadmaps: A Modern Guide" width="1200" height="630" decoding="async" loading="lazy" /></a>
           <a class="dk-related-card-title" href="../art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html">Art of Saying No in Product Roadmaps: A Modern Guide</a>
           <div class="dk-related-card-meta"><time datetime="2026-05-22T09:00:00+05:00">22 May 2026</time></div>
         </article>
         <article class="dk-related-card">
-          <a class="dk-related-card-figure" href="../object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/1200/630" alt="Object Storage as a Primary Database: Emerging Patterns in Cloud Computing" width="1200" height="630" decoding="async" loading="lazy" /></a>
+          <a class="dk-related-card-figure" href="../object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cloud,server,object,storage?lock=3582842096" alt="Object Storage as a Primary Database: Emerging Patterns in Cloud Computing" width="1200" height="630" decoding="async" loading="lazy" /></a>
           <a class="dk-related-card-title" href="../object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html">Object Storage as a Primary Database: Emerging Patterns in Cloud Computing</a>
           <div class="dk-related-card-meta"><time datetime="2026-05-21T09:00:00+05:00">21 May 2026</time></div>
         </article>
         <article class="dk-related-card">
-          <a class="dk-related-card-figure" href="../hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/1200/630" alt="Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns" width="1200" height="630" decoding="async" loading="lazy" /></a>
+          <a class="dk-related-card-figure" href="../hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/machine-learning,data,hyperparameter,tuning?lock=2373282527" alt="Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns" width="1200" height="630" decoding="async" loading="lazy" /></a>
           <a class="dk-related-card-title" href="../hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html">Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns</a>
           <div class="dk-related-card-meta"><time datetime="2026-05-18T09:00:00+05:00">18 May 2026</time></div>
         </article></div>

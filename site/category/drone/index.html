@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -923,7 +938,7 @@ a:focus-visible, button:focus-visible {
 <section class="dk-grid">
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../inspection-drones-for-infrastructure-the-workflow/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/inspection-drones-for-infrastructure-the-workflow/1200/630" alt="Inspection Drones for Infrastructure: The Workflow" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../inspection-drones-for-infrastructure-the-workflow/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,inspection,drones?lock=842819963" alt="Inspection Drones for Infrastructure: The Workflow" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../inspection-drones-for-infrastructure-the-workflow/index.html">Inspection Drones for Infrastructure: The Workflow</a></h2>
   <p class="dk-card-excerpt">Discover the comprehensive workflow of using inspection drones in infrastructure projects to improve efficiency, safety, and accuracy.</p>
@@ -931,7 +946,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../fpv-racing-technology-s-commercial-spillover-beyond-the-drone-racer/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/fpv-racing-technology-s-commercial-spillover-beyond-the-drone-racer/1200/630" alt="FPV Racing Technology&#x27;s Commercial Spillover: Beyond the Drone Racer" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../fpv-racing-technology-s-commercial-spillover-beyond-the-drone-racer/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,racing,technology?lock=1403122616" alt="FPV Racing Technology&#x27;s Commercial Spillover: Beyond the Drone Racer" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../fpv-racing-technology-s-commercial-spillover-beyond-the-drone-racer/index.html">FPV Racing Technology&#x27;s Commercial Spillover: Beyond the Drone Racer</a></h2>
   <p class="dk-card-excerpt">How advancements in first-person view (FPV) racing technology are driving innovations in industries like autonomous vehicles and robotics.</p>
@@ -939,7 +954,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../fpv-racing-technology-from-racer-s-gear-to-industrial-vision/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/fpv-racing-technology-from-racer-s-gear-to-industrial-vision/1200/630" alt="FPV Racing Technology: From Racer’s Gear to Industrial Vision" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../fpv-racing-technology-from-racer-s-gear-to-industrial-vision/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,racing,technology?lock=2251223283" alt="FPV Racing Technology: From Racer’s Gear to Industrial Vision" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../fpv-racing-technology-from-racer-s-gear-to-industrial-vision/index.html">FPV Racing Technology: From Racer’s Gear to Industrial Vision</a></h2>
   <p class="dk-card-excerpt">Discover how first-person view (FPV) racing technology has evolved beyond recreational use, influencing industries like agriculture, construction, and surveillance.</p>
@@ -947,7 +962,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../mapping-and-surveying-with-consumer-grade-drones-a-game-changer-for-engineering/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/mapping-and-surveying-with-consumer-grade-drones-a-game-changer-for-engineering/1200/630" alt="Mapping and Surveying with Consumer-Grade Drones: A Game-Changer for Engineering" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../mapping-and-surveying-with-consumer-grade-drones-a-game-changer-for-engineering/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,mapping,surveying?lock=4081640127" alt="Mapping and Surveying with Consumer-Grade Drones: A Game-Changer for Engineering" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../mapping-and-surveying-with-consumer-grade-drones-a-game-changer-for-engineering/index.html">Mapping and Surveying with Consumer-Grade Drones: A Game-Changer for Engineering</a></h2>
   <p class="dk-card-excerpt">Consumer-grade drones have revolutionized mapping and surveying, offering precision and efficiency at a fraction of traditional costs.</p>
@@ -955,7 +970,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../fpv-racing-technology-s-commercial-spillover-from-race-tracks-to-real-world-applications/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/fpv-racing-technology-s-commercial-spillover-from-race-tracks-to-real-world-applications/1200/630" alt="FPV Racing Technology&#x27;s Commercial Spillover: From Race Tracks to Real-World Applications" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../fpv-racing-technology-s-commercial-spillover-from-race-tracks-to-real-world-applications/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,racing,technology?lock=4001226580" alt="FPV Racing Technology&#x27;s Commercial Spillover: From Race Tracks to Real-World Applications" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../fpv-racing-technology-s-commercial-spillover-from-race-tracks-to-real-world-applications/index.html">FPV Racing Technology&#x27;s Commercial Spillover: From Race Tracks to Real-World Applications</a></h2>
   <p class="dk-card-excerpt">Explore how the cutting-edge technology behind FPV (First Person View) drone racing is transforming industries beyond hobbyist enthusiasts.</p>
@@ -963,7 +978,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../drone-batteries-chemistry-trade-offs-and-field-practices/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/drone-batteries-chemistry-trade-offs-and-field-practices/1200/630" alt="Drone-batteries: Chemistry Trade-offs And Field Practices" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../drone-batteries-chemistry-trade-offs-and-field-practices/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,drone-batteries,chemistry?lock=3771412875" alt="Drone-batteries: Chemistry Trade-offs And Field Practices" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../drone-batteries-chemistry-trade-offs-and-field-practices/index.html">Drone-batteries: Chemistry Trade-offs And Field Practices</a></h2>
   <p class="dk-card-excerpt">An in-depth look at the various battery chemistries used in drones, their trade-offs, and best practices for field use.</p>
@@ -971,7 +986,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../pakistan-s-drone-industry-opportunities-and-constraints/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/pakistan-s-drone-industry-opportunities-and-constraints/1200/630" alt="Pakistan&#x27;s Drone Industry: Opportunities and Constraints" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../pakistan-s-drone-industry-opportunities-and-constraints/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,pakistan,aerospace?lock=4207053382" alt="Pakistan&#x27;s Drone Industry: Opportunities and Constraints" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../pakistan-s-drone-industry-opportunities-and-constraints/index.html">Pakistan&#x27;s Drone Industry: Opportunities and Constraints</a></h2>
   <p class="dk-card-excerpt">Exploring the growth potential and challenges faced by Pakistan’s nascent drone industry.</p>
@@ -979,7 +994,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../cargo-drones-the-middle-mile-opportunity/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/cargo-drones-the-middle-mile-opportunity/1200/630" alt="Cargo Drones: The Middle-Mile Opportunity" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../cargo-drones-the-middle-mile-opportunity/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,cargo,drones?lock=3792863370" alt="Cargo Drones: The Middle-Mile Opportunity" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../cargo-drones-the-middle-mile-opportunity/index.html">Cargo Drones: The Middle-Mile Opportunity</a></h2>
   <p class="dk-card-excerpt">Explore how cargo drones are transforming middle-mile logistics, offering efficient solutions for last-mile delivery challenges.</p>
@@ -987,7 +1002,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../drone-delivery-in-cities-regulatory-and-engineering-hurdles/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/drone-delivery-in-cities-regulatory-and-engineering-hurdles/1200/630" alt="Drone Delivery In Cities: Regulatory And Engineering Hurdles" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../drone-delivery-in-cities-regulatory-and-engineering-hurdles/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,delivery,drone-delivery?lock=1308226687" alt="Drone Delivery In Cities: Regulatory And Engineering Hurdles" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../drone-delivery-in-cities-regulatory-and-engineering-hurdles/index.html">Drone Delivery In Cities: Regulatory And Engineering Hurdles</a></h2>
   <p class="dk-card-excerpt">Navigating the complex landscape of drone regulations and technological challenges to achieve efficient urban delivery systems.</p>
@@ -995,7 +1010,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../drones-in-disaster-response-case-studies/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/drones-in-disaster-response-case-studies/1200/630" alt="Drones In Disaster Response: Case Studies" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../drones-in-disaster-response-case-studies/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,drones,disaster?lock=1743248415" alt="Drones In Disaster Response: Case Studies" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../drones-in-disaster-response-case-studies/index.html">Drones In Disaster Response: Case Studies</a></h2>
   <p class="dk-card-excerpt">Discover how drones are revolutionizing disaster response with case studies from wildfires, floods, and search-and-rescue operations.</p>
@@ -1003,7 +1018,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../software-defined-radio-revolutionizing-drone-communications/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/software-defined-radio-revolutionizing-drone-communications/1200/630" alt="Software-Defined Radio: Revolutionizing Drone Communications" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../software-defined-radio-revolutionizing-drone-communications/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,software-defined,radio?lock=1556631745" alt="Software-Defined Radio: Revolutionizing Drone Communications" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../software-defined-radio-revolutionizing-drone-communications/index.html">Software-Defined Radio: Revolutionizing Drone Communications</a></h2>
   <p class="dk-card-excerpt">Exploring the transformative impact of software-defined radio on drone communications, enhancing flexibility and security in aerial operations.</p>
@@ -1011,7 +1026,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../building-a-drone-fleet-operations-team/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/building-a-drone-fleet-operations-team/1200/630" alt="Building a Drone Fleet Operations Team" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../building-a-drone-fleet-operations-team/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,building,drones?lock=779752785" alt="Building a Drone Fleet Operations Team" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../building-a-drone-fleet-operations-team/index.html">Building a Drone Fleet Operations Team</a></h2>
   <p class="dk-card-excerpt">Learn how to establish an efficient drone fleet operations team that can manage both commercial and personal drones effectively.</p>
@@ -1019,7 +1034,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../drone-based-wildlife-monitoring-a-new-era-in-conservation/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/drone-based-wildlife-monitoring-a-new-era-in-conservation/1200/630" alt="Drone-Based Wildlife Monitoring: A New Era in Conservation" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../drone-based-wildlife-monitoring-a-new-era-in-conservation/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,drone-based,wildlife?lock=2918982132" alt="Drone-Based Wildlife Monitoring: A New Era in Conservation" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../drone-based-wildlife-monitoring-a-new-era-in-conservation/index.html">Drone-Based Wildlife Monitoring: A New Era in Conservation</a></h2>
   <p class="dk-card-excerpt">Exploring the benefits, challenges, and future prospects of using drones to monitor wildlife populations.</p>
@@ -1027,7 +1042,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../drone-swarms-the-future-of-coordination-algorithms-in-practice/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/drone-swarms-the-future-of-coordination-algorithms-in-practice/1200/630" alt="Drone Swarms: The Future of Coordination Algorithms in Practice" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../drone-swarms-the-future-of-coordination-algorithms-in-practice/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,swarms,swarm-technology?lock=4069464526" alt="Drone Swarms: The Future of Coordination Algorithms in Practice" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../drone-swarms-the-future-of-coordination-algorithms-in-practice/index.html">Drone Swarms: The Future of Coordination Algorithms in Practice</a></h2>
   <p class="dk-card-excerpt">Explore the advanced coordination algorithms driving drone swarms, from swarm formation to real-world applications.</p>
@@ -1035,7 +1050,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../aerial-photography-for-journalism-ethics-and-craft/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/aerial-photography-for-journalism-ethics-and-craft/1200/630" alt="Aerial Photography for Journalism: Ethics and Craft" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../aerial-photography-for-journalism-ethics-and-craft/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,photography,journalism?lock=4191208064" alt="Aerial Photography for Journalism: Ethics and Craft" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../aerial-photography-for-journalism-ethics-and-craft/index.html">Aerial Photography for Journalism: Ethics and Craft</a></h2>
   <p class="dk-card-excerpt">Explore the ethical considerations and technical skills needed to use drones in journalistic photography, ensuring accuracy and respect.</p>
@@ -1043,7 +1058,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../drone-insurance-basics-and-what-you-need-to-know/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/drone-insurance-basics-and-what-you-need-to-know/1200/630" alt="DRONE-INSURANCE-Basics-and-What-You-Need-to-Know" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../drone-insurance-basics-and-what-you-need-to-know/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,drone-insurance-basics-and-what-you-need-to-know,insurance?lock=2445167156" alt="DRONE-INSURANCE-Basics-and-What-You-Need-to-Know" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../drone-insurance-basics-and-what-you-need-to-know/index.html">DRONE-INSURANCE-Basics-and-What-You-Need-to-Know</a></h2>
   <p class="dk-card-excerpt">Understanding the crucial aspects of drone insurance, including coverage types and essential considerations for operators.</p>
@@ -1051,7 +1066,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../underwater-drones-an-emerging-category/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/underwater-drones-an-emerging-category/1200/630" alt="Underwater Drones: An Emerging Category" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../underwater-drones-an-emerging-category/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,underwater,drones?lock=256612494" alt="Underwater Drones: An Emerging Category" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../underwater-drones-an-emerging-category/index.html">Underwater Drones: An Emerging Category</a></h2>
   <p class="dk-card-excerpt">Underwater drones are revolutionizing marine exploration, but what exactly is driving this trend and how can they benefit industries?</p>
@@ -1059,7 +1074,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../counter-drone-systems-detection-and-mitigation/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/counter-drone-systems-detection-and-mitigation/1200/630" alt="Counter-drone Systems: Detection and Mitigation" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../counter-drone-systems-detection-and-mitigation/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,counter-drone,systems?lock=3096518596" alt="Counter-drone Systems: Detection and Mitigation" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../counter-drone-systems-detection-and-mitigation/index.html">Counter-drone Systems: Detection and Mitigation</a></h2>
   <p class="dk-card-excerpt">Learn about the latest technologies in counter-drone systems to protect against unauthorized drone intrusions.</p>
@@ -1067,7 +1082,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../drone-pilot-certification-guidelines-around-the-world/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/drone-pilot-certification-guidelines-around-the-world/1200/630" alt="Drone-pilot-certification-guidelines-around-the-world" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../drone-pilot-certification-guidelines-around-the-world/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,drone-pilot-certification-guidelines-around-the-world,certification?lock=3108743129" alt="Drone-pilot-certification-guidelines-around-the-world" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../drone-pilot-certification-guidelines-around-the-world/index.html">Drone-pilot-certification-guidelines-around-the-world</a></h2>
   <p class="dk-card-excerpt">Explore the diverse landscape of drone pilot certification programs and their global standards.</p>
@@ -1075,7 +1090,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../beyond-visual-line-of-sight-the-regulatory-shift-in-2026/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/beyond-visual-line-of-sight-the-regulatory-shift-in-2026/1200/630" alt="Beyond Visual Line of Sight: The Regulatory Shift in 2026" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../beyond-visual-line-of-sight-the-regulatory-shift-in-2026/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,beyond,visual?lock=2406528031" alt="Beyond Visual Line of Sight: The Regulatory Shift in 2026" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../beyond-visual-line-of-sight-the-regulatory-shift-in-2026/index.html">Beyond Visual Line of Sight: The Regulatory Shift in 2026</a></h2>
   <p class="dk-card-excerpt">In 2026, a significant change in drone regulations opens up new possibilities for industries like agriculture and delivery services.</p>

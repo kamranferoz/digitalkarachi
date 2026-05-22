@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -915,7 +930,7 @@ a:focus-visible, button:focus-visible {
 <div class="dk-progress" hidden></div>
 <main id="main">
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Safe and Efficient OTA Updates for Embedded Fleets", "description": "Learn how over-the-air (OTA) updates can be implemented safely in embedded device fleets, ensuring reliability and security.", "datePublished": "2025-12-31T09:00:00+05:00", "dateModified": "2025-12-31T09:00:00+05:00", "author": {"@type": "Person", "name": "digitalkarachi.com", "url": "https://digitalkarachi.com/author/digitalkarachi-com/"}, "publisher": {"@type": "Organization", "name": "Digital Karachi", "logo": {"@type": "ImageObject", "url": "https://digitalkarachi.com/wp-content/uploads/2023/09/DK-Logo-light.png"}}, "mainEntityOfPage": "https://digitalkarachi.com/safe-and-efficient-ota-updates-for-embedded-fleets/", "articleSection": "Internet of Things (IoT)", "keywords": "iot, ota-updates, embedded-devices, security, reliability", "image": "https://picsum.photos/seed/safe-and-efficient-ota-updates-for-embedded-fleets/1200/630"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalkarachi.com/"}, {"@type": "ListItem", "position": 2, "name": "Internet of Things (IoT)", "item": "https://digitalkarachi.com/category/internet-of-things-iot/"}, {"@type": "ListItem", "position": 3, "name": "Safe and Efficient OTA Updates for Embedded Fleets", "item": "https://digitalkarachi.com/safe-and-efficient-ota-updates-for-embedded-fleets/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Safe and Efficient OTA Updates for Embedded Fleets", "description": "Learn how over-the-air (OTA) updates can be implemented safely in embedded device fleets, ensuring reliability and security.", "datePublished": "2025-12-31T09:00:00+05:00", "dateModified": "2025-12-31T09:00:00+05:00", "author": {"@type": "Person", "name": "digitalkarachi.com", "url": "https://digitalkarachi.com/author/digitalkarachi-com/"}, "publisher": {"@type": "Organization", "name": "Digital Karachi", "logo": {"@type": "ImageObject", "url": "https://digitalkarachi.com/wp-content/uploads/2023/09/DK-Logo-light.png"}}, "mainEntityOfPage": "https://digitalkarachi.com/safe-and-efficient-ota-updates-for-embedded-fleets/", "articleSection": "Internet of Things (IoT)", "keywords": "iot, ota-updates, embedded-devices, security, reliability", "image": "https://loremflickr.com/1200/630/iot,sensor,safe,efficient?lock=2218765964"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalkarachi.com/"}, {"@type": "ListItem", "position": 2, "name": "Internet of Things (IoT)", "item": "https://digitalkarachi.com/category/internet-of-things-iot/"}, {"@type": "ListItem", "position": 3, "name": "Safe and Efficient OTA Updates for Embedded Fleets", "item": "https://digitalkarachi.com/safe-and-efficient-ota-updates-for-embedded-fleets/"}]}</script>
 <article class="dk-article">
   <nav class="dk-breadcrumb" aria-label="Breadcrumb">
     <a href="../index.html">Home</a><span>/</span>
@@ -931,7 +946,7 @@ a:focus-visible, button:focus-visible {
       <span><svg width="14" height="14"><use href="#i-clock"/></svg>2 min read</span>
     </div>
   </header>
-  <figure class="dk-article-hero"><img src="https://picsum.photos/seed/safe-and-efficient-ota-updates-for-embedded-fleets/1200/630" alt="Safe and Efficient OTA Updates for Embedded Fleets" width="1200" height="630" decoding="async" loading="eager" fetchpriority="high" /></figure>
+  <figure class="dk-article-hero"><img src="https://loremflickr.com/1200/630/iot,sensor,safe,efficient?lock=2218765964" alt="Safe and Efficient OTA Updates for Embedded Fleets" width="1200" height="630" decoding="async" loading="eager" fetchpriority="high" /></figure>
   <div class="dk-prose">
 <p>Over-the-Air (OTA) updates are critical for maintaining the functionality and security of connected devices. As more and more embedded systems find their way into various industries, from automotive to home automation, ensuring that these devices can be updated seamlessly and securely is essential.</p><h2>Understanding OTA Updates</h2><p>OTA updates allow device firmware or software to be updated wirelessly, without the need for physical access. This capability is particularly crucial for embedded fleets where regular maintenance visits would be impractical. However, implementing these updates safely requires a robust strategy that addresses both security and reliability.</p><h3>Security Considerations</h3><p>The first step in ensuring safe OTA updates is to understand the security challenges involved. Devices must be able to authenticate updates from trusted sources, verify the integrity of the update payload, and prevent unauthorized access or tampering during transmission. Implementing secure boot processes, using encryption for data in transit, and leveraging modern cryptographic techniques are key.</p><h3>Reliability Considerations</h3><p>Reliability is equally important to security when it comes to OTA updates. Devices must handle update failures gracefully without causing system downtime or malfunctions. This involves creating a robust rollback strategy that ensures the device can revert to a previous stable state if an update fails. Additionally, ensuring that devices have adequate power and connectivity during the update process is crucial for successful deployment.</p><h2>Implementing OTA Updates</h2><p>Leading cloud providers offer tools and services designed specifically for managing OTA updates in embedded fleets. These platforms often provide features such as firmware distribution, rollback management, and health monitoring to ensure that devices remain functional even during updates.</p><ul><li>Create a deployment strategy that includes regular testing of the update process across a representative sample of devices.</li><li>Implement a phased rollout approach to minimize risks associated with large-scale updates. Start with a small subset of devices and gradually increase the number over time, monitoring performance closely.</li><li>Utilize automated tools for rollback in case an issue is detected during or after the update process.</li></ul><p>In addition to cloud services, device manufacturers often provide SDKs (Software Development Kits) that enable developers to integrate OTA capabilities directly into their products. These SDKs typically include APIs and libraries that simplify the implementation of secure and reliable updates.</p><h2>Challenges and Best Practices</h2><p>While implementing OTA updates can significantly enhance the functionality and security of embedded devices, several challenges must be addressed. One common issue is ensuring compatibility across different hardware and software versions. Another challenge involves balancing update frequency with device power consumption, especially in battery-powered devices.</p><ol><li>Regularly audit and test firmware to ensure it works as expected on all supported device configurations.</li><li>Develop a clear rollback policy that includes criteria for initiating a rollback and the steps required to do so.</li></ol><h2>The Future of OTA Updates</h2><p>As IoT technology continues to evolve, the demand for reliable and secure OTA updates will only increase. Future advancements in 5G connectivity and edge computing are likely to further improve the performance and efficiency of these updates, making them more practical even in resource-constrained environments.</p><p>The key to successful implementation lies in a balanced approach that prioritizes both security and reliability while leveraging modern technologies and best practices.</p>
   </div>
@@ -952,17 +967,17 @@ a:focus-visible, button:focus-visible {
       <h2>Related reading</h2>
       <div class="dk-related-grid">
         <article class="dk-related-card">
-          <a class="dk-related-card-figure" href="../art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/art-of-saying-no-in-product-roadmaps-a-modern-guide/1200/630" alt="Art of Saying No in Product Roadmaps: A Modern Guide" width="1200" height="630" decoding="async" loading="lazy" /></a>
+          <a class="dk-related-card-figure" href="../art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/business,office,saying,product?lock=970349815" alt="Art of Saying No in Product Roadmaps: A Modern Guide" width="1200" height="630" decoding="async" loading="lazy" /></a>
           <a class="dk-related-card-title" href="../art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html">Art of Saying No in Product Roadmaps: A Modern Guide</a>
           <div class="dk-related-card-meta"><time datetime="2026-05-22T09:00:00+05:00">22 May 2026</time></div>
         </article>
         <article class="dk-related-card">
-          <a class="dk-related-card-figure" href="../object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/1200/630" alt="Object Storage as a Primary Database: Emerging Patterns in Cloud Computing" width="1200" height="630" decoding="async" loading="lazy" /></a>
+          <a class="dk-related-card-figure" href="../object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cloud,server,object,storage?lock=3582842096" alt="Object Storage as a Primary Database: Emerging Patterns in Cloud Computing" width="1200" height="630" decoding="async" loading="lazy" /></a>
           <a class="dk-related-card-title" href="../object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html">Object Storage as a Primary Database: Emerging Patterns in Cloud Computing</a>
           <div class="dk-related-card-meta"><time datetime="2026-05-21T09:00:00+05:00">21 May 2026</time></div>
         </article>
         <article class="dk-related-card">
-          <a class="dk-related-card-figure" href="../hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/1200/630" alt="Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns" width="1200" height="630" decoding="async" loading="lazy" /></a>
+          <a class="dk-related-card-figure" href="../hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/machine-learning,data,hyperparameter,tuning?lock=2373282527" alt="Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns" width="1200" height="630" decoding="async" loading="lazy" /></a>
           <a class="dk-related-card-title" href="../hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html">Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns</a>
           <div class="dk-related-card-meta"><time datetime="2026-05-18T09:00:00+05:00">18 May 2026</time></div>
         </article></div>

@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -923,7 +938,7 @@ a:focus-visible, button:focus-visible {
 <section class="dk-grid">
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../tabletop-exercises-turning-postmortems-into-preparedness/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/tabletop-exercises-turning-postmortems-into-preparedness/1200/630" alt="Tabletop Exercises: Turning Postmortems into Preparedness" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../tabletop-exercises-turning-postmortems-into-preparedness/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cybersecurity,lock,tabletop,exercises?lock=2720220994" alt="Tabletop Exercises: Turning Postmortems into Preparedness" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/security/index.html">Security</a></div>
   <h2 class="dk-card-title"><a href="../../tabletop-exercises-turning-postmortems-into-preparedness/index.html">Tabletop Exercises: Turning Postmortems into Preparedness</a></h2>
   <p class="dk-card-excerpt">Learn how regular tabletop exercises can transform reactive postmortem analysis into proactive preparedness for cybersecurity threats.</p>
@@ -931,7 +946,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../tabletop-exercises-making-postmortem-analysis-mean-business/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/tabletop-exercises-making-postmortem-analysis-mean-business/1200/630" alt="Tabletop Exercises: Making Postmortem Analysis Mean Business" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../tabletop-exercises-making-postmortem-analysis-mean-business/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cybersecurity,lock,tabletop,exercises?lock=2146089687" alt="Tabletop Exercises: Making Postmortem Analysis Mean Business" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/security/index.html">Security</a></div>
   <h2 class="dk-card-title"><a href="../../tabletop-exercises-making-postmortem-analysis-mean-business/index.html">Tabletop Exercises: Making Postmortem Analysis Mean Business</a></h2>
   <p class="dk-card-excerpt">Learn how tabletop exercises transform postmortems into proactive preparedness, enhancing cybersecurity in modern organizations.</p>

@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -923,7 +938,7 @@ a:focus-visible, button:focus-visible {
 <section class="dk-grid">
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../feature-engineering-in-the-age-of-foundation-models/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/feature-engineering-in-the-age-of-foundation-models/1200/630" alt="Feature Engineering in the Age of Foundation Models" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../feature-engineering-in-the-age-of-foundation-models/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/machine-learning,data,feature,engineering?lock=4016688335" alt="Feature Engineering in the Age of Foundation Models" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/machine-learning-ml/index.html">Machine Learning (ML)</a></div>
   <h2 class="dk-card-title"><a href="../../feature-engineering-in-the-age-of-foundation-models/index.html">Feature Engineering in the Age of Foundation Models</a></h2>
   <p class="dk-card-excerpt">How foundational models are reshaping feature engineering practices and challenging traditional approaches.</p>
@@ -931,7 +946,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../cross-validation-strategies-that-don-t-leak/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/cross-validation-strategies-that-don-t-leak/1200/630" alt="Cross-Validation Strategies That Don&#x27;t Leak" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../cross-validation-strategies-that-don-t-leak/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/machine-learning,data,cross-validation,strategies?lock=734425824" alt="Cross-Validation Strategies That Don&#x27;t Leak" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/machine-learning-ml/index.html">Machine Learning (ML)</a></div>
   <h2 class="dk-card-title"><a href="../../cross-validation-strategies-that-don-t-leak/index.html">Cross-Validation Strategies That Don&#x27;t Leak</a></h2>
   <p class="dk-card-excerpt">Exploring advanced techniques to prevent data leakage in machine learning models without compromising accuracy.</p>

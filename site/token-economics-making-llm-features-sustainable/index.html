@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -915,7 +930,7 @@ a:focus-visible, button:focus-visible {
 <div class="dk-progress" hidden></div>
 <main id="main">
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Token-economics: Making LLM Features Sustainable", "description": "Exploring the role of token economics in ensuring long-term sustainability and financial viability of language model features.", "datePublished": "2024-07-09T09:00:00+05:00", "dateModified": "2024-07-09T09:00:00+05:00", "author": {"@type": "Person", "name": "digitalkarachi.com", "url": "https://digitalkarachi.com/author/digitalkarachi-com/"}, "publisher": {"@type": "Organization", "name": "Digital Karachi", "logo": {"@type": "ImageObject", "url": "https://digitalkarachi.com/wp-content/uploads/2023/09/DK-Logo-light.png"}}, "mainEntityOfPage": "https://digitalkarachi.com/token-economics-making-llm-features-sustainable/", "articleSection": "Artificial Intelligence (AI)", "keywords": "ai, token-economics, sustainability, language-models", "image": "https://picsum.photos/seed/token-economics-making-llm-features-sustainable/1200/630"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalkarachi.com/"}, {"@type": "ListItem", "position": 2, "name": "Artificial Intelligence (AI)", "item": "https://digitalkarachi.com/category/artificial-intelligence-ai/"}, {"@type": "ListItem", "position": 3, "name": "Token-economics: Making LLM Features Sustainable", "item": "https://digitalkarachi.com/token-economics-making-llm-features-sustainable/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Token-economics: Making LLM Features Sustainable", "description": "Exploring the role of token economics in ensuring long-term sustainability and financial viability of language model features.", "datePublished": "2024-07-09T09:00:00+05:00", "dateModified": "2024-07-09T09:00:00+05:00", "author": {"@type": "Person", "name": "digitalkarachi.com", "url": "https://digitalkarachi.com/author/digitalkarachi-com/"}, "publisher": {"@type": "Organization", "name": "Digital Karachi", "logo": {"@type": "ImageObject", "url": "https://digitalkarachi.com/wp-content/uploads/2023/09/DK-Logo-light.png"}}, "mainEntityOfPage": "https://digitalkarachi.com/token-economics-making-llm-features-sustainable/", "articleSection": "Artificial Intelligence (AI)", "keywords": "ai, token-economics, sustainability, language-models", "image": "https://loremflickr.com/1200/630/ai,technology,token-economics,making?lock=3560025876"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalkarachi.com/"}, {"@type": "ListItem", "position": 2, "name": "Artificial Intelligence (AI)", "item": "https://digitalkarachi.com/category/artificial-intelligence-ai/"}, {"@type": "ListItem", "position": 3, "name": "Token-economics: Making LLM Features Sustainable", "item": "https://digitalkarachi.com/token-economics-making-llm-features-sustainable/"}]}</script>
 <article class="dk-article">
   <nav class="dk-breadcrumb" aria-label="Breadcrumb">
     <a href="../index.html">Home</a><span>/</span>
@@ -931,7 +946,7 @@ a:focus-visible, button:focus-visible {
       <span><svg width="14" height="14"><use href="#i-clock"/></svg>4 min read</span>
     </div>
   </header>
-  <figure class="dk-article-hero"><img src="https://picsum.photos/seed/token-economics-making-llm-features-sustainable/1200/630" alt="Token-economics: Making LLM Features Sustainable" width="1200" height="630" decoding="async" loading="eager" fetchpriority="high" /></figure>
+  <figure class="dk-article-hero"><img src="https://loremflickr.com/1200/630/ai,technology,token-economics,making?lock=3560025876" alt="Token-economics: Making LLM Features Sustainable" width="1200" height="630" decoding="async" loading="eager" fetchpriority="high" /></figure>
   <div class="dk-prose">
 <p>Token economics, a critical component of modern artificial intelligence (AI) systems, refers to the economic framework that underpins how these models are developed, deployed, and maintained. For large language models (LLMs), token economics plays an essential role in ensuring long-term sustainability and financial viability. This article delves into the nuances of token economics, focusing on how it can make LLM features more sustainable.</p><h2>Understanding Token Economics</h2><p>In simple terms, token economics is about aligning incentives within a system so that participants have a vested interest in its success. For AI systems like LLMs, this involves setting up economic models where stakeholders—such as developers, users, and providers—are rewarded for specific behaviors that contribute to the overall health of the model.</p><p>For instance, in a typical token-based ecosystem, tokens might represent credits or resources used by users to interact with the model. These tokens can be earned through various activities such as data labeling, user engagement, or even positive feedback from interactions. By carefully designing these incentives, developers can foster a community that actively contributes to and benefits from the LLM's growth.</p><h2>Token-Based Incentives for Users</h2><p>User engagement is crucial for any AI system's success. Token economics can drive user interaction by providing tangible rewards. For example:</p><ul><li><strong>Credit System:</strong> Users might earn tokens for completing tasks or providing high-quality inputs, which they can then use to enhance their interactions with the LLM.</li><li><strong>Bug Bounties:</strong> Encouraging users to report bugs or provide feedback can be incentivized through token rewards. This not only improves model accuracy but also builds a community of contributors who feel valued and invested in the project's success.</li><li><strong>Moderation Rewards:</strong> Token-based systems can reward users for moderating content, ensuring that the LLM operates in a controlled environment free from harmful inputs.</li></ul><p>These incentives create a virtuous cycle where users are more likely to engage with and contribute positively to the model, ultimately improving its performance and reliability over time.</p><h2>Token-Based Incentives for Developers</h2><p>In addition to user engagement, token economics can also motivate developers by providing financial rewards for specific actions:</p><ul><li><strong>Educational Resources:</strong> Developers who contribute high-quality educational content or tutorials related to the LLM can earn tokens. This not only enriches the community but also positions them as valuable resources within the ecosystem.</li><li><strong>Bug Fixing and Optimization:</strong> Developers who identify bugs, improve performance, or optimize the model's efficiency can receive token rewards. This encourages a continuous improvement cycle that benefits all stakeholders.</li><li><strong>Community Building:</strong> Developers who actively engage in community building activities, such as hosting webinars or workshops, can also earn tokens. This fosters a vibrant and supportive environment around the LLM.</li></ul><p>By aligning developer incentives with the goals of the project, token economics can drive innovation and maintain high-quality standards over time.</p><h2>Economic Models for Long-Term Sustainability</h2><p>To ensure long-term sustainability, it's crucial to design economic models that balance user engagement and financial viability. Key considerations include:</p><ul><li><strong>Token Distribution:</strong> A well-structured token distribution system can prevent inflation by carefully managing the supply of tokens. This ensures that each token retains its value over time.</li><li><strong>Market Dynamics:</strong> Understanding market dynamics is essential for predicting and mitigating potential issues. For example, if a sudden influx of users leads to a shortage of tokens, mechanisms should be in place to adjust the supply dynamically.</li><li><strong>Community Governance:</strong> Token economics can empower communities by giving them a voice in decision-making processes. This can help maintain transparency and fairness within the ecosystem.</li></ul><p>By implementing these strategies, developers can create a resilient economic framework that supports both short-term growth and long-term sustainability.</p><h2>Case Studies: Real-World Applications of Token Economics</h2><p>To illustrate the practical application of token economics in LLMs, let's consider two hypothetical case studies:</p><h3>Hypothetical Case Study 1: Crowdsourcing for Data Annotation</h3><p>In this scenario, a large language model provider uses tokens to incentivize users to annotate data. By earning tokens, annotators can unlock premium features or exchange them for monetary rewards. This not only ensures high-quality data but also fosters a motivated community of contributors.</p><ul><li><strong>Data Quality:</strong> Token incentives encourage accurate and thorough annotations, improving the overall quality of the training data.</li><li><strong>Community Growth:</strong> By rewarding users with tokens for their contributions, the provider can build a robust and engaged user base that actively participates in the project's success.</li></ul><h3>Hypothetical Case Study 2: Developer Contributions and Innovation</h3><p>This case study focuses on incentivizing developers to contribute to the LLM. By offering tokens for bug fixes, feature enhancements, or educational content, the provider can foster a community of contributors who are invested in the model's success.</p><ul><li><strong>Innovation:</strong> Developers motivated by token rewards are more likely to invest time and effort into developing new features or improving existing ones, driving innovation within the ecosystem.</li><li><strong>Community Engagement:</strong> A vibrant developer community can lead to a richer set of resources and support for users, enhancing overall user satisfaction.</li></ul><p>These case studies demonstrate how token economics can be tailored to specific use cases, ensuring that both users and developers are motivated to contribute positively to the LLM's success.</p>
   </div>
@@ -952,17 +967,17 @@ a:focus-visible, button:focus-visible {
       <h2>Related reading</h2>
       <div class="dk-related-grid">
         <article class="dk-related-card">
-          <a class="dk-related-card-figure" href="../art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/art-of-saying-no-in-product-roadmaps-a-modern-guide/1200/630" alt="Art of Saying No in Product Roadmaps: A Modern Guide" width="1200" height="630" decoding="async" loading="lazy" /></a>
+          <a class="dk-related-card-figure" href="../art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/business,office,saying,product?lock=970349815" alt="Art of Saying No in Product Roadmaps: A Modern Guide" width="1200" height="630" decoding="async" loading="lazy" /></a>
           <a class="dk-related-card-title" href="../art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html">Art of Saying No in Product Roadmaps: A Modern Guide</a>
           <div class="dk-related-card-meta"><time datetime="2026-05-22T09:00:00+05:00">22 May 2026</time></div>
         </article>
         <article class="dk-related-card">
-          <a class="dk-related-card-figure" href="../object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/1200/630" alt="Object Storage as a Primary Database: Emerging Patterns in Cloud Computing" width="1200" height="630" decoding="async" loading="lazy" /></a>
+          <a class="dk-related-card-figure" href="../object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cloud,server,object,storage?lock=3582842096" alt="Object Storage as a Primary Database: Emerging Patterns in Cloud Computing" width="1200" height="630" decoding="async" loading="lazy" /></a>
           <a class="dk-related-card-title" href="../object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html">Object Storage as a Primary Database: Emerging Patterns in Cloud Computing</a>
           <div class="dk-related-card-meta"><time datetime="2026-05-21T09:00:00+05:00">21 May 2026</time></div>
         </article>
         <article class="dk-related-card">
-          <a class="dk-related-card-figure" href="../hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/1200/630" alt="Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns" width="1200" height="630" decoding="async" loading="lazy" /></a>
+          <a class="dk-related-card-figure" href="../hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/machine-learning,data,hyperparameter,tuning?lock=2373282527" alt="Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns" width="1200" height="630" decoding="async" loading="lazy" /></a>
           <a class="dk-related-card-title" href="../hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html">Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns</a>
           <div class="dk-related-card-meta"><time datetime="2026-05-18T09:00:00+05:00">18 May 2026</time></div>
         </article></div>

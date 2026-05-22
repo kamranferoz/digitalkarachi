@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -920,70 +935,70 @@ a:focus-visible, button:focus-visible {
 <section class="dk-grid">
 
 <article class="dk-card is-large">
-  <a class="dk-card-figure" href="../../beyond-visual-line-of-sight-the-regulatory-shift-in-2026/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/beyond-visual-line-of-sight-the-regulatory-shift-in-2026/1200/630" alt="Beyond Visual Line of Sight: The Regulatory Shift in 2026" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../beyond-visual-line-of-sight-the-regulatory-shift-in-2026/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,beyond,visual?lock=2406528031" alt="Beyond Visual Line of Sight: The Regulatory Shift in 2026" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/drone/index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../beyond-visual-line-of-sight-the-regulatory-shift-in-2026/index.html">Beyond Visual Line of Sight: The Regulatory Shift in 2026</a></h2>
   <p class="dk-card-excerpt">In 2026, a significant change in drone regulations opens up new possibilities for industries like agriculture and delivery services.</p>
   <div class="dk-card-meta"><time datetime="2024-05-01T09:00:00+05:00">1 May 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../building-a-culture-of-writing-in-engineering-teams/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/building-a-culture-of-writing-in-engineering-teams/1200/630" alt="Building A Culture Of Writing In Engineering Teams" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../building-a-culture-of-writing-in-engineering-teams/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/business,office,building,culture?lock=3882138687" alt="Building A Culture Of Writing In Engineering Teams" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/management/index.html">Management</a></div>
   <h2 class="dk-card-title"><a href="../../building-a-culture-of-writing-in-engineering-teams/index.html">Building A Culture Of Writing In Engineering Teams</a></h2>
   <p class="dk-card-excerpt">Learn how to foster a writing culture that enhances communication, collaboration, and technical documentation in your engineering team.</p>
   <div class="dk-card-meta"><time datetime="2024-04-28T09:00:00+05:00">28 April 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../zero-trust-architecture-beyond-marketing-slides/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/zero-trust-architecture-beyond-marketing-slides/1200/630" alt="Zero-Trust Architecture: Beyond Marketing Slides" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../zero-trust-architecture-beyond-marketing-slides/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cybersecurity,lock,zero-trust,architecture?lock=2116986464" alt="Zero-Trust Architecture: Beyond Marketing Slides" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/security/index.html">Security</a></div>
   <h2 class="dk-card-title"><a href="../../zero-trust-architecture-beyond-marketing-slides/index.html">Zero-Trust Architecture: Beyond Marketing Slides</a></h2>
   <p class="dk-card-excerpt">Understanding the practical implementation and benefits of zero-trust in enterprise security.</p>
   <div class="dk-card-meta"><time datetime="2024-04-25T09:00:00+05:00">25 April 2024</time></div>
 </article>
 <article class="dk-card is-wide">
-  <a class="dk-card-figure" href="../../the-architecture-of-a-modern-rag-pipeline-end-to-end/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/the-architecture-of-a-modern-rag-pipeline-end-to-end/1200/630" alt="The Architecture Of A Modern Rag Pipeline: End-to-end" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../the-architecture-of-a-modern-rag-pipeline-end-to-end/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/ai,technology,architecture,modern?lock=3577484499" alt="The Architecture Of A Modern Rag Pipeline: End-to-end" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/artificial-intelligence-ai/index.html">Artificial Intelligence (AI)</a></div>
   <h2 class="dk-card-title"><a href="../../the-architecture-of-a-modern-rag-pipeline-end-to-end/index.html">The Architecture Of A Modern Rag Pipeline: End-to-end</a></h2>
   <p class="dk-card-excerpt">Discover the intricate architecture of a modern retrieval-augmented generation (RAG) pipeline, from data sourcing to model deployment.</p>
   <div class="dk-card-meta"><time datetime="2024-04-22T09:00:00+05:00">22 April 2024</time></div>
 </article>
 <article class="dk-card is-wide">
-  <a class="dk-card-figure" href="../../agricultural-robotics-harvesting-at-scale/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/agricultural-robotics-harvesting-at-scale/1200/630" alt="Agricultural Robotics: Harvesting At Scale" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../agricultural-robotics-harvesting-at-scale/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,agricultural,agriculture?lock=1115264669" alt="Agricultural Robotics: Harvesting At Scale" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/robotics/index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../agricultural-robotics-harvesting-at-scale/index.html">Agricultural Robotics: Harvesting At Scale</a></h2>
   <p class="dk-card-excerpt">How autonomous machines are transforming modern farming practices to increase efficiency and sustainability.</p>
   <div class="dk-card-meta"><time datetime="2024-04-19T09:00:00+05:00">19 April 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../building-energy-management-with-iot-sensors-a-comprehensive-guide/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/building-energy-management-with-iot-sensors-a-comprehensive-guide/1200/630" alt="Building Energy Management with IoT Sensors: A Comprehensive Guide" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../building-energy-management-with-iot-sensors-a-comprehensive-guide/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/iot,sensor,building,energy?lock=507784610" alt="Building Energy Management with IoT Sensors: A Comprehensive Guide" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/internet-of-things-iot/index.html">Internet of Things (IoT)</a></div>
   <h2 class="dk-card-title"><a href="../../building-energy-management-with-iot-sensors-a-comprehensive-guide/index.html">Building Energy Management with IoT Sensors: A Comprehensive Guide</a></h2>
   <p class="dk-card-excerpt">Discover how IoT sensors revolutionize building energy management, offering real-time data and predictive analytics to optimize efficiency.</p>
   <div class="dk-card-meta"><time datetime="2024-04-16T09:00:00+05:00">16 April 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../sql-patterns-that-distinguish-senior-data-analysts/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/sql-patterns-that-distinguish-senior-data-analysts/1200/630" alt="SQL Patterns That Distinguish Senior Data Analysts" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../sql-patterns-that-distinguish-senior-data-analysts/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/data,analytics,patterns,distinguish?lock=771553576" alt="SQL Patterns That Distinguish Senior Data Analysts" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/data-science/index.html">Data Science</a></div>
   <h2 class="dk-card-title"><a href="../../sql-patterns-that-distinguish-senior-data-analysts/index.html">SQL Patterns That Distinguish Senior Data Analysts</a></h2>
   <p class="dk-card-excerpt">Senior data analysts master advanced SQL techniques that optimize performance and derive deeper insights.</p>
   <div class="dk-card-meta"><time datetime="2024-04-13T09:00:00+05:00">13 April 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../the-new-generation-of-build-tools-vite-turbopack-bun-unveiled/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/the-new-generation-of-build-tools-vite-turbopack-bun-unveiled/1200/630" alt="The New Generation of Build Tools: Vite, Turbopack, Bun Unveiled" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../the-new-generation-of-build-tools-vite-turbopack-bun-unveiled/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/technology,computer,generation,build?lock=2827066809" alt="The New Generation of Build Tools: Vite, Turbopack, Bun Unveiled" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/technology/index.html">Technology</a></div>
   <h2 class="dk-card-title"><a href="../../the-new-generation-of-build-tools-vite-turbopack-bun-unveiled/index.html">The New Generation of Build Tools: Vite, Turbopack, Bun Unveiled</a></h2>
   <p class="dk-card-excerpt">Discover how modern build tools like Vite, Turbopack, and Bun are transforming web development workflows with faster builds and more efficient deployment.</p>
   <div class="dk-card-meta"><time datetime="2024-04-10T09:00:00+05:00">10 April 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../quantum-sensing-the-underrated-application/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/quantum-sensing-the-underrated-application/1200/630" alt="Quantum Sensing: The Underrated Application" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../quantum-sensing-the-underrated-application/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/quantum,physics,sensing,quantum-computing?lock=3704224226" alt="Quantum Sensing: The Underrated Application" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/quantum-computing/index.html">Quantum Computing</a></div>
   <h2 class="dk-card-title"><a href="../../quantum-sensing-the-underrated-application/index.html">Quantum Sensing: The Underrated Application</a></h2>
   <p class="dk-card-excerpt">Discover how quantum sensing is revolutionizing precision measurement with applications in medicine, navigation, and environmental monitoring.</p>
   <div class="dk-card-meta"><time datetime="2024-04-07T09:00:00+05:00">7 April 2024</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../sim-to-real-transfer-for-robot-learning-realizing-potential/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/sim-to-real-transfer-for-robot-learning-realizing-potential/1200/630" alt="Sim-to-real Transfer For Robot Learning: Realizing Potential" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../sim-to-real-transfer-for-robot-learning-realizing-potential/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,sim-to-real,transfer?lock=3302647549" alt="Sim-to-real Transfer For Robot Learning: Realizing Potential" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/robotics/index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../sim-to-real-transfer-for-robot-learning-realizing-potential/index.html">Sim-to-real Transfer For Robot Learning: Realizing Potential</a></h2>
   <p class="dk-card-excerpt">Sim-to-real transfer in robotics is a promising technique that bridges the gap between simulation and real-world applications, enabling faster deployment of advanced robot systems.</p>

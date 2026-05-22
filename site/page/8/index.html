@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -920,70 +935,70 @@ a:focus-visible, button:focus-visible {
 <section class="dk-grid">
 
 <article class="dk-card is-large">
-  <a class="dk-card-figure" href="../../tech-debt-budgeting-a-quarterly-framework/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/tech-debt-budgeting-a-quarterly-framework/1200/630" alt="Tech Debt Budgeting: A Quarterly Framework" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../tech-debt-budgeting-a-quarterly-framework/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/business,office,tech,debt?lock=1851763246" alt="Tech Debt Budgeting: A Quarterly Framework" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/management/index.html">Management</a></div>
   <h2 class="dk-card-title"><a href="../../tech-debt-budgeting-a-quarterly-framework/index.html">Tech Debt Budgeting: A Quarterly Framework</a></h2>
   <p class="dk-card-excerpt">Learn how to manage technical debt effectively through a structured quarterly budget approach.</p>
   <div class="dk-card-meta"><time datetime="2025-10-26T09:00:00+05:00">26 October 2025</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../cloud-iam-hardening-the-high-leverage-policies/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/cloud-iam-hardening-the-high-leverage-policies/1200/630" alt="Cloud Iam Hardening: The High-leverage Policies" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../cloud-iam-hardening-the-high-leverage-policies/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cybersecurity,lock,cloud,hardening?lock=2410342969" alt="Cloud Iam Hardening: The High-leverage Policies" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/security/index.html">Security</a></div>
   <h2 class="dk-card-title"><a href="../../cloud-iam-hardening-the-high-leverage-policies/index.html">Cloud Iam Hardening: The High-leverage Policies</a></h2>
   <p class="dk-card-excerpt">Understand the critical importance of Cloud Identity and Access Management (IAM) hardening to secure your cloud environment.</p>
   <div class="dk-card-meta"><time datetime="2025-10-23T09:00:00+05:00">23 October 2025</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../multi-modal-ai-beyond-the-demos-into-practical-use-cases/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/multi-modal-ai-beyond-the-demos-into-practical-use-cases/1200/630" alt="Multi-Modal AI: Beyond the Demos into Practical Use Cases" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../multi-modal-ai-beyond-the-demos-into-practical-use-cases/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/ai,technology,multi-modal,beyond?lock=1216909644" alt="Multi-Modal AI: Beyond the Demos into Practical Use Cases" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/artificial-intelligence-ai/index.html">Artificial Intelligence (AI)</a></div>
   <h2 class="dk-card-title"><a href="../../multi-modal-ai-beyond-the-demos-into-practical-use-cases/index.html">Multi-Modal AI: Beyond the Demos into Practical Use Cases</a></h2>
   <p class="dk-card-excerpt">Explore how multi-modal AI is transforming industries with practical applications beyond simple demonstrations.</p>
   <div class="dk-card-meta"><time datetime="2025-10-20T09:00:00+05:00">20 October 2025</time></div>
 </article>
 <article class="dk-card is-wide">
-  <a class="dk-card-figure" href="../../surgical-robotics-the-regulatory-and-engineering-bar/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/surgical-robotics-the-regulatory-and-engineering-bar/1200/630" alt="Surgical Robotics: The Regulatory and Engineering Bar" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../surgical-robotics-the-regulatory-and-engineering-bar/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,surgical,surgical-robotics?lock=3532156349" alt="Surgical Robotics: The Regulatory and Engineering Bar" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/robotics/index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../surgical-robotics-the-regulatory-and-engineering-bar/index.html">Surgical Robotics: The Regulatory and Engineering Bar</a></h2>
   <p class="dk-card-excerpt">Exploring the complexities of regulatory compliance and engineering challenges in surgical robotics.</p>
   <div class="dk-card-meta"><time datetime="2025-10-17T09:00:00+05:00">17 October 2025</time></div>
 </article>
 <article class="dk-card is-wide">
-  <a class="dk-card-figure" href="../../time-series-databases-for-iot-workloads/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/time-series-databases-for-iot-workloads/1200/630" alt="Time-series Databases For Iot Workloads" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../time-series-databases-for-iot-workloads/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/iot,sensor,time-series,databases?lock=1719288570" alt="Time-series Databases For Iot Workloads" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/internet-of-things-iot/index.html">Internet of Things (IoT)</a></div>
   <h2 class="dk-card-title"><a href="../../time-series-databases-for-iot-workloads/index.html">Time-series Databases For Iot Workloads</a></h2>
   <p class="dk-card-excerpt">Understanding the critical role of time-series databases in managing IoT data efficiently.</p>
   <div class="dk-card-meta"><time datetime="2025-10-14T09:00:00+05:00">14 October 2025</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../data-quality-monitoring-the-unappreciated-reliability-problem/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/data-quality-monitoring-the-unappreciated-reliability-problem/1200/630" alt="Data-quality Monitoring: The Unappreciated Reliability Problem" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../data-quality-monitoring-the-unappreciated-reliability-problem/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/data,analytics,data-quality,monitoring?lock=413378528" alt="Data-quality Monitoring: The Unappreciated Reliability Problem" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/data-science/index.html">Data Science</a></div>
   <h2 class="dk-card-title"><a href="../../data-quality-monitoring-the-unappreciated-reliability-problem/index.html">Data-quality Monitoring: The Unappreciated Reliability Problem</a></h2>
   <p class="dk-card-excerpt">Data quality monitoring is essential but often overlooked, ensuring the integrity of data-driven decisions in organizations.</p>
   <div class="dk-card-meta"><time datetime="2025-10-11T09:00:00+05:00">11 October 2025</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../software-supply-chain-security-practical-hardening-steps/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/software-supply-chain-security-practical-hardening-steps/1200/630" alt="Software Supply Chain Security: Practical Hardening Steps" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../software-supply-chain-security-practical-hardening-steps/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/technology,computer,software,supply?lock=1130205831" alt="Software Supply Chain Security: Practical Hardening Steps" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/technology/index.html">Technology</a></div>
   <h2 class="dk-card-title"><a href="../../software-supply-chain-security-practical-hardening-steps/index.html">Software Supply Chain Security: Practical Hardening Steps</a></h2>
   <p class="dk-card-excerpt">Learn essential practices to secure your software supply chain against modern threats, including code scanning and continuous monitoring.</p>
   <div class="dk-card-meta"><time datetime="2025-10-08T09:00:00+05:00">8 October 2025</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../career-paths-in-quantum-computing-for-software-engineers/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/career-paths-in-quantum-computing-for-software-engineers/1200/630" alt="Career Paths in Quantum Computing for Software Engineers" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../career-paths-in-quantum-computing-for-software-engineers/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/quantum,physics,career,paths?lock=4228288697" alt="Career Paths in Quantum Computing for Software Engineers" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/quantum-computing/index.html">Quantum Computing</a></div>
   <h2 class="dk-card-title"><a href="../../career-paths-in-quantum-computing-for-software-engineers/index.html">Career Paths in Quantum Computing for Software Engineers</a></h2>
   <p class="dk-card-excerpt">Explore the diverse career opportunities available to software engineers in quantum computing across various roles and industries.</p>
   <div class="dk-card-meta"><time datetime="2025-10-05T09:00:00+05:00">5 October 2025</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../building-a-wallet-ux-that-doesn-t-scare-normal-users/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/building-a-wallet-ux-that-doesn-t-scare-normal-users/1200/630" alt="Building a Wallet UX That Doesn&#x27;t Scare Normal Users" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../building-a-wallet-ux-that-doesn-t-scare-normal-users/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,building,wallet?lock=966073997" alt="Building a Wallet UX That Doesn&#x27;t Scare Normal Users" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/blockchain/index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../building-a-wallet-ux-that-doesn-t-scare-normal-users/index.html">Building a Wallet UX That Doesn&#x27;t Scare Normal Users</a></h2>
   <p class="dk-card-excerpt">Creating an intuitive and secure cryptocurrency wallet experience is crucial for broader adoption. Here’s how to design with the user in mind.</p>
   <div class="dk-card-meta"><time datetime="2025-10-02T09:00:00+05:00">2 October 2025</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../infrastructure-cost-attribution-the-tagging-discipline/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/infrastructure-cost-attribution-the-tagging-discipline/1200/630" alt="Infrastructure-cost-attribution: The Tagging-discipline" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../infrastructure-cost-attribution-the-tagging-discipline/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cloud,server,infrastructure-cost-attribution,tagging-discipline?lock=1480618365" alt="Infrastructure-cost-attribution: The Tagging-discipline" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/cloud-computing/index.html">Cloud Computing</a></div>
   <h2 class="dk-card-title"><a href="../../infrastructure-cost-attribution-the-tagging-discipline/index.html">Infrastructure-cost-attribution: The Tagging-discipline</a></h2>
   <p class="dk-card-excerpt">Learn how effective tagging practices can transform cost management in cloud infrastructure, ensuring transparency and accountability for your organization&#x27;s expenses.</p>

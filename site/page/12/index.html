@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -920,70 +935,70 @@ a:focus-visible, button:focus-visible {
 <section class="dk-grid">
 
 <article class="dk-card is-large">
-  <a class="dk-card-figure" href="../../the-state-of-post-quantum-cryptography-migration/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/the-state-of-post-quantum-cryptography-migration/1200/630" alt="The State of Post-Quantum Cryptography Migration" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../the-state-of-post-quantum-cryptography-migration/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cybersecurity,lock,state,post-quantum?lock=168281552" alt="The State of Post-Quantum Cryptography Migration" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/security/index.html">Security</a></div>
   <h2 class="dk-card-title"><a href="../../the-state-of-post-quantum-cryptography-migration/index.html">The State of Post-Quantum Cryptography Migration</a></h2>
   <p class="dk-card-excerpt">Why the transition to post-quantum cryptography is crucial in today’s digital landscape.</p>
   <div class="dk-card-meta"><time datetime="2025-06-28T09:00:00+05:00">28 June 2025</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../synthetic-data-generation-an-underrated-production-tool/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/synthetic-data-generation-an-underrated-production-tool/1200/630" alt="Synthetic Data Generation: An Underrated Production Tool" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../synthetic-data-generation-an-underrated-production-tool/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/ai,technology,synthetic,data?lock=2421056359" alt="Synthetic Data Generation: An Underrated Production Tool" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/artificial-intelligence-ai/index.html">Artificial Intelligence (AI)</a></div>
   <h2 class="dk-card-title"><a href="../../synthetic-data-generation-an-underrated-production-tool/index.html">Synthetic Data Generation: An Underrated Production Tool</a></h2>
   <p class="dk-card-excerpt">Explore the benefits and applications of synthetic data in AI development, highlighting its underutilized potential.</p>
   <div class="dk-card-meta"><time datetime="2025-06-25T09:00:00+05:00">25 June 2025</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../mobile-robots-in-hospitals-revolutionizing-logistics-and-disinfection/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/mobile-robots-in-hospitals-revolutionizing-logistics-and-disinfection/1200/630" alt="Mobile Robots in Hospitals: Revolutionizing Logistics and Disinfection" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../mobile-robots-in-hospitals-revolutionizing-logistics-and-disinfection/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/robot,robotics,mobile,robots?lock=3305427241" alt="Mobile Robots in Hospitals: Revolutionizing Logistics and Disinfection" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/robotics/index.html">Robotics</a></div>
   <h2 class="dk-card-title"><a href="../../mobile-robots-in-hospitals-revolutionizing-logistics-and-disinfection/index.html">Mobile Robots in Hospitals: Revolutionizing Logistics and Disinfection</a></h2>
   <p class="dk-card-excerpt">Explore how mobile robots are transforming hospital operations, enhancing logistics efficiency and streamlining disinfection processes.</p>
   <div class="dk-card-meta"><time datetime="2025-06-22T09:00:00+05:00">22 June 2025</time></div>
 </article>
 <article class="dk-card is-wide">
-  <a class="dk-card-figure" href="../../mqtt-at-scale-broker-architecture-patterns/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/mqtt-at-scale-broker-architecture-patterns/1200/630" alt="Mqtt At Scale: Broker Architecture Patterns" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../mqtt-at-scale-broker-architecture-patterns/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/iot,sensor,mqtt,scale?lock=2921402397" alt="Mqtt At Scale: Broker Architecture Patterns" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/internet-of-things-iot/index.html">Internet of Things (IoT)</a></div>
   <h2 class="dk-card-title"><a href="../../mqtt-at-scale-broker-architecture-patterns/index.html">Mqtt At Scale: Broker Architecture Patterns</a></h2>
   <p class="dk-card-excerpt">Explore the essential MQTT broker architectures for handling large-scale IoT deployments, ensuring reliability and scalability.</p>
   <div class="dk-card-meta"><time datetime="2025-06-19T09:00:00+05:00">19 June 2025</time></div>
 </article>
 <article class="dk-card is-wide">
-  <a class="dk-card-figure" href="../../statistical-significance-for-product-teams-without-the-jargon/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/statistical-significance-for-product-teams-without-the-jargon/1200/630" alt="Statistical Significance for Product Teams, Without the Jargon" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../statistical-significance-for-product-teams-without-the-jargon/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/data,analytics,statistical,significance?lock=2490421938" alt="Statistical Significance for Product Teams, Without the Jargon" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/data-science/index.html">Data Science</a></div>
   <h2 class="dk-card-title"><a href="../../statistical-significance-for-product-teams-without-the-jargon/index.html">Statistical Significance for Product Teams, Without the Jargon</a></h2>
   <p class="dk-card-excerpt">Understanding and applying statistical significance in product development can help teams make data-driven decisions without getting lost in complex terminology.</p>
   <div class="dk-card-meta"><time datetime="2025-06-16T09:00:00+05:00">16 June 2025</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../why-static-site-generators-are-outshining-dynamic-cms/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/why-static-site-generators-are-outshining-dynamic-cms/1200/630" alt="Why Static-Site Generators Are Outshining Dynamic CMS" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../why-static-site-generators-are-outshining-dynamic-cms/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/technology,computer,static-site,generators?lock=2743235811" alt="Why Static-Site Generators Are Outshining Dynamic CMS" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/technology/index.html">Technology</a></div>
   <h2 class="dk-card-title"><a href="../../why-static-site-generators-are-outshining-dynamic-cms/index.html">Why Static-Site Generators Are Outshining Dynamic CMS</a></h2>
   <p class="dk-card-excerpt">Static-site generators (SSGs) are becoming the preferred choice over dynamic content management systems (CMS). Explore their advantages and why they’re taking center stage in web d…</p>
   <div class="dk-card-meta"><time datetime="2025-06-13T09:00:00+05:00">13 June 2025</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../quantum-networking-the-path-to-a-quantum-internet/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/quantum-networking-the-path-to-a-quantum-internet/1200/630" alt="Quantum Networking: The Path to a Quantum Internet" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../quantum-networking-the-path-to-a-quantum-internet/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/quantum,physics,networking,quantum-computing?lock=1815941279" alt="Quantum Networking: The Path to a Quantum Internet" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/quantum-computing/index.html">Quantum Computing</a></div>
   <h2 class="dk-card-title"><a href="../../quantum-networking-the-path-to-a-quantum-internet/index.html">Quantum Networking: The Path to a Quantum Internet</a></h2>
   <p class="dk-card-excerpt">Exploring the future of quantum communication networks and their potential to revolutionize data transfer.</p>
   <div class="dk-card-meta"><time datetime="2025-06-10T09:00:00+05:00">10 June 2025</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../restaking-and-shared-security-the-new-primitives/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/restaking-and-shared-security-the-new-primitives/1200/630" alt="Restaking and Shared Security: The New Primitives" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../restaking-and-shared-security-the-new-primitives/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,restaking,shared?lock=1550404238" alt="Restaking and Shared Security: The New Primitives" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/blockchain/index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../restaking-and-shared-security-the-new-primitives/index.html">Restaking and Shared Security: The New Primitives</a></h2>
   <p class="dk-card-excerpt">Blockchain networks are evolving beyond simple validation to incorporate restaking and shared security mechanisms that enhance both decentralization and efficiency.</p>
   <div class="dk-card-meta"><time datetime="2025-06-07T09:00:00+05:00">7 June 2025</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../finops-fundamentals-cutting-cloud-bills-without-slowing-teams/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/finops-fundamentals-cutting-cloud-bills-without-slowing-teams/1200/630" alt="Finops Fundamentals: Cutting Cloud Bills Without Slowing Teams" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../finops-fundamentals-cutting-cloud-bills-without-slowing-teams/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cloud,server,finops,fundamentals?lock=2913624507" alt="Finops Fundamentals: Cutting Cloud Bills Without Slowing Teams" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/cloud-computing/index.html">Cloud Computing</a></div>
   <h2 class="dk-card-title"><a href="../../finops-fundamentals-cutting-cloud-bills-without-slowing-teams/index.html">Finops Fundamentals: Cutting Cloud Bills Without Slowing Teams</a></h2>
   <p class="dk-card-excerpt">Discover essential FinOps practices to optimize cloud spending without hindering your engineering teams.</p>
   <div class="dk-card-meta"><time datetime="2025-06-04T09:00:00+05:00">4 June 2025</time></div>
 </article>
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../why-your-model-s-probabilities-probably-lie-the-need-for-calibration/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/why-your-model-s-probabilities-probably-lie-the-need-for-calibration/1200/630" alt="Why Your Model&#x27;s Probabilities Probably Lie: The Need for Calibration" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../why-your-model-s-probabilities-probably-lie-the-need-for-calibration/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/machine-learning,data,model,probabilities?lock=2351931540" alt="Why Your Model&#x27;s Probabilities Probably Lie: The Need for Calibration" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/machine-learning-ml/index.html">Machine Learning (ML)</a></div>
   <h2 class="dk-card-title"><a href="../../why-your-model-s-probabilities-probably-lie-the-need-for-calibration/index.html">Why Your Model&#x27;s Probabilities Probably Lie: The Need for Calibration</a></h2>
   <p class="dk-card-excerpt">Learn why your machine learning models might not be as confident as they appear and how to improve their reliability with calibration techniques.</p>

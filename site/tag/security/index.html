@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -923,7 +938,7 @@ a:focus-visible, button:focus-visible {
 <section class="dk-grid">
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../threat-modeling-for-small-engineering-teams/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/threat-modeling-for-small-engineering-teams/1200/630" alt="Threat Modeling For Small Engineering Teams" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../threat-modeling-for-small-engineering-teams/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cybersecurity,lock,threat,modeling?lock=1155452492" alt="Threat Modeling For Small Engineering Teams" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/security/index.html">Security</a></div>
   <h2 class="dk-card-title"><a href="../../threat-modeling-for-small-engineering-teams/index.html">Threat Modeling For Small Engineering Teams</a></h2>
   <p class="dk-card-excerpt">Understanding the basics of threat modeling is crucial for small engineering teams to protect their applications and data effectively.</p>
@@ -931,7 +946,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../securing-iot-fleets-provisioning-rotation-attestation/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/securing-iot-fleets-provisioning-rotation-attestation/1200/630" alt="Securing IoT Fleets: Provisioning, Rotation, Attestation" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../securing-iot-fleets-provisioning-rotation-attestation/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/iot,sensor,securing,fleets?lock=766504456" alt="Securing IoT Fleets: Provisioning, Rotation, Attestation" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/internet-of-things-iot/index.html">Internet of Things (IoT)</a></div>
   <h2 class="dk-card-title"><a href="../../securing-iot-fleets-provisioning-rotation-attestation/index.html">Securing IoT Fleets: Provisioning, Rotation, Attestation</a></h2>
   <p class="dk-card-excerpt">Learn how to secure your IoT fleet by understanding provisioning, rotation, and attestation processes.</p>
@@ -939,7 +954,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../vpc-design-for-saas-startups/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/vpc-design-for-saas-startups/1200/630" alt="VPC Design for SaaS Startups" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../vpc-design-for-saas-startups/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cloud,server,design,saas?lock=2419622203" alt="VPC Design for SaaS Startups" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/cloud-computing/index.html">Cloud Computing</a></div>
   <h2 class="dk-card-title"><a href="../../vpc-design-for-saas-startups/index.html">VPC Design for SaaS Startups</a></h2>
   <p class="dk-card-excerpt">A comprehensive guide to designing virtual private clouds (VPCs) for successful SaaS startups, covering best practices and key considerations.</p>
@@ -947,7 +962,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../ai-red-teaming-structured-adversarial-testing-for-llm-apps/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/ai-red-teaming-structured-adversarial-testing-for-llm-apps/1200/630" alt="AI Red-Teaming: Structured Adversarial Testing for LLM Apps" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../ai-red-teaming-structured-adversarial-testing-for-llm-apps/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/ai,technology,red-teaming,structured?lock=1905363271" alt="AI Red-Teaming: Structured Adversarial Testing for LLM Apps" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/artificial-intelligence-ai/index.html">Artificial Intelligence (AI)</a></div>
   <h2 class="dk-card-title"><a href="../../ai-red-teaming-structured-adversarial-testing-for-llm-apps/index.html">AI Red-Teaming: Structured Adversarial Testing for LLM Apps</a></h2>
   <p class="dk-card-excerpt">Learn how red-teaming can help ensure the robustness and security of large language models (LLMs) through structured adversarial testing.</p>
@@ -955,7 +970,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../safe-and-efficient-ota-updates-for-embedded-fleets/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/safe-and-efficient-ota-updates-for-embedded-fleets/1200/630" alt="Safe and Efficient OTA Updates for Embedded Fleets" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../safe-and-efficient-ota-updates-for-embedded-fleets/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/iot,sensor,safe,efficient?lock=2218765964" alt="Safe and Efficient OTA Updates for Embedded Fleets" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/internet-of-things-iot/index.html">Internet of Things (IoT)</a></div>
   <h2 class="dk-card-title"><a href="../../safe-and-efficient-ota-updates-for-embedded-fleets/index.html">Safe and Efficient OTA Updates for Embedded Fleets</a></h2>
   <p class="dk-card-excerpt">Learn how over-the-air (OTA) updates can be implemented safely in embedded device fleets, ensuring reliability and security.</p>
@@ -963,7 +978,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../mev-what-it-is-and-why-builders-should-care/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/mev-what-it-is-and-why-builders-should-care/1200/630" alt="MEV: What It Is And Why Builders Should Care" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../mev-what-it-is-and-why-builders-should-care/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,builders,care?lock=3472501045" alt="MEV: What It Is And Why Builders Should Care" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/blockchain/index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../mev-what-it-is-and-why-builders-should-care/index.html">MEV: What It Is And Why Builders Should Care</a></h2>
   <p class="dk-card-excerpt">Understand what MEV is, its implications on blockchain security and efficiency, and why developers must address it in their projects.</p>
@@ -971,7 +986,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../cross-chain-bridges-the-security-postmortem/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/cross-chain-bridges-the-security-postmortem/1200/630" alt="Cross-Chain Bridges: The Security Postmortem" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../cross-chain-bridges-the-security-postmortem/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,cross-chain,bridges?lock=3023720675" alt="Cross-Chain Bridges: The Security Postmortem" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/blockchain/index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../cross-chain-bridges-the-security-postmortem/index.html">Cross-Chain Bridges: The Security Postmortem</a></h2>
   <p class="dk-card-excerpt">An in-depth analysis of cross-chain bridges, their security challenges, and the strategies to mitigate them.</p>
@@ -979,7 +994,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../building-a-wallet-ux-that-doesn-t-scare-normal-users/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/building-a-wallet-ux-that-doesn-t-scare-normal-users/1200/630" alt="Building a Wallet UX That Doesn&#x27;t Scare Normal Users" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../building-a-wallet-ux-that-doesn-t-scare-normal-users/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,building,wallet?lock=966073997" alt="Building a Wallet UX That Doesn&#x27;t Scare Normal Users" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/blockchain/index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../building-a-wallet-ux-that-doesn-t-scare-normal-users/index.html">Building a Wallet UX That Doesn&#x27;t Scare Normal Users</a></h2>
   <p class="dk-card-excerpt">Creating an intuitive and secure cryptocurrency wallet experience is crucial for broader adoption. Here’s how to design with the user in mind.</p>
@@ -987,7 +1002,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../securing-remote-workforce-endpoints-without-locking-them-down/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/securing-remote-workforce-endpoints-without-locking-them-down/1200/630" alt="Securing Remote Workforce Endpoints Without Locking Them Down" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../securing-remote-workforce-endpoints-without-locking-them-down/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cybersecurity,lock,securing,remote?lock=2847337896" alt="Securing Remote Workforce Endpoints Without Locking Them Down" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/security/index.html">Security</a></div>
   <h2 class="dk-card-title"><a href="../../securing-remote-workforce-endpoints-without-locking-them-down/index.html">Securing Remote Workforce Endpoints Without Locking Them Down</a></h2>
   <p class="dk-card-excerpt">Strategies for protecting remote workers&#x27; devices while preserving their productivity and autonomy.</p>
@@ -995,7 +1010,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../software-defined-radio-revolutionizing-drone-communications/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/software-defined-radio-revolutionizing-drone-communications/1200/630" alt="Software-Defined Radio: Revolutionizing Drone Communications" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../software-defined-radio-revolutionizing-drone-communications/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,software-defined,radio?lock=1556631745" alt="Software-Defined Radio: Revolutionizing Drone Communications" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/drone/index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../software-defined-radio-revolutionizing-drone-communications/index.html">Software-Defined Radio: Revolutionizing Drone Communications</a></h2>
   <p class="dk-card-excerpt">Exploring the transformative impact of software-defined radio on drone communications, enhancing flexibility and security in aerial operations.</p>
@@ -1003,7 +1018,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../detection-engineering-writing-better-alerts/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/detection-engineering-writing-better-alerts/1200/630" alt="Detection Engineering: Writing Better Alerts" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../detection-engineering-writing-better-alerts/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cybersecurity,lock,detection,engineering?lock=3964236069" alt="Detection Engineering: Writing Better Alerts" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/security/index.html">Security</a></div>
   <h2 class="dk-card-title"><a href="../../detection-engineering-writing-better-alerts/index.html">Detection Engineering: Writing Better Alerts</a></h2>
   <p class="dk-card-excerpt">Learn how to craft effective alerts that minimize false positives and ensure your security operations run smoothly.</p>
@@ -1011,7 +1026,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../safeguarding-embedded-fleets-best-practices-for-over-the-air-updates/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/safeguarding-embedded-fleets-best-practices-for-over-the-air-updates/1200/630" alt="Safeguarding Embedded Fleets: Best Practices for Over-The-Air Updates" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../safeguarding-embedded-fleets-best-practices-for-over-the-air-updates/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/iot,sensor,safeguarding,embedded?lock=776129190" alt="Safeguarding Embedded Fleets: Best Practices for Over-The-Air Updates" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/internet-of-things-iot/index.html">Internet of Things (IoT)</a></div>
   <h2 class="dk-card-title"><a href="../../safeguarding-embedded-fleets-best-practices-for-over-the-air-updates/index.html">Safeguarding Embedded Fleets: Best Practices for Over-The-Air Updates</a></h2>
   <p class="dk-card-excerpt">Learn how to implement secure over-the-air updates for embedded fleets, ensuring reliability and security in an increasingly connected world.</p>
@@ -1019,7 +1034,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../secrets-management-rotating-keys-without-breaking-production/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/secrets-management-rotating-keys-without-breaking-production/1200/630" alt="Secrets Management: Rotating Keys Without Breaking Production" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../secrets-management-rotating-keys-without-breaking-production/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cybersecurity,lock,secrets,management?lock=372749073" alt="Secrets Management: Rotating Keys Without Breaking Production" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/security/index.html">Security</a></div>
   <h2 class="dk-card-title"><a href="../../secrets-management-rotating-keys-without-breaking-production/index.html">Secrets Management: Rotating Keys Without Breaking Production</a></h2>
   <p class="dk-card-excerpt">Learn how to safely rotate encryption keys in your production environment without causing downtime or service disruptions.</p>
@@ -1027,7 +1042,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../service-mesh-fatigue-simpler-alternatives-that-work/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/service-mesh-fatigue-simpler-alternatives-that-work/1200/630" alt="Service Mesh Fatigue: Simpler Alternatives That Work" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../service-mesh-fatigue-simpler-alternatives-that-work/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/technology,computer,service,mesh?lock=2721313867" alt="Service Mesh Fatigue: Simpler Alternatives That Work" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/technology/index.html">Technology</a></div>
   <h2 class="dk-card-title"><a href="../../service-mesh-fatigue-simpler-alternatives-that-work/index.html">Service Mesh Fatigue: Simpler Alternatives That Work</a></h2>
   <p class="dk-card-excerpt">Explore lightweight and effective alternatives to service meshes that can simplify your microservices architecture without compromising on performance or security.</p>
@@ -1035,7 +1050,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../quantum-cryptography-vs-post-quantum-cryptography-a-comprehensive-comparison/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/quantum-cryptography-vs-post-quantum-cryptography-a-comprehensive-comparison/1200/630" alt="Quantum Cryptography vs Post-Quantum Cryptography: A Comprehensive Comparison" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../quantum-cryptography-vs-post-quantum-cryptography-a-comprehensive-comparison/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/quantum,physics,cryptography,quantum-computing?lock=1801707112" alt="Quantum Cryptography vs Post-Quantum Cryptography: A Comprehensive Comparison" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/quantum-computing/index.html">Quantum Computing</a></div>
   <h2 class="dk-card-title"><a href="../../quantum-cryptography-vs-post-quantum-cryptography-a-comprehensive-comparison/index.html">Quantum Cryptography vs Post-Quantum Cryptography: A Comprehensive Comparison</a></h2>
   <p class="dk-card-excerpt">Explore the nuances between quantum cryptography and post-quantum cryptography, understanding their roles in secure communication in an increasingly quantum world.</p>
@@ -1043,7 +1058,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../smart-contract-auditing-a-practitioner-s-checklist/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/smart-contract-auditing-a-practitioner-s-checklist/1200/630" alt="Smart Contract Auditing: A Practitioner&#x27;s Checklist" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../smart-contract-auditing-a-practitioner-s-checklist/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,smart,contract?lock=2486705933" alt="Smart Contract Auditing: A Practitioner&#x27;s Checklist" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/blockchain/index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../smart-contract-auditing-a-practitioner-s-checklist/index.html">Smart Contract Auditing: A Practitioner&#x27;s Checklist</a></h2>
   <p class="dk-card-excerpt">Learn the essential steps to ensure your smart contracts are secure and reliable, avoiding common pitfalls in deployment.</p>
@@ -1051,7 +1066,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../tabletop-exercises-turning-postmortems-into-preparedness/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/tabletop-exercises-turning-postmortems-into-preparedness/1200/630" alt="Tabletop Exercises: Turning Postmortems into Preparedness" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../tabletop-exercises-turning-postmortems-into-preparedness/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cybersecurity,lock,tabletop,exercises?lock=2720220994" alt="Tabletop Exercises: Turning Postmortems into Preparedness" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/security/index.html">Security</a></div>
   <h2 class="dk-card-title"><a href="../../tabletop-exercises-turning-postmortems-into-preparedness/index.html">Tabletop Exercises: Turning Postmortems into Preparedness</a></h2>
   <p class="dk-card-excerpt">Learn how regular tabletop exercises can transform reactive postmortem analysis into proactive preparedness for cybersecurity threats.</p>
@@ -1059,7 +1074,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../incident-response-runbooks-every-startup-needs/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/incident-response-runbooks-every-startup-needs/1200/630" alt="Incident Response Runbooks Every Startup Needs" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../incident-response-runbooks-every-startup-needs/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cybersecurity,lock,incident,response?lock=3861520630" alt="Incident Response Runbooks Every Startup Needs" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/security/index.html">Security</a></div>
   <h2 class="dk-card-title"><a href="../../incident-response-runbooks-every-startup-needs/index.html">Incident Response Runbooks Every Startup Needs</a></h2>
   <p class="dk-card-excerpt">Learn how to craft comprehensive incident response runbooks that protect your startup from cyber threats and maintain business continuity.</p>
@@ -1067,7 +1082,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../account-abstraction-a-game-changer-for-blockchain-users/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/account-abstraction-a-game-changer-for-blockchain-users/1200/630" alt="Account Abstraction: A Game-Changer for Blockchain Users" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../account-abstraction-a-game-changer-for-blockchain-users/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,account,abstraction?lock=3573364514" alt="Account Abstraction: A Game-Changer for Blockchain Users" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/blockchain/index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../account-abstraction-a-game-changer-for-blockchain-users/index.html">Account Abstraction: A Game-Changer for Blockchain Users</a></h2>
   <p class="dk-card-excerpt">Revolutionizing User Experience in Blockchain by Simplifying Wallet Interactions and Enhancing Security.</p>
@@ -1075,7 +1090,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../tabletop-exercises-making-postmortem-analysis-mean-business/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/tabletop-exercises-making-postmortem-analysis-mean-business/1200/630" alt="Tabletop Exercises: Making Postmortem Analysis Mean Business" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../tabletop-exercises-making-postmortem-analysis-mean-business/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cybersecurity,lock,tabletop,exercises?lock=2146089687" alt="Tabletop Exercises: Making Postmortem Analysis Mean Business" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/security/index.html">Security</a></div>
   <h2 class="dk-card-title"><a href="../../tabletop-exercises-making-postmortem-analysis-mean-business/index.html">Tabletop Exercises: Making Postmortem Analysis Mean Business</a></h2>
   <p class="dk-card-excerpt">Learn how tabletop exercises transform postmortems into proactive preparedness, enhancing cybersecurity in modern organizations.</p>
@@ -1083,7 +1098,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../permissioned-blockchains-in-enterprise-the-honest-assessment/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/permissioned-blockchains-in-enterprise-the-honest-assessment/1200/630" alt="Permissioned Blockchains In Enterprise: The Honest Assessment" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../permissioned-blockchains-in-enterprise-the-honest-assessment/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/blockchain,crypto,permissioned,blockchains?lock=489275751" alt="Permissioned Blockchains In Enterprise: The Honest Assessment" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/blockchain/index.html">Blockchain</a></div>
   <h2 class="dk-card-title"><a href="../../permissioned-blockchains-in-enterprise-the-honest-assessment/index.html">Permissioned Blockchains In Enterprise: The Honest Assessment</a></h2>
   <p class="dk-card-excerpt">An in-depth look at the practical applications and limitations of permissioned blockchains in enterprise settings.</p>
@@ -1091,7 +1106,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../phishing-resistant-mfa-what-s-actually-available-in-2026/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/phishing-resistant-mfa-what-s-actually-available-in-2026/1200/630" alt="Phishing-Resistant MFA: What&#x27;s Actually Available in 2026" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../phishing-resistant-mfa-what-s-actually-available-in-2026/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cybersecurity,lock,phishing-resistant,actually?lock=2632347213" alt="Phishing-Resistant MFA: What&#x27;s Actually Available in 2026" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/security/index.html">Security</a></div>
   <h2 class="dk-card-title"><a href="../../phishing-resistant-mfa-what-s-actually-available-in-2026/index.html">Phishing-Resistant MFA: What&#x27;s Actually Available in 2026</a></h2>
   <p class="dk-card-excerpt">Explore the latest advancements in multi-factor authentication (MFA) that offer robust protection against phishing attacks, ensuring your digital security remains unbreachable.</p>
@@ -1099,7 +1114,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../the-case-for-boring-technology-in-startup-stacks/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/the-case-for-boring-technology-in-startup-stacks/1200/630" alt="The Case For Boring Technology In Startup Stacks" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../the-case-for-boring-technology-in-startup-stacks/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/technology,computer,case,boring?lock=3021428285" alt="The Case For Boring Technology In Startup Stacks" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/technology/index.html">Technology</a></div>
   <h2 class="dk-card-title"><a href="../../the-case-for-boring-technology-in-startup-stacks/index.html">The Case For Boring Technology In Startup Stacks</a></h2>
   <p class="dk-card-excerpt">Why using established and reliable tools can be a strategic advantage in tech startups.</p>
@@ -1107,7 +1122,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../supply-chain-attacks-the-realistic-defenses/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/supply-chain-attacks-the-realistic-defenses/1200/630" alt="Supply Chain Attacks: The Realistic Defenses" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../supply-chain-attacks-the-realistic-defenses/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cybersecurity,lock,supply,chain?lock=3636857295" alt="Supply Chain Attacks: The Realistic Defenses" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/security/index.html">Security</a></div>
   <h2 class="dk-card-title"><a href="../../supply-chain-attacks-the-realistic-defenses/index.html">Supply Chain Attacks: The Realistic Defenses</a></h2>
   <p class="dk-card-excerpt">Supply chain attacks are a growing threat to organizations. Learn how to secure your technology ecosystem effectively.</p>
@@ -1115,7 +1130,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../counter-drone-systems-detection-and-mitigation/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/counter-drone-systems-detection-and-mitigation/1200/630" alt="Counter-drone Systems: Detection and Mitigation" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../counter-drone-systems-detection-and-mitigation/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/drone,aerial,counter-drone,systems?lock=3096518596" alt="Counter-drone Systems: Detection and Mitigation" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/drone/index.html">Drone</a></div>
   <h2 class="dk-card-title"><a href="../../counter-drone-systems-detection-and-mitigation/index.html">Counter-drone Systems: Detection and Mitigation</a></h2>
   <p class="dk-card-excerpt">Learn about the latest technologies in counter-drone systems to protect against unauthorized drone intrusions.</p>
@@ -1123,7 +1138,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../securing-ci-cd-pipelines-against-malicious-dependencies/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/securing-ci-cd-pipelines-against-malicious-dependencies/1200/630" alt="Securing CI/CD Pipelines Against Malicious Dependencies" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../securing-ci-cd-pipelines-against-malicious-dependencies/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cybersecurity,lock,securing,pipelines?lock=2277059962" alt="Securing CI/CD Pipelines Against Malicious Dependencies" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/security/index.html">Security</a></div>
   <h2 class="dk-card-title"><a href="../../securing-ci-cd-pipelines-against-malicious-dependencies/index.html">Securing CI/CD Pipelines Against Malicious Dependencies</a></h2>
   <p class="dk-card-excerpt">Learn how to protect your Continuous Integration/Continuous Deployment (CI/CD) pipelines from malicious dependencies that could compromise your applications.</p>
@@ -1131,7 +1146,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../quantum-resistant-cryptography-the-migration-roadmap/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/quantum-resistant-cryptography-the-migration-roadmap/1200/630" alt="Quantum-Resistant Cryptography: The Migration Roadmap" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../quantum-resistant-cryptography-the-migration-roadmap/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/quantum,physics,quantum-resistant,cryptography?lock=2002238424" alt="Quantum-Resistant Cryptography: The Migration Roadmap" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/quantum-computing/index.html">Quantum Computing</a></div>
   <h2 class="dk-card-title"><a href="../../quantum-resistant-cryptography-the-migration-roadmap/index.html">Quantum-Resistant Cryptography: The Migration Roadmap</a></h2>
   <p class="dk-card-excerpt">Understanding the critical steps organizations must take to secure their data against quantum threats.</p>
@@ -1139,7 +1154,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../build-buy-or-open-source-choosing-an-iot-platform/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/build-buy-or-open-source-choosing-an-iot-platform/1200/630" alt="Build, Buy, Or Open Source: Choosing An Iot Platform" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../build-buy-or-open-source-choosing-an-iot-platform/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/iot,sensor,build,open?lock=460742343" alt="Build, Buy, Or Open Source: Choosing An Iot Platform" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/internet-of-things-iot/index.html">Internet of Things (IoT)</a></div>
   <h2 class="dk-card-title"><a href="../../build-buy-or-open-source-choosing-an-iot-platform/index.html">Build, Buy, Or Open Source: Choosing An Iot Platform</a></h2>
   <p class="dk-card-excerpt">Deciding between building your own IoT platform, buying a commercial solution, or leveraging open source tools can significantly impact project success and cost.</p>
@@ -1147,7 +1162,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../quantum-random-number-generation-in-production/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/quantum-random-number-generation-in-production/1200/630" alt="Quantum Random Number Generation in Production" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../quantum-random-number-generation-in-production/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/quantum,physics,random,quantum-computing?lock=4076482434" alt="Quantum Random Number Generation in Production" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/quantum-computing/index.html">Quantum Computing</a></div>
   <h2 class="dk-card-title"><a href="../../quantum-random-number-generation-in-production/index.html">Quantum Random Number Generation in Production</a></h2>
   <p class="dk-card-excerpt">Exploring the practical implementation of quantum random number generation (QRNG) in today’s data-driven world, this article delves into its benefits and challenges.</p>
@@ -1155,7 +1170,7 @@ a:focus-visible, button:focus-visible {
 </article>
 
 <article class="dk-card">
-  <a class="dk-card-figure" href="../../zero-trust-architecture-beyond-marketing-slides/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/zero-trust-architecture-beyond-marketing-slides/1200/630" alt="Zero-Trust Architecture: Beyond Marketing Slides" width="1200" height="630" decoding="async" loading="lazy" /></a>
+  <a class="dk-card-figure" href="../../zero-trust-architecture-beyond-marketing-slides/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cybersecurity,lock,zero-trust,architecture?lock=2116986464" alt="Zero-Trust Architecture: Beyond Marketing Slides" width="1200" height="630" decoding="async" loading="lazy" /></a>
   <div class="dk-eyebrow"><a href="../../category/security/index.html">Security</a></div>
   <h2 class="dk-card-title"><a href="../../zero-trust-architecture-beyond-marketing-slides/index.html">Zero-Trust Architecture: Beyond Marketing Slides</a></h2>
   <p class="dk-card-excerpt">Understanding the practical implementation and benefits of zero-trust in enterprise security.</p>

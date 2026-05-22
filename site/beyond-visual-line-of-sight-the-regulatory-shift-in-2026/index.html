@@ -692,16 +692,30 @@ a:focus-visible, button:focus-visible {
   padding: 2rem 0;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 7rem 1fr;
+  grid-template-columns: 12rem 7rem 1fr;
   gap: 1.5rem;
-  align-items: baseline;
+  align-items: start;
 }
 .dk-news-item:last-child { border-bottom: 1px solid var(--rule); }
+.dk-news-thumb-link {
+  display: block;
+  width: 12rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--rule);
+}
+.dk-news-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dk-news-item time {
   font-family: var(--mono);
   font-size: .82rem;
   color: var(--ink-mute);
   letter-spacing: .04em;
+  padding-top: .25rem;
 }
 .dk-news-item h2 {
   font-family: var(--serif);
@@ -713,8 +727,9 @@ a:focus-visible, button:focus-visible {
 }
 .dk-news-item h2 a:hover { color: var(--accent); }
 .dk-news-item p { color: var(--ink-soft); margin-top: .5rem; font-size: 1rem; line-height: 1.55; }
-@media (max-width: 560px) {
-  .dk-news-item { grid-template-columns: 1fr; gap: .5rem; }
+@media (max-width: 760px) {
+  .dk-news-item { grid-template-columns: 1fr; gap: .75rem; }
+  .dk-news-thumb-link { width: 100%; }
 }
 
 /* -- 13. Search results ------------------------------------- */
@@ -915,7 +930,7 @@ a:focus-visible, button:focus-visible {
 <div class="dk-progress" hidden></div>
 <main id="main">
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Beyond Visual Line of Sight: The Regulatory Shift in 2026", "description": "In 2026, a significant change in drone regulations opens up new possibilities for industries like agriculture and delivery services.", "datePublished": "2024-05-01T09:00:00+05:00", "dateModified": "2024-05-01T09:00:00+05:00", "author": {"@type": "Person", "name": "digitalkarachi.com", "url": "https://digitalkarachi.com/author/digitalkarachi-com/"}, "publisher": {"@type": "Organization", "name": "Digital Karachi", "logo": {"@type": "ImageObject", "url": "https://digitalkarachi.com/wp-content/uploads/2023/09/DK-Logo-light.png"}}, "mainEntityOfPage": "https://digitalkarachi.com/beyond-visual-line-of-sight-the-regulatory-shift-in-2026/", "articleSection": "Drone", "keywords": "drone, regulation, beyond-visual-line-of-sight, industry-shift, technology", "image": "https://picsum.photos/seed/beyond-visual-line-of-sight-the-regulatory-shift-in-2026/1200/630"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalkarachi.com/"}, {"@type": "ListItem", "position": 2, "name": "Drone", "item": "https://digitalkarachi.com/category/drone/"}, {"@type": "ListItem", "position": 3, "name": "Beyond Visual Line of Sight: The Regulatory Shift in 2026", "item": "https://digitalkarachi.com/beyond-visual-line-of-sight-the-regulatory-shift-in-2026/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Beyond Visual Line of Sight: The Regulatory Shift in 2026", "description": "In 2026, a significant change in drone regulations opens up new possibilities for industries like agriculture and delivery services.", "datePublished": "2024-05-01T09:00:00+05:00", "dateModified": "2024-05-01T09:00:00+05:00", "author": {"@type": "Person", "name": "digitalkarachi.com", "url": "https://digitalkarachi.com/author/digitalkarachi-com/"}, "publisher": {"@type": "Organization", "name": "Digital Karachi", "logo": {"@type": "ImageObject", "url": "https://digitalkarachi.com/wp-content/uploads/2023/09/DK-Logo-light.png"}}, "mainEntityOfPage": "https://digitalkarachi.com/beyond-visual-line-of-sight-the-regulatory-shift-in-2026/", "articleSection": "Drone", "keywords": "drone, regulation, beyond-visual-line-of-sight, industry-shift, technology", "image": "https://loremflickr.com/1200/630/drone,aerial,beyond,visual?lock=2406528031"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalkarachi.com/"}, {"@type": "ListItem", "position": 2, "name": "Drone", "item": "https://digitalkarachi.com/category/drone/"}, {"@type": "ListItem", "position": 3, "name": "Beyond Visual Line of Sight: The Regulatory Shift in 2026", "item": "https://digitalkarachi.com/beyond-visual-line-of-sight-the-regulatory-shift-in-2026/"}]}</script>
 <article class="dk-article">
   <nav class="dk-breadcrumb" aria-label="Breadcrumb">
     <a href="../index.html">Home</a><span>/</span>
@@ -931,7 +946,7 @@ a:focus-visible, button:focus-visible {
       <span><svg width="14" height="14"><use href="#i-clock"/></svg>3 min read</span>
     </div>
   </header>
-  <figure class="dk-article-hero"><img src="https://picsum.photos/seed/beyond-visual-line-of-sight-the-regulatory-shift-in-2026/1200/630" alt="Beyond Visual Line of Sight: The Regulatory Shift in 2026" width="1200" height="630" decoding="async" loading="eager" fetchpriority="high" /></figure>
+  <figure class="dk-article-hero"><img src="https://loremflickr.com/1200/630/drone,aerial,beyond,visual?lock=2406528031" alt="Beyond Visual Line of Sight: The Regulatory Shift in 2026" width="1200" height="630" decoding="async" loading="eager" fetchpriority="high" /></figure>
   <div class="dk-prose">
 <p>The year 2026 marked a pivotal moment in the history of drone technology as regulators worldwide loosened restrictions, paving the way for Beyond Visual Line of Sight (BVLOS) operations. This regulatory shift transformed not just how drones are used but also opened up new avenues for businesses and industries to integrate these technologies into their core processes.</p><h2>Background: The Need for BVLOS</h2><p>The development of modern drone technology, including improved navigation systems and real-time data transmission capabilities, laid the groundwork for this shift. Traditional limitations on drone operations were primarily due to safety concerns, especially when drones ventured beyond visual line of sight (BVLOS).</p><p>As industries such as agriculture, construction, and delivery services began to see the potential benefits of BVLOS operations, calls for regulatory changes grew louder. Farmers needed to monitor vast fields from above without constant human supervision; delivery companies sought ways to transport goods more efficiently across long distances; and infrastructure inspectors required unobstructed views of hard-to-reach areas.</p><h2>Regulatory Changes in 2026</h2><p>The regulatory landscape underwent a significant overhaul starting in 2026. Governments recognized that with the right safeguards, BVLOS operations could be made safe and efficient. Key changes included:</p><ul><li><strong>New BVLOS Certification Requirements:</strong> Drone operators now needed to demonstrate robust safety measures, including fail-safes like geofencing and enhanced communication systems.</li><li><strong>Dynamic Risk Assessment:</strong> A system was introduced where drone operators could assess risks dynamically and adjust their flight plans accordingly.</li><li><strong>Increased Use of AI:</strong> Advanced algorithms were employed to monitor drones in real-time, ensuring they stayed within designated areas and responded to potential hazards.</li></ul><p>The shift towards BVLOS operations required significant investments from both the public and private sectors. Governments allocated resources for developing new regulatory frameworks, while tech companies invested in developing the necessary software and hardware solutions.</p><h2>Impact on Agriculture</h2><p>Agriculture was one of the first industries to benefit significantly from these changes. Farmers could now deploy drones over larger areas, providing detailed crop health assessments, field mapping, and precision agriculture techniques with greater accuracy and efficiency.</p><p>Drones equipped with sensors and cameras could collect real-time data on soil moisture levels, plant health, and pest infestations. This information allowed farmers to make informed decisions about irrigation, fertilization, and pest control, leading to higher yields and better resource management.</p><h2>Delivery Services Revolutionized</h2><p>The delivery sector saw a dramatic transformation with BVLOS capabilities. Companies could now use drones for longer-range deliveries, reducing the need for ground transportation and decreasing travel times significantly. This was particularly advantageous in rural or remote areas where traditional delivery methods were slow and inefficient.</p><ol><li><strong>Urban Delivery:</strong> In densely populated urban areas, drones could operate BVLOS to deliver packages from warehouses directly to consumers' doorsteps, bypassing traffic congestion and reducing last-mile logistics costs.</li><li><strong>Rural Access:</strong> Remote regions with poor road infrastructure benefited greatly from drone deliveries. Medical supplies, emergency goods, and essential services could now be delivered quickly and reliably over long distances.</li></ol><h2>Infrastructure Inspection and Maintenance</h2><p>In the realm of construction and infrastructure maintenance, BVLOS operations proved invaluable for inspecting large-scale projects and monitoring ongoing work. Drones equipped with high-resolution cameras and LiDAR technology could provide detailed assessments of bridges, buildings, and other critical structures.</p><ul><li><strong>Bridge Inspection:</strong> Regular inspections using drones reduced the need for manual labor and provided more accurate data on structural integrity.</li><li><strong>Energy Infrastructure:</strong> Power lines and substations could be monitored continuously, helping to identify potential issues before they become major failures.</li></ul><p>The regulatory shift also spurred innovation in drone design. Companies began developing drones specifically tailored for BVLOS operations, focusing on improved endurance, payload capacity, and autonomous navigation capabilities. These advancements not only enhanced operational efficiency but also expanded the range of tasks that could be performed by drones.</p><h2>Challenges and Considerations</h2><p>While the regulatory shift opened up numerous opportunities, it also presented challenges. Privacy concerns arose as drones operated over larger areas, potentially infringing on personal space and data protection issues. There was a need for clear guidelines to ensure that drone operations did not violate individuals' privacy rights.</p><p>Ethical considerations were also paramount. As drones became more autonomous, questions about accountability and responsibility in case of accidents or malfunctions emerged. The industry needed to develop robust frameworks to address these ethical dilemmas and maintain public trust.</p><p>Moreover, there was a need for continuous monitoring and updating of regulatory policies to keep pace with technological advancements and changing operational needs. Collaboration between governments, tech companies, and industry stakeholders became crucial in navigating this complex landscape.</p>
   </div>
@@ -952,17 +967,17 @@ a:focus-visible, button:focus-visible {
       <h2>Related reading</h2>
       <div class="dk-related-grid">
         <article class="dk-related-card">
-          <a class="dk-related-card-figure" href="../art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/art-of-saying-no-in-product-roadmaps-a-modern-guide/1200/630" alt="Art of Saying No in Product Roadmaps: A Modern Guide" width="1200" height="630" decoding="async" loading="lazy" /></a>
+          <a class="dk-related-card-figure" href="../art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/business,office,saying,product?lock=970349815" alt="Art of Saying No in Product Roadmaps: A Modern Guide" width="1200" height="630" decoding="async" loading="lazy" /></a>
           <a class="dk-related-card-title" href="../art-of-saying-no-in-product-roadmaps-a-modern-guide/index.html">Art of Saying No in Product Roadmaps: A Modern Guide</a>
           <div class="dk-related-card-meta"><time datetime="2026-05-22T09:00:00+05:00">22 May 2026</time></div>
         </article>
         <article class="dk-related-card">
-          <a class="dk-related-card-figure" href="../object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/1200/630" alt="Object Storage as a Primary Database: Emerging Patterns in Cloud Computing" width="1200" height="630" decoding="async" loading="lazy" /></a>
+          <a class="dk-related-card-figure" href="../object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/cloud,server,object,storage?lock=3582842096" alt="Object Storage as a Primary Database: Emerging Patterns in Cloud Computing" width="1200" height="630" decoding="async" loading="lazy" /></a>
           <a class="dk-related-card-title" href="../object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/index.html">Object Storage as a Primary Database: Emerging Patterns in Cloud Computing</a>
           <div class="dk-related-card-meta"><time datetime="2026-05-21T09:00:00+05:00">21 May 2026</time></div>
         </article>
         <article class="dk-related-card">
-          <a class="dk-related-card-figure" href="../hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html" aria-hidden="true" tabindex="-1"><img src="https://picsum.photos/seed/hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/1200/630" alt="Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns" width="1200" height="630" decoding="async" loading="lazy" /></a>
+          <a class="dk-related-card-figure" href="../hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html" aria-hidden="true" tabindex="-1"><img src="https://loremflickr.com/1200/630/machine-learning,data,hyperparameter,tuning?lock=2373282527" alt="Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns" width="1200" height="630" decoding="async" loading="lazy" /></a>
           <a class="dk-related-card-title" href="../hyperparameter-tuning-budgets-bayesian-methods-and-asymptotic-returns/index.html">Hyperparameter Tuning: Budgets, Bayesian Methods, and Asymptotic Returns</a>
           <div class="dk-related-card-meta"><time datetime="2026-05-18T09:00:00+05:00">18 May 2026</time></div>
         </article></div>
