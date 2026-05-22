@@ -82,6 +82,11 @@ jobs:
             --model "$OLLAMA_MODEL" \
             ${{ github.event.inputs.dry_run == 'true' && '--dry-run' || '' }}
 
+      - name: Generate AI hero images (incremental)
+        if: github.event.inputs.dry_run != 'true'
+        continue-on-error: true
+        run: python3 scripts/generate_ai_images.py --workers 6
+
       - name: Build site
         run: python3 build.py
 
