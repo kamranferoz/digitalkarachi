@@ -69,12 +69,16 @@ def _image_keywords_from_title(title: str, n: int = 2) -> list[str]:
     return out
 
 def _loremflickr_url(keywords: list[str], slug: str, w: int = 1200, h: int = 630) -> str:
-    """Deterministic Flickr-backed image URL matching the given keywords."""
+    """Deterministic Flickr-backed image URL matching the given keywords.
+
+    Loremflickr falls back to a generic placeholder image when no Flickr photo
+    matches *all* of a multi-tag query, so we keep it to ONE broad tag and let
+    the `lock` query param pick a specific photo from that tag's pool.
+    """
     kws = [k for k in keywords if k] or ["technology"]
-    # loremflickr accepts up to ~4 comma-separated tags reliably.
-    tags = ",".join(kws[:4])
+    tag = kws[0]
     lock = int(hashlib.md5(slug.encode("utf-8")).hexdigest()[:8], 16)
-    return f"https://loremflickr.com/{w}/{h}/{tags}?lock={lock}"
+    return f"https://loremflickr.com/{w}/{h}/{tag}?lock={lock}"
 
 def featured_image_url(slug: str, title: str = "",
                        categories: list[str] | None = None,
@@ -88,26 +92,39 @@ def featured_image_url(slug: str, title: str = "",
         for k in _CAT_IMG_KEYWORDS.get(c, []):
             if k not in kws:
                 kws.append(k)
-        if len(kws) >= 2:
-            break
-    # 2. Title-derived keywords for specificity.
+    # 2. Title-derived keywords as later fallback.
     for w in _image_keywords_from_title(title, n=2):
         if w not in kws:
             kws.append(w)
-    # 3. Author-supplied tags (best signal if present).
-    for t in (tags or [])[:2]:
-        t = re.sub(r"[^a-z0-9\-]+", "", (t or "").lower())
-        if t and t not in kws:
-            kws.append(t)
     return _loremflickr_url(kws or ["technology"], slug)
 
 def news_image_url(slug: str, title: str = "") -> str:
-    """Topic-relevant hero URL for a Tech-update item."""
-    kws = ["news", "technology"]
-    for w in _image_keywords_from_title(title, n=2):
-        if w not in kws:
-            kws.append(w)
-    return _loremflickr_url(kws, slug)
+    """Topic-relevant hero URL for a Tech-update item.
+
+    Tries to map words in the title to a small set of broad, photo-rich tags
+    that loremflickr is known to have results for; falls back to 'technology'.
+    """
+    title_l = (title or "").lower()
+    # ordered: more specific tag wins
+    rules = [
+        (("ai", "gpt", "llm", "openai", "anthropic", "chatgpt", "gemini", "model"), "ai"),
+        (("quantum",), "quantum"),
+        (("blockchain", "crypto", "bitcoin", "ethereum", "nft"), "blockchain"),
+        (("drone", "uav"), "drone"),
+        (("robot",), "robot"),
+        (("security", "cyber", "hack", "breach", "ransomware", "malware"), "cybersecurity"),
+        (("iot", "sensor"), "iot"),
+        (("vr", "ar", "metaverse", "headset"), "vr"),
+        (("cloud", "aws", "azure", "kubernetes", "server"), "cloud"),
+        (("data", "analytics", "warehouse"), "data"),
+        (("phone", "iphone", "pixel", "android", "earbud", "wearable", "gadget"), "smartphone"),
+        (("car", "tesla", "ev", "vehicle"), "car"),
+        (("startup", "funding", "raise", "investment"), "business"),
+    ]
+    for needles, tag in rules:
+        if any(n in title_l for n in needles):
+            return _loremflickr_url([tag], slug)
+    return _loremflickr_url(["technology"], slug)
 
 
 def _is_external_img(path: str) -> bool:
