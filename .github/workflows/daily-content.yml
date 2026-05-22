@@ -19,6 +19,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: daily-content
@@ -97,6 +98,11 @@ jobs:
           git commit -m "chore(content): daily content + rebuild ($(date -u +%Y-%m-%d))"
           git push
 
+      - name: Ping IndexNow with today's URLs
+        if: github.event.inputs.dry_run != 'true'
+        continue-on-error: true
+        run: python3 scripts/indexnow_ping.py
+
       - name: Upload Ollama log on failure
         if: failure()
         uses: actions/upload-artifact@v4
@@ -104,3 +110,15 @@ jobs:
           name: ollama-log
           path: ollama.log
           if-no-files-found: ignore
+
+      - name: Open issue on failure
+        if: failure() && github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          RUN_URL="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          gh issue create \
+            --title "Daily content workflow failed ($DATE)" \
+            --label "automation,bug" \
+            --body "The scheduled daily-content workflow failed on $DATE. See run: $RUN_URL"

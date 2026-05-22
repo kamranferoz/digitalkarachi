@@ -1920,12 +1920,17 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalkarachi.com/category/blockchain/</loc>
+    <loc>https://digitalkarachi.com/category/quantum-computing/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalkarachi.com/category/machine-learning-ml/</loc>
+    <loc>https://digitalkarachi.com/category/management/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://digitalkarachi.com/category/drone/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>

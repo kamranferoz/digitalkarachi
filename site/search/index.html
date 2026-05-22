@@ -941,7 +941,7 @@ function search(){
   if(!term){ render(INDEX); return; }
   const tokens = term.split(/\s+/);
   const hits = INDEX.filter(p => {
-    const hay = (p.title + ' ' + p.excerpt + ' ' + p.categories.join(' ')).toLowerCase();
+  const hay = (p.title + ' ' + p.excerpt + ' ' + p.categories.join(' ') + ' ' + (p.kw || '')).toLowerCase();
     return tokens.every(t => hay.includes(t));
   });
   render(hits);

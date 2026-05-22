@@ -22,6 +22,20 @@ POSTS_PER_PAGE = 10
 # ---------------------------------------------------------------------------
 # 1. Load metadata for all 20 posts by parsing the existing index + page/2
 # ---------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+# Featured-image fallback: deterministic Picsum URL keyed by post slug.
+# Used when a post has no archived hero image (`p.image is None`).
+# Picsum returns a different random photo per seed but the same one each call.
+# ---------------------------------------------------------------------------
+def featured_image_url(slug: str, category: str | None = None) -> str:
+    # 1200x630 = ideal OG / Twitter card aspect.
+    return f"https://picsum.photos/seed/{slug}/1200/630"
+
+
+def _is_external_img(path: str) -> bool:
+    return bool(path) and (path.startswith("http://") or path.startswith("https://"))
+
+
 POST_IMG_FIX = {
     # page-2 posts whose hero images were never archived — point at local placeholder
     "a-10-year-old-tech-prodigy-has-risen-to-the-role-of-an-assistant-teacher-at-karachi-university": "wp-content/uploads/placeholder.svg",
@@ -206,11 +220,44 @@ SVG_SPRITE = '''<svg style="position:absolute;width:0;height:0" aria-hidden="tru
 
 
 def _head_html():
+    # Optional verification meta tags (Google Search Console, Bing Webmaster).
+    # Set via env vars; rendered into <head> only if non-empty.
+    gsc = os.environ.get("GOOGLE_SITE_VERIFICATION", "").strip()
+    bing = os.environ.get("BING_SITE_VERIFICATION", "").strip()
+    verify_tags = ""
+    if gsc:
+        verify_tags += f'<meta name="google-site-verification" content="{html.escape(gsc, quote=True)}">\n'
+    if bing:
+        verify_tags += f'<meta name="msvalidate.01" content="{html.escape(bing, quote=True)}">\n'
+
+    # Optional analytics. Cookieless options preferred.
+    #   PLAUSIBLE_DOMAIN     -> Plausible (cookieless). Defaults host to plausible.io.
+    #   PLAUSIBLE_SRC        -> override script URL (for self-hosted instances).
+    #   GA4_MEASUREMENT_ID   -> Google Analytics 4 (e.g. G-XXXXXXX).
+    analytics = ""
+    plausible_domain = os.environ.get("PLAUSIBLE_DOMAIN", "").strip()
+    plausible_src = os.environ.get(
+        "PLAUSIBLE_SRC", "https://plausible.io/js/script.js"
+    ).strip()
+    if plausible_domain:
+        analytics += (
+            f'<script defer data-domain="{html.escape(plausible_domain, quote=True)}" '
+            f'src="{html.escape(plausible_src, quote=True)}"></script>\n'
+        )
+    ga4_id = os.environ.get("GA4_MEASUREMENT_ID", "").strip()
+    if ga4_id:
+        safe_ga = html.escape(ga4_id, quote=True)
+        analytics += (
+            f'<script async src="https://www.googletagmanager.com/gtag/js?id={safe_ga}"></script>\n'
+            f"<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}"
+            f"gtag('js',new Date());gtag('config','{safe_ga}',{{anonymize_ip:true}});</script>\n"
+        )
+
     return '''<!doctype html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+''' + verify_tags + analytics + '''<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#FAFAF7" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0E0F0C" media="(prefers-color-scheme: dark)">
 <title>Digital Karachi</title>
@@ -348,7 +395,11 @@ def parse_posts():
         )
         sys.exit(1)
     for idx, p in enumerate(loaded, start=1):
-        img = p.image if p.image else "wp-content/uploads/placeholder.svg"
+        if p.image:
+            img = p.image
+        else:
+            primary_cat = p.categories[0] if p.categories else None
+            img = featured_image_url(p.slug, primary_cat)
         posts[p.slug] = dict(
             id=str(idx),
             slug=p.slug,
@@ -428,6 +479,15 @@ def responsive_img_attrs(current_path, site_rel_path, sizes_attr,
                           alt, eager=False, klass=""):
     """Build an <img> tag with srcset + sizes + width/height.
     `current_path` is the building page; `site_rel_path` is the image."""
+    # External URLs (e.g. Picsum featured-image fallback): emit a plain <img>
+    # with the absolute URL and a conservative width/height.
+    if _is_external_img(site_rel_path):
+        safe_alt = html.escape(alt)
+        cls_attr = f' class="{klass}"' if klass else ''
+        load_attrs = (' loading="eager" fetchpriority="high"'
+                      if eager else ' loading="lazy"')
+        return (f'<img{cls_attr} src="{site_rel_path}" alt="{safe_alt}"'
+                f' width="1200" height="630" decoding="async"{load_attrs} />')
     # Ensure we point at the .webp twin when one exists.
     candidate = site_rel_path
     if not candidate.lower().endswith(".webp"):
@@ -603,7 +663,7 @@ def page_shell(current_path, title, description, canonical, body_main, body_clas
 def render_article_card(current_path, post, variant=""):
     """variant: "" (default), "is-large", "is-wide"."""
     link = rel(current_path, f"{post['slug']}/index.html")
-    img = rel(current_path, post["img"]) if post["img"] else ""
+    img = post["img"] if _is_external_img(post["img"]) else (rel(current_path, post["img"]) if post["img"] else "")
     primary_cat = post["categories"][0] if post["categories"] else None
     cat_display = CATEGORIES.get(primary_cat, (primary_cat or "Blog", None))[0] if primary_cat else "Blog"
     cat_link = rel(current_path, f"category/{primary_cat}/index.html") if primary_cat else "#"
@@ -641,7 +701,7 @@ def render_post_page(post, all_posts):
         body = content["body"]
         tags = content.get("tags", [])
 
-    img = rel(current, post["img"]) if post["img"] else ""
+    img = post["img"] if _is_external_img(post["img"]) else (rel(current, post["img"]) if post["img"] else "")
     primary_cat = post["categories"][0] if post["categories"] else None
     cat_name = CATEGORIES.get(primary_cat, (primary_cat or "Blog", None))[0] if primary_cat else "Blog"
     cat_link = rel(current, f"category/{primary_cat}/index.html") if primary_cat else "#"
@@ -702,7 +762,7 @@ def render_post_page(post, all_posts):
         "keywords": ", ".join(tags) if tags else cat_name,
     }
     if post["img"]:
-        ld_article["image"] = f"https://digitalkarachi.com/{post['img']}"
+        ld_article["image"] = post["img"] if _is_external_img(post["img"]) else f"https://digitalkarachi.com/{post['img']}"
     ld_breadcrumb = {"@context": "https://schema.org", "@type": "BreadcrumbList",
                      "itemListElement": breadcrumb_items}
     json_ld = (
@@ -765,7 +825,7 @@ def render_post_page(post, all_posts):
     page = page_shell(current, post["title"], desc, f"{slug}/", main, body_class="dk-single")
     # Preload the article-hero LCP image with the responsive srcset so the
     # browser can start fetching it in parallel with CSS.
-    if post.get("img"):
+    if post.get("img") and not _is_external_img(post["img"]):
         candidate = post["img"]
         if not candidate.lower().endswith(".webp"):
             webp_path = re.sub(r'\.(jpe?g|png)$', '.webp', candidate, flags=re.I)
@@ -999,10 +1059,36 @@ def render_privacy():
 
 def render_search(all_posts):
     current = "search/index.html"
+    # Build a compact body-keyword bag per post for full-text recall.
+    # Strip HTML, lowercase, drop short/stop words, dedupe; cap at 80 unique
+    # tokens per post (~0.5 KB raw) so the index stays under ~200 KB total.
+    _STOP = set(
+        "a an the and or but if then so to of in on at by for with from is are was were "
+        "be been being have has had do does did this that these those it its as not no "
+        "you your we our they their he she his her them us i me my mine yours ours theirs "
+        "can will would should could may might must shall about into over under more most "
+        "less many much such some any all each every other another which what when where "
+        "why how than too very also only just like one two three new also up down out".split()
+    )
+    def _bag(slug: str) -> str:
+        body = POST_BODIES.get(slug, {}).get("body", "")
+        text = re.sub(r"<[^>]+>", " ", body).lower()
+        toks = re.findall(r"[a-z][a-z0-9\-]{3,}", text)
+        seen, out = set(), []
+        for t in toks:
+            if t in _STOP or t in seen:
+                continue
+            seen.add(t)
+            out.append(t)
+            if len(out) >= 80:
+                break
+        return " ".join(out)
+
     index = [
         {"title": p["title"], "url": f"../{p['slug']}/",
          "excerpt": (POST_BODIES.get(p['slug'], {}).get('excerpt') or p.get('excerpt') or '')[:200],
-         "categories": [CATEGORIES.get(c, (c.title(), None))[0] for c in p["categories"]]}
+         "categories": [CATEGORIES.get(c, (c.title(), None))[0] for c in p["categories"]],
+         "kw": _bag(p["slug"])}
         for p in all_posts.values()
     ]
     import json as _json
@@ -1033,7 +1119,7 @@ function search(){{
   if(!term){{ render(INDEX); return; }}
   const tokens = term.split(/\\s+/);
   const hits = INDEX.filter(p => {{
-    const hay = (p.title + ' ' + p.excerpt + ' ' + p.categories.join(' ')).toLowerCase();
+  const hay = (p.title + ' ' + p.excerpt + ' ' + p.categories.join(' ') + ' ' + (p.kw || '')).toLowerCase();
     return tokens.every(t => hay.includes(t));
   }});
   render(hits);
@@ -1267,6 +1353,12 @@ def write_seo_files(all_posts):
         f"\nSitemap: {SITE_BASE}/sitemap.xml\n"
     )
     (SITE / "robots.txt").write_text(robots, encoding="utf-8")
+
+    # IndexNow key file: stable 32-char hex token committed into the repo.
+    # IndexNow keys are public by design; this file proves ownership of the
+    # host when we ping the API. See scripts/indexnow_ping.py.
+    INDEXNOW_KEY = "9b8e4f3a2c7d4a1e8f5b6c2d0a9e7f31"
+    (SITE / f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY, encoding="utf-8")
 
     # Custom-domain marker for GitHub Pages
     (SITE / "CNAME").write_text("digitalkarachi.com\n", encoding="utf-8")
