@@ -20,3 +20,4 @@ Thumbs.db
 
 # Generator runtime state (kept locally so re-runs don't re-publish news)
 content/.seen_urls.json
+.venv-ai/
