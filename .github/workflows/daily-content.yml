@@ -43,6 +43,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install Python deps for image step
+        run: pip install Pillow requests
+
       - name: Cache Ollama models
         id: ollama-cache
         uses: actions/cache@v4
@@ -104,7 +107,8 @@ jobs:
             git add -f content/.seen_urls.json
           fi
           git commit -m "chore(content): daily content + rebuild ($(date -u +%Y-%m-%d))"
-          git push
+          git pull --rebase origin main
+          git push origin HEAD:main
 
       - name: Ping IndexNow with today's URLs
         if: github.event.inputs.dry_run != 'true'
