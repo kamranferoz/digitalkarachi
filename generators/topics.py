@@ -20,6 +20,8 @@ import random
 import re
 from datetime import datetime
 
+from generators.rss import FeedItem, fetch_recent, filter_unseen
+
 
 # Categories used in the rotation. `blog` is implicit on every post (the
 # WP convention preserved in build.py); these are the *topical* categories.
@@ -395,3 +397,65 @@ def pick_topic(
         if not is_duplicate(topic, existing_titles):
             return topic
     return order[0]
+
+
+def _trend_topic_from_headline(headline: str, category: str) -> str:
+    """Turn a news headline into a long-form article angle."""
+    h = headline.strip().rstrip(".")
+    display = _category_display_name(category)
+    return (
+        f"Engineering perspective on today's tech news: {h} "
+        f"(a practical analysis for {display} readers)"
+    )
+
+
+def _category_display_name(slug: str) -> str:
+    names = {
+        "artificial-intelligence-ai": "AI",
+        "machine-learning-ml": "machine learning",
+        "internet-of-things-iot": "IoT",
+        "virtual-reality-vr": "VR",
+        "quantum-computing": "quantum computing",
+        "cloud-computing": "cloud",
+        "data-science": "data science",
+        "security": "security",
+        "technology": "technology",
+        "management": "engineering leadership",
+        "blockchain": "blockchain",
+        "drone": "drones",
+        "robotics": "robotics",
+    }
+    return names.get(slug, slug.replace("-", " "))
+
+
+def pick_topic_from_trends(
+    category: str,
+    *,
+    existing_titles: list[str],
+    seed: int | str | None = None,
+    max_feed_items: int = 40,
+) -> str:
+    """Pick a blog topic inspired by recent RSS headlines for the category.
+
+    Falls back to the evergreen topic bank when feeds are empty or all
+    headlines are too similar to existing posts.
+    """
+    items = filter_unseen(fetch_recent(max_per_feed=8))[:max_feed_items]
+    items.sort(key=lambda f: f.published or "", reverse=True)
+
+    # Prefer items tagged with this category, then general technology.
+    cat_items = [it for it in items if category in (it.categories or [])]
+    pool: list[FeedItem] = cat_items or items or []
+
+    seed_str = f"{category}::trends::{seed}" if seed is not None else f"{category}::trends"
+    key = int(hashlib.sha256(seed_str.encode()).hexdigest(), 16)
+    rng = random.Random(key)
+    order = list(pool)
+    rng.shuffle(order)
+
+    for item in order:
+        topic = _trend_topic_from_headline(item.title, category)
+        if not is_duplicate(topic, existing_titles, threshold=0.55):
+            return topic
+
+    return pick_topic(category, existing_titles=existing_titles, seed=seed)
