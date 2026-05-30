@@ -7,6 +7,14 @@
     <language>en-us</language>
     <atom:link href="https://digitalkarachi.com/category/technology/feed/" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Engineering Perspective on Today&#x27;s Tech News: Climate Tech Companies Are Going Public</title>
+      <link>https://digitalkarachi.com/engineering-perspective-on-today-s-tech-news-climate-tech-companies-are-going-public/</link>
+      <guid isPermaLink="true">https://digitalkarachi.com/engineering-perspective-on-today-s-tech-news-climate-tech-companies-are-going-public/</guid>
+      <pubDate>2026-05-30T09:00:00+05:00</pubDate>
+      <description>Climate tech companies are increasingly turning to public markets as a means to accelerate their growth and scale. This move has significant implications for both the industry and its engineering teams. In this article, we explore the technical challenges, financial considerations, and strategic decisions that come with going public in the climate tech space. 
+ Engineering Challenges of Scaling C</description>
+    </item>
+    <item>
       <title>Object Storage as a Primary Database: Emerging Patterns in Cloud Computing</title>
       <link>https://digitalkarachi.com/object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/</link>
       <guid isPermaLink="true">https://digitalkarachi.com/object-storage-as-a-primary-database-emerging-patterns-in-cloud-computing/</guid>
@@ -162,15 +170,6 @@
 
  Autonomous Excavators and Diggers 
  One of the first areas where robots have made significant inroads is in excavation work. Auton</description>
-    </item>
-    <item>
-      <title>Securing IoT Fleets: Provisioning, Rotation, Attestation</title>
-      <link>https://digitalkarachi.com/securing-iot-fleets-provisioning-rotation-attestation/</link>
-      <guid isPermaLink="true">https://digitalkarachi.com/securing-iot-fleets-provisioning-rotation-attestation/</guid>
-      <pubDate>2026-03-19T09:00:00+05:00</pubDate>
-      <description>As the Internet of Things (IoT) continues to grow, securing fleets of connected devices becomes increasingly critical. This article explores key security practices—provisioning, rotation, and attestation—that are essential for maintaining the integrity and confidentiality of your IoT ecosystem. 
- Provisioning: Initial Security Setup 
- The first step in securing an IoT fleet is proper provisioning</description>
     </item>
   </channel>
 </rss>

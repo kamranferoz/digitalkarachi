@@ -166,6 +166,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://digitalkarachi.com/engineering-perspective-on-today-s-tech-news-climate-tech-companies-are-going-public/</loc>
+    <lastmod>2026-05-30T09:00:00+05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://digitalkarachi.com/art-of-saying-no-in-product-roadmaps-a-modern-guide/</loc>
     <lastmod>2026-05-22T09:00:00+05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -1852,6 +1858,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://digitalkarachi.com/news/ai-job-grief-tech-workers-face-unnamed-psychological-crisis/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://digitalkarachi.com/news/voxel-space-launched-with-48-upvotes/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://digitalkarachi.com/news/anker-s-new-earbuds-offer-superior-call-quality/</loc>
     <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -1900,17 +1918,12 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalkarachi.com/category/machine-learning-ml/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://digitalkarachi.com/category/artificial-intelligence-ai/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalkarachi.com/category/technology/</loc>
+    <loc>https://digitalkarachi.com/category/cloud-computing/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1920,42 +1933,12 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalkarachi.com/category/drone/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://digitalkarachi.com/category/internet-of-things-iot/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalkarachi.com/category/data-science/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://digitalkarachi.com/category/blog/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://digitalkarachi.com/category/blockchain/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://digitalkarachi.com/category/virtual-reality-vr/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://digitalkarachi.com/category/management/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://digitalkarachi.com/category/robotics/</loc>
+    <loc>https://digitalkarachi.com/category/technology/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1965,7 +1948,42 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalkarachi.com/category/cloud-computing/</loc>
+    <loc>https://digitalkarachi.com/category/management/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://digitalkarachi.com/category/blockchain/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://digitalkarachi.com/category/blog/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://digitalkarachi.com/category/data-science/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://digitalkarachi.com/category/drone/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://digitalkarachi.com/category/machine-learning-ml/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://digitalkarachi.com/category/virtual-reality-vr/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://digitalkarachi.com/category/robotics/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
