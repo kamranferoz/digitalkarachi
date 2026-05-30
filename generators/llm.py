@@ -113,10 +113,14 @@ class OllamaLLM:
 
 
 def get_llm() -> LLM:
-    """Factory honouring env vars OLLAMA_URL + OLLAMA_MODEL."""
+    """Factory honouring env vars OLLAMA_URL, OLLAMA_MODEL, OLLAMA_TIMEOUT."""
+    timeout = int(os.environ.get("OLLAMA_TIMEOUT", "300"))
+    retries = int(os.environ.get("OLLAMA_RETRIES", "2"))
     return OllamaLLM(
         model=os.environ.get("OLLAMA_MODEL", "qwen2.5:7b-instruct"),
         url=os.environ.get("OLLAMA_URL", "http://localhost:11434"),
+        timeout=timeout,
+        retries=retries,
     )
 
 

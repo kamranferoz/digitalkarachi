@@ -121,25 +121,27 @@ def cmd_daily(args: argparse.Namespace) -> int:
     date_iso = args.date or _today_iso()
     print(f"[daily] {date_iso}")
 
-    # Blog (topic seeded from today's tech headlines when possible)
+    # News first — fast; ensures fresh items publish even if blog times out.
+    rc2 = cmd_news(argparse.Namespace(
+        max=args.news, model=None, dry_run=args.dry_run,
+    ))
+    news_ok = rc2 == 0
+
     rc = cmd_blog(argparse.Namespace(
         date=date_iso, category=None, topic=None, seed=date_iso,
         model=None, dry_run=args.dry_run, from_trends=True,
     ))
     blog_ok = rc == 0
 
-    # News
-    rc2 = cmd_news(argparse.Namespace(
-        max=args.news, model=None, dry_run=args.dry_run,
-    ))
-    news_ok = rc2 == 0
-
     if blog_ok and news_ok:
         return 0
-    if not blog_ok:
-        print("[daily] blog generation failed", file=sys.stderr)
-    if not news_ok:
-        print("[daily] news generation failed or produced no items", file=sys.stderr)
+    if blog_ok or news_ok:
+        if not blog_ok:
+            print("[daily] blog generation failed (news published)", file=sys.stderr)
+        if not news_ok:
+            print("[daily] news generation failed (blog published)", file=sys.stderr)
+        return 0
+    print("[daily] blog and news generation both failed", file=sys.stderr)
     return 1
 
 
