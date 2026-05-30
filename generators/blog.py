@@ -7,6 +7,7 @@ and writes `content/posts/<slug>.json`.
 from __future__ import annotations
 
 import html
+import os
 import re
 from datetime import datetime
 from pathlib import Path
@@ -115,9 +116,15 @@ def generate_blog(
         topic=topic,
         date_display=_date_display(date_iso),
     )
+    if os.environ.get("CI") or os.environ.get("OLLAMA_CI"):
+        base_prompt = base_prompt.replace(
+            "TARGET LENGTH: 1100-1600 words (count carefully).",
+            "TARGET LENGTH: 750-950 words (count carefully).",
+        )
 
-    MIN_WORDS = 650
-    MAX_ATTEMPTS = 4
+    MIN_WORDS = 500 if (os.environ.get("CI") or os.environ.get("OLLAMA_CI")) else 650
+    MAX_ATTEMPTS = 2 if (os.environ.get("CI") or os.environ.get("OLLAMA_CI")) else 4
+    max_tokens = 2048 if (os.environ.get("CI") or os.environ.get("OLLAMA_CI")) else 4096
     last_short_wc: int | None = None
     data: dict | None = None
     title = excerpt = body_html = ""
@@ -125,18 +132,19 @@ def generate_blog(
     for attempt in range(1, MAX_ATTEMPTS + 1):
         prompt = base_prompt
         if last_short_wc is not None:
+            min_target = 750 if (os.environ.get("CI") or os.environ.get("OLLAMA_CI")) else 1100
             prompt += (
                 f"\n\nIMPORTANT: The previous attempt produced only {last_short_wc} words. "
-                "You MUST write at least 1100 words. EXPAND every <h2> section with more "
+                f"You MUST write at least {min_target} words. EXPAND every <h2> section with more "
                 "concrete examples, longer paragraphs, and additional sub-points. "
-                "Do not be terse. Aim for 1300-1600 words."
+                "Do not be terse."
             )
         data = llm.complete(
             prompt,
             system=SYSTEM_PROMPT,
             json_mode=True,
             temperature=0.75,
-            max_tokens=4096,
+            max_tokens=max_tokens,
         )
         if not isinstance(data, dict):
             raise LLMError(f"Expected dict from LLM, got {type(data).__name__}")

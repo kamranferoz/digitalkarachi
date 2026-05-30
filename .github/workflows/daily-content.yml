@@ -32,6 +32,10 @@ jobs:
     env:
       OLLAMA_MODEL: ${{ github.event.inputs.model || 'qwen2.5:7b-instruct' }}
       OLLAMA_URL: http://127.0.0.1:11434
+      OLLAMA_TIMEOUT: "900"
+      OLLAMA_RETRIES: "1"
+      OLLAMA_CI: "1"
+      CI: "true"
     steps:
       - uses: actions/checkout@v4
         with:
