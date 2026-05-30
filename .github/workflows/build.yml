@@ -6,9 +6,10 @@ on:
     paths:
       - "build.py"
       - "generators/**"
-      - "content/**"
       - "scripts/**"
       - "posts_content.py"
+    # content/** is built and committed by daily-content.yml; a parallel
+    # rebuild here races the daily push and causes rebase conflicts on site/
   workflow_dispatch:
 
 permissions:
