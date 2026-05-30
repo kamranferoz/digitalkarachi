@@ -17,6 +17,29 @@ from generators.schema import (
 
 CONTENT = Path(__file__).resolve().parent.parent / "content"
 
+def save_news_item(
+    slug: str,
+    title: str,
+    date_iso: str,
+    body: str,
+    source: str = "manual",
+    source_urls: list[str] = [],
+    content_dir: Path = CONTENT,
+):
+    """
+    Write a news item to content/news/{slug}.json in the correct format.
+    Ensures schema validation and correct structure for the build pipeline.
+    """
+    news = NewsItem(
+        slug=slug,
+        title=title,
+        date_iso=date_iso,
+        body=body,
+        source=source,
+        source_urls=source_urls,
+    )
+    return write_news(content_dir, news)
+
 SYSTEM_PROMPT = """You are a tech newsroom editor. You rewrite news leads into short, neutral, factually conservative dispatches suitable for a daily tech bulletin. You never add information that is not in the source. You never speculate. You never use marketing adjectives. Plain English, working-journalist tone."""
 
 USER_PROMPT_TEMPLATE = """Rewrite the following source item as a short news dispatch for Digital Karachi.
@@ -55,27 +78,56 @@ def _unique_slug(base: str, taken: set[str]) -> str:
     raise LLMError(f"Cannot find unique news slug for base {base!r}")
 
 
+MIN_NEWS_WORDS = 70
+MAX_REWRITE_ATTEMPTS = 3
+
+
+def _existing_source_urls() -> set[str]:
+    urls: set[str] = set()
+    for n in load_news(CONTENT):
+        for u in n.source_urls:
+            if u:
+                urls.add(u.split("#")[0].split("?")[0].rstrip("/"))
+    return urls
+
+
 def rewrite_item(item: FeedItem, llm: LLM) -> NewsItem:
-    prompt = USER_PROMPT_TEMPLATE.format(
+    base_prompt = USER_PROMPT_TEMPLATE.format(
         title=item.title,
         summary=item.summary or "(no summary provided)",
         link=item.link,
         publisher=item.source_name,
     )
-    data = llm.complete(
-        prompt,
-        system=SYSTEM_PROMPT,
-        json_mode=True,
-        temperature=0.4,
-        max_tokens=512,
-    )
-    if not isinstance(data, dict):
-        raise LLMError(f"Expected dict from LLM, got {type(data).__name__}")
+    last_wc = 0
+    data: dict | None = None
+    title = body = ""
+    for attempt in range(1, MAX_REWRITE_ATTEMPTS + 1):
+        prompt = base_prompt
+        if last_wc and last_wc < MIN_NEWS_WORDS:
+            prompt += (
+                f"\n\nIMPORTANT: Your previous attempt was only {last_wc} words. "
+                f"You MUST write at least 110 words in the body field. "
+                "Expand with neutral context from the summary only — do not invent facts."
+            )
+        data = llm.complete(
+            prompt,
+            system=SYSTEM_PROMPT,
+            json_mode=True,
+            temperature=0.4,
+            max_tokens=1024,
+        )
+        if not isinstance(data, dict):
+            raise LLMError(f"Expected dict from LLM, got {type(data).__name__}")
 
-    title = (data.get("title") or "").strip().rstrip(".")
-    body = re.sub(r"\s+", " ", (data.get("body") or "")).strip()
-    if not title or len(body.split()) < 70:
-        raise LLMError(f"News rewrite too short for {item.title!r} (words={len(body.split())})")
+        title = (data.get("title") or "").strip().rstrip(".")
+        body = re.sub(r"\s+", " ", (data.get("body") or "")).strip()
+        last_wc = len(body.split())
+        if title and last_wc >= MIN_NEWS_WORDS:
+            break
+    else:
+        raise LLMError(
+            f"News rewrite too short for {item.title!r} (words={last_wc})"
+        )
 
     date_iso = item.published or date_cls.today().isoformat()
     base_slug = slugify(title)[:80]
@@ -102,6 +154,11 @@ def generate_news_batch(
     """Fetch RSS, dedup, rewrite up to `max_items`, write to disk."""
     raw = fetch_recent(max_per_feed=8)
     fresh = filter_unseen(raw)
+    published_urls = _existing_source_urls()
+    fresh = [
+        it for it in fresh
+        if not it.link or it.url_key() not in published_urls
+    ]
     # Prefer most recently published items first.
     fresh.sort(key=lambda f: f.published or "", reverse=True)
 
@@ -117,7 +174,15 @@ def generate_news_batch(
             print(f"  SKIP {item.title!r}: {e}")
             continue
         if not dry_run:
-            write_news(CONTENT, n)
+            save_news_item(
+                slug=n.slug,
+                title=n.title,
+                date_iso=n.date_iso,
+                body=n.body,
+                source=n.source,
+                source_urls=n.source_urls,
+                content_dir=CONTENT,
+            )
         out.append(n)
         used.append(item)
 

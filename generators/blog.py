@@ -32,7 +32,7 @@ TARGET DATE: {date_display}
 TARGET LENGTH: 1100-1600 words (count carefully).
 
 CONSTRAINTS:
-- Do NOT mention specific real companies' news, funding rounds, product launches, executives by name, or dated events you are not certain occurred. Speak in general patterns ("modern transformer models", "leading cloud providers") rather than naming specific products. The article must read as evergreen and not be falsifiable as of {date_display}.
+- The TOPIC may reference a current trend from the headline seed. You may discuss that theme in general, analytical terms. Do NOT invent specific quotes, statistics, dollar amounts, or dated events beyond what the topic implies. Prefer patterns and trade-offs over breaking-news claims.
 - Do NOT include phrases like "as an AI", "in conclusion", "in today's fast-paced world", "in the digital age", or other AI cliches.
 - Use ONLY these HTML tags in body_html: <h2>, <h3>, <p>, <ul>, <ol>, <li>, <strong>, <em>, <blockquote>, <code>. Do not include <h1>, <html>, <body>, <head>, scripts, or images. No raw URLs.
 - Open with a punchy 2-3 sentence lede in a <p>, NOT a heading.
@@ -116,8 +116,8 @@ def generate_blog(
         date_display=_date_display(date_iso),
     )
 
-    MIN_WORDS = 800
-    MAX_ATTEMPTS = 3
+    MIN_WORDS = 650
+    MAX_ATTEMPTS = 4
     last_short_wc: int | None = None
     data: dict | None = None
     title = excerpt = body_html = ""

@@ -69,9 +69,16 @@ def cmd_blog(args: argparse.Namespace) -> int:
     date_iso = args.date or _today_iso()
     category = args.category or topics_mod.rotate_category(date_iso)
     existing = [p.title for p in load_posts(CONTENT)]
-    topic = args.topic or topics_mod.pick_topic(
-        category, existing_titles=existing, seed=args.seed or date_iso,
-    )
+    if args.topic:
+        topic = args.topic
+    elif getattr(args, "from_trends", False):
+        topic = topics_mod.pick_topic_from_trends(
+            category, existing_titles=existing, seed=args.seed or date_iso,
+        )
+    else:
+        topic = topics_mod.pick_topic(
+            category, existing_titles=existing, seed=args.seed or date_iso,
+        )
     print(f"[blog] date={date_iso} category={category}")
     print(f"[blog] topic: {topic}")
     llm = get_llm()
@@ -104,7 +111,8 @@ def cmd_news(args: argparse.Namespace) -> int:
     for n in items:
         print(f"[news] {'(dry-run) ' if args.dry_run else ''}{n.slug} :: {n.title}")
     if not items:
-        print("[news] no new items.")
+        print("[news] no new items.", file=sys.stderr)
+        return 1
     return 0
 
 
@@ -113,10 +121,10 @@ def cmd_daily(args: argparse.Namespace) -> int:
     date_iso = args.date or _today_iso()
     print(f"[daily] {date_iso}")
 
-    # Blog
+    # Blog (topic seeded from today's tech headlines when possible)
     rc = cmd_blog(argparse.Namespace(
         date=date_iso, category=None, topic=None, seed=date_iso,
-        model=None, dry_run=args.dry_run,
+        model=None, dry_run=args.dry_run, from_trends=True,
     ))
     blog_ok = rc == 0
 
@@ -126,7 +134,13 @@ def cmd_daily(args: argparse.Namespace) -> int:
     ))
     news_ok = rc2 == 0
 
-    return 0 if (blog_ok or news_ok) else 1
+    if blog_ok and news_ok:
+        return 0
+    if not blog_ok:
+        print("[daily] blog generation failed", file=sys.stderr)
+    if not news_ok:
+        print("[daily] news generation failed or produced no items", file=sys.stderr)
+    return 1
 
 
 def cmd_backfill(args: argparse.Namespace) -> int:
@@ -206,6 +220,10 @@ def build_parser() -> argparse.ArgumentParser:
     sp.add_argument("--seed", default=None)
     sp.add_argument("--model")
     sp.add_argument("--dry-run", action="store_true")
+    sp.add_argument(
+        "--from-trends", action="store_true",
+        help="Seed topic from recent tech RSS headlines (used by daily)",
+    )
     sp.set_defaults(func=cmd_blog)
 
     sp = sub.add_parser("news", help="Fetch RSS + rewrite news items")
